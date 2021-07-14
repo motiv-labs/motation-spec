@@ -18,10 +18,6 @@
       "minItems": 1,
       "uniqueItems": true
     },
-    "external": {
-      "type": "object",
-      "$ref": "./external-schema.json"
-    },
     "dependencies": {
       "type": "object",
       "$ref": "./dependencies-schema.json"

@@ -1,0 +1,55 @@
+{
+  "$schema": "../../schema/multiple/tag-schema.json",
+  "$id": "tag-schema.json",
+  "systems":[
+    {
+      "name":"dotCMS 5.2.7",
+      "date":"2021-07-14 18:53:09.18862463 +0000 UTC m=+641.919624176"
+    }
+  ],
+  "id": [
+    {
+      "value": "799f176a-d32e-4844-a07c-1b5fcd107578"
+    }
+  ],
+  "tags": [
+  {
+    "id": [
+      {
+        "value": "df56f776-928f-4cb7-93f9-0ca242df928f"
+      }
+    ],
+    "name": "tag1",
+    "site": "SYSTEM_HOST",
+    "system": {
+      "persona": "false"
+    },
+    "modificationDate": "2020-08-18 16:56:40.392 +0000 UTC"
+  },
+  {
+    "id": [
+      {
+        "value": "d20dca41-2a90-43f7-af90-19b0eaa42af1"
+      }
+    ],
+    "name": "tag2",
+    "site": "SYSTEM_HOST",
+    "system": {
+      "persona": "false"
+    },
+    "modificationDate": "2020-08-18 16:56:50.559 +0000 UTC"
+  },
+  {
+    "id": [
+      {
+        "value": "6c7a56bf-006e-4f93-a092-1c1b905998a6"
+      }
+    ],
+    "name": "tag3",
+    "site": "SYSTEM_HOST",
+    "system": {
+      "persona": "false"
+    },
+    "modificationDate": "2020-08-18 16:57:11.891 +0000 UTC"
+  }
+]}

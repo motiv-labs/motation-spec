@@ -1,0 +1,72 @@
+{
+  "$schema": "../../schema/multiple/relationship-schema.json",
+  "$id": "relationship-schema.json",
+  "systems":[
+    {
+      "name":"dotCMS 5.2.7",
+      "date":"2021-07-14 18:53:09.18862463 +0000 UTC m=+641.919624176"
+    }
+  ],
+  "id": [
+    {
+      "value": "bd3a6f51-2df9-41f7-a6d8-2c5d80bc23b0"
+    }
+  ],
+  "relationships": [
+    {
+      "id": [
+        {
+          "value": "bd3a6f51-2df9-41f7-a6d8-2c5d80bc23b0"
+        }
+      ],
+      "properties": {
+        "uniqueName": "Kitchensink.relationships",
+        "parentId": [
+          {
+            "value": "a0ba0feb-440e-4881-8275-91f312bedb32"
+          }
+        ],
+        "childId": [
+          {
+            "value": "2a3e91e4-fbbf-4876-8c5b-2233c1739b05"
+          }
+        ],
+        "childName": "relationships",
+        "cardinality": "ManyToMany",
+        "system": {
+          "child_required": "false",
+          "fixed": "false",
+          "parent_required": "false"
+        }
+      },
+      "relations": [
+        {
+          "parent": [
+            {
+              "value": "4bae2fbe-7ab3-4b44-a196-1bd444b42eda"
+            }
+          ],
+          "child": [
+            {
+              "value": "90ec36f6-2aa2-4288-bfb1-bab0e152eadb"
+            }
+          ],
+          "order": 2
+        },
+        {
+          "parent": [
+            {
+              "value": "4bae2fbe-7ab3-4b44-a196-1bd444b42eda"
+            }
+          ],
+          "child": [
+            {
+              "value": "35891a5a-d1fc-4ccd-9f49-8cb3b4219ebf"
+            }
+          ],
+          "order": 3
+        }
+      ]
+    }
+  ]
+}

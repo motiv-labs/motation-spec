@@ -1,0 +1,29 @@
+{
+  "$schema": "../../schema/multiple/language-schema.json",
+  "$id": "language-schema.json",
+  "systems":[
+    {
+      "name":"dotCMS 5.2.7",
+      "date":"2021-07-14 18:53:09.18862463 +0000 UTC m=+641.919624176"
+    }
+  ],
+  "id": [
+    {
+      "value": "799f176a-d32e-4844-a07c-1b5fcd107578"
+    }
+  ],
+  "languages": [
+    {
+      "id": [
+        {
+          "value": "df56f776-928f-4cb7-93f9-0ca242df928f"
+        }
+      ],
+      "languageId": [
+        {
+          "value": "1"
+        }
+      ]
+    }
+  ]
+}

@@ -7,18 +7,6 @@
       "date": "2020-09-16 15:05:48.954501 -0600 CST m=+0.003559429"
     }
   ],
-  "external": {
-    "contents" : [
-      {
-        "bucket": "motation",
-        "md5": "df46a83719529da62b2e1053d0ed65cf"
-      },
-      {
-        "bucket": "motation",
-        "md5": "098f6bcd4621d373cade4e832627b4f6"
-      }
-    ]
-  },
   "dependencies": {
     "relationships": [
       {
