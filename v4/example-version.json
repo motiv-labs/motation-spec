@@ -1,0 +1,44 @@
+{
+  "$schema": "schema/version-schema.json",
+  "$id": "version-schema.json",
+
+  "language": "1",
+  "hash": "9202816dabaaf34bb106a10421b9a0d0",
+  "id": "860ecec3-6748-4237-b776-4c6fa8c7f389",
+  "status": "Working",
+
+  "title" : "Ecotourism in Costa Rica",
+
+  "fields": [
+    {
+      "id": "text1",
+      "value": "This is a title"
+    },
+    {
+      "id": "text_area2",
+      "value": "ecotourism-in-costa-rica"
+    },
+    {
+      "id": "text_area3",
+      "value": "Ecotourism in Costa Rica is a robust industry because the country was one of the earliest adopters of connecting nature/wildlife conservation with responsible travel."
+    },
+    {
+      "id": "text_area5",
+      "value": "<p>Ecotourism in Costa Rica is a robust industry because the country was one of the earliest adopters of connecting nature/wildlife conservation with responsible travel. Costa Rica has been ranked among the world&rsquo;s best ecotourism destinations on more than one occasion, and became the first country in the Americas to ban hunting in 2012. As a result, its biodiversity is virtually unparalleled.</p>\n<p>The first European to explore Costa Rica was Christopher Columbus, who arrived in 1502. By the time he arrived, there were four indigenous tribes in Costa Rica&ndash; the Caribs, Borucas, Chibchas, and Diqu&iacute;s tribes.</p>\n<p>Few of these indigenous peoples survived the dawn of Spanish colonialism, and African slaves were brought in to work the land.</p>\n<p>Despite its colonial past, Costa Rica eventually managed to achieve a lasting democracy. Unique among its Central American neighbors, it&rsquo;s a peaceful country with no army, excellent infrastructure, a high standard of living, and impressive conservation efforts.</p>\n<p>Check out our extensive guide to Costa Rica Ecotourism:</p>\n<p><iframe src=\"https://www.google.com/maps/d/u/0/embed?mid=1UDbBGQnoLCLAbdGZpbrcYEqcFVE&amp;z=8.9\" width=\"100%\" height=\"500\"></iframe></p>\n<p>Costa Rica boasts 26 National Parks, 58 wildlife refuges, 32 protected zones, 15 wetland areas, 11 forest reserves, and 8 biological reserves. Over 25% of the country&rsquo;s 19,730 square miles is protected from future development. Ecotourism in Costa Rica encompasses a diverse array of ecosystems, from cloud forests and rainforests to wetlands and coastal marine areas. With so many different things to do in Costa Rica, it can be difficult to narrow them down. However, there are certain places that should be a must-see on every eco-traveler&rsquo;s itinerary.</p>\n<h2>1. ARENAL VOLCANO NATIONAL PARK</h2>\n<p>One of the most active volcanoes in the world until 2010, the 5,480-foot Arenal Volcano dominates the landscape of northwestern Costa Rica. Located near the tiny town of La Fortuna, the volcano has been dormant for years. But the area remains a popular ecotourism destination thanks to Lake Arenal, La Fortuna Waterfall, and various hot springs. And of course the mountain still looms ominously over the verdant landscape, like a sleeping giant just waiting for the opportune moment to re-awaken.</p>\n<h2>2. BALLENA MARINE NATIONAL PARK</h2>\n<p>Ballena Marine National Park, one of the newest national parks in Costa Rica, is widely considered among the best places in the Americas for whale-watching. This is due to the fact that both Northern and Southern Humpback Whales migrate through this area. The park also offers 8.69 miles of beautiful beaches, a small estuary, and snorkeling Central America&rsquo;s largest coral reef on the Pacific Ocean.</p>\n<h3>3. CA&Ntilde;O ISLAND</h3>\n<p>Located off the coast of the Osa Peninsula, Ca&ntilde;o Island became a biological reserve in 1978. Among the island&rsquo;s towering evergreens, the Diqu&iacute;s tribe&rsquo;s hand-carved stone spheres have baffled archeologists for years. Ca&ntilde;o Island is considered one of the world&rsquo;s best Scuba diving spots: It&rsquo;s surrounded by five platforms of coral reefs. Divers have the chance to see Eels, Lobsters, Sharks, Sea Turtles, and possibly Whales during winter.</p>\n<h2>4.&nbsp;CORCOVADO NATIONAL PARK</h2>\n<p>Described by National Geographic as &ldquo;the most biologically intense place on earth,&rdquo; Corcovado National Park is the largest in Costa Rica. Located on the Osa Peninsuala, it&rsquo;s a haven for bird-watchers, hikers, and wildlife photographers. There are 13 different ecosystems here, with extensive trails through highland cloud forest, mangrove swamps, lowland rain forests, and sandy beaches. The biodiversity in Corcovado is remarkable, ranging from Monkeys and Sloths to rare species such as Jaguars and Baird&rsquo;s Tapirs.</p>\n<h2>5. MANUEL ANTONIO NATIONAL PARK</h2>\n<p>Ranked among the world&rsquo;s most beautiful national parks by Forbes, Manuel Antonio annually attracts around 150,000 visitors. They&rsquo;re drawn by its beautiful beaches and hiking trails through primary forest, secondary forest, mangrove swamps, and lagoons. The park boasts 184 species of birds and 109 species of mammals. The most frequently sighted are the Monkeys. But beware: They&rsquo;ve become so habituated, they&rsquo;re renowned for stealing food and other items!</p>"
+    }
+  ],
+
+  "systemProperties": {
+    "locked_by" : "",
+    "locked_on" : "2020-01-08 10:49:54.888000",
+    "version_ts" : "2019-11-08 11:43:32.081000",
+    "show_on_menu": false,
+    "sort_order": 0,
+    "friendly_name" : "Ecotourism in Costa Rica",
+    "last_review" : "2019-11-01 10:55:54.913000"
+  },
+
+  "modificationDate": "2019-11-08 11:43:32.008000",
+  "modificationUser": "86fe5be1-4624-4595-bf2d-af8d559414b1"
+
+}

@@ -1,0 +1,326 @@
+{
+  "$schema": "https://json-schema.org/draft/2019-09/schema",
+  "$id": "https://json-schema.org/draft/2019-09/output/schema",
+  "description": "A schema that validates the structure of Motation Definitions",
+
+  "type": "object",
+  "required": [ "id","properties","fields" ],
+
+  "properties": {
+
+    "id": {
+      "type": "array",
+      "items": {
+        "$ref": "#/definitions/id"
+      },
+      "uniqueItems": true
+    },
+
+    "properties": {
+      "type": "object",
+      "$ref": "#/definitions/properties"
+    },
+
+    "fields": {
+      "type": "array",
+      "items": {
+        "$ref": "#/definitions/field"
+      },
+      "minItems": 1,
+      "uniqueItems": true
+    }
+  },
+
+  "definitions": {
+
+    "id": {
+      "required": ["value"],
+      "properties": {
+        "label": {
+          "type": "string"
+        },
+        "value": {
+          "type": "string",
+          "default": "defaultId"
+        }
+      }
+    },
+
+    "audit" : {
+      "required": ["date"],
+      "properties": {
+        "user": {
+          "type": "object",
+          "$ref": "#/definitions/user"
+        },
+        "date": {
+          "type": "string"
+        }
+      }
+    },
+
+    "user": {
+      "properties": {
+        "id": {
+          "type": "object",
+          "$ref": "#/definitions/id"
+        },
+        "name": {
+          "type": "string"
+        },
+        "email": {
+          "type": "string"
+        },
+        "username": {
+          "type": "string"
+        }
+      }
+    },
+
+    "properties": {
+
+      "required": [ "audit"],
+      "properties": {
+
+        "uniqueName": {
+          "type": "string"
+        },
+        "description": {
+          "type": "string"
+        },
+        "name": {
+          "type": "string"
+        },
+        "creationDate": {
+          "type": "string"
+        },
+        "modificationDate": {
+          "type": "string"
+        },
+
+        "parent": {
+          "type": "object",
+          "$ref": "#/definitions/parent"
+        },
+
+        "metadata": {
+          "type": "object",
+          "$ref": "#/definitions/metadata"
+        },
+
+        "system": {
+          "type": "object",
+          "$ref": "#/definitions/system"
+        },
+
+        "audit": {
+          "type": "array",
+          "items": {
+            "$ref": "#/definitions/audit"
+          },
+          "minItems": 1,
+          "uniqueItems": true
+        }
+      }
+    },
+
+    "parent": {
+      "properties": {
+        "type": {
+          "enum": [
+            "Site", "Folder"
+          ]
+        },
+        "id": {
+          "type": "array",
+          "items": {
+            "$ref": "#/definitions/id"
+          },
+          "uniqueItems": true
+        }
+      },
+      "required": [
+        "type",
+        "id"
+      ],
+      "additionalProperties": false
+    },
+
+    "metadata" : {
+      "properties" : {
+        "items" : {
+          "type": "array"
+        }
+      }
+    },
+
+    "system" : {
+      "properties" : {
+        "items" : {
+          "type": "array"
+        }
+      }
+    },
+
+    "validation": {
+      "properties" : {
+        "name": {
+          "type" : "string"
+        },
+        "required": {
+          "type" : "boolean"
+        },
+        "minLength":  {
+          "type" : "number"
+        },
+        "maxLength":  {
+          "type" : "number"
+        },
+        "regex":  {
+          "type" : "string"
+        }
+      }
+    },
+
+    "constraint": {
+      "properties" : {
+        "unique": {
+          "type" : "boolean"
+        },
+        "readOnly": {
+          "type" : "boolean"
+        }
+      }
+    },
+
+    "display": {
+      "properties" : {
+        "showInList": {
+          "type" : "boolean"
+        },
+        "searchable": {
+          "type" : "boolean"
+        },
+        "hint": {
+          "type": "string"
+        }
+      }
+    },
+
+    "dataType": { "enum": [ "String", "BigString", "Boolean", "Int", "BigInt", "Float", "Date", "Time", "DateTime"] },
+
+    "field" : {
+
+      "required": [ "id", "properties"],
+      "properties": {
+
+        "id": {
+          "type": "array",
+          "items": {
+            "$ref": "#/definitions/id"
+          },
+          "uniqueItems": true
+        },
+
+        "properties": {
+
+          "required": [ "dataType", "fieldType", "name"],
+          "properties": {
+
+            "dataType" : {
+              "type": "string",
+              "$ref": "#/definitions/dataType"
+            },
+
+            "fieldType": {
+              "enum": [
+                "Binary",
+                "Categories",
+                "Checkbox",
+                "Constant",
+                "Custom",
+                "Date",
+                "Datetime",
+                "File",
+                "Hidden",
+                "Site",
+                "Image",
+                "KeyValue",
+                "Divider",
+                "Select",
+                "Multiselect",
+                "Tab",
+                "Radio",
+                "Relationship",
+                "Tags",
+                "Textarea",
+                "Text",
+                "Time",
+                "WYSIWYG",
+                "Row",
+                "Column"
+              ]
+            },
+
+            "validations": {
+              "type": "array",
+              "items": {
+                "$ref": "#/definitions/validation"
+              },
+              "uniqueItems": true
+            },
+
+            "constraints": {
+              "type": "array",
+              "items": {
+                "$ref": "#/definitions/constraint"
+              },
+              "uniqueItems": true
+            },
+
+            "display": {
+              "type": "array",
+              "items": {
+                "$ref": "#/definitions/display"
+              },
+              "uniqueItems": true
+            },
+
+            "system": {
+              "type": "object",
+              "$ref": "#/definitions/system"
+            },
+
+            "metadata": {
+              "type": "object",
+              "$ref": "#/definitions/metadata"
+            },
+
+            "uniqueName": {
+              "type": "string"
+            },
+            "description": {
+              "type": "string"
+            },
+            "name": {
+              "type": "string"
+            },
+            "defaultValue": {
+              "type": "string"
+            },
+            "creationDate": {
+              "type": "string"
+            },
+            "modificationDate": {
+              "type": "string"
+            }
+          }
+        }
+
+      }
+
+    }
+
+  }
+
+}

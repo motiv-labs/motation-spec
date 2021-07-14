@@ -1,0 +1,14 @@
+{
+    "$schema": "mtype-schema.json",
+    "$id": "mtype-schema.json",
+    "title": "JSON Test",
+
+    "description": "Representation of a single mtype",
+
+    "type": "String",
+    "name": "Title",
+    "value": "Hello world",
+    "systemId": "32680740-2120-4d68-bbc2-c47a5b13f139",
+    "systemType": "Text Field"
+
+}

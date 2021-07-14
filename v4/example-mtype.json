@@ -1,0 +1,54 @@
+{
+    "$schema": "schema/mtype-schema.json",
+    "$id": "mtype-schema.json",
+    "title": "JSON Test",
+
+    "dataType": "String",
+    "fieldType": "Text",
+
+    "validations": [
+        {
+            "name": "required",
+            "required": true
+        },
+        {
+            "name": "email",
+            "regex": "^(\\([0-9]{3}\\))?[0-9]{3}-[0-9]{4}$"
+        },
+        {
+            "name": "email",
+            "minLength": 6
+        }
+    ],
+
+    "constraints": [
+        {
+            "unique": true
+        }
+    ],
+
+    "display": [
+        {
+            "showInList": true
+        },
+        {
+            "searchable": true
+        }
+    ],
+
+    "metadata": {
+        "content-type" : "image/jpeg"
+    },
+
+    "systemProperties": {
+        "field_contentlet" : "text3"
+    },
+    
+    "id": "32680740-2120-4d68-bbc2-c47a5b13f139",
+    "uniqueName": "userEmail",
+    "description": "Email field description",
+    "hint" : "This is the email field",
+    "name": "User email",
+    "creationDate": "2020-03-27 13:36:37.000000",
+    "modificationDate": "2020-03-27 13:36:37.000000"
+}

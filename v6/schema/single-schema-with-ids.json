@@ -1,0 +1,671 @@
+{
+  "$schema": "https://json-schema.org/draft/2019-09/schema",
+  "$id": "https://json-schema.org/draft/2019-09/output/schema",
+  "description": "A schema that validates the structure of a Mutation file",
+  "type": "object",
+  "required": [
+    "systems",
+    "definition",
+    "contents",
+    "audit",
+    "key"
+  ],
+  "properties": {
+    "systems": {
+      "type": "array",
+      "items": {
+        "$ref": "#system"
+      },
+      "minItems": 1,
+      "uniqueItems": true
+    },
+    "definition": {
+      "type": "object",
+      "required": [
+        "id",
+        "properties",
+        "fields"
+      ],
+      "properties": {
+        "id": {
+          "type": "array",
+          "items": {
+            "$ref": "#id"
+          },
+          "uniqueItems": true
+        },
+        "properties": {
+          "type": "object",
+          "$ref": "#definition-properties"
+        },
+        "fields": {
+          "type": "array",
+          "items": {
+            "$ref": "#definition-field"
+          },
+          "minItems": 1,
+          "uniqueItems": true
+        }
+      }
+    },
+    "contents": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": [
+          "id",
+          "properties",
+          "versions"
+        ],
+        "properties": {
+          "id": {
+            "type": "array",
+            "items": {
+              "$ref": "#id"
+            },
+            "uniqueItems": true
+          },
+          "properties": {
+            "type": "object",
+            "$ref": "#content-properties"
+          },
+          "versions": {
+            "type": "array",
+            "items": {
+              "$ref": "#version"
+            },
+            "minItems": 1,
+            "uniqueItems": true
+          }
+        }
+      },
+      "minItems": 1,
+      "uniqueItems": true
+    },
+    "audit": {
+      "type": "array",
+      "items": {
+        "$ref": "#audit"
+      },
+      "minItems": 1,
+      "uniqueItems": true
+    },
+    "key": {
+      "required": [
+        "fields"
+      ],
+      "properties": {
+        "fields": {
+          "type": "array",
+          "items": {
+            "$ref": "#key-field"
+          },
+          "minItems": 1,
+          "uniqueItems": true
+        }
+      }
+    }
+  },
+  "definitions": {
+    "id": {
+      "$id" : "#id",
+      "required": [
+        "value"
+      ],
+      "properties": {
+        "label": {
+          "type": "string"
+        },
+        "value": {
+          "type": "string"
+        }
+      }
+    },
+    "definition-properties": {
+      "$id" : "#definition-properties",
+      "required": [
+        "uniqueName",
+        "type"
+      ],
+      "properties": {
+        "uniqueName": {
+          "type": "string"
+        },
+        "description": {
+          "type": "string"
+        },
+        "name": {
+          "type": "string"
+        },
+        "type": {
+          "enum": [
+            "Content",
+            "Widget",
+            "Form",
+            "File",
+            "Page",
+            "Persona"
+          ]
+        },
+        "creationDate": {
+          "type": "string"
+        },
+        "modificationDate": {
+          "type": "string"
+        },
+        "parent": {
+          "type": "object",
+          "$ref": "#parent"
+        },
+        "metadata": {
+          "type": "object",
+          "$ref": "#metadata"
+        },
+        "system": {
+          "type": "object",
+          "$ref": "#system-properties"
+        }
+      }
+    },
+    "parent": {
+      "$id" : "#parent",
+      "properties": {
+        "type": {
+          "enum": [
+            "Site",
+            "Folder"
+          ]
+        },
+        "id": {
+          "type": "array",
+          "items": {
+            "$ref": "#id"
+          },
+          "uniqueItems": true
+        }
+      },
+      "required": [
+        "type",
+        "id"
+      ],
+      "additionalProperties": false
+    },
+    "fullMetadata": {
+      "$id" : "#fullMetadata",
+      "required": [
+        "key",
+        "value"
+      ],
+      "properties": {
+        "id": {
+          "type": "array",
+          "items": {
+            "$ref": "#id"
+          },
+          "minItems": 1,
+          "uniqueItems": true
+        },
+        "name": {
+          "type": "string"
+        },
+        "key": {
+          "type": "string"
+        },
+        "value": {
+          "type": "string"
+        },
+        "creationDate": {
+          "type": "string"
+        },
+        "modificationDate": {
+          "type": "string"
+        }
+      }
+    },
+    "validation": {
+      "$id" : "#validation",
+      "properties": {
+        "name": {
+          "type": "string"
+        },
+        "required": {
+          "type": "boolean"
+        },
+        "minLength": {
+          "type": "number"
+        },
+        "maxLength": {
+          "type": "number"
+        },
+        "regex": {
+          "type": "string"
+        }
+      }
+    },
+    "constraint": {
+      "$id" : "#constraint",
+      "properties": {
+        "unique": {
+          "type": "boolean"
+        },
+        "readOnly": {
+          "type": "boolean"
+        },
+        "fixed": {
+          "type": "boolean"
+        }
+      }
+    },
+    "display": {
+      "$id" : "#display",
+      "properties": {
+        "showInList": {
+          "type": "boolean"
+        },
+        "searchable": {
+          "type": "boolean"
+        },
+        "hint": {
+          "type": "string"
+        }
+      }
+    },
+    "dataType": {
+      "$id" : "#dataType",
+      "enum": [
+        "String",
+        "BigString",
+        "Boolean",
+        "Int",
+        "BigInt",
+        "Float",
+        "Date",
+        "Time",
+        "DateTime"
+      ]
+    },
+    "definition-field": {
+      "$id" : "#definition-field",
+      "required": [
+        "id",
+        "properties"
+      ],
+      "properties": {
+        "id": {
+          "type": "array",
+          "items": {
+            "$ref": "#id"
+          },
+          "uniqueItems": true
+        },
+        "properties": {
+          "required": [
+            "fieldType",
+            "name"
+          ],
+          "properties": {
+            "dataType": {
+              "type": "string",
+              "$ref": "#dataType"
+            },
+            "fieldType": {
+              "enum": [
+                "Binary",
+                "Categories",
+                "Checkbox",
+                "Constant",
+                "Custom",
+                "Date",
+                "Datetime",
+                "File",
+                "Hidden",
+                "Site",
+                "Image",
+                "KeyValue",
+                "Divider",
+                "Select",
+                "Multiselect",
+                "Tab",
+                "Radio",
+                "Relationship",
+                "Tags",
+                "Textarea",
+                "Text",
+                "Time",
+                "WYSIWYG",
+                "Row",
+                "Column"
+              ]
+            },
+            "validations": {
+              "type": "array",
+              "items": {
+                "$ref": "#validation"
+              },
+              "uniqueItems": true
+            },
+            "constraints": {
+              "type": "array",
+              "items": {
+                "$ref": "#constraint"
+              },
+              "uniqueItems": true
+            },
+            "display": {
+              "type": "array",
+              "items": {
+                "$ref": "#display"
+              },
+              "uniqueItems": true
+            },
+            "system": {
+              "type": "object",
+              "$ref": "#system-properties"
+            },
+            "metadata": {
+              "type": "array",
+              "items": {
+                "$ref": "#fullMetadata"
+              },
+              "uniqueItems": true
+            },
+            "uniqueName": {
+              "type": "string"
+            },
+            "order": {
+              "type": "integer"
+            },
+            "description": {
+              "type": "string"
+            },
+            "setUpData": {
+              "type": "string"
+            },
+            "name": {
+              "type": "string"
+            },
+            "defaultValue": {
+              "type": "string"
+            },
+            "creationDate": {
+              "type": "string"
+            },
+            "modificationDate": {
+              "type": "string"
+            }
+          }
+        }
+      }
+    },
+    "system": {
+      "$id": "#system",
+      "properties": {
+        "name": {
+          "type": "string"
+        },
+        "version": {
+          "type": "string"
+        },
+        "date": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "name",
+        "date"
+      ],
+      "additionalProperties": false
+    },
+    "audit": {
+      "$id" : "#audit",
+      "required": [
+        "date"
+      ],
+      "properties": {
+        "user": {
+          "type": "object",
+          "$ref": "#user"
+        },
+        "date": {
+          "type": "string"
+        }
+      }
+    },
+    "user": {
+      "$id" : "#user",
+      "properties": {
+        "id": {
+          "type": "object",
+          "$ref": "#id"
+        },
+        "name": {
+          "type": "string"
+        },
+        "email": {
+          "type": "string"
+        },
+        "username": {
+          "type": "string"
+        }
+      }
+    },
+    "key-field": {
+      "$id" : "#key-field",
+      "required": [
+        "name",
+        "id"
+      ],
+      "properties": {
+        "name": {
+          "type": "string"
+        },
+        "id": {
+          "type": "array",
+          "items": {
+            "$ref": "#id"
+          },
+          "minItems": 1,
+          "uniqueItems": true
+        }
+      }
+    },
+    "language": {
+      "$id" : "#language",
+      "properties": {
+        "id": {
+          "type": "array",
+          "items": {
+            "$ref": "#id"
+          },
+          "minItems": 1,
+          "uniqueItems": true
+        },
+        "language": {
+          "type": "string"
+        },
+        "languageCode": {
+          "type": "string"
+        },
+        "country": {
+          "type": "string"
+        },
+        "countryCode": {
+          "type": "string"
+        }
+      }
+    },
+    "storage": {
+      "$id" : "#storage",
+      "required": [
+        "bucket",
+        "md5"
+      ],
+      "properties": {
+        "bucket": {
+          "type": "string"
+        },
+        "md5": {
+          "type": "string"
+        }
+      }
+    },
+    "metadata": {
+      "$id" : "#metadata",
+      "properties": {
+        "items": {
+          "type": "array"
+        }
+      }
+    },
+    "system-properties": {
+      "$id" : "#system-properties",
+      "properties": {
+        "items": {
+          "type": "array"
+        }
+      }
+    },
+    "status": {
+      "$id" : "#status",
+      "enum": [
+        "Live",
+        "Working",
+        "Deleted"
+      ]
+    },
+    "content-properties": {
+      "$id" : "#content-properties",
+      "required": [
+        "definitionId",
+        "name",
+        "type",
+        "path"
+      ],
+      "properties": {
+        "type": {
+          "enum": [
+            "Content",
+            "Page",
+            "Folder"
+          ]
+        },
+        "status": {
+          "$ref": "#status"
+        },
+        "language": {
+          "type": "object",
+          "$ref": "#language"
+        },
+        "definitionId": {
+          "type": "array",
+          "items": {
+            "$ref": "#id"
+          },
+          "uniqueItems": true
+        },
+        "name": {
+          "type": "string"
+        },
+        "description": {
+          "type": "string"
+        },
+        "path": {
+          "type": "string"
+        },
+        "site": {
+          "type": "string"
+        },
+        "system": {
+          "type": "object",
+          "$ref": "#system-properties"
+        },
+        "creationDate": {
+          "type": "string"
+        },
+        "modificationDate": {
+          "type": "string"
+        }
+      }
+    },
+    "version": {
+      "$id" : "#version",
+      "required": [
+        "id",
+        "properties",
+        "fields"
+      ],
+      "properties": {
+        "id": {
+          "type": "array",
+          "items": {
+            "$ref": "#id"
+          },
+          "uniqueItems": true
+        },
+        "properties": {
+          "properties": {
+            "status": {
+              "$ref": "#status"
+            },
+            "title": {
+              "type": "string"
+            },
+            "order": {
+              "type": "integer"
+            },
+            "metadata": {
+              "type": "object",
+              "$ref": "#metadata"
+            },
+            "system": {
+              "type": "object",
+              "$ref": "#system-properties"
+            },
+            "creationDate": {
+              "type": "string"
+            },
+            "modificationDate": {
+              "type": "string"
+            },
+            "modificationUser": {
+              "type": "array",
+              "items": {
+                "$ref": "#id"
+              },
+              "uniqueItems": true
+            }
+          }
+        },
+        "fields": {
+          "type": "array",
+          "items": {
+            "$ref": "#content-field"
+          },
+          "uniqueItems": true
+        }
+      }
+    },
+    "content-field": {
+      "$id" : "#content-field",
+      "required": [
+        "id"
+      ],
+      "properties": {
+        "id": {
+          "type": "array",
+          "items": {
+            "$ref": "#id"
+          },
+          "uniqueItems": true
+        },
+        "value": {
+          "type": "string"
+        },
+        "storage": {
+          "type": "object",
+          "$ref": "#storage"
+        }
+      }
+    }
+  }
+}

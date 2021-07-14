@@ -1,0 +1,40 @@
+{
+  "$schema": "https://json-schema.org/draft/2019-09/schema",
+  "$id": "https://json-schema.org/draft/2019-09/output/schema",
+  "description": "A schema that validates the structure of a Mutation file",
+
+  "type": "object",
+  "required": [ "system", "systemVersion", "date","definitions","contents"],
+
+  "properties": {
+
+    "system": {
+      "type": "string"
+    },
+    "systemVersion": {
+      "type": "string"
+    },
+    "date": {
+      "type": "string"
+    },
+
+    "definitions": {
+      "type": "array",
+      "items": {
+        "$ref": "contentType-schema.json"
+      },
+      "minItems": 1,
+      "uniqueItems": true
+    },
+
+    "contents": {
+      "type": "array",
+      "items": {
+        "$ref": "content-schema.json"
+      },
+      "minItems": 1,
+      "uniqueItems": true
+    }
+  }
+
+}

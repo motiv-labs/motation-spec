@@ -1,0 +1,217 @@
+{
+  "$schema": "schema/full-schema.json",
+  "$id": "full-schema.json",
+
+  "systems": [
+    {
+      "name": "gitHub",
+      "date": "2020-04-30 22:29:06.0774099 +0000 UTC m=+157.817518601"
+    }
+  ],
+  "definitions": [
+    {
+      "id": [
+        {
+          "value": "01E76KAAWX687E08SHQQZQCFR9"
+        }
+      ],
+      "properties": {
+        "system": {
+          "after": "dbdee1a50b097d56de8c777d7bbc6fd692150ec2",
+          "before": "493cc420e00471f48f9199d054a83c0762ff9f08",
+          "ref": "refs/heads/master",
+          "repository": {
+            "default_branch": "master",
+            "description": null,
+            "full_name": "johndoe/pushtest",
+            "git_url": "git://github.com/johndoe/pushtest.git",
+            "html_url": "https://github.com/johndoe/pushtest",
+            "id": 253908032,
+            "master_branch": "master",
+            "name": "pushtest",
+            "node_id": "MDEwOlJlcG9zaXRvcnkyNTM5MDgwMzI=",
+            "private": false,
+            "ssh_url": "git@github.com:johndoe/pushtest.git"
+          }
+        },
+        "audit": [
+          {
+            "date": "2020-04-30 22:29:06.0770427 +0000 UTC m=+157.817151901",
+            "user": {
+              "name": "johndoe",
+              "email": "johndoe@gmail.com"
+            }
+          }
+        ]
+      },
+      "fields": [
+        {
+          "id": [
+            {
+              "value": "01E76KAAWXZA0Z0TB8TEG1ZK5M"
+            }
+          ],
+          "properties": {
+            "fieldType": "File",
+            "name": "File"
+          }
+        }
+      ]
+    }
+  ],
+  "contents": [
+    {
+      "id": [
+        {
+          "value": "01E76KAAWXX72MK1QVCF1F53A6"
+        }
+      ],
+      "properties": {
+        "type": "Content",
+        "definitionId": [
+          {
+            "value": "01E76KAAWX687E08SHQQZQCFR9"
+          }
+        ],
+        "name": "300+x+100.png",
+        "path": "test2/",
+        "system": {
+          "compare": "https://github.com/johndoe/pushtest/compare/493cc420e004...dbdee1a50b09"
+        },
+
+        "audit": [
+          {
+            "date": "2020-04-30 22:29:06.0772521 +0000 UTC m=+157.817361901",
+            "user": {
+              "name": "johndoe",
+              "email": "johndoe@gmail.com"
+            }
+          }
+        ]
+      },
+
+      "versions": [
+        {
+          "id": [
+            {
+              "value": "bc77b180371d45ea25601ea9449ee6951be47588"
+            }
+          ],
+          "properties": {
+            "modificationDate": "2020-04-30 16:23:23 -0600 -0600",
+            "system": {
+              "message": "Test1",
+              "sha": null,
+              "tree_id": "3e10588aed1c00d07da0b664eb5388481f19383b",
+              "url": "https://github.com/johndoe/pushtest/commit/bc77b180371d45ea25601ea9449ee6951be47588"
+            },
+
+            "audit": [
+              {
+                "date": "2020-04-30 22:29:06.0772912 +0000 UTC m=+157.817402401",
+                "user": {
+                  "name": "John Doe",
+                  "email": "johndoe@gmail.com",
+                  "username": "johndoe"
+                }
+              }
+            ]
+          },
+          "fields": [
+            {
+              "id": [
+                {
+                  "value": "01E76KAAWXZA0Z0TB8TEG1ZK5M"
+                }
+              ],
+              "value": "http://diesel:8080/getfile/motiv-github/johndoe/pushtest/test2/300+x+100.png?versionId=999774"
+            }
+          ]
+        },
+        {
+          "id": [
+            {
+              "value": "e02f864fe4d973a0bd4279a30b56b9a001cb64c8"
+            }
+          ],
+          "properties": {
+            "modificationDate": "2020-04-30 16:25:25 -0600 -0600",
+            "system": {
+              "message": "Test2",
+              "sha": null,
+              "tree_id": "9d1967e7a516f0c74ee33ec62a547aefa7bfba0b",
+              "url": "https://github.com/johndoe/pushtest/commit/e02f864fe4d973a0bd4279a30b56b9a001cb64c8"
+            },
+
+            "audit": [
+              {
+                "date": "2020-04-30 22:29:06.0772912 +0000 UTC m=+157.817402401",
+                "user": {
+                  "name": "John Doe",
+                  "email": "johndoe@gmail.com",
+                  "username": "johndoe"
+                }
+              }
+            ]
+          },
+          "fields": [
+            {
+              "id": [
+                {
+                  "value": "01E76KAAWXZA0Z0TB8TEG1ZK5M"
+                }
+              ],
+              "value": "http://diesel:8080/getfile/motiv-github/johndoe/pushtest/test2/300+x+100.png?versionId=678945"
+            }
+          ]
+        },
+        {
+          "id": [
+            {
+              "value": "dbdee1a50b097d56de8c777d7bbc6fd692150ec2"
+            }
+          ],
+          "properties": {
+            "modificationDate": "2020-04-30 16:25:53 -0600 -0600",
+            "system": {
+              "message": "Test3",
+              "sha": null,
+              "tree_id": "d1d23864776dde8310a52caa1f994ec7253aa60e",
+              "url": "https://github.com/johndoe/pushtest/commit/dbdee1a50b097d56de8c777d7bbc6fd692150ec2"
+            },
+
+            "audit": [
+              {
+                "date": "2020-04-30 22:29:06.0772912 +0000 UTC m=+157.817402401",
+                "user": {
+                  "name": "John Doe",
+                  "email": "johndoe@gmail.com",
+                  "username": "johndoe"
+                }
+              }
+            ]
+          },
+          "fields": [
+            {
+              "id": [
+                {
+                  "value": "01E76KAAWXZA0Z0TB8TEG1ZK5M"
+                }
+              ],
+              "value": "http://diesel:8080/getfile/motiv-github/johndoe/pushtest/test2/300+x+100.png?versionId=123456"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "audit": [
+    {
+      "date": "2020-04-30 22:29:06.077426 +0000 UTC m=+157.817535001",
+      "user": {
+        "name": "johndoe",
+        "email": "johndoe@gmail.com"
+      }
+    }
+  ]
+}

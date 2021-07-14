@@ -1,0 +1,235 @@
+{
+  "$schema": "https://json-schema.org/draft/2019-09/schema",
+  "$id": "https://json-schema.org/draft/2019-09/output/schema",
+  "description": "A schema that validates the structure of a mtype",
+
+  "type": "object",
+  "required": [ "dataType", "fieldType", "systemId", "name", "id"],
+
+  "properties": {
+
+    "dataType": {
+      "type": "object",
+      "oneOf": [
+        { "$ref": "#/definitions/dataTypes/String" },
+        { "$ref": "#/definitions/dataTypes/Int" },
+        { "$ref": "#/definitions/dataTypes/Date" },
+        { "$ref": "#/definitions/dataTypes/Boolean" }
+      ]
+    },
+
+    "fieldType": {
+      "type": "object",
+      "oneOf": [
+        { "$ref": "#/definitions/fieldTypes/Text" },
+        { "$ref": "#/definitions/fieldTypes/File" },
+        { "$ref": "#/definitions/fieldTypes/HTML" },
+        { "$ref": "#/definitions/fieldTypes/Tags" }
+      ]
+    },
+
+    "validations": {
+      "type": "object",
+      "$ref": "#/definitions/validations"
+    },
+
+    "metadata": {
+      "type": "object",
+      "$ref": "#/definitions/metadata"
+    },
+
+    "id": {
+      "type": "string"
+    },
+    "name": {
+      "type": "string"
+    },
+    "systemId": {
+      "type": "string"
+    },
+    "value": {
+      "type": "string"
+    }
+  },
+
+  "definitions": {
+
+    "dataTypes" : {
+
+      "String": {
+        "properties": {
+          "type": {
+            "enum": [ "String" ]
+          },
+          "name": {
+            "type": "string"
+          },
+          "id": {
+            "type": "string"
+          }
+        },
+        "required": [ "type", "name" ],
+        "additionalProperties": false
+      },
+
+      "Int": {
+        "properties": {
+          "type": {
+            "enum": [ "Int" ]
+          },
+          "name": {
+            "type": "number"
+          },
+          "id": {
+            "type": "number"
+          }
+        },
+        "required": [ "type", "name" ],
+        "additionalProperties": false
+      },
+
+      "Date": {
+        "properties": {
+          "type": {
+            "enum": [ "Date" ]
+          },
+          "name": {
+            "type": "string"
+          },
+          "id": {
+            "type": "string"
+          }
+        },
+        "required": [ "type", "name" ],
+        "additionalProperties": false
+      },
+
+      "Boolean": {
+        "properties": {
+          "type": {
+            "enum": [ "Boolean" ]
+          },
+          "name": {
+            "type": "string"
+          },
+          "id": {
+            "type": "string"
+          }
+        },
+        "required": [ "type", "name" ],
+        "additionalProperties": false
+      }
+
+    },
+
+    "fieldTypes" : {
+
+      "Text": {
+        "properties": {
+          "type": {
+            "enum": [ "Text" ]
+          },
+          "name": {
+            "type": "string"
+          },
+          "id": {
+            "type": "string"
+          }
+        },
+        "required": [ "type", "name" ],
+        "additionalProperties": false
+      },
+
+      "Code": {
+        "properties": {
+          "type": {
+            "enum": [ "Text" ]
+          },
+          "name": {
+            "type": "string"
+          },
+          "id": {
+            "type": "string"
+          }
+        },
+        "required": [ "type", "name" ],
+        "additionalProperties": false
+      },
+
+      "File": {
+        "properties": {
+          "type": {
+            "enum": [ "File" ]
+          },
+          "name": {
+            "type": "string"
+          },
+          "id": {
+            "type": "string"
+          }
+        },
+        "required": [ "type", "name" ],
+        "additionalProperties": false
+      },
+
+      "HTML": {
+        "properties": {
+          "type": {
+            "enum": [ "HTML" ]
+          },
+          "name": {
+            "type": "string"
+          },
+          "id": {
+            "type": "string"
+          }
+        },
+        "required": [ "type", "name" ],
+        "additionalProperties": false
+      },
+
+      "Tags": {
+        "properties": {
+          "type": {
+            "enum": [ "Tags" ]
+          },
+          "name": {
+            "type": "string"
+          },
+          "id": {
+            "type": "string"
+          }
+        },
+        "required": [ "type", "name" ],
+        "additionalProperties": false
+      }
+    },
+
+    "validations": {
+      "properties" : {
+        "required": {
+          "type" : "boolean"
+        },
+        "minLength":  {
+          "type" : "number"
+        },
+        "maxLength":  {
+          "type" : "number"
+        },
+        "regex":  {
+          "type" : "string"
+        }
+      }
+    },
+
+    "metadata" : {
+      "properties" : {
+        "items" : {
+          "type": "array"
+        }
+      }
+    }
+
+  }
+
+}

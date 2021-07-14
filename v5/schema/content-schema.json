@@ -1,0 +1,249 @@
+{
+  "$schema": "https://json-schema.org/draft/2019-09/schema",
+  "$id": "https://json-schema.org/draft/2019-09/output/schema",
+  "description": "A schema that validates the structure of a Motation Content",
+
+  "type": "object",
+  "required": [ "id","properties","versions" ],
+
+  "properties": {
+
+    "id": {
+      "type": "array",
+      "items": {
+        "$ref": "#/definitions/id"
+      },
+      "uniqueItems": true
+    },
+
+    "properties": {
+      "type": "object",
+      "$ref": "#/definitions/properties"
+    },
+
+    "versions": {
+      "type": "array",
+      "items": {
+        "$ref": "#/definitions/version"
+      },
+      "minItems": 1,
+      "uniqueItems": true
+    }
+
+  },
+
+  "definitions": {
+
+    "id": {
+      "required": ["value"],
+      "properties": {
+        "label": {
+          "type": "string"
+        },
+        "value": {
+          "type": "string"
+        }
+      }
+    },
+
+    "audit" : {
+      "required": ["date"],
+      "properties": {
+        "user": {
+          "type": "object",
+          "$ref": "#/definitions/user"
+        },
+        "date": {
+          "type": "string"
+        }
+      }
+    },
+
+    "user": {
+      "properties": {
+        "id": {
+          "type": "object",
+          "$ref": "#/definitions/id"
+        },
+        "name": {
+          "type": "string"
+        },
+        "email": {
+          "type": "string"
+        },
+        "username": {
+          "type": "string"
+        }
+      }
+    },
+
+    "properties": {
+
+      "required": [
+        "definitionId",
+        "name",
+        "type",
+        "path",
+        "audit"
+      ],
+      "properties": {
+        "type": { "enum": [ "Content", "Folder" ] },
+
+        "definitionId": {
+          "type": "array",
+          "items": {
+            "$ref": "#/definitions/id"
+          },
+          "uniqueItems": true
+        },
+
+        "name": {
+          "type": "string"
+        },
+
+        "description": {
+          "type": "string"
+        },
+
+        "path": {
+          "type": "string"
+        },
+
+        "site": {
+          "type": "string"
+        },
+
+        "system": {
+          "type": "object",
+          "$ref": "#/definitions/system"
+        },
+
+        "creationDate": {
+          "type": "string"
+        },
+        "modificationDate": {
+          "type": "string"
+        },
+
+        "audit": {
+          "type": "array",
+          "items": {
+            "$ref": "#/definitions/audit"
+          },
+          "minItems": 1,
+          "uniqueItems": true
+        }
+      }
+    },
+
+    "version" : {
+
+      "required": [
+        "id", "properties", "fields"
+      ],
+      "properties": {
+
+        "id": {
+          "type": "array",
+          "items": {
+            "$ref": "#/definitions/id"
+          },
+          "uniqueItems": true
+        },
+
+        "properties": {
+
+          "required": [
+            "status", "audit"
+          ],
+          "properties": {
+            "language": {
+              "type": "string"
+            },
+
+            "status": { "enum": [ "Live", "Working", "Deleted", "Other"] },
+
+            "title": {
+              "type": "string"
+            },
+
+            "metadata": {
+              "type": "object",
+              "$ref": "#/definitions/metadata"
+            },
+
+            "system": {
+              "type": "object",
+              "$ref": "#/definitions/system"
+            },
+
+            "creationDate": {
+              "type": "string"
+            },
+            "modificationDate": {
+              "type": "string"
+            },
+            "modificationUser": {
+              "type": "string"
+            },
+            "audit": {
+              "type": "array",
+              "items": {
+                "$ref": "#/definitions/audit"
+              },
+              "minItems": 1,
+              "uniqueItems": true
+            }
+          }
+
+        },
+
+        "fields": {
+          "type": "array",
+          "items": {
+            "$ref": "#/definitions/field"
+          },
+          "uniqueItems": true
+        }
+
+      }
+    },
+
+    "field": {
+      "properties" : {
+        "id": {
+          "type": "array",
+          "items": {
+            "$ref": "#/definitions/id"
+          },
+          "uniqueItems": true
+        },
+        "value": {
+          "type" : "string"
+        }
+      },
+      "required": [
+        "id",
+        "value"
+      ]
+    },
+
+    "metadata" : {
+      "properties" : {
+        "items" : {
+          "type": "array"
+        }
+      }
+    },
+
+    "system" : {
+      "properties" : {
+        "items" : {
+          "type": "array"
+        }
+      }
+    }
+
+  }
+
+}

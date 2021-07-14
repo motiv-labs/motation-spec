@@ -1,0 +1,33 @@
+{
+    "$schema": "mtype-schema.json",
+    "$id": "mtype-schema.json",
+    "title": "JSON Test",
+
+    "description": "Representation of a single mtype",
+
+    "dataType":{
+        "type": "String",
+        "name": "blogTitle"
+    },
+
+    "fieldType": {
+        "type": "Text",
+        "name": "Title"
+    },
+
+    "validations": {
+        "required": true,
+        "regex": "^(\\([0-9]{3}\\))?[0-9]{3}-[0-9]{4}$"
+    },
+
+    "metadata": {
+        "hint" : "This is the title field",
+        "systemIndexed" : true,
+        "userSearchable" : true
+    },
+
+    "id": "1234",
+    "name": "Title",
+    "systemId": "32680740-2120-4d68-bbc2-c47a5b13f139",
+    "value": "Hello world"
+}

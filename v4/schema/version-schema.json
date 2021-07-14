@@ -1,0 +1,98 @@
+{
+  "$schema": "https://json-schema.org/draft/2019-09/schema",
+  "$id": "https://json-schema.org/draft/2019-09/output/schema",
+  "description": "A schema that validates the structure of a Content",
+
+  "type": "object",
+  "required": [
+    "hash",
+    "id",
+    "status",
+    "fields"
+  ],
+
+  "properties": {
+
+    "hash": {
+      "type": "string"
+    },
+
+    "id": {
+      "type": "string"
+    },
+
+    "language": {
+      "type": "string"
+    },
+
+    "status": { "enum": [ "Live", "Working", "Deleted"] },
+
+    "title": {
+      "type": "string"
+    },
+
+    "metadata": {
+      "type": "object",
+      "$ref": "#/definitions/metadata"
+    },
+
+    "systemProperties": {
+      "type": "object",
+      "$ref": "#/definitions/systemProperties"
+    },
+
+    "fields": {
+      "type": "array",
+      "items": {
+        "$ref": "#/definitions/field"
+      },
+      "uniqueItems": true
+    },
+
+    "creationDate": {
+      "type": "string"
+    },
+    "modificationDate": {
+      "type": "string"
+    },
+    "modificationUser": {
+      "type": "string"
+    }
+  },
+
+  "definitions": {
+
+    "field": {
+      "properties" : {
+        "id": {
+          "type" : "string"
+        },
+        "value": {
+          "type" : "string"
+        }
+      },
+      "required": [
+        "id",
+        "value"
+      ]
+    },
+
+    "metadata" : {
+      "properties" : {
+        "items" : {
+          "type": "array"
+        }
+      }
+    },
+
+    "systemProperties" : {
+      "properties" : {
+        "items" : {
+          "type": "array"
+        }
+      }
+    }
+
+  }
+
+}

@@ -1,0 +1,92 @@
+{
+  "$schema": "https://json-schema.org/draft/2019-09/schema",
+  "$id": "https://json-schema.org/draft/2019-09/output/schema",
+  "description": "A schema that validates the structure of a mtype",
+
+  "type": "object",
+  "required": [ "type", "systemId", "systemType"],
+
+  "oneOf": [
+    { "$ref": "#/definitions/String" },
+    { "$ref": "#/definitions/Int" },
+    { "$ref": "#/definitions/Date" },
+    { "$ref": "#/definitions/Boolean" }
+  ],
+
+  "properties": {
+    "systemId": {
+      "type": "string"
+    },
+    "systemType": {
+      "type": "string"
+    }
+  },
+
+  "definitions": {
+
+    "String": {
+      "properties": {
+        "type": {
+          "enum": [ "String" ]
+        },
+        "name": {
+          "type": "string"
+        },
+        "value": {
+          "type": "string"
+        }
+      },
+      "required": [ "name" ],
+      "additionalProperties": false
+    },
+
+    "Int": {
+      "properties": {
+        "type": {
+          "enum": [ "Int" ]
+        },
+        "name": {
+          "type": "number"
+        },
+        "value": {
+          "type": "number"
+        }
+      },
+      "required": [ "name"],
+      "additionalProperties": false
+    },
+
+    "Date": {
+      "properties": {
+        "type": {
+          "enum": [ "Date" ]
+        },
+        "name": {
+          "type": "string"
+        },
+        "value": {
+          "type": "string"
+        }
+      },
+      "required": [ "name"],
+      "additionalProperties": false
+    },
+
+    "Boolean": {
+      "properties": {
+        "type": {
+          "enum": [ "Boolean" ]
+        },
+        "name": {
+          "type": "string"
+        },
+        "value": {
+          "type": "string"
+        }
+      },
+      "required": [ "name"],
+      "additionalProperties": false
+    }
+  }
+
+}

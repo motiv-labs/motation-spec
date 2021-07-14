@@ -1,0 +1,22 @@
+{
+  "$schema": "mtypes-schema.json",
+  "$id": "mtypes-schema.json",
+  "title": "Multiple mtypes test",
+
+  "contentType": [
+    {
+      "type": "String",
+      "name": "Title",
+      "value": "Hello world",
+      "systemId": "32680740-2120-4d68-bbc2-c47a5b13f139",
+      "systemType": "Text Field"
+    },
+    {
+      "type": "String",
+      "name": "Body",
+      "value": "This is a body",
+      "systemId": "32680740-2120-4d68-bbc2-c47a5b13f139",
+      "systemType": "WYSIWYG Field"
+    }
+  ]
+}

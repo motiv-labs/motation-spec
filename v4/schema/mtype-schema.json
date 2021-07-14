@@ -1,0 +1,165 @@
+{
+  "$schema": "https://json-schema.org/draft/2019-09/schema",
+  "$id": "https://json-schema.org/draft/2019-09/output/schema",
+  "description": "A schema that validates the structure of a mtype",
+
+  "type": "object",
+  "required": [ "dataType", "fieldType", "name", "id"],
+
+  "properties": {
+
+    "dataType": { "enum": [ "String", "BigString", "Boolean", "Int", "BigInt", "Float", "Date", "Time", "DateTime"] },
+
+    "fieldType": {
+      "enum": [
+        "Binary",
+        "Categories",
+        "Checkbox",
+        "Constant",
+        "Custom",
+        "Date",
+        "Datetime",
+        "File",
+        "Hidden",
+        "Site",
+        "Image",
+        "KeyValue",
+        "Divider",
+        "Select",
+        "Multiselect",
+        "Tab",
+        "Radio",
+        "Relationship",
+        "Tags",
+        "Textarea",
+        "Text",
+        "Time",
+        "WYSIWYG",
+        "Row",
+        "Column"
+      ]
+    },
+
+    "validations": {
+      "type": "array",
+      "items": {
+        "$ref": "#/definitions/validation"
+      },
+      "uniqueItems": true
+    },
+
+    "constraints": {
+      "type": "array",
+      "items": {
+        "$ref": "#/definitions/constraint"
+      },
+      "uniqueItems": true
+    },
+
+    "display": {
+      "type": "array",
+      "items": {
+        "$ref": "#/definitions/display"
+      },
+      "uniqueItems": true
+    },
+
+    "systemProperties": {
+      "type": "object",
+      "$ref": "#/definitions/systemProperties"
+    },
+
+    "metadata": {
+      "type": "object",
+      "$ref": "#/definitions/metadata"
+    },
+
+    "id": {
+      "type": "string"
+    },
+    "uniqueName": {
+      "type": "string"
+    },
+    "description": {
+      "type": "string"
+    },
+    "name": {
+      "type": "string"
+    },
+    "hint": {
+      "type": "string"
+    },
+    "defaultValue": {
+      "type": "string"
+    },
+    "creationDate": {
+      "type": "string"
+    },
+    "modificationDate": {
+      "type": "string"
+    }
+  },
+
+  "definitions": {
+
+    "validation": {
+      "properties" : {
+        "name": {
+          "type" : "string"
+        },
+        "required": {
+          "type" : "boolean"
+        },
+        "minLength":  {
+          "type" : "number"
+        },
+        "maxLength":  {
+          "type" : "number"
+        },
+        "regex":  {
+          "type" : "string"
+        }
+      }
+    },
+
+    "constraint": {
+      "properties" : {
+        "unique": {
+          "type" : "boolean"
+        },
+        "readOnly": {
+          "type" : "boolean"
+        }
+      }
+    },
+
+    "display": {
+      "properties" : {
+        "showInList": {
+          "type" : "boolean"
+        },
+        "searchable": {
+          "type" : "boolean"
+        }
+      }
+    },
+
+    "metadata" : {
+      "properties" : {
+        "items" : {
+          "type": "array"
+        }
+      }
+    },
+
+    "systemProperties" : {
+      "properties" : {
+        "items" : {
+          "type": "array"
+        }
+      }
+    }
+
+  }
+
+}
