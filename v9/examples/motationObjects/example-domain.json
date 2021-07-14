@@ -5,11 +5,7 @@
       "date":"2021-07-14 18:53:09.139091659 +0000 UTC m=+641.870090928"
     }
   ],
-  "dependencies":{
-  },
-  "definition": {
-    "reference": "domain-definition-motation-id"
-  },
+  "definition": "definition-reference-motation-id",
   "contents":[
     {
       "id":[

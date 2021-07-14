@@ -5,11 +5,7 @@
       "date":"2021-07-14 18:53:09.18862463 +0000 UTC m=+641.919624176"
     }
   ],
-  "dependencies":{
-  },
-  "definition": {
-    "reference": "folder-definition-motation-id"
-  },
+  "definition": "definition-reference-motation-id",
   "contents":[
     {
       "id":[

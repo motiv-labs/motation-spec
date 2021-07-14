@@ -16,14 +16,23 @@
     {
       "id": [
         {
-          "value": "df56f776-928f-4cb7-93f9-0ca242df928f"
-        }
-      ],
-      "languageId": [
-        {
           "value": "1"
         }
-      ]
+      ],
+      "language": "English",
+      "languageCode": "EN",
+      "countryCode": "US"
+    },
+    {
+      "id": [
+        {
+          "value": "2"
+        }
+      ],
+      "language": "Spanish",
+      "languageCode": "ES",
+      "countryCode": "ES",
+      "country": "Spain"
     }
   ]
 }
