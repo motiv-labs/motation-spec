@@ -1,0 +1,68 @@
+{
+  "systems":[
+    {
+      "name":"dotCMS 5.2.7",
+      "date":"2021-07-14 18:53:09.139091659 +0000 UTC m=+641.870090928"
+    }
+  ],
+  "domain": [
+    {
+      "id":[
+        {
+          "value":"b91f2b4b-ac64-429e-8a58-5c3f8484a600"
+        }
+      ],
+      "versions": [
+        {
+          "domainName": "site1",
+          "uniqueName":"Site1",
+          "description": "Testing site for testing purposes",
+          "systemDomain": "true",
+          "modificationDate":"2020-08-18 23:27:32.121 +0000 UTC",
+          "modificationUser":[
+            {
+              "value":"dotcms.org.1"
+            }
+          ],
+          "system":{
+            "default_structure":"false",
+            "fixed":"true",
+            "folder":"SYSTEM_FOLDER",
+            "system":"true"
+          },
+          "vanityUrls": [
+            {
+              "url": "mysite"
+            },
+            {
+              "url": "mysamesite"
+            }
+          ]
+        },
+        {
+          "domainName": "siteold",
+          "uniqueName":"Site1",
+          "description": "Testing site for testing purposes - original version",
+          "defaultDomain": "false",
+          "modificationDate":"2020-07-18 23:27:32.121 +0000 UTC",
+          "modificationUser":[
+            {
+              "value":"dotcms.org.1"
+            }
+          ],
+          "system":{
+            "default_structure":"false",
+            "fixed":"true",
+            "folder":"SYSTEM_FOLDER",
+            "system":"true"
+          }
+        }
+      ]
+    }
+  ],
+  "audit":[
+    {
+      "date":"2021-07-14 18:53:09.139120783 +0000 UTC m=+641.870120051"
+    }
+  ]
+}
