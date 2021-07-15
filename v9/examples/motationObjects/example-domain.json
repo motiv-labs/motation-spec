@@ -6,6 +6,11 @@
     }
   ],
   "domain": {
+    "id":[
+      {
+        "value":"b91f2b4b-ac64-429e-8a58-5c3f8484a600"
+      }
+    ],
     "properties":{
       "type":"Content",
       "uniqueName":"Host",
