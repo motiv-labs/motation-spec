@@ -1,6 +1,7 @@
 {
   "$schema": "../../schema/multiple/definition-schema.json",
   "$id": "definition-schema.json",
+  "motationType": "definition",
   "systems": [
     {
       "name": "dotCMS 5.2.7",

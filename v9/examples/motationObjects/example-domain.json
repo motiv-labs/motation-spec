@@ -1,4 +1,5 @@
 {
+  "motationType": "domain",
   "systems": [
     {
       "name": "dotCMS 5.2.7",
@@ -457,59 +458,45 @@
       }
     ]
   },
-  "relationships": [
+  "domain": [
     {
-      "id": [
+      "id":[
         {
-          "value": "bd3a6f51-2df9-41f7-a6d8-2c5d80bc23b0"
+          "value":"b91f2b4b-ac64-429e-8a58-5c3f8484a600"
         }
       ],
-      "properties": {
-        "uniqueName": "Kitchensink.relationships",
-        "parentId": [
+      "properties":{
+        "domainName": "site1",
+        "uniqueName":"Site1",
+        "active": true,
+        "system":{
+          "default_structure":"false",
+          "fixed":"true",
+          "folder":"SYSTEM_FOLDER",
+          "system":"true"
+        },
+        "modificationDate":"2020-08-18 23:27:32.121 +0000 UTC",
+        "modificationUser":[
           {
-            "value": "a0ba0feb-440e-4881-8275-91f312bedb32"
+            "value":"dotcms.org.1"
           }
-        ],
-        "childId": [
-          {
-            "value": "2a3e91e4-fbbf-4876-8c5b-2233c1739b05"
-          }
-        ],
-        "childName": "relationships",
-        "cardinality": "ManyToMany",
-        "system": {
-          "child_required": "false",
-          "fixed": "false",
-          "parent_required": "false"
-        }
+        ]
       },
-      "relations": [
+      "systemDomain": "true",
+      "defaultDomain": "true",
+      "metadata": {
+        "description": "Testing site for testing purposes",
+        "googleAnalytics": "googleAnalyticsString",
+        "googleMap": "googleMapString",
+        "pubId": "googlePubId",
+        "keywords": "comma,separated,list,of,keywords"
+      },
+      "vanityUrls": [
         {
-          "parent": [
-            {
-              "value": "4bae2fbe-7ab3-4b44-a196-1bd444b42eda"
-            }
-          ],
-          "child": [
-            {
-              "value": "90ec36f6-2aa2-4288-bfb1-bab0e152eadb"
-            }
-          ],
-          "order": 2
+          "url": "mysite"
         },
         {
-          "parent": [
-            {
-              "value": "4bae2fbe-7ab3-4b44-a196-1bd444b42eda"
-            }
-          ],
-          "child": [
-            {
-              "value": "35891a5a-d1fc-4ccd-9f49-8cb3b4219ebf"
-            }
-          ],
-          "order": 3
+          "url": "mysamesite"
         }
       ]
     }
