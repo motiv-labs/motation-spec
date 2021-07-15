@@ -3,34 +3,26 @@
   "description": "A schema that validates the structure of a Motation dependencies",
   "type": "object",
   "properties": {
+    "domain": {
+      "type": "string"
+    },
+    "definition": {
+      "type": "string"
+    },
     "languages": {
-      "type": "array",
-      "items": {
-        "$ref": "#dep-language"
-      },
-      "minItems": 1,
-      "uniqueItems": true
+      "type": "string"
     },
     "tags": {
-      "type": "array",
-      "items": {
-        "$ref": "#dep-tag"
-      },
-      "uniqueItems": true
+      "type": "string"
     },
     "categories": {
-      "type": "array",
-      "items": {
-        "$ref": "#dep-category"
-      },
-      "uniqueItems": true
+      "type": "string"
     },
     "relationships": {
-      "type": "array",
-      "items": {
-        "$ref": "#dep-relationship"
-      },
-      "uniqueItems": true
+      "type": "string"
+    },
+    "folders": {
+      "type": "string"
     }
   },
   "definitions": {

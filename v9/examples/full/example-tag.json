@@ -1,5 +1,7 @@
 {
-  "motationType": "relationship",
+  "$schema": "../../schema/multiple/full-tag-schema.json",
+  "$id": "tag-schema.json",
+  "motationType": "tag",
   "systems": [
     {
       "name": "dotCMS 5.2.7",
@@ -458,61 +460,45 @@
       }
     ]
   },
-  "relationships": [
+  "tags": [
     {
       "id": [
         {
-          "value": "bd3a6f51-2df9-41f7-a6d8-2c5d80bc23b0"
+          "value": "df56f776-928f-4cb7-93f9-0ca242df928f"
         }
       ],
-      "properties": {
-        "uniqueName": "Kitchensink.relationships",
-        "parentId": [
-          {
-            "value": "a0ba0feb-440e-4881-8275-91f312bedb32"
-          }
-        ],
-        "childId": [
-          {
-            "value": "2a3e91e4-fbbf-4876-8c5b-2233c1739b05"
-          }
-        ],
-        "childName": "relationships",
-        "cardinality": "ManyToMany",
-        "system": {
-          "child_required": "false",
-          "fixed": "false",
-          "parent_required": "false"
-        }
+      "name": "tag1",
+      "site": "SYSTEM_HOST",
+      "system": {
+        "persona": "false"
       },
-      "relations": [
+      "modificationDate": "2020-08-18 16:56:40.392 +0000 UTC"
+    },
+    {
+      "id": [
         {
-          "parent": [
-            {
-              "value": "4bae2fbe-7ab3-4b44-a196-1bd444b42eda"
-            }
-          ],
-          "child": [
-            {
-              "value": "90ec36f6-2aa2-4288-bfb1-bab0e152eadb"
-            }
-          ],
-          "order": 2
-        },
-        {
-          "parent": [
-            {
-              "value": "4bae2fbe-7ab3-4b44-a196-1bd444b42eda"
-            }
-          ],
-          "child": [
-            {
-              "value": "35891a5a-d1fc-4ccd-9f49-8cb3b4219ebf"
-            }
-          ],
-          "order": 3
+          "value": "d20dca41-2a90-43f7-af90-19b0eaa42af1"
         }
-      ]
+      ],
+      "name": "tag2",
+      "site": "SYSTEM_HOST",
+      "system": {
+        "persona": "false"
+      },
+      "modificationDate": "2020-08-18 16:56:50.559 +0000 UTC"
+    },
+    {
+      "id": [
+        {
+          "value": "6c7a56bf-006e-4f93-a092-1c1b905998a6"
+        }
+      ],
+      "name": "tag3",
+      "site": "SYSTEM_HOST",
+      "system": {
+        "persona": "false"
+      },
+      "modificationDate": "2020-08-18 16:57:11.891 +0000 UTC"
     }
   ]
 }

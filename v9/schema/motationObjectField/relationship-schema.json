@@ -1,0 +1,110 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "description": "A schema that validates the structure of a Relationship Motation Object Field",
+  "type": "object",
+  "properties": {
+    "relationships": {
+      "type": "array",
+      "items": {
+        "$ref": "#dep-relationship"
+      },
+      "uniqueItems": true
+    }
+  },
+  "definitions": {
+    "relationship": {
+      "$id": "#dep-relationship",
+      "required": [
+        "id",
+        "properties"
+      ],
+      "properties": {
+        "id": {
+          "type": "array",
+          "items": {
+            "$ref": "../multiple/common-schema.json#/definitions/id"
+          },
+          "minItems": 1,
+          "uniqueItems": true
+        },
+        "properties": {
+          "required": [
+            "uniqueName",
+            "parentId",
+            "childId",
+            "cardinality"
+          ],
+          "properties": {
+            "uniqueName": {
+              "type": "string"
+            },
+            "parentId": {
+              "type": "array",
+              "items": {
+                "$ref": "../multiple/common-schema.json#/definitions/id"
+              },
+              "minItems": 1,
+              "uniqueItems": true
+            },
+            "parentName": {
+              "type": "string"
+            },
+            "childId": {
+              "type": "array",
+              "items": {
+                "$ref": "../multiple/common-schema.json#/definitions/id"
+              },
+              "minItems": 1,
+              "uniqueItems": true
+            },
+            "childName": {
+              "type": "string"
+            },
+            "cardinality": {
+              "type": "string"
+            },
+            "system": {
+              "type": "object",
+              "$ref": "../multiple/common-schema.json#/definitions/system"
+            }
+          },
+          "relations": {
+            "type": "array",
+            "items": {
+              "$ref": "#dep-relation"
+            },
+            "uniqueItems": true
+          }
+        }
+      }
+    },
+    "relation": {
+      "$id": "#dep-relation",
+      "required": [
+        "parent",
+        "child"
+      ],
+      "properties": {
+        "parent": {
+          "type": "array",
+          "items": {
+            "$ref": "../multiple/common-schema.json#/definitions/id"
+          },
+          "minItems": 1,
+          "uniqueItems": true
+        },
+        "child": {
+          "type": "array",
+          "items": {
+            "$ref": "../multiple/common-schema.json#/definitions/id"
+          },
+          "minItems": 1,
+          "uniqueItems": true
+        },
+        "order": {
+          "type": "integer"
+        }
+      }
+    },
+  }
+}

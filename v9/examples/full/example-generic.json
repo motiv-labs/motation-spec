@@ -1,5 +1,7 @@
 {
-  "motationType": "domain",
+  "$schema": "../../schema/multiple/full-generic-schema.json",
+  "$id": "generic-schema.json",
+  "motationType": "generic",
   "systems": [
     {
       "name": "dotCMS 5.2.7",
@@ -457,48 +459,5 @@
         ]
       }
     ]
-  },
-  "domain": [
-    {
-      "id":[
-        {
-          "value":"b91f2b4b-ac64-429e-8a58-5c3f8484a600"
-        }
-      ],
-      "properties":{
-        "domainName": "site1",
-        "uniqueName":"Site1",
-        "active": true,
-        "system":{
-          "default_structure":"false",
-          "fixed":"true",
-          "folder":"SYSTEM_FOLDER",
-          "system":"true"
-        },
-        "modificationDate":"2020-08-18 23:27:32.121 +0000 UTC",
-        "modificationUser":[
-          {
-            "value":"dotcms.org.1"
-          }
-        ]
-      },
-      "systemDomain": "true",
-      "defaultDomain": "true",
-      "metadata": {
-        "description": "Testing site for testing purposes",
-        "googleAnalytics": "googleAnalyticsString",
-        "googleMap": "googleMapString",
-        "pubId": "googlePubId",
-        "keywords": "comma,separated,list,of,keywords"
-      },
-      "vanityUrls": [
-        {
-          "url": "mysite"
-        },
-        {
-          "url": "mysamesite"
-        }
-      ]
-    }
-  ]
+  }
 }

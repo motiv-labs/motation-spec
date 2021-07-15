@@ -1,5 +1,5 @@
 {
-  "$schema": "../../schema/multiple/definition-schema.json",
+  "$schema": "../../schema/motationObjectField/definition-schema.json",
   "$id": "definition-schema.json",
   "motationType": "definition",
   "systems": [

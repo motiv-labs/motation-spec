@@ -1,5 +1,7 @@
 {
-  "motationType": "generic",
+  "$schema": "../../schema/multiple/full-category-schema.json",
+  "$id": "category-schema.json",
+  "motationType": "category",
   "systems": [
     {
       "name": "dotCMS 5.2.7",
@@ -12,8 +14,8 @@
     "categories": "category-reference-motation-id",
     "definition": "definition-reference-motation-id",
     "domain": "domain-reference-motation-id",
-    "language": "language-reference-motation-id",
-    "folder": "folder-reference-motation-id"
+    "languages": "language-reference-motation-id",
+    "folders": "folder-reference-motation-id"
   },
   "contents": [
     {
@@ -457,5 +459,236 @@
         ]
       }
     ]
-  }
+  },
+  "categories": [
+    {
+      "id": [
+        {
+          "value": "f5476c1e-7fcc-4e5c-846f-7390fa8c6f60"
+        }
+      ],
+      "properties": {
+        "name": "Cat1",
+        "uniqueName": "cat1",
+        "system": {
+          "active": "true",
+          "category_key": "cat1"
+        },
+        "order": 0,
+        "modificationDate": "2020-08-19 15:05:31.184 +0000 UTC"
+      },
+      "children": [
+        {
+          "id": [
+            {
+              "value": "7ec289ef-f830-4d0b-ba3d-a43e4cdceec0"
+            }
+          ],
+          "properties": {
+            "name": "Cat1.3",
+            "uniqueName": "cat13",
+            "system": {
+              "active": "true",
+              "category_key": "cat13"
+            },
+            "order": 0,
+            "modificationDate": "2020-08-19 15:05:48.094 +0000 UTC"
+          },
+          "children": [
+            {
+              "id": [
+                {
+                  "value": "81a56c8d-b9d1-4df6-95e2-39577270154f"
+                }
+              ],
+              "properties": {
+                "name": "Cat1.3.3",
+                "uniqueName": "cat133",
+                "system": {
+                  "active": "true",
+                  "category_key": "cat133"
+                },
+                "order": 0,
+                "modificationDate": "2020-08-19 15:06:45.806 +0000 UTC"
+              }
+            },
+            {
+              "id": [
+                {
+                  "value": "aa2738de-4134-47d4-8852-1d86bd5e78ed"
+                }
+              ],
+              "properties": {
+                "name": "Cat1.3.2",
+                "uniqueName": "cat132",
+                "system": {
+                  "active": "true",
+                  "category_key": "cat132"
+                },
+                "order": 0,
+                "modificationDate": "2020-08-19 15:06:42.994 +0000 UTC"
+              }
+            },
+            {
+              "id": [
+                {
+                  "value": "e65d2a8e-ad10-41e6-bf21-aa36dfbf520f"
+                }
+              ],
+              "properties": {
+                "name": "Cat1.3.1",
+                "uniqueName": "cat131",
+                "system": {
+                  "active": "true",
+                  "category_key": "cat131"
+                },
+                "order": 0,
+                "modificationDate": "2020-08-19 15:06:35.434 +0000 UTC"
+              }
+            }
+          ]
+        },
+        {
+          "id": [
+            {
+              "value": "2bc7078e-02e6-4b21-8a41-0febc7a324b7"
+            }
+          ],
+          "properties": {
+            "name": "Cat1.2",
+            "uniqueName": "cat12",
+            "system": {
+              "active": "true",
+              "category_key": "cat12"
+            },
+            "order": 0,
+            "modificationDate": "2020-08-19 15:05:45.17 +0000 UTC"
+          },
+          "children": [
+            {
+              "id": [
+                {
+                  "value": "cb98ee02-5515-47d1-bb52-826b99940954"
+                }
+              ],
+              "properties": {
+                "name": "Cat1.2.3",
+                "uniqueName": "cat123",
+                "system": {
+                  "active": "true",
+                  "category_key": "cat123"
+                },
+                "order": 0,
+                "modificationDate": "2020-08-19 15:06:23.286 +0000 UTC"
+              }
+            },
+            {
+              "id": [
+                {
+                  "value": "a5a655fb-825f-431b-9bc3-1b1a32ca8da5"
+                }
+              ],
+              "properties": {
+                "name": "Cat1.2.2",
+                "uniqueName": "cat122",
+                "system": {
+                  "active": "true",
+                  "category_key": "cat122"
+                },
+                "order": 0,
+                "modificationDate": "2020-08-19 15:06:20.381 +0000 UTC"
+              }
+            },
+            {
+              "id": [
+                {
+                  "value": "598a577b-9409-4414-ae08-fbe7855b9ed1"
+                }
+              ],
+              "properties": {
+                "name": "Cat1.2.1",
+                "uniqueName": "cat121",
+                "system": {
+                  "active": "true",
+                  "category_key": "cat121"
+                },
+                "order": 0,
+                "modificationDate": "2020-08-19 15:06:17.647 +0000 UTC"
+              }
+            }
+          ]
+        },
+        {
+          "id": [
+            {
+              "value": "b5e588d4-0289-4f6e-b5e4-be67d3fb1a76"
+            }
+          ],
+          "properties": {
+            "name": "Cat1.1",
+            "uniqueName": "cat11",
+            "system": {
+              "active": "true",
+              "category_key": "cat11"
+            },
+            "order": 0,
+            "modificationDate": "2020-08-19 15:05:41.884 +0000 UTC"
+          },
+          "children": [
+            {
+              "id": [
+                {
+                  "value": "5abdb8ed-3076-41b2-917c-ff2de12eda07"
+                }
+              ],
+              "properties": {
+                "name": "Cat1.1.3",
+                "uniqueName": "cat113",
+                "system": {
+                  "active": "true",
+                  "category_key": "cat113"
+                },
+                "order": 0,
+                "modificationDate": "2020-08-19 15:06:05.646 +0000 UTC"
+              }
+            },
+            {
+              "id": [
+                {
+                  "value": "f8641448-b22d-4c15-92ac-14e91a29fe3c"
+                }
+              ],
+              "properties": {
+                "name": "Cat1.1.2",
+                "uniqueName": "cat112",
+                "system": {
+                  "active": "true",
+                  "category_key": "cat112"
+                },
+                "order": 0,
+                "modificationDate": "2020-08-19 15:06:02.538 +0000 UTC"
+              }
+            },
+            {
+              "id": [
+                {
+                  "value": "e4b2fbab-8aa7-432b-b529-f52a77da9e39"
+                }
+              ],
+              "properties": {
+                "name": "Cat1.1.1",
+                "uniqueName": "cat111",
+                "system": {
+                  "active": "true",
+                  "category_key": "cat111"
+                },
+                "order": 0,
+                "modificationDate": "2020-08-19 15:05:59.55 +0000 UTC"
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
 }

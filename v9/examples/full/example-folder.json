@@ -1,4 +1,6 @@
 {
+  "$schema": "../../schema/multiple/full-folder-schema.json",
+  "$id": "folder-schema.json",
   "motationType": "folder",
   "systems": [
     {

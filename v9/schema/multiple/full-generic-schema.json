@@ -1,15 +1,20 @@
 {
   "$schema": "http://json-schema.org/draft-07/schema#",
-  "description": "A schema that validates the structure of a Mutation file",
+  "description": "A schema that validates the structure of a Motation file",
   "type": "object",
   "required": [
+    "motationType",
     "systems",
-    "definition",
+    "dependencies",
     "contents",
     "audit",
     "key"
   ],
   "properties": {
+    "motationType": {
+      "type": "string",
+      "const": "generic"
+    },
     "systems": {
       "type": "array",
       "items": {
@@ -24,7 +29,7 @@
     },
     "definition": {
       "type": "object",
-      "$ref": "./definition-schema.json"
+      "$ref": "../motationObjectField/definition-schema.json"
     },
     "contents": {
       "type": "array",

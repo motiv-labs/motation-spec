@@ -1,0 +1,28 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "description": "A schema that validates the structure of a Folder Motation Object Field",
+  "type": "object",
+  "properties": {
+    "folders": {
+      "type": "array",
+      "items": {
+        "$ref": "#dep-folder"
+      },
+      "minItems": 1,
+      "uniqueItems": true
+    }
+  },
+  "definitions": {
+    "folder": {
+      "$id": "#dep-folder",
+      "required": [
+        "path"
+      ],
+      "properties": {
+        "path": {
+          "type": "string"
+        }
+      }
+    }
+  }
+}

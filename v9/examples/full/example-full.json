@@ -1,5 +1,6 @@
 {
-  "$schema": "../../schema/multiple/full-schema.json",
+  "$schema": "../../schema/multiple/full-generic-schema.json",
+  "$id": "example-full.json",
   "dependencies": {
     "languages": [
       {

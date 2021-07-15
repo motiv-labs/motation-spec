@@ -1,6 +1,13 @@
 {
   "$schema": "../../schema/motationObjectField/definition-schema.json",
   "$id": "definition-schema.json",
+  "motationType": "definition",
+  "systems": [
+    {
+      "name": "dotCMS 5.2.7",
+      "date": "2020-09-16 15:05:48.954501 -0600 CST m=+0.003559429"
+    }
+  ],
   "id": [
     {
       "value": "799f176a-d32e-4844-a07c-1b5fcd107578"
@@ -137,6 +144,11 @@
         "creationDate": "2020-03-27 13:36:37.000000",
         "modificationDate": "2020-03-27 13:36:37.000000"
       }
+    }
+  ],
+  "audit":[
+    {
+      "date":"2021-07-14 18:53:09.139120783 +0000 UTC m=+641.870120051"
     }
   ]
 }

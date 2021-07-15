@@ -1,0 +1,53 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "description": "A schema that validates the structure of a Tag Motation Object Field",
+  "type": "object",
+  "properties": {
+    "tags": {
+      "type": "array",
+      "items": {
+        "$ref": "#dep-tag"
+      },
+      "uniqueItems": true
+    }
+  },
+  "definitions": {
+    "tag": {
+      "$id": "#dep-tag",
+      "required": [
+        "id",
+        "name"
+      ],
+      "properties": {
+        "id": {
+          "type": "array",
+          "items": {
+            "$ref": "../multiple/common-schema.json#/definitions/id"
+          },
+          "minItems": 1,
+          "uniqueItems": true
+        },
+        "name": {
+          "type": "string"
+        },
+        "site": {
+          "type": "string"
+        },
+        "system": {
+          "type": "object",
+          "$ref": "../multiple/common-schema.json#/definitions/system"
+        },
+        "modificationUser": {
+          "type": "array",
+          "items": {
+            "$ref": "../multiple/common-schema.json#/definitions/id"
+          },
+          "uniqueItems": true
+        },
+        "modificationDate": {
+          "type": "string"
+        }
+      }
+    }
+  }
+}

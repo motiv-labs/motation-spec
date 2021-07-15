@@ -1,5 +1,7 @@
 {
-  "motationType": "tag",
+  "$schema": "../../schema/multiple/full-language-schema.json",
+  "$id": "language-schema.json",
+  "motationType": "language",
   "systems": [
     {
       "name": "dotCMS 5.2.7",
@@ -458,45 +460,27 @@
       }
     ]
   },
-  "tags": [
+  "languages": [
     {
       "id": [
         {
-          "value": "df56f776-928f-4cb7-93f9-0ca242df928f"
+          "value": "1"
         }
       ],
-      "name": "tag1",
-      "site": "SYSTEM_HOST",
-      "system": {
-        "persona": "false"
-      },
-      "modificationDate": "2020-08-18 16:56:40.392 +0000 UTC"
+      "language": "English",
+      "languageCode": "EN",
+      "countryCode": "US"
     },
     {
       "id": [
         {
-          "value": "d20dca41-2a90-43f7-af90-19b0eaa42af1"
+          "value": "2"
         }
       ],
-      "name": "tag2",
-      "site": "SYSTEM_HOST",
-      "system": {
-        "persona": "false"
-      },
-      "modificationDate": "2020-08-18 16:56:50.559 +0000 UTC"
-    },
-    {
-      "id": [
-        {
-          "value": "6c7a56bf-006e-4f93-a092-1c1b905998a6"
-        }
-      ],
-      "name": "tag3",
-      "site": "SYSTEM_HOST",
-      "system": {
-        "persona": "false"
-      },
-      "modificationDate": "2020-08-18 16:57:11.891 +0000 UTC"
+      "language": "Spanish",
+      "languageCode": "ES",
+      "countryCode": "ES",
+      "country": "Spain"
     }
   ]
 }

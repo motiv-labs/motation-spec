@@ -1,0 +1,20 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "description": "A schema that validates the structure of a Motation file",
+  "allOf": [{"$ref": "full-generic-schema.json"}],
+  "type": "object",
+  "required": [
+    "motationType",
+    "systems",
+    "dependencies",
+    "contents",
+    "audit",
+    "key"
+  ],
+  "properties": {
+    "motationType": {
+      "type": "string",
+      "const": "folder"
+    }
+  }
+}
