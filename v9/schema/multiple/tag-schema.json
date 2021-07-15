@@ -3,7 +3,6 @@
   "description": "A schema that validates the structure of a Category Motation Object",
   "type": "object",
   "required": [
-    "id",
     "tags"
   ],
   "id": {

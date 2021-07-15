@@ -3,7 +3,6 @@
   "description": "A schema that validates the structure of a Langauge Motation Object",
   "type": "object",
   "required": [
-    "id",
     "languages"
   ],
   "id": {

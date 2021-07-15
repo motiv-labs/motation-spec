@@ -3,7 +3,6 @@
   "description": "A schema that validates the structure of Motation Definitions",
   "type": "object",
   "required": [
-    "id",
     "properties",
     "fields"
   ],
