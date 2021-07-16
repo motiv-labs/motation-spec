@@ -72,7 +72,11 @@
                   "value": "d3f676ce-1510-46f7-a64e-168ef5361c83"
                 }
               ],
-              "value": "Test1"
+              "value": [
+                {
+                  "value": "Test1"
+                }
+              ]
             },
             {
               "id": [
@@ -92,7 +96,24 @@
                   "value": "1c8e2d38-367c-4b68-8a0b-ef6fdca315f4"
                 }
               ],
-              "value": "7ec289ef-f830-4d0b-ba3d-a43e4cdceec0,81a56c8d-b9d1-4df6-95e2-39577270154f,b5e588d4-0289-4f6e-b5e4-be67d3fb1a76,e65d2a8e-ad10-41e6-bf21-aa36dfbf520f"
+              "value": [
+                {
+                  "value": "7ec289ef-f830-4d0b-ba3d-a43e4cdceec0",
+                  "order": 0
+                },
+                {
+                  "value": "81a56c8d-b9d1-4df6-95e2-39577270154f",
+                  "order": 1
+                },
+                {
+                  "value": "b5e588d4-0289-4f6e-b5e4-be67d3fb1a76",
+                  "order": 2
+                },
+                {
+                  "value": "e65d2a8e-ad10-41e6-bf21-aa36dfbf520f",
+                  "order": 3
+                }
+              ]
             },
             {
               "id": [
@@ -100,7 +121,17 @@
                   "value": "fd115ab5-6c36-441b-83f4-cc7f5c1b74b4"
                 }
               ],
-              "value": "CA,MX,US"
+              "value": [
+                {
+                  "value": "CA"
+                },
+                {
+                  "value": "MX"
+                },
+                {
+                  "value": "US"
+                }
+              ]
             },
             {
               "id": [
@@ -108,7 +139,11 @@
                   "value": "4edbd036-28d8-4b84-bdc3-ee92085aff72"
                 }
               ],
-              "value": "2021-08-20 00:00:00 +0000 UTC"
+              "value": [
+                {
+                  "value": "2021-08-20 00:00:00 +0000 UTC"
+                }
+              ]
             },
             {
               "id": [
@@ -116,7 +151,11 @@
                   "value": "c0eb301e-b44f-4481-b771-0695fc29f1a5"
                 }
               ],
-              "value": "2021-08-28 09:15:00 +0000 UTC"
+              "value": [
+                {
+                  "value": "2021-08-28 09:15:00 +0000 UTC"
+                }
+              ]
             },
             {
               "id": [
@@ -124,7 +163,11 @@
                   "value": "a5895873-bd0f-4a96-9d6c-222b14a4bbb4"
                 }
               ],
-              "value": "b3eee8aa-f664-46a8-992a-f29915396fe4"
+              "value": [
+                {
+                  "value": "b3eee8aa-f664-46a8-992a-f29915396fe4"
+                }
+              ]
             },
             {
               "id": [
@@ -132,7 +175,11 @@
                   "value": "8b68b865-9921-4b50-8f3f-3316eca51543"
                 }
               ],
-              "value": "37996e78-c97e-4b94-aeaa-806d821f6293"
+              "value": [
+                {
+                  "value": "37996e78-c97e-4b94-aeaa-806d821f6293"
+                }
+              ]
             },
             {
               "id": [
@@ -140,7 +187,11 @@
                   "value": "482566eb-7825-40e5-8470-d21e6909030d"
                 }
               ],
-              "value": "{\"key1\":\"value1\",\"key2\":\"value2\",\"key3\":\"value3\"}"
+              "value": [
+                {
+                  "value": "{\"key1\":\"value1\",\"key2\":\"value2\",\"key3\":\"value3\"}"
+                }
+              ]
             },
             {
               "id": [
@@ -148,7 +199,20 @@
                   "value": "1b525ae2-e38e-4f25-92ef-9cfb2dc178cd"
                 }
               ],
-              "value": "val2,val3,val4,val5"
+              "value": [
+                {
+                  "value": "val2"
+                },
+                {
+                  "value": "val3"
+                },
+                {
+                  "value": "val4"
+                },
+                {
+                  "value": "val5"
+                }
+              ]
             },
             {
               "id": [
@@ -156,7 +220,11 @@
                   "value": "a1c3f628-567a-483d-915a-c48caf804223"
                 }
               ],
-              "value": "false"
+              "value": [
+                {
+                  "value": "false"
+                }
+              ]
             },
             {
               "id": [
@@ -164,7 +232,11 @@
                   "value": "58c49ba4-5351-4b05-bb3e-1da6880abb30"
                 }
               ],
-              "value": "3"
+              "value": [
+                {
+                  "value": "3"
+                }
+              ]
             },
             {
               "id": [
@@ -172,7 +244,11 @@
                   "value": "086ece8d-8ad6-4a47-8e21-cd8604807fe3"
                 }
               ],
-              "value": "false"
+              "value": [
+                {
+                  "value": "false"
+                }
+              ]
             },
             {
               "id": [
@@ -180,7 +256,11 @@
                   "value": "c90f840f-8304-4f43-b947-06a735e300c1"
                 }
               ],
-              "value": "52.8"
+              "value": [
+                {
+                  "value": "52.8"
+                }
+              ]
             },
             {
               "id": [
@@ -188,7 +268,11 @@
                   "value": "69ed4f4e-4b0a-42b4-b628-4dfba1fdce25"
                 }
               ],
-              "value": "Text with field variables"
+              "value": [
+                {
+                  "value": "Text with field variables"
+                }
+              ]
             },
             {
               "id": [
@@ -196,7 +280,20 @@
                   "value": "09d0b004-a170-4d9c-a992-b86c990c2c5f"
                 }
               ],
-              "value": "df56f776-928f-4cb7-93f9-0ca242df928f,d20dca41-2a90-43f7-af90-19b0eaa42af1,6c7a56bf-006e-4f93-a092-1c1b905998a6"
+              "value": [
+                {
+                  "value": "df56f776-928f-4cb7-93f9-0ca242df928f",
+                  "order": 0
+                },
+                {
+                  "value": "d20dca41-2a90-43f7-af90-19b0eaa42af1",
+                  "order": 1
+                },
+                {
+                  "value": "6c7a56bf-006e-4f93-a092-1c1b905998a6",
+                  "order": 2
+                }
+              ]
             },
             {
               "id": [
@@ -204,7 +301,11 @@
                   "value": "3c866071-41d3-4396-ae60-ccec4467aba6"
                 }
               ],
-              "value": "email@dotcms.com"
+              "value": [
+                {
+                  "value": "email@dotcms.com"
+                }
+              ]
             },
             {
               "id": [
@@ -212,7 +313,11 @@
                   "value": "8bd6ea9d-dfa8-4968-b5e9-9cb42e05618a"
                 }
               ],
-              "value": "val3"
+              "value": [
+                {
+                  "value": "val3"
+                }
+              ]
             },
             {
               "id": [
@@ -220,7 +325,11 @@
                   "value": "ad4c58e8-fd89-404f-8152-36b306287083"
                 }
               ],
-              "value": "1970-01-01 10:30:00 +0000 UTC"
+              "value": [
+                {
+                  "value": "1970-01-01 10:30:00 +0000 UTC"
+                }
+              ]
             },
             {
               "id": [
@@ -228,7 +337,11 @@
                   "value": "3cd1e994-ab0f-42d2-bd1b-d3697fab2195"
                 }
               ],
-              "value": "58"
+              "value": [
+                {
+                  "value": "58"
+                }
+              ]
             },
             {
               "id": [
@@ -236,7 +349,11 @@
                   "value": "f5a23a73-27e9-4cec-a758-988ec39fd100"
                 }
               ],
-              "value": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quae est igitur causa istarum angustiarum? Quod vestri non item. Idemne, quod iucunde? Non igitur bene. Eam stabilem appellas. Cur id non ita fit? \n\nNihil sane. Nos commodius agimus. Duo Reges: constructio interrete. Ergo, inquit, tibi Q. Quod cum dixissent, ille contra."
+              "value": [
+                {
+                  "value": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quae est igitur causa istarum angustiarum? Quod vestri non item. Idemne, quod iucunde? Non igitur bene. Eam stabilem appellas. Cur id non ita fit? \n\nNihil sane. Nos commodius agimus. Duo Reges: constructio interrete. Ergo, inquit, tibi Q. Quod cum dixissent, ille contra."
+                }
+              ]
             },
             {
               "id": [
@@ -244,7 +361,11 @@
                   "value": "b8525712-ff31-4022-b9ca-b76f9419e6ae"
                 }
               ],
-              "value": "\u003cp\u003eLorem ipsum dolor sit amet, consectetur adipiscing elit. Nihil illinc huc pervenit. Cur id non ita fit? Ait enim se, si uratur, Quam hoc suave! dicturum. Qui-vere falsone, quaerere mittimus-dicitur oculis se privasse; Quae quo sunt excelsiores, eo dant clariora indicia naturae. Que Manilium, ab iisque M.\u003c/p\u003e\n\u003cp\u003eDuo Reges: constructio interrete. Quid enim? Quia nec honesto quic quam honestius nec turpi turpius. Hunc vos beatum; Bestiarum vero nullum iudicium puto. Multoque hoc melius nos veriusque quam Stoici.\u003c/p\u003e\n\u003cp\u003eNihil enim hoc differt. Quod totum contra est. Traditur, inquit, ab Epicuro ratio neglegendi doloris. Aliter enim nosmet ipsos nosse non possumus. Bonum integritas corporis: misera debilitas.\u003c/p\u003e\n\u003cp\u003eDat enim intervalla et relaxat. Hos contra singulos dici est melius. Non risu potius quam oratione eiciendum? Poterat autem inpune;\u003c/p\u003e"
+              "value": [
+                {
+                  "value": "\u003cp\u003eLorem ipsum dolor sit amet, consectetur adipiscing elit. Nihil illinc huc pervenit. Cur id non ita fit? Ait enim se, si uratur, Quam hoc suave! dicturum. Qui-vere falsone, quaerere mittimus-dicitur oculis se privasse; Quae quo sunt excelsiores, eo dant clariora indicia naturae. Que Manilium, ab iisque M.\u003c/p\u003e\n\u003cp\u003eDuo Reges: constructio interrete. Quid enim? Quia nec honesto quic quam honestius nec turpi turpius. Hunc vos beatum; Bestiarum vero nullum iudicium puto. Multoque hoc melius nos veriusque quam Stoici.\u003c/p\u003e\n\u003cp\u003eNihil enim hoc differt. Quod totum contra est. Traditur, inquit, ab Epicuro ratio neglegendi doloris. Aliter enim nosmet ipsos nosse non possumus. Bonum integritas corporis: misera debilitas.\u003c/p\u003e\n\u003cp\u003eDat enim intervalla et relaxat. Hos contra singulos dici est melius. Non risu potius quam oratione eiciendum? Poterat autem inpune;\u003c/p\u003e"
+                }
+              ]
             }
           ]
         }

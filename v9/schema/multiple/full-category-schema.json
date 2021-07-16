@@ -1,7 +1,7 @@
 {
   "$schema": "http://json-schema.org/draft-07/schema#",
   "description": "A schema that validates the structure of a Motation file",
-  "allOf": [{"$ref": "full-generic-schema.json"}],
+  "allOf": [{"$ref": "full-generic-schema.json"}, {"$ref": "../motationObjectField/category-schema.json"}, {"$ref": "dependencies-schema.json"}],
   "type": "object",
   "required": [
     "motationType",
@@ -9,7 +9,8 @@
     "dependencies",
     "contents",
     "audit",
-    "key"
+    "key",
+    "categories"
   ],
   "properties": {
     "motationType": {

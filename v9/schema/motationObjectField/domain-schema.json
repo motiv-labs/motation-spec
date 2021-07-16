@@ -3,73 +3,92 @@
   "description": "A schema that validates the structure of a Domain Motation Object Field",
   "type": "object",
   "properties": {
-    "id": {
+    "domains": {
       "type": "array",
       "items": {
-        "$ref": "../multiple/common-schema.json#/definitions/id"
-      },
-      "minItems": 1,
-      "uniqueItems": true
-    },
-    "properties": {
-      "type": "object",
+        "$ref": "#dep-domain"
+      }
+    }
+  },
+  "definitions": {
+    "domain": {
+      "$id": "#dep-domain",
+      "required": [
+        "id",
+        "properties"
+      ],
       "properties": {
-        "domainName": {
-          "type": "string"
-        },
-        "uniqueName": {
-          "type": "string"
-        },
-        "active": {
-          "type": "boolean"
-        },
-        "modificationDate": {
-          "type": "string"
-        },
-        "modificationUser": {
+        "id": {
           "type": "array",
           "items": {
             "$ref": "../multiple/common-schema.json#/definitions/id"
           },
           "minItems": 1,
           "uniqueItems": true
+        },
+        "properties": {
+          "type": "object",
+          "required": [
+            "domainName",
+            "uniqueName"
+          ],
+          "properties": {
+            "domainName": {
+              "type": "string"
+            },
+            "uniqueName": {
+              "type": "string"
+            },
+            "active": {
+              "type": "boolean"
+            },
+            "modificationDate": {
+              "type": "string"
+            },
+            "modificationUser": {
+              "type": "array",
+              "items": {
+                "$ref": "../multiple/common-schema.json#/definitions/id"
+              },
+              "minItems": 1,
+              "uniqueItems": true
+            }
+          }
+        },
+        "systemDomain": {
+          "type": "string"
+        },
+        "defaultDomain": {
+          "type": "string"
+        },
+        "metadata": {
+          "type": "object",
+          "properties": {
+            "description": {
+              "type": "string"
+            },
+            "googleAnalytics": {
+              "type": "string"
+            },
+            "googleMap": {
+              "type": "string"
+            },
+            "pubId": {
+              "type": "string"
+            },
+            "keywords": {
+              "type": "string"
+            }
+          }
+        },
+        "vanityUrls": {
+          "type": "array",
+          "items": {
+            "$ref": "#dep-domain-url"
+          }
         }
       }
     },
-    "systemDomain": {
-      "type": "string"
-    },
-    "defaultDomain": {
-      "type": "string"
-    },
-    "metadata": {
-      "type": "object",
-      "properties": {
-        "description": {
-          "type": "string"
-        },
-        "googleAnalytics": {
-          "type": "string"
-        },
-        "googleMap": {
-          "type": "string"
-        },
-        "pubId": {
-          "type": "string"
-        },
-        "keywords": {
-          "type": "string"
-        }
-      }
-    },
-    "vanityUrls": {
-      "type": "array",
-      "items": {
-        "$ref": "#dep-domain-url"
-      }
-    }
-  },
-  "definitions": {
     "url": {
       "$id": "#dep-domain-url",
       "required": [

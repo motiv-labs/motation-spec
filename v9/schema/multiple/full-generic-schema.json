@@ -1,6 +1,7 @@
 {
   "$schema": "http://json-schema.org/draft-07/schema#",
   "description": "A schema that validates the structure of a Motation file",
+  "allOf": [{"$ref": "dependencies-schema.json"}],
   "type": "object",
   "required": [
     "motationType",

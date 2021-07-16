@@ -3,231 +3,28 @@
   "description": "A schema that validates the structure of a Motation dependencies",
   "type": "object",
   "properties": {
-    "domain": {
-      "type": "string"
-    },
-    "definition": {
-      "type": "string"
-    },
-    "languages": {
-      "type": "string"
-    },
-    "tags": {
-      "type": "string"
-    },
-    "categories": {
-      "type": "string"
-    },
-    "relationships": {
-      "type": "string"
-    },
-    "folders": {
-      "type": "string"
-    }
-  },
-  "definitions": {
-    "relationship": {
-      "$id": "#dep-relationship",
-      "required": [
-        "id",
-        "properties"
-      ],
+    "dependencies": {
+      "type": "object",
       "properties": {
-        "id": {
-          "type": "array",
-          "items": {
-            "$ref": "./common-schema.json#/definitions/id"
-          },
-          "minItems": 1,
-          "uniqueItems": true
-        },
-        "properties": {
-          "required": [
-            "uniqueName",
-            "parentId",
-            "childId",
-            "cardinality"
-          ],
-          "properties": {
-            "uniqueName": {
-              "type": "string"
-            },
-            "parentId": {
-              "type": "array",
-              "items": {
-                "$ref": "./common-schema.json#/definitions/id"
-              },
-              "minItems": 1,
-              "uniqueItems": true
-            },
-            "parentName": {
-              "type": "string"
-            },
-            "childId": {
-              "type": "array",
-              "items": {
-                "$ref": "./common-schema.json#/definitions/id"
-              },
-              "minItems": 1,
-              "uniqueItems": true
-            },
-            "childName": {
-              "type": "string"
-            },
-            "cardinality": {
-              "type": "string"
-            },
-            "system": {
-              "type": "object",
-              "$ref": "./common-schema.json#/definitions/system"
-            }
-          },
-          "relations": {
-            "type": "array",
-            "items": {
-              "$ref": "#dep-relation"
-            },
-            "uniqueItems": true
-          }
-        }
-      }
-    },
-    "relation": {
-      "$id": "#dep-relation",
-      "required": [
-        "parent",
-        "child"
-      ],
-      "properties": {
-        "parent": {
-          "type": "array",
-          "items": {
-            "$ref": "./common-schema.json#/definitions/id"
-          },
-          "minItems": 1,
-          "uniqueItems": true
-        },
-        "child": {
-          "type": "array",
-          "items": {
-            "$ref": "./common-schema.json#/definitions/id"
-          },
-          "minItems": 1,
-          "uniqueItems": true
-        },
-        "order": {
-          "type": "integer"
-        }
-      }
-    },
-    "category": {
-      "$id": "#dep-category",
-      "required": [
-        "id",
-        "properties"
-      ],
-      "properties": {
-        "id": {
-          "type": "array",
-          "items": {
-            "$ref": "./common-schema.json#/definitions/id"
-          },
-          "minItems": 1,
-          "uniqueItems": true
-        },
-        "properties": {
-          "required": [
-            "name"
-          ],
-          "properties": {
-            "name": {
-              "type": "string"
-            },
-            "uniqueName": {
-              "type": "string"
-            },
-            "order": {
-              "type": "integer"
-            },
-            "system": {
-              "type": "object",
-              "$ref": "./common-schema.json#/definitions/system"
-            },
-            "modificationDate": {
-              "type": "string"
-            }
-          }
-        },
-        "children": {
-          "type": "array",
-          "items": {
-            "$ref": "#dep-category"
-          },
-          "uniqueItems": true
-        }
-      }
-    },
-    "tag": {
-      "$id": "#dep-tag",
-      "required": [
-        "id",
-        "name"
-      ],
-      "properties": {
-        "id": {
-          "type": "array",
-          "items": {
-            "$ref": "./common-schema.json#/definitions/id"
-          },
-          "minItems": 1,
-          "uniqueItems": true
-        },
-        "name": {
+        "domain": {
           "type": "string"
         },
-        "site": {
+        "definition": {
           "type": "string"
         },
-        "system": {
-          "type": "object",
-          "$ref": "./common-schema.json#/definitions/system"
-        },
-        "modificationUser": {
-          "type": "array",
-          "items": {
-            "$ref": "./common-schema.json#/definitions/id"
-          },
-          "uniqueItems": true
-        },
-        "modificationDate": {
-          "type": "string"
-        }
-      }
-    },
-    "language": {
-      "$id": "#dep-language",
-      "required": [
-        "id"
-      ],
-      "properties": {
-        "id": {
-          "type": "array",
-          "items": {
-            "$ref": "./common-schema.json#/definitions/id"
-          },
-          "minItems": 1,
-          "uniqueItems": true
-        },
-        "language": {
+        "languages": {
           "type": "string"
         },
-        "languageCode": {
+        "tags": {
           "type": "string"
         },
-        "country": {
+        "categories": {
           "type": "string"
         },
-        "countryCode": {
+        "relationships": {
+          "type": "string"
+        },
+        "folders": {
           "type": "string"
         }
       }
