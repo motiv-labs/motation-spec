@@ -83,7 +83,11 @@
                   "value":"6a582bf1-bfee-4964-b903-a34699f231a9"
                 }
               ],
-              "value":"img1.jpg"
+              "value": [
+                {
+                  "value": "img1.jpg"
+                }
+              ]
             },
             {
               "id":[
@@ -91,7 +95,11 @@
                   "value":"6a859c54-11fb-4be7-bb41-ec07e5f56f3d"
                 }
               ],
-              "value":"img1.jpg"
+              "value": [
+                {
+                  "value": "img1.jpg"
+                }
+              ]
             },
             {
               "id":[
@@ -99,7 +107,11 @@
                   "value":"64e7ad1d-6539-4721-be7d-0b6027be5259"
                 }
               ],
-              "value":"{\"content\":\"\",\"contentType\":\"image/jpeg\",\"fileSize\":133648,\"height\":\"500\",\"length\":133648,\"width\":\"600\"}"
+              "value":[
+                {
+                  "value": "{\"content\":\"\",\"contentType\":\"image/jpeg\",\"fileSize\":133648,\"height\":\"500\",\"length\":133648,\"width\":\"600\"}"
+                }
+              ]
             },
             {
               "id":[
@@ -107,7 +119,11 @@
                   "value":"0a50eb4b-2073-4ae2-82fc-ab2a046d7e91"
                 }
               ],
-              "value":"0"
+              "value":[
+                {
+                  "value": "0"
+                }
+              ]
             },
             {
               "id":[
@@ -115,7 +131,11 @@
                   "value":"512503af-cb80-46ce-b12e-26135e7ea3aa"
                 }
               ],
-              "value":"img1"
+              "value":[
+                {
+                  "value": "img1"
+                }
+              ]
             }
           ]
         }

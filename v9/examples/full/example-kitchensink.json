@@ -9,6 +9,7 @@
     }
   ],
   "dependencies": {
+    "languages": "languagesMotationId",
     "relationships": "relationshipsMotationId",
     "tags": "tagsMotationId",
     "categories": "categoriesMotationId",

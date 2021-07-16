@@ -182,7 +182,17 @@
           "uniqueItems": true
         },
         "value": {
-          "type": "string"
+          "type": "array",
+          "items": {
+            "properties": {
+              "value": {
+                "type": "string"
+              },
+              "order": {
+                "type": "integer"
+              }
+            }
+          }
         },
         "storage": {
           "type": "object",
