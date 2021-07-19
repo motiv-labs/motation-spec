@@ -1,0 +1,88 @@
+{
+  "$schema": "../../schema/motationObjectField/definition-schema.json",
+  "$id": "definition-schema.json",
+  "motationType": "definition",
+  "systems": [
+    {
+      "name": "dotCMS 5.2.7",
+      "date": "2020-09-16 15:05:48.954501 -0600 CST m=+0.003559429"
+    }
+  ],
+  "id": [
+    {
+      "value": "799f176a-d32e-4844-a07c-1b5fcd107578"
+    }
+  ],
+  "properties": {
+    "uniqueName": "language-spanish",
+    "name": "language-spanish",
+    "type": "Content"
+  },
+  "fields": [
+    {
+      "id": [
+        {
+          "value": "799f176a-d32e-4844-a07c-1b5fcd107111"
+        }
+      ],
+      "properties": {
+        "fieldType": "Custom",
+        "name": "id",
+        "setUpData": "2"
+      }
+    },
+    {
+      "id": [
+        {
+          "value": "799f176a-d32e-4844-a07c-1b5fcd107222"
+        }
+      ],
+      "properties": {
+        "fieldType": "Custom",
+        "name": "language",
+        "setUpData": "Spanish"
+      }
+    },
+    {
+      "id": [
+        {
+          "value": "799f176a-d32e-4844-a07c-1b5fcd107222"
+        }
+      ],
+      "properties": {
+        "fieldType": "Custom",
+        "name": "languageCode",
+        "setUpData": "ES"
+      }
+    },
+    {
+      "id": [
+        {
+          "value": "799f176a-d32e-4844-a07c-1b5fcd107333"
+        }
+      ],
+      "properties": {
+        "fieldType": "Custom",
+        "name": "countryCode",
+        "setUpData": "ES"
+      }
+    },
+    {
+      "id": [
+        {
+          "value": "799f176a-d32e-4844-a07c-1b5fcd107444"
+        }
+      ],
+      "properties": {
+        "fieldType": "Custom",
+        "name": "country",
+        "setUpData": "Spain"
+      }
+    }
+  ],
+  "audit":[
+    {
+      "date":"2021-07-14 18:53:09.139120783 +0000 UTC m=+641.870120051"
+    }
+  ]
+}
