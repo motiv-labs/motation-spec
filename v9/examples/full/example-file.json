@@ -9,10 +9,10 @@
     }
   ],
   "dependencies":{
-    "folders": "folderMotationId",
-    "languages": "languageMotationId",
-    "domain": "domainMotationId",
-    "definition": "definitionMotationId"
+    "folders": ["folderMotationId"],
+    "languages": ["languageMotationId"],
+    "domains": ["domainMotationId"],
+    "definition": ["definitionMotationId"]
   },
   "contents":[
     {

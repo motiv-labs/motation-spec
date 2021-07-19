@@ -1,10 +1,10 @@
 {
   "$schema": "../../schema/multiple/dependencies-schema.json",
   "$id": "dependencies-schema.json",
-  "relationships": "relationshipsMotationId",
-  "tags": "tagsMotationId",
-  "categories": "categoriesMotationId",
-  "domain": "domainMotationId",
-  "definition": "definitionMotationId",
-  "folders": "folderMotationId"
+  "relationships": ["relationshipsMotationId"],
+  "tags": ["tagsMotationId"],
+  "categories": ["categoriesMotationId"],
+  "domains": ["domainMotationId"],
+  "definition": ["definitionMotationId"],
+  "folders": ["folderMotationId"]
 }

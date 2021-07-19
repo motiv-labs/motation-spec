@@ -6,26 +6,47 @@
     "dependencies": {
       "type": "object",
       "properties": {
-        "domain": {
-          "type": "string"
+        "domains": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
         },
         "definition": {
-          "type": "string"
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
         },
         "languages": {
-          "type": "string"
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
         },
         "tags": {
-          "type": "string"
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
         },
         "categories": {
-          "type": "string"
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
         },
         "relationships": {
-          "type": "string"
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
         },
         "folders": {
-          "type": "string"
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
         }
       }
     }

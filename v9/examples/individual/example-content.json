@@ -66,7 +66,11 @@
               "value": "text1"
             }
           ],
-          "value": "This is a title"
+          "value": [
+            {
+              "value": "This is a title"
+            }
+          ]
         },
         {
           "id": [
@@ -74,7 +78,11 @@
               "value": "text_area2"
             }
           ],
-          "value": "ecotourism-in-costa-rica"
+          "value": [
+            {
+              "value": "ecotourism-in-costa-rica"
+            }
+          ]
         },
         {
           "id": [
@@ -93,7 +101,11 @@
               "value": "text_area3"
             }
           ],
-          "value": "Ecotourism in Costa Rica is a robust industry because the country was one of the earliest adopters of connecting nature/wildlife conservation with responsible travel."
+          "value": [
+            {
+              "value": "Ecotourism in Costa Rica is a robust industry because the country was one of the earliest adopters of connecting nature/wildlife conservation with responsible travel."
+            }
+          ]
         },
         {
           "id": [
@@ -101,7 +113,11 @@
               "value": "text_area5"
             }
           ],
-          "value": "<p>Ecotourism in Costa Rica is a robust industry because the country was one of the earliest adopters of connecting nature/wildlife conservation with responsible travel. Costa Rica has been ranked among the world&rsquo;s best ecotourism destinations on more than one occasion, and became the first country in the Americas to ban hunting in 2012. As a result, its biodiversity is virtually unparalleled.</p>"
+          "value": [
+            {
+              "value": "<p>Ecotourism in Costa Rica is a robust industry because the country was one of the earliest adopters of connecting nature/wildlife conservation with responsible travel. Costa Rica has been ranked among the world&rsquo;s best ecotourism destinations on more than one occasion, and became the first country in the Americas to ban hunting in 2012. As a result, its biodiversity is virtually unparalleled.</p>"
+            }
+          ]
         }
       ]
     },
@@ -138,7 +154,11 @@
               "value": "text1"
             }
           ],
-          "value": "This is a title"
+          "value": [
+            {
+              "value": "This is a title"
+            }
+          ]
         },
         {
           "id": [
@@ -146,7 +166,11 @@
               "value": "text_area2"
             }
           ],
-          "value": "ecotourism-in-costa-rica"
+          "value": [
+            {
+              "value": "ecotourism-in-costa-rica"
+            }
+          ]
         },
         {
           "id": [
@@ -154,7 +178,11 @@
               "value": "text_area3"
             }
           ],
-          "value": "Ecotourism in Costa Rica is a robust industry because the country was one of the earliest adopters of connecting nature/wildlife conservation with responsible travel."
+          "value": [
+            {
+              "value": "Ecotourism in Costa Rica is a robust industry because the country was one of the earliest adopters of connecting nature/wildlife conservation with responsible travel."
+            }
+          ]
         },
         {
           "id": [
@@ -162,7 +190,11 @@
               "value": "text_area5"
             }
           ],
-          "value": "<p>Ecotourism in Costa Rica is a robust industry because the country was one of the earliest adopters of connecting nature/wildlife conservation with responsible travel. Costa Rica has been ranked among the world&rsquo;s best ecotourism destinations on more than one occasion, and became the first country in the Americas to ban hunting in 2012. As a result, its biodiversity is virtually unparalleled.</p>"
+          "value": [
+            {
+              "value": "<p>Ecotourism in Costa Rica is a robust industry because the country was one of the earliest adopters of connecting nature/wildlife conservation with responsible travel. Costa Rica has been ranked among the world&rsquo;s best ecotourism destinations on more than one occasion, and became the first country in the Americas to ban hunting in 2012. As a result, its biodiversity is virtually unparalleled.</p>"
+            }
+          ]
         }
       ]
     }

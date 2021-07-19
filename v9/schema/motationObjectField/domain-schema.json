@@ -4,10 +4,8 @@
   "type": "object",
   "properties": {
     "domains": {
-      "type": "array",
-      "items": {
-        "$ref": "#dep-domain"
-      }
+      "type": "object",
+      "$ref": "#dep-domain"
     }
   },
   "definitions": {

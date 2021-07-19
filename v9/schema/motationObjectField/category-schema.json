@@ -4,10 +4,8 @@
   "type": "object",
   "properties": {
     "categories": {
-      "type": "array",
-      "items": {
-        "$ref": "#dep-category"
-      },
+      "type": "object",
+      "$ref": "#dep-category",
       "uniqueItems": true
     }
   },

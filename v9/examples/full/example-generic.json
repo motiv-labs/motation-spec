@@ -9,13 +9,13 @@
     }
   ],
   "dependencies": {
-    "relationships": "relationship-reference-motation-id",
-    "tags": "tag-reference-motation-id",
-    "categories": "category-reference-motation-id",
-    "definition": "definition-reference-motation-id",
-    "domain": "domain-reference-motation-id",
-    "language": "language-reference-motation-id",
-    "folder": "folder-reference-motation-id"
+    "relationships": ["relationship-reference-motation-id"],
+    "tags": ["tag-reference-motation-id"],
+    "categories": ["category-reference-motation-id"],
+    "definition": ["definition-reference-motation-id"],
+    "domains": ["domain-reference-motation-id", "id 2", "id3"],
+    "languages": ["language-reference-motation-id"],
+    "folders": ["folder-reference-motation-id"]
   },
   "contents": [
     {

@@ -1,17 +1,7 @@
 {
   "$schema": "../../schema/motationObjectField/language-schema.json",
   "$id": "language-schema.json",
-  "languages": [
-    {
-      "id": [
-        {
-          "value": "1"
-        }
-      ],
-      "language": "English",
-      "languageCode": "EN",
-      "countryCode": "US"
-    },
+  "languages":
     {
       "id": [
         {
@@ -23,5 +13,4 @@
       "countryCode": "ES",
       "country": "Spain"
     }
-  ]
 }

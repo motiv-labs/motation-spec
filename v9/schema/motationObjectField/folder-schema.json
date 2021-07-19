@@ -4,10 +4,8 @@
   "type": "object",
   "properties": {
     "folders": {
-      "type": "array",
-      "items": {
-        "$ref": "#dep-folder"
-      },
+      "type": "object",
+      "$ref": "#dep-folder",
       "minItems": 1,
       "uniqueItems": true
     }

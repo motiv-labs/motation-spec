@@ -1,15 +1,8 @@
 {
   "$schema": "../../schema/motationObjectField/folder-schema.json",
   "$id": "folder-schema.json",
-  "folders": [
+  "folders":
     {
       "path":"folder1/"
-    },
-    {
-      "path":"folder3/"
-    },
-    {
-      "path":"folder1/folder2/"
     }
-  ]
 }

@@ -9,8 +9,8 @@
     }
   ],
   "dependencies": {
-    "definition": "definitionMotationId",
-    "folders": "foldersMotationId"
+    "definition": ["definitionMotationId"],
+    "folders": ["foldersMotationId"]
   },
   "contents": [
     {

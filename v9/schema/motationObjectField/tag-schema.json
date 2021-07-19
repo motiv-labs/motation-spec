@@ -4,10 +4,8 @@
   "type": "object",
   "properties": {
     "tags": {
-      "type": "array",
-      "items": {
-        "$ref": "#dep-tag"
-      },
+      "type": "object",
+      "$ref": "#dep-tag",
       "uniqueItems": true
     }
   },

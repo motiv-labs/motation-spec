@@ -1,7 +1,7 @@
 {
   "$schema": "../../schema/motationObjectField/domain-schema.json",
   "$id": "domain-schema.json",
-  "domains": [
+  "domains":
     {
       "id":[
         {
@@ -43,5 +43,4 @@
         }
       ]
     }
-  ]
 }

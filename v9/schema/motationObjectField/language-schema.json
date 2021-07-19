@@ -4,10 +4,8 @@
   "type": "object",
   "properties": {
     "languages": {
-      "type": "array",
-      "items": {
-        "$ref": "#dep-language"
-      },
+      "type": "object",
+      "$ref": "#dep-language",
       "minItems": 1,
       "uniqueItems": true
     }

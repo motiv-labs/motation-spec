@@ -3,13 +3,13 @@
   "$id": "example-full.json",
   "motationType": "generic",
   "dependencies": {
-    "languages": "languagesMotationId",
-    "relationships": "relationshipsMotationId",
-    "tags": "tagsMotationId",
-    "categories": "categoriesMotationId",
-    "domain": "domainMotationId",
-    "definition": "definitionMotationId",
-    "folders": "folderMotationId"
+    "languages": ["languagesMotationId"],
+    "relationships": ["relationshipsMotationId"],
+    "tags": ["tagsMotationId"],
+    "categories": ["categoriesMotationId"],
+    "domains": ["domainMotationId"],
+    "definition": ["definitionMotationId"],
+    "folders": ["folderMotationId"]
   },
   "systems": [
     {
