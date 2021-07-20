@@ -14,35 +14,10 @@
       }
     ],
     "properties": {
-
-    },
-    "definitionProperties": {
       "motationType": "language",
       "uniqueName": "language-spanish",
-      "type": "MotationObject",
+      "type": "MotationObject"
     },
-    "contentProperties": [
-      {
-        "name": "language",
-        "propertyType": "Text"
-      },
-      {
-        "name": "languageCode",
-        "propertyType": "Text"
-      },
-      {
-        "name": "country",
-        "propertyType": "Text"
-      },
-      {
-        "name": "countryCode",
-        "propertyType": "Text"
-      },
-      {
-        "name": "localId",
-        "propertyType": "array"
-      }
-    ],
     "fields": [
       {
         "id": [
@@ -114,11 +89,7 @@
           {
             "value": "2"
           }
-        ],
-        "language": "d3f676ce-1510-46f7-a64e-168ef5361555",
-        "languageCode": "d3f676ce-1510-46f7-a64e-168ef5361444",
-        "countryCode": "d3f676ce-1510-46f7-a64e-168ef5361c83",
-        "country": "d3f676ce-1510-46f7-a64e-168ef5361666"
+        ]
       },
       "versions": [
         {
@@ -209,10 +180,7 @@
           {
             "value": "1"
           }
-        ],
-        "language": "d3f676ce-1510-46f7-a64e-168ef5361555",
-        "languageCode": "d3f676ce-1510-46f7-a64e-168ef5361444",
-        "countryCode": "d3f676ce-1510-46f7-a64e-168ef5361c83"
+        ]
       },
       "versions": [
         {
