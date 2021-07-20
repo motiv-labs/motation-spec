@@ -33,9 +33,13 @@
       "$id": "#def-properties",
       "required": [
         "uniqueName",
-        "type"
+        "type",
+        "motationType"
       ],
       "properties": {
+        "motationType": {
+          "type": "string"
+        },
         "uniqueName": {
           "type": "string"
         },
@@ -52,7 +56,8 @@
             "Form",
             "File",
             "Page",
-            "Persona"
+            "Persona",
+            "MotationObject"
           ]
         },
         "creationDate": {

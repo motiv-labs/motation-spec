@@ -1,7 +1,6 @@
 {
-//  "$schema": "../../schema/motationObjectField/definition-schema.json",
+  "$schema": "../../schema/motationObjectField/language-schema.json",
   "$id": "definition-schema.json",
-  "motationType": "definition",
   "definition": {
     "systems": [
       {
@@ -11,23 +10,13 @@
     ],
     "id": [
       {
-        "value": "799f176a-d32e-4844-a07c-1b5fcd107578"
+        "value": "a0ba0feb-440e-4881-8275-91f312bedb32"
       }
     ],
     "properties": {
+      "motationType": "language",
       "uniqueName": "language-spanish",
-      "name": "language-spanish",
-      "type": "Content",
-
-      "id": [
-        {
-          "value": "2"
-        }
-      ],
-      "language": "Spanish",
-      "languageCode": "ES",
-      "countryCode": "ES",
-      "country": "Spain"
+      "type": "MotationObject"
     },
     "fields": [
       {
@@ -37,9 +26,8 @@
           }
         ],
         "properties": {
-          "fieldType": "Custom",
-          "name": "id",
-          "setUpData": "2"
+          "fieldType": "Text",
+          "name": "id"
         }
       },
       {
@@ -98,6 +86,107 @@
       "id": [
         {
           "value": "4bae2fbe-7ab3-4b44-a196-1bd444b42eda"
+        }
+      ],
+      "properties": {
+        "type": "Content",
+        "status": "Live",
+        "definitionId": [
+          {
+            "value": "a0ba0feb-440e-4881-8275-91f312bedb32"
+          }
+        ],
+        "name": "content.936162bd-d3b1-4b13-ac76-1dcdf4ecef55",
+        "id": [
+          {
+            "value": "2"
+          }
+        ]
+      },
+      "versions": [
+        {
+          "id": [
+            {
+              "value": "3a4fd59c-c666-48b2-858c-f62c45c33b75"
+            }
+          ],
+          "properties": {
+            "status": "Live",
+            "title": "Spanish",
+            "order": 0,
+            "modificationDate": "2020-08-19 15:08:00.493 +0000 UTC",
+            "modificationUser": [
+              {
+                "value": "someuser"
+              }
+            ],
+            "system": {
+              "friendly_name": "Spanish",
+              "last_review": "2020-08-19 15:08:00.352 +0000 UTC",
+              "show_on_menu": "false"
+            },
+            "language": "Spanish",
+            "languageCode": "ES",
+            "countryCode": "ES",
+            "country": "Spain"
+          },
+          "fields": [
+            {
+              "id": [
+                {
+                  "value": "d3f676ce-1510-46f7-a64e-168ef5361555"
+                }
+              ],
+              "value": [
+                {
+                  "value": "Spanish"
+                }
+              ]
+            },
+            {
+              "id": [
+                {
+                  "value": "d3f676ce-1510-46f7-a64e-168ef5361444"
+                }
+              ],
+              "value": [
+                {
+                  "value": "ES"
+                }
+              ]
+            },
+            {
+              "id": [
+                {
+                  "value": "d3f676ce-1510-46f7-a64e-168ef5361c83"
+                }
+              ],
+              "value": [
+                {
+                  "value": "ES"
+                }
+              ]
+            },
+            {
+              "id": [
+                {
+                  "value": "d3f676ce-1510-46f7-a64e-168ef5361666"
+                }
+              ],
+              "value": [
+                {
+                  "value": "Spain"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": [
+        {
+          "value": "dd59cfd4-e97f-11eb-9a03-0242ac130003"
         }
       ],
       "properties": {
@@ -177,18 +266,6 @@
                   "value": "US"
                 }
               ]
-            },
-            {
-              "id": [
-                {
-                  "value": "d3f676ce-1510-46f7-a64e-168ef5361666"
-                }
-              ],
-              "value": [
-                {
-                  "value": "Spain"
-                }
-              ]
             }
           ]
         }
@@ -202,6 +279,14 @@
   ],
   "key": {
     "fields": [
+      {
+        "name": "Id",
+        "id": [
+          {
+            "value": "799f176a-d32e-4844-a07c-1b5fcd107222"
+          }
+        ]
+      },
       {
         "name": "language",
         "id": [

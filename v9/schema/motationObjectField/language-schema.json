@@ -1,6 +1,13 @@
 {
   "$schema": "http://json-schema.org/draft-07/schema#",
   "description": "A schema that validates the structure of a Language Motation Object Field",
+  "allOf": [{
+      "$ref": "./definition-schema.json"
+    },
+    {
+      "$ref": "../multiple/content-schema.json"
+    }
+  ],
   "type": "object",
   "properties": {
     "languages": {
@@ -8,9 +15,57 @@
       "$ref": "#dep-language",
       "minItems": 1,
       "uniqueItems": true
+    },
+    "contents": {
+      "properties": {
+        "versions": {
+          "type": "array",
+          "properties": {
+            "properties": {
+              "type": "object",
+              "required": [
+                "language",
+                "languageCode"
+              ],
+              "properties": {
+                "language": {
+                  "type": "string"
+                },
+                "languageCode": {
+                  "type": "string"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "definition": {
+      "required": [
+        "languageCode",
+        "language"
+      ],
+      "properties": {
+        "properties": {
+
+        },
+        "languageCode": {
+          "type": "string"
+        },
+        "language": {
+          "type": "string"
+        },
+        "countryCode": {
+          "type": "string"
+        },
+        "country": {
+          "type": "string"
+        }
+      }
     }
   },
   "definitions": {
+
     "language": {
       "$id": "#dep-language",
       "required": [

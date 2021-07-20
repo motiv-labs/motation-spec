@@ -57,8 +57,7 @@
       "required": [
         "definitionId",
         "name",
-        "type",
-        "path"
+        "type"
       ],
       "properties": {
         "type": {
