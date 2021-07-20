@@ -27,8 +27,7 @@
         ],
         "properties": {
           "fieldType": "Text",
-          "name": "language",
-          "motationObjectField": "language"
+          "name": "language"
         }
       },
       {
@@ -39,8 +38,7 @@
         ],
         "properties": {
           "fieldType": "Text",
-          "name": "languageCode",
-          "motationObjectField": "languageCode"
+          "name": "languageCode"
         }
       },
       {
@@ -51,8 +49,7 @@
         ],
         "properties": {
           "fieldType": "Text",
-          "name": "countryCode",
-          "motationObjectField": "countryCode"
+          "name": "countryCode"
         }
       },
       {
@@ -63,8 +60,7 @@
         ],
         "properties": {
           "fieldType": "Text",
-          "name": "country",
-          "motationObjectField": "country"
+          "name": "country"
         }
       }
     ],
