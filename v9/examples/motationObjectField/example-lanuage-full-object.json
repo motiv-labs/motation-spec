@@ -1,5 +1,5 @@
 {
-  "$schema": "../../schema/motationObjectField/language-schema.json",
+  "$schema": "../../schema/multiple/full-language-schema.json",
   "$id": "definition-schema.json",
   "definition": {
     "systems": [
@@ -19,17 +19,6 @@
       "type": "MotationObject"
     },
     "fields": [
-      {
-        "id": [
-          {
-            "value": "799f176a-d32e-4844-a07c-1b5fcd107222"
-          }
-        ],
-        "properties": {
-          "fieldType": "Text",
-          "name": "id"
-        }
-      },
       {
         "id": [
           {
@@ -90,18 +79,21 @@
       ],
       "properties": {
         "type": "Content",
-        "status": "Live",
         "definitionId": [
           {
             "value": "a0ba0feb-440e-4881-8275-91f312bedb32"
           }
         ],
-        "name": "content.936162bd-d3b1-4b13-ac76-1dcdf4ecef55",
-        "id": [
+        "name": "spanish",
+        "localId": [
           {
             "value": "2"
           }
-        ]
+        ],
+        "language": "Spanish",
+        "languageCode": "ES",
+        "countryCode": "ES",
+        "country": "Spain"
       },
       "versions": [
         {
@@ -113,22 +105,7 @@
           "properties": {
             "status": "Live",
             "title": "Spanish",
-            "order": 0,
-            "modificationDate": "2020-08-19 15:08:00.493 +0000 UTC",
-            "modificationUser": [
-              {
-                "value": "someuser"
-              }
-            ],
-            "system": {
-              "friendly_name": "Spanish",
-              "last_review": "2020-08-19 15:08:00.352 +0000 UTC",
-              "show_on_menu": "false"
-            },
-            "language": "Spanish",
-            "languageCode": "ES",
-            "countryCode": "ES",
-            "country": "Spain"
+            "order": 0
           },
           "fields": [
             {
@@ -202,10 +179,15 @@
             "value": "a0ba0feb-440e-4881-8275-91f312bedb32"
           }
         ],
-        "name": "content.936162bd-d3b1-4b13-ac76-1dcdf4ecef55",
-        "path": "/",
-        "site": "SYSTEM_HOST",
-        "system": {}
+        "name": "English",
+        "localId": [
+          {
+            "value": "1"
+          }
+        ],
+        "language": "English",
+        "languageCode": "EN",
+        "countryCode": "US"
       },
       "versions": [
         {
@@ -280,14 +262,6 @@
   "key": {
     "fields": [
       {
-        "name": "Id",
-        "id": [
-          {
-            "value": "799f176a-d32e-4844-a07c-1b5fcd107222"
-          }
-        ]
-      },
-      {
         "name": "language",
         "id": [
           {
@@ -320,5 +294,11 @@
         ]
       }
     ]
-  }
+  },
+  "systems": [
+    {
+      "name": "dotCMS 5.2.7",
+      "date": "2020-09-16 15:05:48.954501 -0600 CST m=+0.003559429"
+    }
+  ]
 }
