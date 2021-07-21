@@ -14,53 +14,31 @@
       }
     ],
     "properties": {
-      "motationType": "tag",
-      "uniqueName": "tags",
+      "motationType": "category",
+      "uniqueName": "category",
       "type": "MotationObject"
     },
     "fields": [
       {
         "id": [
           {
-            "value": "d3f676ce-1510-46f7-a64e-168ef5361555"
+            "value": "d3f676ce-1510-46f7-a64e-168ef5361111"
           }
         ],
         "properties": {
           "fieldType": "Text",
-          "name": "name"
+          "name": "uniqueName"
         }
       },
       {
         "id": [
           {
-            "value": "d3f676ce-1510-46f7-a64e-168ef5361444"
+            "value": "d3f676ce-1510-46f7-a64e-168ef5361333"
           }
         ],
         "properties": {
           "fieldType": "Text",
-          "name": "site"
-        }
-      },
-      {
-        "id": [
-          {
-            "value": "d3f676ce-1510-46f7-a64e-168ef5361666"
-          }
-        ],
-        "properties": {
-          "fieldType": "Text",
-          "name": "modificationDate"
-        }
-      },
-      {
-        "id": [
-          {
-            "value": "d3f676ce-1510-46f7-a64e-168ef5361777"
-          }
-        ],
-        "properties": {
-          "fieldType": "Text",
-          "name": "persona"
+          "name": "children"
         }
       }
     ],
@@ -74,7 +52,7 @@
     {
       "id": [
         {
-          "value": "df56f776-928f-4cb7-93f9-0ca242df928f"
+          "value": "f5476c1e-7fcc-4e5c-846f-7390fa8c6f60"
         }
       ],
       "properties": {
@@ -84,7 +62,7 @@
             "value": "a0ba0feb-440e-4881-8275-91f312bedb32"
           }
         ],
-        "name": "tag1"
+        "name": "cat1"
       },
       "versions": [
         {
@@ -95,55 +73,32 @@
           ],
           "properties": {
             "status": "Live",
-            "title": "Tag1",
+            "title": "cat1",
             "order": 0
           },
           "fields": [
             {
               "id": [
                 {
-                  "value": "d3f676ce-1510-46f7-a64e-168ef5361555"
+                  "value": "d3f676ce-1510-46f7-a64e-168ef5361111"
                 }
               ],
               "value": [
                 {
-                  "value": "tag1"
+                  "value": "cat1"
                 }
               ]
             },
             {
               "id": [
                 {
-                  "value": "d3f676ce-1510-46f7-a64e-168ef5361444"
+                  "value": "d3f676ce-1510-46f7-a64e-168ef5361333"
                 }
               ],
               "value": [
                 {
-                  "value": "SYSTEM_HOST"
-                }
-              ]
-            },
-            {
-              "id": [
-                {
-                  "value": "d3f676ce-1510-46f7-a64e-168ef5361666"
-                }
-              ],
-              "value": [
-                {
-                  "value": "2020-08-18 16:56:40.392 +0000 UTC"
-                }
-              ]
-            },
-            {
-              "id": [
-                {
-                  "value": "d3f676ce-1510-46f7-a64e-168ef5361777"
-                }
-              ],
-              "value": [
-                {
-                  "value": "false"
+                  "value": "f5476c1e-7fcc-4e5c-846f-7390fa8c6111",
+                  "order": 0
                 }
               ]
             }
@@ -154,7 +109,7 @@
     {
       "id": [
         {
-          "value": "d20dca41-2a90-43f7-af90-19b0eaa42af1"
+          "value": "81a56c8d-b9d1-4df6-95e2-39577270154f"
         }
       ],
       "properties": {
@@ -164,7 +119,7 @@
             "value": "a0ba0feb-440e-4881-8275-91f312bedb32"
           }
         ],
-        "name": "tag2"
+        "name": "cat1.3"
       },
       "versions": [
         {
@@ -175,55 +130,36 @@
           ],
           "properties": {
             "status": "Live",
-            "title": "Tag2",
+            "title": "cat1.3",
             "order": 0
           },
           "fields": [
             {
               "id": [
                 {
-                  "value": "d3f676ce-1510-46f7-a64e-168ef5361555"
+                  "value": "d3f676ce-1510-46f7-a64e-168ef5361111"
                 }
               ],
               "value": [
                 {
-                  "value": "tag2"
+                  "value": "cat1.3"
                 }
               ]
             },
             {
               "id": [
                 {
-                  "value": "d3f676ce-1510-46f7-a64e-168ef5361444"
+                  "value": "d3f676ce-1510-46f7-a64e-168ef5361333"
                 }
               ],
               "value": [
                 {
-                  "value": "SYSTEM_HOST"
-                }
-              ]
-            },
-            {
-              "id": [
+                  "value": "aa2738de-4134-47d4-8852-1d86bd5e78ed",
+                  "order": 0
+                },
                 {
-                  "value": "d3f676ce-1510-46f7-a64e-168ef5361666"
-                }
-              ],
-              "value": [
-                {
-                  "value": "2020-08-18 16:56:50.559 +0000 UTC"
-                }
-              ]
-            },
-            {
-              "id": [
-                {
-                  "value": "d3f676ce-1510-46f7-a64e-168ef5361777"
-                }
-              ],
-              "value": [
-                {
-                  "value": "false"
+                  "value": "e65d2a8e-ad10-41e6-bf21-aa36dfbf520f",
+                  "order": 1
                 }
               ]
             }
@@ -234,7 +170,7 @@
     {
       "id": [
         {
-          "value": "6c7a56bf-006e-4f93-a092-1c1b905998a6"
+          "value": "aa2738de-4134-47d4-8852-1d86bd5e78ed"
         }
       ],
       "properties": {
@@ -244,7 +180,7 @@
             "value": "a0ba0feb-440e-4881-8275-91f312bedb32"
           }
         ],
-        "name": "tag3"
+        "name": "cat1.3.2"
       },
       "versions": [
         {
@@ -255,55 +191,63 @@
           ],
           "properties": {
             "status": "Live",
-            "title": "Tag3",
+            "title": "cat1.3.2",
             "order": 0
           },
           "fields": [
             {
               "id": [
                 {
-                  "value": "d3f676ce-1510-46f7-a64e-168ef5361555"
+                  "value": "d3f676ce-1510-46f7-a64e-168ef5361111"
                 }
               ],
               "value": [
                 {
-                  "value": "tag3"
+                  "value": "cat1.3.2"
                 }
               ]
-            },
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": [
+        {
+          "value": "e65d2a8e-ad10-41e6-bf21-aa36dfbf520f"
+        }
+      ],
+      "properties": {
+        "type": "Content",
+        "definitionId": [
+          {
+            "value": "a0ba0feb-440e-4881-8275-91f312bedb32"
+          }
+        ],
+        "name": "cat1.3.1"
+      },
+      "versions": [
+        {
+          "id": [
+            {
+              "value": "3a4fd59c-c666-48b2-858c-f62c45c33b75"
+            }
+          ],
+          "properties": {
+            "status": "Live",
+            "title": "cat1.3.1",
+            "order": 0
+          },
+          "fields": [
             {
               "id": [
                 {
-                  "value": "d3f676ce-1510-46f7-a64e-168ef5361444"
+                  "value": "d3f676ce-1510-46f7-a64e-168ef5361111"
                 }
               ],
               "value": [
                 {
-                  "value": "SYSTEM_HOST"
-                }
-              ]
-            },
-            {
-              "id": [
-                {
-                  "value": "d3f676ce-1510-46f7-a64e-168ef5361666"
-                }
-              ],
-              "value": [
-                {
-                  "value": "2020-08-18 16:57:11.891 +0000 UTC"
-                }
-              ]
-            },
-            {
-              "id": [
-                {
-                  "value": "d3f676ce-1510-46f7-a64e-168ef5361777"
-                }
-              ],
-              "value": [
-                {
-                  "value": "false"
+                  "value": "cat1.3.1"
                 }
               ]
             }
@@ -320,34 +264,18 @@
   "key": {
     "fields": [
       {
-        "name": "name",
+        "name": "uniqueName",
         "id": [
           {
-            "value": "d3f676ce-1510-46f7-a64e-168ef5361555"
+            "value": "d3f676ce-1510-46f7-a64e-168ef5361111"
           }
         ]
       },
       {
-        "name": "site",
+        "name": "children",
         "id": [
           {
-            "value": "d3f676ce-1510-46f7-a64e-168ef5361444"
-          }
-        ]
-      },
-      {
-        "name": "modificationDate",
-        "id": [
-          {
-            "value": "d3f676ce-1510-46f7-a64e-168ef5361666"
-          }
-        ]
-      },
-      {
-        "name": "persona",
-        "id": [
-          {
-            "value": "d3f676ce-1510-46f7-a64e-168ef5361777"
+            "value": "d3f676ce-1510-46f7-a64e-168ef5361333"
           }
         ]
       }

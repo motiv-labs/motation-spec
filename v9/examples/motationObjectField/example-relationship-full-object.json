@@ -1,0 +1,292 @@
+{
+  "$schema": "../../schema/multiple/full-generic-schema.json",
+  "$id": "definition-schema.json",
+  "definition": {
+    "systems": [
+      {
+        "name": "dotCMS 5.2.7",
+        "date": "2020-09-16 15:05:48.954501 -0600 CST m=+0.003559429"
+      }
+    ],
+    "id": [
+      {
+        "value": "a0ba0feb-440e-4881-8275-91f312bedb32"
+      }
+    ],
+    "properties": {
+      "motationType": "relationship",
+      "uniqueName": "relationship",
+      "type": "MotationObject",
+      "system": {
+        "child_required": "false",
+        "fixed": "false",
+        "parent_required": "false"
+      }
+    },
+    "contentProperties": [
+      {
+        "propertyType":"String",
+        "name": "child_required"
+      },
+      {
+        "propertyType":"String",
+        "name": "fixed"
+      },
+      {
+        "propertyType":"String",
+        "name": "parent_required"
+      }
+    ],
+    "fields": [
+      {
+        "id": [
+          {
+            "value": "d3f676ce-1510-46f7-a64e-168ef5361111"
+          }
+        ],
+        "properties": {
+          "fieldType": "Text",
+          "name": "uniqueName"
+        }
+      },
+      {
+        "id": [
+          {
+            "value": "d3f676ce-1510-46f7-a64e-168ef5361222"
+          }
+        ],
+        "properties": {
+          "fieldType": "Text",
+          "name": "parentId"
+        }
+      },
+      {
+        "id": [
+          {
+            "value": "d3f676ce-1510-46f7-a64e-168ef5361333"
+          }
+        ],
+        "properties": {
+          "fieldType": "Text",
+          "name": "childId"
+        }
+      },
+      {
+        "id": [
+          {
+            "value": "d3f676ce-1510-46f7-a64e-168ef5361444"
+          }
+        ],
+        "properties": {
+          "fieldType": "Text",
+          "name": "childName"
+        }
+      },
+      {
+        "id": [
+          {
+            "value": "d3f676ce-1510-46f7-a64e-168ef5361555"
+          }
+        ],
+        "properties": {
+          "fieldType": "Text",
+          "name": "cardinality"
+        }
+      },
+      {
+        "id": [
+          {
+            "value": "d3f676ce-1510-46f7-a64e-168ef5361666"
+          }
+        ],
+        "properties": {
+          "fieldType": "Text",
+          "name": "relations"
+        }
+      }
+    ],
+    "audit":[
+      {
+        "date":"2021-07-14 18:53:09.139120783 +0000 UTC m=+641.870120051"
+      }
+    ]
+  },
+  "contents": [
+    {
+      "id": [
+        {
+          "value": "bd3a6f51-2df9-41f7-a6d8-2c5d80bc23b0"
+        }
+      ],
+      "properties": {
+        "type": "Content",
+        "definitionId": [
+          {
+            "value": "a0ba0feb-440e-4881-8275-91f312bedb32"
+          }
+        ],
+        "name": "Kitchensink.relationships",
+
+        "child_required": "false",
+        "fixed": "false",
+        "parent_required": "false"
+      },
+      "versions": [
+        {
+          "id": [
+            {
+              "value": "3a4fd59c-c666-48b2-858c-f62c45c33b75"
+            }
+          ],
+          "properties": {
+            "status": "Live",
+            "title": "Kitchensink.relationships",
+            "order": 0
+          },
+          "fields": [
+            {
+              "id": [
+                {
+                  "value": "d3f676ce-1510-46f7-a64e-168ef5361111"
+                }
+              ],
+              "value": [
+                {
+                  "value": "Kitchensink.relationships"
+                }
+              ]
+            },
+            {
+              "id": [
+                {
+                  "value": "d3f676ce-1510-46f7-a64e-168ef5361222"
+                }
+              ],
+              "value": [
+                {
+                  "value": "a0ba0feb-440e-4881-8275-91f312bedb32"
+                }
+              ]
+            },
+            {
+              "id": [
+                {
+                  "value": "d3f676ce-1510-46f7-a64e-168ef5361333"
+                }
+              ],
+              "value": [
+                {
+                  "value": "2a3e91e4-fbbf-4876-8c5b-2233c1739b05"
+                }
+              ]
+            },
+            {
+              "id": [
+                {
+                  "value": "d3f676ce-1510-46f7-a64e-168ef5361444"
+                }
+              ],
+              "value": [
+                {
+                  "value": "relationships"
+                }
+              ]
+            },
+            {
+              "id": [
+                {
+                  "value": "d3f676ce-1510-46f7-a64e-168ef5361555"
+                }
+              ],
+              "value": [
+                {
+                  "value": "ManyToMany"
+                }
+              ]
+            },
+            {
+              "id": [
+                {
+                  "value": "d3f676ce-1510-46f7-a64e-168ef5361666"
+                }
+              ],
+              "value": [
+                {
+                  "value": "90ec36f6-2aa2-4288-bfb1-bab0e152eadb",
+                  "order": 0
+                },
+                {
+                  "value": "35891a5a-d1fc-4ccd-9f49-8cb3b4219ebf",
+                  "order": 1
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "audit": [
+    {
+      "date": "2020-09-16 15:05:48.954512 -0600 CST m=+0.003569682"
+    }
+  ],
+  "key": {
+    "fields": [
+      {
+        "name": "uniqueName",
+        "id": [
+          {
+            "value": "d3f676ce-1510-46f7-a64e-168ef5361111"
+          }
+        ]
+      },
+      {
+        "name": "parentId",
+        "id": [
+          {
+            "value": "d3f676ce-1510-46f7-a64e-168ef5361222"
+          }
+        ]
+      },
+      {
+        "name": "childId",
+        "id": [
+          {
+            "value": "d3f676ce-1510-46f7-a64e-168ef5361333"
+          }
+        ]
+      },
+      {
+        "name": "childName",
+        "id": [
+          {
+            "value": "d3f676ce-1510-46f7-a64e-168ef5361444"
+          }
+        ]
+      },
+      {
+        "name": "cardinality",
+        "id": [
+          {
+            "value": "d3f676ce-1510-46f7-a64e-168ef5361555"
+          }
+        ]
+      },
+      {
+        "name": "relations",
+        "id": [
+          {
+            "value": "d3f676ce-1510-46f7-a64e-168ef5361666"
+          }
+        ]
+      }
+    ]
+  },
+  "systems": [
+    {
+      "name": "dotCMS 5.2.7",
+      "date": "2020-09-16 15:05:48.954501 -0600 CST m=+0.003559429"
+    }
+  ]
+}

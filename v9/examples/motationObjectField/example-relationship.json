@@ -40,7 +40,7 @@
               "value": "90ec36f6-2aa2-4288-bfb1-bab0e152eadb"
             }
           ],
-          "order": 2
+          "order": 0
         },
         {
           "parent": [
@@ -53,7 +53,7 @@
               "value": "35891a5a-d1fc-4ccd-9f49-8cb3b4219ebf"
             }
           ],
-          "order": 3
+          "order": 1
         }
       ]
     }
