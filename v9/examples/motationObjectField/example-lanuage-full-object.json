@@ -74,7 +74,7 @@
     {
       "id": [
         {
-          "value": "4bae2fbe-7ab3-4b44-a196-1bd444b42eda"
+          "value": "2"
         }
       ],
       "properties": {
@@ -84,12 +84,7 @@
             "value": "a0ba0feb-440e-4881-8275-91f312bedb32"
           }
         ],
-        "name": "spanish",
-        "localId": [
-          {
-            "value": "2"
-          }
-        ]
+        "name": "spanish"
       },
       "versions": [
         {
@@ -159,28 +154,17 @@
     {
       "id": [
         {
-          "value": "dd59cfd4-e97f-11eb-9a03-0242ac130003"
+          "value": "1"
         }
       ],
       "properties": {
         "type": "Content",
-        "status": "Live",
-        "languageId": [
-          {
-            "value": "1"
-          }
-        ],
         "definitionId": [
           {
             "value": "a0ba0feb-440e-4881-8275-91f312bedb32"
           }
         ],
-        "name": "English",
-        "localId": [
-          {
-            "value": "1"
-          }
-        ]
+        "name": "English"
       },
       "versions": [
         {
@@ -190,20 +174,8 @@
             }
           ],
           "properties": {
-            "status": "Live",
-            "title": "Test1",
-            "order": 0,
-            "modificationDate": "2020-08-19 15:08:00.493 +0000 UTC",
-            "modificationUser": [
-              {
-                "value": "dotcms.org.1"
-              }
-            ],
-            "system": {
-              "friendly_name": "Test1",
-              "last_review": "2020-08-19 15:08:00.352 +0000 UTC",
-              "show_on_menu": "false"
-            }
+            "title": "English",
+            "order": 0
           },
           "fields": [
             {
