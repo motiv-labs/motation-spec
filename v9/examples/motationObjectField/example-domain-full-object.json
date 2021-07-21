@@ -1,0 +1,174 @@
+{
+  "$schema": "../../schema/multiple/full-generic-schema.json",
+  "$id": "definition-schema.json",
+  "definition": {
+    "systems": [
+      {
+        "name": "dotCMS 5.2.7",
+        "date": "2020-09-16 15:05:48.954501 -0600 CST m=+0.003559429"
+      }
+    ],
+    "id": [
+      {
+        "value": "a0ba0feb-440e-4881-8275-91f312bedb32"
+      }
+    ],
+    "properties": {
+      "motationType": "domain",
+      "uniqueName": "domain",
+      "type": "MotationObject"
+    },
+    "fields": [
+      {
+        "id": [
+          {
+            "value": "d3f676ce-1510-46f7-a64e-168ef5361111"
+          }
+        ],
+        "properties": {
+          "fieldType": "Text",
+          "name": "domainName"
+        }
+      },
+      {
+        "id": [
+          {
+            "value": "d3f676ce-1510-46f7-a64e-168ef5361222"
+          }
+        ],
+        "properties": {
+          "fieldType": "Text",
+          "name": "active"
+        }
+      },
+      {
+        "id": [
+          {
+            "value": "d3f676ce-1510-46f7-a64e-168ef5361333"
+          }
+        ],
+        "properties": {
+          "fieldType": "Text",
+          "name": "vanityUrls"
+        }
+      }
+    ],
+    "audit":[
+      {
+        "date":"2021-07-14 18:53:09.139120783 +0000 UTC m=+641.870120051"
+      }
+    ]
+  },
+  "contents": [
+    {
+      "id": [
+        {
+          "value": "4bae2fbe-7ab3-4b44-a196-1bd444b42eda"
+        }
+      ],
+      "properties": {
+        "type": "Content",
+        "definitionId": [
+          {
+            "value": "a0ba0feb-440e-4881-8275-91f312bedb32"
+          }
+        ],
+        "name": "site1"
+      },
+      "versions": [
+        {
+          "id": [
+            {
+              "value": "3a4fd59c-c666-48b2-858c-f62c45c33b75"
+            }
+          ],
+          "properties": {
+            "status": "Live",
+            "title": "site1",
+            "order": 0
+          },
+          "fields": [
+            {
+              "id": [
+                {
+                  "value": "d3f676ce-1510-46f7-a64e-168ef5361111"
+                }
+              ],
+              "value": [
+                {
+                  "value": "site1"
+                }
+              ]
+            },
+            {
+              "id": [
+                {
+                  "value": "d3f676ce-1510-46f7-a64e-168ef5361222"
+                }
+              ],
+              "value": [
+                {
+                  "value": "true"
+                }
+              ]
+            },
+            {
+              "id": [
+                {
+                  "value": "d3f676ce-1510-46f7-a64e-168ef5361333"
+                }
+              ],
+              "value": [
+                {
+                  "value": "mysite"
+                },
+                {
+                  "value": "mysamesite"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "audit": [
+    {
+      "date": "2020-09-16 15:05:48.954512 -0600 CST m=+0.003569682"
+    }
+  ],
+  "key": {
+    "fields": [
+      {
+        "name": "domainName",
+        "id": [
+          {
+            "value": "d3f676ce-1510-46f7-a64e-168ef5361111"
+          }
+        ]
+      },
+      {
+        "name": "active",
+        "id": [
+          {
+            "value": "d3f676ce-1510-46f7-a64e-168ef5361222"
+          }
+        ]
+      },
+      {
+        "name": "vanityUrls",
+        "id": [
+          {
+            "value": "d3f676ce-1510-46f7-a64e-168ef5361333"
+          }
+        ]
+      }
+    ]
+  },
+  "systems": [
+    {
+      "name": "dotCMS 5.2.7",
+      "date": "2020-09-16 15:05:48.954501 -0600 CST m=+0.003559429"
+    }
+  ]
+}

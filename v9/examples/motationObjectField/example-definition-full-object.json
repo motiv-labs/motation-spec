@@ -1,0 +1,152 @@
+{
+  "$schema": "../../schema/multiple/full-generic-schema.json",
+  "$id": "definition-schema.json",
+  "definition": {
+    "systems": [
+      {
+        "name": "dotCMS 5.2.7",
+        "date": "2020-09-16 15:05:48.954501 -0600 CST m=+0.003559429"
+      }
+    ],
+    "id": [
+      {
+        "value": "a0ba0feb-440e-4881-8275-91f312bedb32"
+      }
+    ],
+    "properties": {
+      "motationType": "definition",
+      "uniqueName": "definition",
+      "type": "MotationObject"
+    },
+    "contentProperties": [
+      {
+        "propertyType": "",
+        "name": "def-type"
+      },
+      {
+        "propertyType": "",
+        "name": "def-uniqueName"
+      },
+      {
+        "propertyType": "",
+        "name": "def-name"
+      },
+      {
+        "propertyType": "",
+        "name": "def-description"
+      }
+    ],
+    "fields": [
+      {
+        "id": [
+          {
+            "value": "d3f676ce-1510-46f7-a64e-168ef5361111"
+          }
+        ],
+        "properties": {
+          "fieldType": "Text",
+          "name": "defId"
+        }
+      }
+    ],
+    "audit":[
+      {
+        "date":"2021-07-14 18:53:09.139120783 +0000 UTC m=+641.870120051"
+      }
+    ]
+  },
+  "contents": [
+    {
+      "id": [
+        {
+          "value": "4bae2fbe-7ab3-4b44-a196-1bd444b42eda"
+        }
+      ],
+      "properties": {
+        "type": "Content",
+        "definitionId": [
+          {
+            "value": "a0ba0feb-440e-4881-8275-91f312bedb32"
+          }
+        ],
+        "name": "site1",
+
+        "def-type": "Content",
+        "def-uniqueName": "Kitchensink",
+        "def-name": "Kitchensink",
+        "def-description": "A content type with all the field types"
+      },
+      "versions": [
+        {
+          "id": [
+            {
+              "value": "3a4fd59c-c666-48b2-858c-f62c45c33b75"
+            }
+          ],
+          "properties": {
+            "status": "Live",
+            "title": "site1",
+            "order": 0,
+            "d3f676ce-1510-46f7-a64e-168ef5361111": {
+              "dataType": "String",
+              "fieldType": "Text",
+              "validations": [
+                {
+                  "required": true
+                }
+              ],
+              "display": [
+                {
+                  "searchable": true
+                },
+                {
+                  "showInList": true
+                }
+              ],
+              "order": 1,
+              "uniqueName": "Name",
+              "name": "Name"
+            }
+          },
+          "fields": [
+            {
+              "id": [
+                {
+                  "value": "d3f676ce-1510-46f7-a64e-168ef5361111"
+                }
+              ],
+              "value": [
+                {
+                  "value": "a0ba0feb-440e-4881-8275-91f312bedb32"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "audit": [
+    {
+      "date": "2020-09-16 15:05:48.954512 -0600 CST m=+0.003569682"
+    }
+  ],
+  "key": {
+    "fields": [
+      {
+        "name": "defId",
+        "id": [
+          {
+            "value": "d3f676ce-1510-46f7-a64e-168ef5361111"
+          }
+        ]
+      }
+    ]
+  },
+  "systems": [
+    {
+      "name": "dotCMS 5.2.7",
+      "date": "2020-09-16 15:05:48.954501 -0600 CST m=+0.003559429"
+    }
+  ]
+}
