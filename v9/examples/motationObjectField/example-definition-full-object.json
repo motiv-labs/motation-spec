@@ -79,7 +79,17 @@
           "properties": {
             "status": "Live",
             "title": "Kitchensink",
-            "order": 0
+            "order": 0,
+            "32680740-2120-4d68-bbc2-c47a5b13f139": {
+              "system": {
+                "field_contentlet": "text3"
+              }
+            },
+            "42680740-2120-4d68-bbc2-c47a5b13f144": {
+              "system": {
+                "field_contentlet": "text2"
+              }
+            }
           },
           "fields": [
             {
@@ -138,7 +148,7 @@
               ],
               "value": [
                 {
-                  "value": "\"properties\": {\n\"dataType\": \"String\",\n\"fieldType\": \"Text\",\n\"validations\": [\n{\n\"name\": \"required\",\n\"required\": true\n},\n{\n\"name\": \"email\",\n\"regex\": \"^(\\\\([0-9]{3}\\\\))?[0-9]{3}-[0-9]{4}$\"\n},\n{\n\"name\": \"email\",\n            \"minLength\": 6\n          }\n        ],\n        \"constraints\": [\n          {\n            \"unique\": true\n          },\n          {\n            \"readOnly\": true\n          }\n        ],\n        \"display\": [\n          {\n            \"showInList\": true\n          },\n          {\n            \"searchable\": true\n          }\n        ],\n        \"metadata\": [\n          {\n            \"key\": \"content-type\",\n            \"value\": \"image/jpeg\"\n          }\n        ],\n        \"system\": {\n          \"field_contentlet\": \"text3\"\n        },\n        \"uniqueName\": \"userEmail\",\n        \"description\": \"Email field description\",\n        \"hint\": \"This is the email field\",\n\"name\": \"User email\",\n\"creationDate\": \"2020-03-27 13:36:37.000000\",\n\"modificationDate\": \"2020-03-27 13:36:37.000000\",\n\"defaultValue\": \"info@email.com\",\n\"order\": 1,\n\"setUpData\":\"##Some set up...\"\n}"
+                  "value": "\"properties\": {\n\"dataType\": \"String\",\n\"fieldType\": \"Text\",\n\"validations\": [\n{\n\"name\": \"required\",\n\"required\": true\n},\n{\n\"name\": \"email\",\n\"regex\": \"^(\\\\([0-9]{3}\\\\))?[0-9]{3}-[0-9]{4}$\"\n},\n{\n\"name\": \"email\",\n            \"minLength\": 6\n          }\n        ],\n        \"constraints\": [\n          {\n            \"unique\": true\n          },\n          {\n            \"readOnly\": true\n          }\n        ],\n        \"display\": [\n          {\n            \"showInList\": true\n          },\n          {\n            \"searchable\": true\n          }\n        ],\n        \"metadata\": [\n          {\n            \"key\": \"content-type\",\n            \"value\": \"image/jpeg\"\n          }\n        ],\n         \"uniqueName\": \"userEmail\",\n        \"description\": \"Email field description\",\n        \"hint\": \"This is the email field\",\n\"name\": \"User email\",\n\"creationDate\": \"2020-03-27 13:36:37.000000\",\n\"modificationDate\": \"2020-03-27 13:36:37.000000\",\n\"defaultValue\": \"info@email.com\",\n\"order\": 1,\n\"setUpData\":\"##Some set up...\"\n}"
                 }
               ]
             },
@@ -150,7 +160,7 @@
               ],
               "value": [
                 {
-                  "value": "\"properties\": {\n        \"dataType\": \"String\",\n        \"fieldType\": \"Text\",\n        \"validations\": [\n          {\n            \"name\": \"required\",\n            \"required\": true\n          }\n        ],\n        \"constraints\": [\n          {\n            \"readOnly\": true\n          }\n        ],\n        \"display\": [\n          {\n            \"searchable\": true\n          }\n        ],\n        \"metadata\": [\n          {\n            \"key\": \"content-type\",\n            \"value\": \"image/jpeg\"\n          }\n        ],\n        \"system\": {\n          \"field_contentlet\": \"text2\"\n        },\n        \"uniqueName\": \"title\",\n        \"description\": \"Title field description\",\n        \"hint\": \"This is the title field\",\n        \"name\": \"Title\",\n        \"defaultValue\": \"Default Title\",\n        \"creationDate\": \"2020-03-27 13:36:37.000000\",\n        \"modificationDate\": \"2020-03-27 13:36:37.000000\"\n      }"
+                  "value": "\"properties\": {\n        \"dataType\": \"String\",\n        \"fieldType\": \"Text\",\n        \"validations\": [\n          {\n            \"name\": \"required\",\n            \"required\": true\n          }\n        ],\n        \"constraints\": [\n          {\n            \"readOnly\": true\n          }\n        ],\n        \"display\": [\n          {\n            \"searchable\": true\n          }\n        ],\n        \"metadata\": [\n          {\n            \"key\": \"content-type\",\n            \"value\": \"image/jpeg\"\n          }\n        ],\n \"uniqueName\": \"title\",\n        \"description\": \"Title field description\",\n        \"hint\": \"This is the title field\",\n        \"name\": \"Title\",\n        \"defaultValue\": \"Default Title\",\n        \"creationDate\": \"2020-03-27 13:36:37.000000\",\n        \"modificationDate\": \"2020-03-27 13:36:37.000000\"\n      }"
                 }
               ]
             }
