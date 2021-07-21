@@ -16,12 +16,7 @@
     "properties": {
       "motationType": "relationship",
       "uniqueName": "relationship",
-      "type": "MotationObject",
-      "system": {
-        "child_required": "false",
-        "fixed": "false",
-        "parent_required": "false"
-      }
+      "type": "MotationObject"
     },
     "contentProperties": [
       {
@@ -126,10 +121,11 @@
           }
         ],
         "name": "Kitchensink.relationships",
-
-        "child_required": "false",
-        "fixed": "false",
-        "parent_required": "false"
+        "system": {
+          "child_required": "false",
+          "fixed": "false",
+          "parent_required": "false"
+        }
       },
       "versions": [
         {

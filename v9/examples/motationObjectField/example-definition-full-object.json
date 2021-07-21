@@ -59,7 +59,7 @@
     {
       "id": [
         {
-          "value": "4bae2fbe-7ab3-4b44-a196-1bd444b42eda"
+          "value": "a0ba0feb-440e-4881-8275-91f312bedb32"
         }
       ],
       "properties": {
@@ -69,12 +69,7 @@
             "value": "a0ba0feb-440e-4881-8275-91f312bedb32"
           }
         ],
-        "name": "site1",
-
-        "def-type": "Content",
-        "def-uniqueName": "Kitchensink",
-        "def-name": "Kitchensink",
-        "def-description": "A content type with all the field types"
+        "name": "Kitchensink"
       },
       "versions": [
         {
@@ -85,7 +80,7 @@
           ],
           "properties": {
             "status": "Live",
-            "title": "site1",
+            "title": "Kitchensink",
             "order": 0,
             "d3f676ce-1510-46f7-a64e-168ef5361111": {
               "dataType": "String",
@@ -117,7 +112,67 @@
               ],
               "value": [
                 {
-                  "value": "a0ba0feb-440e-4881-8275-91f312bedb32"
+                  "value": "Content"
+                }
+              ]
+            },
+            {
+              "id": [
+                {
+                  "value": "d3f676ce-1510-46f7-a64e-168ef5361222"
+                }
+              ],
+              "value": [
+                {
+                  "value": "Kitchensink"
+                }
+              ]
+            },
+            {
+              "id": [
+                {
+                  "value": "d3f676ce-1510-46f7-a64e-168ef5361333"
+                }
+              ],
+              "value": [
+                {
+                  "value": "Kitchensink"
+                }
+              ]
+            },
+            {
+              "id": [
+                {
+                  "value": "d3f676ce-1510-46f7-a64e-168ef5361444"
+                }
+              ],
+              "value": [
+                {
+                  "value": "A content type with all the field types"
+                }
+              ]
+            },
+            {
+              "id": [
+                {
+                  "value": "32680740-2120-4d68-bbc2-c47a5b13f139"
+                }
+              ],
+              "value": [
+                {
+                  "value": "\"properties\": {\n\"dataType\": \"String\",\n\"fieldType\": \"Text\",\n\"validations\": [\n{\n\"name\": \"required\",\n\"required\": true\n},\n{\n\"name\": \"email\",\n\"regex\": \"^(\\\\([0-9]{3}\\\\))?[0-9]{3}-[0-9]{4}$\"\n},\n{\n\"name\": \"email\",\n            \"minLength\": 6\n          }\n        ],\n        \"constraints\": [\n          {\n            \"unique\": true\n          },\n          {\n            \"readOnly\": true\n          }\n        ],\n        \"display\": [\n          {\n            \"showInList\": true\n          },\n          {\n            \"searchable\": true\n          }\n        ],\n        \"metadata\": [\n          {\n            \"key\": \"content-type\",\n            \"value\": \"image/jpeg\"\n          }\n        ],\n        \"system\": {\n          \"field_contentlet\": \"text3\"\n        },\n        \"uniqueName\": \"userEmail\",\n        \"description\": \"Email field description\",\n        \"hint\": \"This is the email field\",\n\"name\": \"User email\",\n\"creationDate\": \"2020-03-27 13:36:37.000000\",\n\"modificationDate\": \"2020-03-27 13:36:37.000000\",\n\"defaultValue\": \"info@email.com\",\n\"order\": 1,\n\"setUpData\":\"##Some set up...\"\n}"
+                }
+              ]
+            },
+            {
+              "id": [
+                {
+                  "value": "42680740-2120-4d68-bbc2-c47a5b13f144"
+                }
+              ],
+              "value": [
+                {
+                  "value": "\"properties\": {\n        \"dataType\": \"String\",\n        \"fieldType\": \"Text\",\n        \"validations\": [\n          {\n            \"name\": \"required\",\n            \"required\": true\n          }\n        ],\n        \"constraints\": [\n          {\n            \"readOnly\": true\n          }\n        ],\n        \"display\": [\n          {\n            \"searchable\": true\n          }\n        ],\n        \"metadata\": [\n          {\n            \"key\": \"content-type\",\n            \"value\": \"image/jpeg\"\n          }\n        ],\n        \"system\": {\n          \"field_contentlet\": \"text2\"\n        },\n        \"uniqueName\": \"title\",\n        \"description\": \"Title field description\",\n        \"hint\": \"This is the title field\",\n        \"name\": \"Title\",\n        \"defaultValue\": \"Default Title\",\n        \"creationDate\": \"2020-03-27 13:36:37.000000\",\n        \"modificationDate\": \"2020-03-27 13:36:37.000000\"\n      }"
                 }
               ]
             }
@@ -134,10 +189,50 @@
   "key": {
     "fields": [
       {
-        "name": "defId",
+        "name": "defType",
         "id": [
           {
             "value": "d3f676ce-1510-46f7-a64e-168ef5361111"
+          }
+        ]
+      },
+      {
+        "name": "defUniqueName",
+        "id": [
+          {
+            "value": "d3f676ce-1510-46f7-a64e-168ef5361222"
+          }
+        ]
+      },
+      {
+        "name": "defName",
+        "id": [
+          {
+            "value": "d3f676ce-1510-46f7-a64e-168ef5361333"
+          }
+        ]
+      },
+      {
+        "name": "defDescription",
+        "id": [
+          {
+            "value": "d3f676ce-1510-46f7-a64e-168ef5361444"
+          }
+        ]
+      },
+      {
+        "name": "email",
+        "id": [
+          {
+            "value": "32680740-2120-4d68-bbc2-c47a5b13f139"
+          }
+        ]
+      },
+      {
+        "name": "title",
+        "id": [
+          {
+            "value": "42680740-2120-4d68-bbc2-c47a5b13f144"
           }
         ]
       }

@@ -40,7 +40,8 @@
       "publish_date_var": "postingDate",
       "fixed": true,
       "system": true
-    }
+    },
+    "motationType": "definition"
   },
   "fields": [
     {

@@ -15,7 +15,7 @@
     ],
     "properties": {
       "motationType": "language",
-      "uniqueName": "language-spanish",
+      "uniqueName": "language",
       "type": "MotationObject"
     },
     "fields": [
