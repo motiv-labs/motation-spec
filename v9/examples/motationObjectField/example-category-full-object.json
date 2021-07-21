@@ -131,7 +131,7 @@
           "properties": {
             "status": "Live",
             "title": "cat1.3",
-            "order": 0
+            "order": 1
           },
           "fields": [
             {
@@ -192,7 +192,7 @@
           "properties": {
             "status": "Live",
             "title": "cat1.3.2",
-            "order": 0
+            "order": 2
           },
           "fields": [
             {
@@ -236,7 +236,7 @@
           "properties": {
             "status": "Live",
             "title": "cat1.3.1",
-            "order": 0
+            "order": 2
           },
           "fields": [
             {
