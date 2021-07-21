@@ -27,7 +27,40 @@
         ],
         "properties": {
           "fieldType": "Text",
-          "name": "defId"
+          "name": "defType"
+        }
+      },
+      {
+        "id": [
+          {
+            "value": "d3f676ce-1510-46f7-a64e-168ef5361222"
+          }
+        ],
+        "properties": {
+          "fieldType": "Text",
+          "name": "defUniqueName"
+        }
+      },
+      {
+        "id": [
+          {
+            "value": "d3f676ce-1510-46f7-a64e-168ef5361333"
+          }
+        ],
+        "properties": {
+          "fieldType": "Text",
+          "name": "defName"
+        }
+      },
+      {
+        "id": [
+          {
+            "value": "d3f676ce-1510-46f7-a64e-168ef5361444"
+          }
+        ],
+        "properties": {
+          "fieldType": "Text",
+          "name": "defDescription"
         }
       }
     ],
@@ -148,7 +181,56 @@
               ],
               "value": [
                 {
-                  "value": "\"properties\": {\n\"dataType\": \"String\",\n\"fieldType\": \"Text\",\n\"validations\": [\n{\n\"name\": \"required\",\n\"required\": true\n},\n{\n\"name\": \"email\",\n\"regex\": \"^(\\\\([0-9]{3}\\\\))?[0-9]{3}-[0-9]{4}$\"\n},\n{\n\"name\": \"email\",\n            \"minLength\": 6\n          }\n        ],\n        \"constraints\": [\n          {\n            \"unique\": true\n          },\n          {\n            \"readOnly\": true\n          }\n        ],\n        \"display\": [\n          {\n            \"showInList\": true\n          },\n          {\n            \"searchable\": true\n          }\n        ],\n        \"metadata\": [\n          {\n            \"key\": \"content-type\",\n            \"value\": \"image/jpeg\"\n          }\n        ],\n         \"uniqueName\": \"userEmail\",\n        \"description\": \"Email field description\",\n        \"hint\": \"This is the email field\",\n\"name\": \"User email\",\n\"creationDate\": \"2020-03-27 13:36:37.000000\",\n\"modificationDate\": \"2020-03-27 13:36:37.000000\",\n\"defaultValue\": \"info@email.com\",\n\"order\": 1,\n\"setUpData\":\"##Some set up...\"\n}"
+                  "dataType": "String",
+                  "fieldType": "Text",
+                  "validations": [
+                    {
+                      "name": "required",
+                      "required": true
+                    },
+                    {
+                      "name": "email",
+                      "regex": "^(\\([0-9]{3}\\))?[0-9]{3}-[0-9]{4}$"
+                    },
+                    {
+                      "name": "email",
+                      "minLength": 6
+                    }
+                  ],
+                  "constraints": [
+                    {
+                      "unique": true
+                    },
+                    {
+                      "readOnly": true
+                    }
+                  ],
+                  "display": [
+                    {
+                      "showInList": true
+                    },
+                    {
+                      "searchable": true
+                    }
+                  ],
+                  "metadata": [
+                    {
+                      "key": "content-type",
+                      "value": "image/jpeg"
+                    }
+                  ],
+                  "system": {
+                    "field_contentlet": "text3"
+                  },
+                  "uniqueName": "userEmail",
+                  "description": "Email field description",
+                  "hint": "This is the email field",
+                  "name": "User email",
+                  "creationDate": "2020-03-27 13:36:37.000000",
+                  "modificationDate": "2020-03-27 13:36:37.000000",
+                  "defaultValue": "info@email.com",
+                  "order": 1,
+                  "setUpData": "##Some set up..."
                 }
               ]
             },
@@ -160,7 +242,40 @@
               ],
               "value": [
                 {
-                  "value": "\"properties\": {\n        \"dataType\": \"String\",\n        \"fieldType\": \"Text\",\n        \"validations\": [\n          {\n            \"name\": \"required\",\n            \"required\": true\n          }\n        ],\n        \"constraints\": [\n          {\n            \"readOnly\": true\n          }\n        ],\n        \"display\": [\n          {\n            \"searchable\": true\n          }\n        ],\n        \"metadata\": [\n          {\n            \"key\": \"content-type\",\n            \"value\": \"image/jpeg\"\n          }\n        ],\n \"uniqueName\": \"title\",\n        \"description\": \"Title field description\",\n        \"hint\": \"This is the title field\",\n        \"name\": \"Title\",\n        \"defaultValue\": \"Default Title\",\n        \"creationDate\": \"2020-03-27 13:36:37.000000\",\n        \"modificationDate\": \"2020-03-27 13:36:37.000000\"\n      }"
+                  "dataType": "String",
+                  "fieldType": "Text",
+                  "validations": [
+                    {
+                      "name": "required",
+                      "required": true
+                    }
+                  ],
+                  "constraints": [
+                    {
+                      "readOnly": true
+                    }
+                  ],
+                  "display": [
+                    {
+                      "searchable": true
+                    }
+                  ],
+                  "metadata": [
+                    {
+                      "key": "content-type",
+                      "value": "image/jpeg"
+                    }
+                  ],
+                  "system": {
+                    "field_contentlet": "text2"
+                  },
+                  "uniqueName": "title",
+                  "description": "Title field description",
+                  "hint": "This is the title field",
+                  "name": "Title",
+                  "defaultValue": "Default Title",
+                  "creationDate": "2020-03-27 13:36:37.000000",
+                  "modificationDate": "2020-03-27 13:36:37.000000"
                 }
               ]
             }
