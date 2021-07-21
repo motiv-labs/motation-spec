@@ -18,24 +18,6 @@
       "uniqueName": "definition",
       "type": "MotationObject"
     },
-    "contentProperties": [
-      {
-        "propertyType": "",
-        "name": "def-type"
-      },
-      {
-        "propertyType": "",
-        "name": "def-uniqueName"
-      },
-      {
-        "propertyType": "",
-        "name": "def-name"
-      },
-      {
-        "propertyType": "",
-        "name": "def-description"
-      }
-    ],
     "fields": [
       {
         "id": [
@@ -69,7 +51,23 @@
             "value": "a0ba0feb-440e-4881-8275-91f312bedb32"
           }
         ],
-        "name": "Kitchensink"
+        "name": "Kitchensink",
+
+        "parent": {
+          "type": "Site",
+          "id": [
+            {
+              "value": "SYSTEM_HOST"
+            }
+          ]
+        },
+        "system": {
+          "default_structure": "false",
+          "fixed": "false",
+          "folder": "SYSTEM_FOLDER",
+          "system": "false"
+        },
+        "modificationDate": "2020-09-15 14:41:31 +0000 UTC"
       },
       "versions": [
         {
@@ -81,27 +79,7 @@
           "properties": {
             "status": "Live",
             "title": "Kitchensink",
-            "order": 0,
-            "d3f676ce-1510-46f7-a64e-168ef5361111": {
-              "dataType": "String",
-              "fieldType": "Text",
-              "validations": [
-                {
-                  "required": true
-                }
-              ],
-              "display": [
-                {
-                  "searchable": true
-                },
-                {
-                  "showInList": true
-                }
-              ],
-              "order": 1,
-              "uniqueName": "Name",
-              "name": "Name"
-            }
+            "order": 0
           },
           "fields": [
             {
