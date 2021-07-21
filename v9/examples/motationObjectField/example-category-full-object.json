@@ -37,7 +37,7 @@
           }
         ],
         "properties": {
-          "fieldType": "Text",
+          "fieldType": "Array",
           "name": "children"
         }
       }
