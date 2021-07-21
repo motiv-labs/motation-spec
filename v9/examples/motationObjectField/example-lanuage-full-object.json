@@ -1,5 +1,5 @@
 {
-  "$schema": "../../schema/multiple/full-language-schema.json",
+  "$schema": "../../schema/multiple/full-generic-schema.json",
   "$id": "definition-schema.json",
   "definition": {
     "systems": [
