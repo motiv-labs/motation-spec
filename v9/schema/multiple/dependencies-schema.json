@@ -7,43 +7,43 @@
       "type": "object",
       "properties": {
         "domains": {
-          "type": "array",
+          "type": "string",
           "items": {
             "type": "string"
           }
         },
-        "definition": {
-          "type": "array",
+        "definitions": {
+          "type": "string",
           "items": {
             "type": "string"
           }
         },
         "languages": {
-          "type": "array",
+          "type": "string",
           "items": {
             "type": "string"
           }
         },
         "tags": {
-          "type": "array",
+          "type": "string",
           "items": {
             "type": "string"
           }
         },
         "categories": {
-          "type": "array",
+          "type": "string",
           "items": {
             "type": "string"
           }
         },
         "relationships": {
-          "type": "array",
+          "type": "string",
           "items": {
             "type": "string"
           }
         },
         "folders": {
-          "type": "array",
+          "type": "string",
           "items": {
             "type": "string"
           }

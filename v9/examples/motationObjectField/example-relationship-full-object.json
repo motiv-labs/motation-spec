@@ -2,12 +2,6 @@
   "$schema": "../../schema/multiple/full-generic-schema.json",
   "$id": "definition-schema.json",
   "definition": {
-    "systems": [
-      {
-        "name": "dotCMS 5.2.7",
-        "date": "2020-09-16 15:05:48.954501 -0600 CST m=+0.003559429"
-      }
-    ],
     "id": [
       {
         "value": "a0ba0feb-440e-4881-8275-91f312bedb32"
