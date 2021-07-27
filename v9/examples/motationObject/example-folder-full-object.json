@@ -1,0 +1,155 @@
+{
+  "$schema": "../../schema/full-folder-schema.json",
+  "$id": "definition-schema.json",
+  "definition": {
+    "id": [
+      {
+        "value": "a0ba0feb-440e-4881-8275-91f312bedb32"
+      }
+    ],
+    "properties": {
+      "motationType": "folder",
+      "uniqueName": "folder",
+      "type": "MotationObject"
+    },
+    "fields": [
+      {
+        "id": [
+          {
+            "value": "d3f676ce-1510-46f7-a64e-168ef5361555"
+          }
+        ],
+        "properties": {
+          "fieldType": "Text",
+          "name": "path"
+        }
+      }
+    ],
+    "audit":[
+      {
+        "date":"2021-07-14 18:53:09.139120783 +0000 UTC m=+641.870120051"
+      }
+    ]
+  },
+  "contents": [
+    {
+      "id": [
+        {
+          "value": "4bae2fbe-7ab3-4b44-a196-1bd444b42eda"
+        }
+      ],
+      "properties": {
+        "type": "Content",
+        "definitionId": [
+          {
+            "value": "a0ba0feb-440e-4881-8275-91f312bedb32"
+          }
+        ],
+        "name": "folder1"
+      },
+      "versions": [
+        {
+          "id": [
+            {
+              "value": "3a4fd59c-c666-48b2-858c-f62c45c33b75"
+            }
+          ],
+          "properties": {
+            "status": "Live",
+            "title": "folder1",
+            "order": 0
+          },
+          "fields": [
+            {
+              "id": [
+                {
+                  "value": "d3f676ce-1510-46f7-a64e-168ef5361555"
+                }
+              ],
+              "value": [
+                {
+                  "value": "folder1/"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": [
+            {
+              "value": "3a4fd59c-c666-48b2-858c-f62c45c33b75"
+            }
+          ],
+          "properties": {
+            "status": "Live",
+            "title": "folder2",
+            "order": 0
+          },
+          "fields": [
+            {
+              "id": [
+                {
+                  "value": "d3f676ce-1510-46f7-a64e-168ef5361555"
+                }
+              ],
+              "value": [
+                {
+                  "value": "folder2/"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": [
+            {
+              "value": "3a4fd59c-c666-48b2-858c-f62c45c33b75"
+            }
+          ],
+          "properties": {
+            "status": "Live",
+            "title": "folder4",
+            "order": 0
+          },
+          "fields": [
+            {
+              "id": [
+                {
+                  "value": "d3f676ce-1510-46f7-a64e-168ef5361555"
+                }
+              ],
+              "value": [
+                {
+                  "value": "folder3/folder4/"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "audit": [
+    {
+      "date": "2020-09-16 15:05:48.954512 -0600 CST m=+0.003569682"
+    }
+  ],
+  "key": {
+    "fields": [
+      {
+        "name": "path",
+        "id": [
+          {
+            "value": "d3f676ce-1510-46f7-a64e-168ef5361555"
+          }
+        ]
+      }
+    ]
+  },
+  "systems": [
+    {
+      "name": "dotCMS 5.2.7",
+      "date": "2020-09-16 15:05:48.954501 -0600 CST m=+0.003559429"
+    }
+  ]
+}

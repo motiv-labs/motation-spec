@@ -1,0 +1,202 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "description": "A schema that validates the structure of a Motation Content",
+  "required": [
+    "id",
+    "properties",
+    "versions"
+  ],
+  "properties": {
+    "id": {
+      "type": "array",
+      "items": {
+        "$ref": "common-schema.json#/definitions/id"
+      },
+      "uniqueItems": true
+    },
+    "properties": {
+      "type": "object",
+      "$ref": "#content-properties"
+    },
+    "versions": {
+      "type": "array",
+      "items": {
+        "$ref": "#content-version"
+      },
+      "minItems": 1,
+      "uniqueItems": true
+    }
+  },
+  "definitions": {
+    "storage": {
+      "$id": "#content-storage",
+      "required": [
+        "bucket",
+        "md5"
+      ],
+      "properties": {
+        "bucket": {
+          "type": "string"
+        },
+        "md5": {
+          "type": "string"
+        }
+      }
+    },
+    "status": {
+      "$id": "#content-status",
+      "enum": [
+        "Live",
+        "Working",
+        "Deleted"
+      ]
+    },
+    "properties": {
+      "$id": "#content-properties",
+      "required": [
+        "definitionId",
+        "name",
+        "type"
+      ],
+      "properties": {
+        "type": {
+          "enum": [
+            "Content",
+            "Page",
+            "Folder"
+          ]
+        },
+        "status": {
+          "$ref": "#content-status"
+        },
+        "languageId": {
+          "type": "array",
+          "items": {
+            "$ref": "common-schema.json#/definitions/id"
+          },
+          "uniqueItems": true
+        },
+        "definitionId": {
+          "type": "array",
+          "items": {
+            "$ref": "common-schema.json#/definitions/id"
+          },
+          "uniqueItems": true
+        },
+        "name": {
+          "type": "string"
+        },
+        "description": {
+          "type": "string"
+        },
+        "path": {
+          "type": "string"
+        },
+        "site": {
+          "type": "string"
+        },
+        "system": {
+          "type": "object",
+          "$ref": "common-schema.json#/definitions/system"
+        },
+        "creationDate": {
+          "type": "string"
+        },
+        "modificationDate": {
+          "type": "string"
+        }
+      }
+    },
+    "version": {
+      "$id": "#content-version",
+      "required": [
+        "id",
+        "properties",
+        "fields"
+      ],
+      "properties": {
+        "id": {
+          "type": "array",
+          "items": {
+            "$ref": "common-schema.json#/definitions/id"
+          },
+          "uniqueItems": true
+        },
+        "properties": {
+          "properties": {
+            "status": {
+              "$ref": "#content-status"
+            },
+            "title": {
+              "type": "string"
+            },
+            "order": {
+              "type": "integer"
+            },
+            "metadata": {
+              "type": "object",
+              "$ref": "common-schema.json#/definitions/metadata"
+            },
+            "system": {
+              "type": "object",
+              "$ref": "common-schema.json#/definitions/system"
+            },
+            "creationDate": {
+              "type": "string"
+            },
+            "modificationDate": {
+              "type": "string"
+            },
+            "modificationUser": {
+              "type": "array",
+              "items": {
+                "$ref": "common-schema.json#/definitions/id"
+              },
+              "uniqueItems": true
+            }
+          }
+        },
+        "fields": {
+          "$id": "#content-fields",
+          "type": "array",
+          "items": {
+            "$ref": "#content-field"
+          },
+          "uniqueItems": true
+        }
+      }
+    },
+    "field": {
+      "$id": "#content-field",
+      "required": [
+        "id"
+      ],
+      "properties": {
+        "id": {
+          "type": "array",
+          "items": {
+            "$ref": "common-schema.json#/definitions/id"
+          },
+          "uniqueItems": true
+        },
+        "value": {
+          "type": "array",
+          "items": {
+            "properties": {
+              "value": {
+                "type": "string"
+              },
+              "order": {
+                "type": "integer"
+              }
+            }
+          }
+        },
+        "storage": {
+          "type": "object",
+          "$ref": "#content-storage"
+        }
+      }
+    }
+  }
+}

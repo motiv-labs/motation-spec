@@ -1,5 +1,5 @@
 {
-  "$schema": "../../schema/multiple/full-generic-schema.json",
+  "$schema": "../../schema/full-generic-schema.json",
   "$id": "example-file.json",
   "motationType": "generic",
   "systems":[
@@ -9,10 +9,10 @@
     }
   ],
   "dependencies":{
-    "folders": ["folderMotationId"],
-    "languages": ["languageMotationId"],
-    "domains": ["domainMotationId"],
-    "definition": ["definitionMotationId"]
+    "folders": "folderMotationId",
+    "languages": "languageMotationId",
+    "domains": "domainMotationId",
+    "definitions": "definitionMotationId"
   },
   "contents":[
     {

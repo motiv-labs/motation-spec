@@ -1,5 +1,5 @@
 {
-  "$schema": "../../schema/multiple/full-generic-schema.json",
+  "$schema": "../../schema/full-generic-schema.json",
   "$id": "example-dotCMS-5.2.7.json",
   "motationType": "generic",
   "systems": [
@@ -9,10 +9,10 @@
     }
   ],
   "dependencies": {
-    "domains": ["domainMotationId"],
-    "definition": ["definitionMotationId"],
-    "folders": ["foldersMotationId"],
-    "languages": ["languageMotationId"]
+    "domains": "domainMotationId",
+    "definitions": "definitionMotationId",
+    "folders": "foldersMotationId",
+    "languages": "languageMotationId"
   },
   "contents": [
     {

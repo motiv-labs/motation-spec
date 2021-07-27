@@ -1,15 +1,15 @@
 {
-  "$schema": "../../schema/multiple/full-generic-schema.json",
+  "$schema": "../../schema/full-generic-schema.json",
   "$id": "example-full.json",
   "motationType": "generic",
   "dependencies": {
-    "languages": ["languagesMotationId"],
-    "relationships": ["relationshipsMotationId"],
-    "tags": ["tagsMotationId"],
-    "categories": ["categoriesMotationId"],
-    "domains": ["domainMotationId"],
-    "definition": ["definitionMotationId"],
-    "folders": ["folderMotationId"]
+    "languages": "languagesMotationId",
+    "relationships": "relationshipsMotationId",
+    "tags": "tagsMotationId",
+    "categories": "categoriesMotationId",
+    "domains": "domainMotationId",
+    "definitions": "definitionMotationId",
+    "folders": "folderMotationId"
   },
   "systems": [
     {
