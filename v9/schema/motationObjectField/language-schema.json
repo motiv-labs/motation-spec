@@ -1,98 +1,17 @@
+
 {
-  "$schema": "http://json-schema.org/draft-07/schema#",
-  "description": "A schema that validates the structure of a Language Motation Object Field",
-  "allOf": [{
-      "$ref": "./definition-schema.json"
-    },
-    {
-      "$ref": "../multiple/content-schema.json"
-    }
-  ],
-  "type": "object",
-  "properties": {
-    "languages": {
-      "type": "object",
-      "$ref": "#dep-language",
-      "minItems": 1,
-      "uniqueItems": true
-    },
-    "contents": {
-      "properties": {
-        "versions": {
-          "type": "array",
-          "properties": {
-            "properties": {
-              "type": "object",
-              "required": [
-                "language",
-                "languageCode"
-              ],
-              "properties": {
-                "language": {
-                  "type": "string"
-                },
-                "languageCode": {
-                  "type": "string"
-                }
-              }
-            }
-          }
-        }
+  "$schema": "../../schema/motationObjectField/language-schema.json",
+  "$id": "language-schema.json",
+  "languages":
+  {
+    "id": [
+      {
+        "value": "2"
       }
-    },
-    "definition": {
-      "required": [
-        "languageCode",
-        "language"
-      ],
-      "properties": {
-        "properties": {
-
-        },
-        "languageCode": {
-          "type": "string"
-        },
-        "language": {
-          "type": "string"
-        },
-        "countryCode": {
-          "type": "string"
-        },
-        "country": {
-          "type": "string"
-        }
-      }
-    }
-  },
-  "definitions": {
-
-    "language": {
-      "$id": "#dep-language",
-      "required": [
-        "id"
-      ],
-      "properties": {
-        "id": {
-          "type": "array",
-          "items": {
-            "$ref": "../multiple/common-schema.json#/definitions/id"
-          },
-          "minItems": 1,
-          "uniqueItems": true
-        },
-        "language": {
-          "type": "string"
-        },
-        "languageCode": {
-          "type": "string"
-        },
-        "country": {
-          "type": "string"
-        },
-        "countryCode": {
-          "type": "string"
-        }
-      }
-    }
+    ],
+    "language": "Spanish",
+    "languageCode": "ES",
+    "countryCode": "ES",
+    "country": "Spain"
   }
 }

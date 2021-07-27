@@ -1,0 +1,116 @@
+{
+  "definition": {
+    "id": [
+      {
+        "value": "01EC3GWG3PQ9VN91NV6J9QDBQR"
+      }
+    ],
+    "properties": {
+      "type": "File",
+      "uniqueName": "GitHub",
+      "name": "GitHub",
+      "description": "Content type for GitHub files",
+      "system": {
+        "after": "ffaf7d9cbda8ddca6cf706ecb599c47b5ff49609",
+        "before": "900facc3395e1d5b8b21c850aa8c5522a0432f8e",
+        "ref": "refs/heads/master",
+        "repository": {
+          "default_branch": "master",
+          "description": null,
+          "full_name": "myGitHubUser/pushtest",
+          "git_url": "git://github.com/myGitHubUser/pushtest.git",
+          "html_url": "https://github.com/myGitHubUser/pushtest",
+          "id": 253908032,
+          "master_branch": "master",
+          "name": "pushtest",
+          "node_id": "MDEwOlJlcG9zaXRvcnkyNTM5MDgwMzI=",
+          "private": false,
+          "ssh_url": "git@github.com:myGitHubUser/pushtest.git"
+        }
+      }
+    },
+    "fields": [
+      {
+        "id": [
+          {
+            "value": "01EC3GWG3P9EMG6AY8XJFJ9V6F"
+          }
+        ],
+        "properties": {
+          "dataType": "String",
+          "fieldType": "Text",
+          "validations": [
+            {
+              "required": true
+            }
+          ],
+          "display": [
+            {
+              "searchable": true
+            },
+            {
+              "showInList": true
+            }
+          ],
+          "order": 1,
+          "uniqueName": "Name",
+          "name": "Name"
+        }
+      },
+      {
+        "id": [
+          {
+            "value": "01EC3GWG3P6YMMERCBZ0N77KTT"
+          }
+        ],
+        "properties": {
+          "dataType": "String",
+          "fieldType": "Binary",
+          "validations": [
+            {
+              "required": true
+            }
+          ],
+          "display": [
+            {
+              "searchable": false
+            },
+            {
+              "showInList": false
+            }
+          ],
+          "order": 2,
+          "uniqueName": "File",
+          "name": "File"
+        }
+      },
+      {
+        "id": [
+          {
+            "value": "01EC3GWG3P09ZWPCCM3JE7A24R"
+          }
+        ],
+        "properties": {
+          "dataType": "BigString",
+          "fieldType": "Textarea",
+          "validations": [
+            {
+              "required": false
+            }
+          ],
+          "display": [
+            {
+              "searchable": false
+            },
+            {
+              "showInList": false
+            }
+          ],
+          "order": 3,
+          "uniqueName": "Description",
+          "name": "Description"
+        }
+      }
+    ]
+  }
+}

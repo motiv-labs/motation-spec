@@ -1,5 +1,5 @@
 {
-  "$schema": "../../schema/multiple/full-generic-schema.json",
+  "$schema": "../../schema/rework/full-definition-schema.json",
   "$id": "definition-schema.json",
   "definition": {
     "id": [
@@ -175,56 +175,58 @@
               ],
               "value": [
                 {
-                  "dataType": "String",
-                  "fieldType": "Text",
-                  "validations": [
-                    {
-                      "name": "required",
-                      "required": true
+                  "properties": {
+                    "dataType": "String",
+                    "fieldType": "Text",
+                    "validations": [
+                      {
+                        "name": "required",
+                        "required": true
+                      },
+                      {
+                        "name": "email",
+                        "regex": "^(\\([0-9]{3}\\))?[0-9]{3}-[0-9]{4}$"
+                      },
+                      {
+                        "name": "email",
+                        "minLength": 6
+                      }
+                    ],
+                    "constraints": [
+                      {
+                        "unique": true
+                      },
+                      {
+                        "readOnly": true
+                      }
+                    ],
+                    "display": [
+                      {
+                        "showInList": true
+                      },
+                      {
+                        "searchable": true
+                      }
+                    ],
+                    "metadata": [
+                      {
+                        "key": "content-type",
+                        "value": "image/jpeg"
+                      }
+                    ],
+                    "system": {
+                      "field_contentlet": "text3"
                     },
-                    {
-                      "name": "email",
-                      "regex": "^(\\([0-9]{3}\\))?[0-9]{3}-[0-9]{4}$"
-                    },
-                    {
-                      "name": "email",
-                      "minLength": 6
-                    }
-                  ],
-                  "constraints": [
-                    {
-                      "unique": true
-                    },
-                    {
-                      "readOnly": true
-                    }
-                  ],
-                  "display": [
-                    {
-                      "showInList": true
-                    },
-                    {
-                      "searchable": true
-                    }
-                  ],
-                  "metadata": [
-                    {
-                      "key": "content-type",
-                      "value": "image/jpeg"
-                    }
-                  ],
-                  "system": {
-                    "field_contentlet": "text3"
-                  },
-                  "uniqueName": "userEmail",
-                  "description": "Email field description",
-                  "hint": "This is the email field",
-                  "name": "User email",
-                  "creationDate": "2020-03-27 13:36:37.000000",
-                  "modificationDate": "2020-03-27 13:36:37.000000",
-                  "defaultValue": "info@email.com",
-                  "order": 1,
-                  "setUpData": "##Some set up..."
+                    "uniqueName": "userEmail",
+                    "description": "Email field description",
+                    "hint": "This is the email field",
+                    "name": "User email",
+                    "creationDate": "2020-03-27 13:36:37.000000",
+                    "modificationDate": "2020-03-27 13:36:37.000000",
+                    "defaultValue": "info@email.com",
+                    "order": 1,
+                    "setUpData": "##Some set up..."
+                  }
                 }
               ]
             },
@@ -236,40 +238,42 @@
               ],
               "value": [
                 {
-                  "dataType": "String",
-                  "fieldType": "Text",
-                  "validations": [
-                    {
-                      "name": "required",
-                      "required": true
-                    }
-                  ],
-                  "constraints": [
-                    {
-                      "readOnly": true
-                    }
-                  ],
-                  "display": [
-                    {
-                      "searchable": true
-                    }
-                  ],
-                  "metadata": [
-                    {
-                      "key": "content-type",
-                      "value": "image/jpeg"
-                    }
-                  ],
-                  "system": {
-                    "field_contentlet": "text2"
-                  },
-                  "uniqueName": "title",
-                  "description": "Title field description",
-                  "hint": "This is the title field",
-                  "name": "Title",
-                  "defaultValue": "Default Title",
-                  "creationDate": "2020-03-27 13:36:37.000000",
-                  "modificationDate": "2020-03-27 13:36:37.000000"
+                  "properties":  {
+                    "dataType": "String",
+                    "fieldType": "Text",
+                    "validations": [
+                      {
+                        "name": "required",
+                        "required": true
+                      }
+                    ],
+                    "constraints": [
+                      {
+                        "readOnly": true
+                      }
+                    ],
+                    "display": [
+                      {
+                        "searchable": true
+                      }
+                    ],
+                    "metadata": [
+                      {
+                        "key": "content-type",
+                        "value": "image/jpeg"
+                      }
+                    ],
+                    "system": {
+                      "field_contentlet": "text2"
+                    },
+                    "uniqueName": "title",
+                    "description": "Title field description",
+                    "hint": "This is the title field",
+                    "name": "Title",
+                    "defaultValue": "Default Title",
+                    "creationDate": "2020-03-27 13:36:37.000000",
+                    "modificationDate": "2020-03-27 13:36:37.000000"
+                  }
                 }
               ]
             }
@@ -286,7 +290,7 @@
   "key": {
     "fields": [
       {
-        "name": "defType",
+        "name": "definitionType",
         "id": [
           {
             "value": "d3f676ce-1510-46f7-a64e-168ef5361111"
@@ -294,7 +298,7 @@
         ]
       },
       {
-        "name": "defUniqueName",
+        "name": "definitionUniqueName",
         "id": [
           {
             "value": "d3f676ce-1510-46f7-a64e-168ef5361222"

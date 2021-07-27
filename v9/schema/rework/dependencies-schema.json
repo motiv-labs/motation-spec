@@ -1,6 +1,6 @@
 {
   "$schema": "http://json-schema.org/draft-07/schema#",
-  "description": "A schema that validates the structure of a Motation dependencies",
+  "description": "A schema that validates the structure of the dependency field of a generic Motation Content",
   "type": "object",
   "properties": {
     "domains": {

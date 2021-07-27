@@ -1,0 +1,237 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "description": "A schema that validates the structure of Definition Motation Object Field",
+  "type": "object",
+  "required": [
+    "systems",
+    "contents",
+    "audit",
+    "key"
+  ],
+  "properties": {
+    "systems": {
+      "type": "array",
+      "items": {
+        "$ref": "#global-system"
+      },
+      "minItems": 1,
+      "uniqueItems": true
+    },
+    "definition": {
+      "type": "object",
+      "allOf": [
+        {
+          "$ref": "./definition-field-schema.json"
+        },
+        {
+          "properties": {
+            "fields": {
+              "type": "array",
+              "items": {
+                "allOf": [
+                  {
+                    "$ref": "./definition-field-schema.json#/definitions/field"
+                  }
+                ]
+              },
+              "allOf": [
+                {
+                  "contains": {
+                    "properties": {
+                      "properties": {
+                        "type": "object",
+                        "properties": {
+                          "name": {
+                            "type": "string",
+                            "const": "definitionType"
+                          }
+                        }
+                      }
+                    }
+                  }
+                },
+                {
+                  "contains": {
+                    "properties": {
+                      "properties": {
+                        "type": "object",
+                        "properties": {
+                          "name": {
+                            "type": "string",
+                            "const": "definitionUniqueName"
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              ]
+            }
+          }
+        }
+      ],
+      "properties": {
+        "fields": {
+          "type": "array",
+          "items": {
+            "$ref": "./definition-field-schema.json#/definitions/field"
+          },
+          "minItems": 2
+        }
+      }
+    },
+    "contents": {
+      "type": "array",
+      "items": {
+        "allOf": [
+          {
+            "$ref": "./definition-content-schema.json"
+          },
+          {
+            "$ref": "#content-field"
+          }
+        ]
+      },
+      "minItems": 1,
+      "uniqueItems": true
+    },
+    "audit": {
+      "type": "array",
+      "items": {
+        "$ref": "#global-audit"
+      },
+      "minItems": 1,
+      "uniqueItems": true
+    },
+    "key": {
+      "required": [
+        "fields"
+      ],
+      "properties": {
+        "fields": {
+          "type": "array",
+          "items": {
+            "$ref": "#key-field"
+          },
+          "allOf": [
+            {
+              "contains": {
+                "properties": {
+                  "name": {
+                    "type": "string",
+                    "const": "definitionType"
+                  }
+                }
+              }
+            },
+            {
+              "contains": {
+                "properties": {
+                  "name": {
+                    "type": "string",
+                    "const": "definitionUniqueName"
+                  }
+                }
+              }
+            }
+          ],
+          "minItems": 2,
+          "uniqueItems": true
+        }
+      }
+    }
+  },
+  "definitions": {
+    "content-field": {
+      "$id": "#content-field",
+      "properties": {
+        "versions": {
+          "type": "array",
+          "items": {
+            "properties": {
+              "id": {
+                "type": "array"
+              },
+              "fields": {
+                "type": "array",
+                "minItems": 2
+              }
+            }
+          }
+        }
+      }
+    },
+    "system": {
+      "$id": "#global-system",
+      "required": [
+        "name",
+        "date"
+      ],
+      "properties": {
+        "name": {
+          "type": "string"
+        },
+        "version": {
+          "type": "string"
+        },
+        "date": {
+          "type": "string"
+        }
+      },
+      "additionalProperties": false
+    },
+    "audit": {
+      "$id": "#global-audit",
+      "required": [
+        "date"
+      ],
+      "properties": {
+        "user": {
+          "type": "object",
+          "$ref": "#global-user"
+        },
+        "date": {
+          "type": "string"
+        }
+      }
+    },
+    "user": {
+      "$id": "#global-user",
+      "properties": {
+        "id": {
+          "type": "object",
+          "$ref": "./common-schema.json#/definitions/id"
+        },
+        "name": {
+          "type": "string"
+        },
+        "email": {
+          "type": "string"
+        },
+        "username": {
+          "type": "string"
+        }
+      }
+    },
+    "key-field": {
+      "$id": "#key-field",
+      "required": [
+        "name",
+        "id"
+      ],
+      "properties": {
+        "name": {
+          "type": "string"
+        },
+        "id": {
+          "type": "array",
+          "items": {
+            "$ref": "./common-schema.json#/definitions/id"
+          },
+          "minItems": 1,
+          "uniqueItems": true
+        }
+      }
+    }
+  }
+}

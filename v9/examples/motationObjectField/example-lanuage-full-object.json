@@ -1,5 +1,5 @@
 {
-  "$schema": "../../schema/multiple/full-generic-schema.json",
+  "$schema": "../../schema/rework/full-language-schema.json",
   "$id": "definition-schema.json",
   "definition": {
     "id": [
@@ -68,7 +68,7 @@
     {
       "id": [
         {
-          "value": "2"
+          "value": "123"
         }
       ],
       "properties": {
@@ -113,31 +113,7 @@
               ],
               "value": [
                 {
-                  "value": "ES"
-                }
-              ]
-            },
-            {
-              "id": [
-                {
-                  "value": "d3f676ce-1510-46f7-a64e-168ef5361c83"
-                }
-              ],
-              "value": [
-                {
-                  "value": "ES"
-                }
-              ]
-            },
-            {
-              "id": [
-                {
-                  "value": "d3f676ce-1510-46f7-a64e-168ef5361666"
-                }
-              ],
-              "value": [
-                {
-                  "value": "Spain"
+                  "value": "SP"
                 }
               ]
             }

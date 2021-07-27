@@ -27,7 +27,7 @@
     },
     "definition": {
       "type": "object",
-      "$ref": "../motationObjectField/definition-schema.json"
+      "$ref": "./definition-field-schema.json"
     },
     "contents": {
       "type": "array",

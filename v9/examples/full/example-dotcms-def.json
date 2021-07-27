@@ -1,0 +1,2344 @@
+{
+  "definition": {
+    "id": [
+      {
+        "value": "a0ba0feb-440e-4881-8275-91f312bedb32"
+      }
+    ],
+    "properties": {
+      "type": "Content",
+      "uniqueName": "Kitchensink",
+      "name": "Kitchensink",
+      "description": "A content type with all the field types",
+      "parent": {
+        "type": "Site",
+        "id": [
+          {
+            "value": "SYSTEM_HOST"
+          }
+        ]
+      },
+      "system": {
+        "default_structure": "false",
+        "fixed": "false",
+        "folder": "SYSTEM_FOLDER",
+        "system": "false"
+      },
+      "modificationDate": "2020-09-15 14:41:31 +0000 UTC"
+    },
+    "fields": [
+      {
+        "id": [
+          {
+            "value": "c42bc160-0ea5-4a65-9978-ede6f20f9324"
+          }
+        ],
+        "properties": {
+          "dataType": "String",
+          "fieldType": "Row",
+          "validations": [
+            {
+              "required": false
+            }
+          ],
+          "constraints": [
+            {
+              "unique": false
+            },
+            {
+              "readOnly": false
+            },
+            {
+              "fixed": false
+            }
+          ],
+          "display": [
+            {
+              "searchable": false
+            },
+            {
+              "showInList": false
+            }
+          ],
+          "system": {
+            "field_contentlet": "system_field",
+            "indexed": "false"
+          },
+          "order": 0,
+          "uniqueName": "fields131",
+          "name": "fields-0",
+          "modificationDate": "2020-09-15 14:41:29 +0000 UTC"
+        }
+      },
+      {
+        "id": [
+          {
+            "value": "876582ff-42d6-4707-862f-ce7330945a1f"
+          }
+        ],
+        "properties": {
+          "dataType": "String",
+          "fieldType": "Column",
+          "validations": [
+            {
+              "required": false
+            }
+          ],
+          "constraints": [
+            {
+              "unique": false
+            },
+            {
+              "readOnly": false
+            },
+            {
+              "fixed": false
+            }
+          ],
+          "display": [
+            {
+              "searchable": false
+            },
+            {
+              "showInList": false
+            }
+          ],
+          "system": {
+            "field_contentlet": "system_field",
+            "indexed": "false"
+          },
+          "order": 1,
+          "uniqueName": "fields141",
+          "name": "fields-1",
+          "modificationDate": "2020-09-15 14:41:29 +0000 UTC"
+        }
+      },
+      {
+        "id": [
+          {
+            "value": "d3f676ce-1510-46f7-a64e-168ef5361c83"
+          }
+        ],
+        "properties": {
+          "dataType": "String",
+          "fieldType": "Text",
+          "validations": [
+            {
+              "required": true
+            }
+          ],
+          "constraints": [
+            {
+              "unique": false
+            },
+            {
+              "readOnly": false
+            },
+            {
+              "fixed": false
+            }
+          ],
+          "display": [
+            {
+              "searchable": true
+            },
+            {
+              "showInList": true
+            }
+          ],
+          "system": {
+            "field_contentlet": "text5",
+            "indexed": "true"
+          },
+          "order": 2,
+          "uniqueName": "title",
+          "name": "Title",
+          "modificationDate": "2020-09-15 14:41:29 +0000 UTC"
+        }
+      },
+      {
+        "id": [
+          {
+            "value": "985220f2-ba1e-4461-aeb8-d36d2071c283"
+          }
+        ],
+        "properties": {
+          "dataType": "String",
+          "fieldType": "Row",
+          "validations": [
+            {
+              "required": false
+            }
+          ],
+          "constraints": [
+            {
+              "unique": false
+            },
+            {
+              "readOnly": false
+            },
+            {
+              "fixed": false
+            }
+          ],
+          "display": [
+            {
+              "searchable": false
+            },
+            {
+              "showInList": false
+            }
+          ],
+          "system": {
+            "field_contentlet": "system_field",
+            "indexed": "false"
+          },
+          "order": 3,
+          "uniqueName": "fields0",
+          "name": "fields-2",
+          "modificationDate": "2020-09-15 14:41:29 +0000 UTC"
+        }
+      },
+      {
+        "id": [
+          {
+            "value": "9ffc967a-666d-4a38-8863-47072f9f6de1"
+          }
+        ],
+        "properties": {
+          "dataType": "String",
+          "fieldType": "Column",
+          "validations": [
+            {
+              "required": false
+            }
+          ],
+          "constraints": [
+            {
+              "unique": false
+            },
+            {
+              "readOnly": false
+            },
+            {
+              "fixed": false
+            }
+          ],
+          "display": [
+            {
+              "searchable": false
+            },
+            {
+              "showInList": false
+            }
+          ],
+          "system": {
+            "field_contentlet": "system_field",
+            "indexed": "false"
+          },
+          "order": 4,
+          "uniqueName": "fields1",
+          "name": "fields-3",
+          "modificationDate": "2020-09-15 14:41:29 +0000 UTC"
+        }
+      },
+      {
+        "id": [
+          {
+            "value": "90211310-3882-430e-a1b7-f9e34ed841a9"
+          }
+        ],
+        "properties": {
+          "dataType": "String",
+          "fieldType": "Binary",
+          "validations": [
+            {
+              "required": false
+            }
+          ],
+          "constraints": [
+            {
+              "unique": false
+            },
+            {
+              "readOnly": false
+            },
+            {
+              "fixed": false
+            }
+          ],
+          "display": [
+            {
+              "searchable": true
+            },
+            {
+              "showInList": false
+            }
+          ],
+          "system": {
+            "field_contentlet": "system_field",
+            "indexed": "true"
+          },
+          "order": 5,
+          "uniqueName": "binary",
+          "name": "Binary",
+          "modificationDate": "2020-09-15 14:41:29 +0000 UTC"
+        }
+      },
+      {
+        "id": [
+          {
+            "value": "01f727af-f83f-4670-9a9e-243897d37d45"
+          }
+        ],
+        "properties": {
+          "dataType": "String",
+          "fieldType": "Divider",
+          "validations": [
+            {
+              "required": false
+            }
+          ],
+          "constraints": [
+            {
+              "unique": false
+            },
+            {
+              "readOnly": false
+            },
+            {
+              "fixed": false
+            }
+          ],
+          "display": [
+            {
+              "searchable": false
+            },
+            {
+              "showInList": false
+            }
+          ],
+          "system": {
+            "field_contentlet": "system_field",
+            "indexed": "false"
+          },
+          "order": 6,
+          "uniqueName": "lineDivider",
+          "name": "Line Divider",
+          "modificationDate": "2020-09-15 14:41:29 +0000 UTC"
+        }
+      },
+      {
+        "id": [
+          {
+            "value": "1c8e2d38-367c-4b68-8a0b-ef6fdca315f4"
+          }
+        ],
+        "properties": {
+          "dataType": "String",
+          "fieldType": "Category",
+          "validations": [
+            {
+              "required": false
+            }
+          ],
+          "constraints": [
+            {
+              "unique": false
+            },
+            {
+              "readOnly": false
+            },
+            {
+              "fixed": false
+            }
+          ],
+          "display": [
+            {
+              "searchable": true
+            },
+            {
+              "showInList": false
+            }
+          ],
+          "system": {
+            "field_contentlet": "system_field",
+            "indexed": "true"
+          },
+          "order": 7,
+          "uniqueName": "category",
+          "setUpData": "f5476c1e-7fcc-4e5c-846f-7390fa8c6f60",
+          "name": "Category",
+          "modificationDate": "2020-09-15 14:41:29 +0000 UTC"
+        }
+      },
+      {
+        "id": [
+          {
+            "value": "fd115ab5-6c36-441b-83f4-cc7f5c1b74b4"
+          }
+        ],
+        "properties": {
+          "dataType": "String",
+          "fieldType": "Checkbox",
+          "validations": [
+            {
+              "required": false
+            }
+          ],
+          "constraints": [
+            {
+              "unique": false
+            },
+            {
+              "readOnly": false
+            },
+            {
+              "fixed": false
+            }
+          ],
+          "display": [
+            {
+              "searchable": true
+            },
+            {
+              "showInList": false
+            }
+          ],
+          "system": {
+            "field_contentlet": "text1",
+            "indexed": "true"
+          },
+          "order": 8,
+          "uniqueName": "checkbox",
+          "setUpData": "Canada|CA\r\nMexico|MX\r\nUSA|US",
+          "name": "Checkbox",
+          "modificationDate": "2020-09-15 14:41:29 +0000 UTC"
+        }
+      },
+      {
+        "id": [
+          {
+            "value": "40f904d2-d187-4549-b88a-1862fff9502b"
+          }
+        ],
+        "properties": {
+          "dataType": "String",
+          "fieldType": "Column",
+          "validations": [
+            {
+              "required": false
+            }
+          ],
+          "constraints": [
+            {
+              "unique": false
+            },
+            {
+              "readOnly": false
+            },
+            {
+              "fixed": false
+            }
+          ],
+          "display": [
+            {
+              "searchable": false
+            },
+            {
+              "showInList": false
+            }
+          ],
+          "system": {
+            "field_contentlet": "system_field",
+            "indexed": "false"
+          },
+          "order": 9,
+          "uniqueName": "fields2",
+          "name": "fields-4",
+          "modificationDate": "2020-09-15 14:41:29 +0000 UTC"
+        }
+      },
+      {
+        "id": [
+          {
+            "value": "82484b21-353c-4610-8384-d9542272e68b"
+          }
+        ],
+        "properties": {
+          "dataType": "String",
+          "fieldType": "Constant",
+          "validations": [
+            {
+              "required": false
+            }
+          ],
+          "constraints": [
+            {
+              "unique": false
+            },
+            {
+              "readOnly": false
+            },
+            {
+              "fixed": false
+            }
+          ],
+          "display": [
+            {
+              "searchable": false
+            },
+            {
+              "showInList": false
+            }
+          ],
+          "system": {
+            "field_contentlet": "system_field",
+            "indexed": "false"
+          },
+          "order": 10,
+          "uniqueName": "constant",
+          "setUpData": "Test Constant",
+          "name": "Constant",
+          "modificationDate": "2020-09-15 14:41:29 +0000 UTC"
+        }
+      },
+      {
+        "id": [
+          {
+            "value": "165f823c-3f12-41f5-8812-608e5bd119b0"
+          }
+        ],
+        "properties": {
+          "dataType": "String",
+          "fieldType": "Divider",
+          "validations": [
+            {
+              "required": false
+            }
+          ],
+          "constraints": [
+            {
+              "unique": false
+            },
+            {
+              "readOnly": false
+            },
+            {
+              "fixed": false
+            }
+          ],
+          "display": [
+            {
+              "searchable": false
+            },
+            {
+              "showInList": false
+            }
+          ],
+          "system": {
+            "field_contentlet": "system_field",
+            "indexed": "false"
+          },
+          "order": 11,
+          "uniqueName": "lineDivider2",
+          "name": "Line Divider2",
+          "modificationDate": "2020-09-15 14:41:29 +0000 UTC"
+        }
+      },
+      {
+        "id": [
+          {
+            "value": "7a15643f-9720-4cdb-a60d-a8760c820922"
+          }
+        ],
+        "properties": {
+          "dataType": "BigString",
+          "fieldType": "Custom",
+          "validations": [
+            {
+              "required": false
+            }
+          ],
+          "constraints": [
+            {
+              "unique": false
+            },
+            {
+              "readOnly": false
+            },
+            {
+              "fixed": false
+            }
+          ],
+          "display": [
+            {
+              "searchable": true
+            },
+            {
+              "showInList": false
+            }
+          ],
+          "metadata": [
+            {
+              "id": [
+                {
+                  "value": "38f2b660-c98d-4ee8-be26-f1ecc149cc29"
+                }
+              ],
+              "name": "1597777192527",
+              "key": "Var1",
+              "value": "Value1",
+              "modificationDate": "2020-09-15 14:41:31 +0000 UTC"
+            },
+            {
+              "id": [
+                {
+                  "value": "1e183ce1-2031-46cb-b1d0-0953bbb11edc"
+                }
+              ],
+              "name": "1597777199390",
+              "key": "Var2",
+              "value": "Value2",
+              "modificationDate": "2020-09-15 14:41:31 +0000 UTC"
+            }
+          ],
+          "system": {
+            "field_contentlet": "text_area1",
+            "indexed": "true"
+          },
+          "order": 12,
+          "uniqueName": "custom",
+          "setUpData": "Custom code",
+          "name": "Custom",
+          "modificationDate": "2020-09-15 14:41:29 +0000 UTC"
+        }
+      },
+      {
+        "id": [
+          {
+            "value": "4edbd036-28d8-4b84-bdc3-ee92085aff72"
+          }
+        ],
+        "properties": {
+          "dataType": "DateTime",
+          "fieldType": "Date",
+          "validations": [
+            {
+              "required": false
+            }
+          ],
+          "constraints": [
+            {
+              "unique": false
+            },
+            {
+              "readOnly": false
+            },
+            {
+              "fixed": false
+            }
+          ],
+          "display": [
+            {
+              "searchable": true
+            },
+            {
+              "showInList": false
+            }
+          ],
+          "system": {
+            "field_contentlet": "date1",
+            "indexed": "true"
+          },
+          "order": 13,
+          "uniqueName": "date",
+          "name": "Date",
+          "modificationDate": "2020-09-15 14:41:29 +0000 UTC"
+        }
+      },
+      {
+        "id": [
+          {
+            "value": "73896afa-4e8e-495d-960f-e3f4391db648"
+          }
+        ],
+        "properties": {
+          "dataType": "String",
+          "fieldType": "Row",
+          "validations": [
+            {
+              "required": false
+            }
+          ],
+          "constraints": [
+            {
+              "unique": false
+            },
+            {
+              "readOnly": false
+            },
+            {
+              "fixed": false
+            }
+          ],
+          "display": [
+            {
+              "searchable": false
+            },
+            {
+              "showInList": false
+            }
+          ],
+          "system": {
+            "field_contentlet": "system_field",
+            "indexed": "false"
+          },
+          "order": 14,
+          "uniqueName": "fields3",
+          "name": "fields-5",
+          "modificationDate": "2020-09-15 14:41:29 +0000 UTC"
+        }
+      },
+      {
+        "id": [
+          {
+            "value": "dc857a9a-31bf-4deb-920e-3550c28c6e73"
+          }
+        ],
+        "properties": {
+          "dataType": "String",
+          "fieldType": "Column",
+          "validations": [
+            {
+              "required": false
+            }
+          ],
+          "constraints": [
+            {
+              "unique": false
+            },
+            {
+              "readOnly": false
+            },
+            {
+              "fixed": false
+            }
+          ],
+          "display": [
+            {
+              "searchable": false
+            },
+            {
+              "showInList": false
+            }
+          ],
+          "system": {
+            "field_contentlet": "system_field",
+            "indexed": "false"
+          },
+          "order": 15,
+          "uniqueName": "fields4",
+          "name": "fields-6",
+          "modificationDate": "2020-09-15 14:41:29 +0000 UTC"
+        }
+      },
+      {
+        "id": [
+          {
+            "value": "c0eb301e-b44f-4481-b771-0695fc29f1a5"
+          }
+        ],
+        "properties": {
+          "dataType": "DateTime",
+          "fieldType": "Datetime",
+          "validations": [
+            {
+              "required": false
+            }
+          ],
+          "constraints": [
+            {
+              "unique": false
+            },
+            {
+              "readOnly": false
+            },
+            {
+              "fixed": false
+            }
+          ],
+          "display": [
+            {
+              "searchable": true
+            },
+            {
+              "showInList": false
+            }
+          ],
+          "system": {
+            "field_contentlet": "date2",
+            "indexed": "true"
+          },
+          "order": 16,
+          "uniqueName": "dateAndTime",
+          "name": "Date and time",
+          "modificationDate": "2020-09-15 14:41:29 +0000 UTC"
+        }
+      },
+      {
+        "id": [
+          {
+            "value": "a5895873-bd0f-4a96-9d6c-222b14a4bbb4"
+          }
+        ],
+        "properties": {
+          "dataType": "String",
+          "fieldType": "File",
+          "validations": [
+            {
+              "required": false
+            }
+          ],
+          "constraints": [
+            {
+              "unique": false
+            },
+            {
+              "readOnly": false
+            },
+            {
+              "fixed": false
+            }
+          ],
+          "display": [
+            {
+              "searchable": false
+            },
+            {
+              "showInList": false
+            }
+          ],
+          "system": {
+            "field_contentlet": "text2",
+            "indexed": "false"
+          },
+          "order": 17,
+          "uniqueName": "file",
+          "name": "File",
+          "modificationDate": "2020-09-15 14:41:29 +0000 UTC"
+        }
+      },
+      {
+        "id": [
+          {
+            "value": "97e27d4b-878d-4e2b-b379-f1b091cbc677"
+          }
+        ],
+        "properties": {
+          "dataType": "String",
+          "fieldType": "Hidden",
+          "validations": [
+            {
+              "required": false
+            }
+          ],
+          "constraints": [
+            {
+              "unique": false
+            },
+            {
+              "readOnly": false
+            },
+            {
+              "fixed": false
+            }
+          ],
+          "display": [
+            {
+              "searchable": false
+            },
+            {
+              "showInList": false
+            }
+          ],
+          "system": {
+            "field_contentlet": "system_field",
+            "indexed": "false"
+          },
+          "order": 18,
+          "uniqueName": "hidden",
+          "setUpData": "Hidden value",
+          "name": "Hidden",
+          "modificationDate": "2020-09-15 14:41:29 +0000 UTC"
+        }
+      },
+      {
+        "id": [
+          {
+            "value": "183640ab-e994-4267-a579-5aa73b73ddaa"
+          }
+        ],
+        "properties": {
+          "dataType": "String",
+          "fieldType": "Column",
+          "validations": [
+            {
+              "required": false
+            }
+          ],
+          "constraints": [
+            {
+              "unique": false
+            },
+            {
+              "readOnly": false
+            },
+            {
+              "fixed": false
+            }
+          ],
+          "display": [
+            {
+              "searchable": false
+            },
+            {
+              "showInList": false
+            }
+          ],
+          "system": {
+            "field_contentlet": "system_field",
+            "indexed": "false"
+          },
+          "order": 19,
+          "uniqueName": "fields5",
+          "name": "fields-7",
+          "modificationDate": "2020-09-15 14:41:29 +0000 UTC"
+        }
+      },
+      {
+        "id": [
+          {
+            "value": "8b68b865-9921-4b50-8f3f-3316eca51543"
+          }
+        ],
+        "properties": {
+          "dataType": "String",
+          "fieldType": "Image",
+          "validations": [
+            {
+              "required": false
+            }
+          ],
+          "constraints": [
+            {
+              "unique": false
+            },
+            {
+              "readOnly": false
+            },
+            {
+              "fixed": false
+            }
+          ],
+          "display": [
+            {
+              "searchable": false
+            },
+            {
+              "showInList": false
+            }
+          ],
+          "system": {
+            "field_contentlet": "text3",
+            "indexed": "false"
+          },
+          "order": 20,
+          "uniqueName": "image",
+          "name": "Image",
+          "modificationDate": "2020-09-15 14:41:29 +0000 UTC"
+        }
+      },
+      {
+        "id": [
+          {
+            "value": "482566eb-7825-40e5-8470-d21e6909030d"
+          }
+        ],
+        "properties": {
+          "dataType": "BigString",
+          "fieldType": "KeyValue",
+          "validations": [
+            {
+              "required": false
+            }
+          ],
+          "constraints": [
+            {
+              "unique": false
+            },
+            {
+              "readOnly": false
+            },
+            {
+              "fixed": false
+            }
+          ],
+          "display": [
+            {
+              "searchable": true
+            },
+            {
+              "showInList": false
+            }
+          ],
+          "system": {
+            "field_contentlet": "text_area2",
+            "indexed": "true"
+          },
+          "order": 21,
+          "uniqueName": "keyValue",
+          "name": "Key value",
+          "modificationDate": "2020-09-15 14:41:29 +0000 UTC"
+        }
+      },
+      {
+        "id": [
+          {
+            "value": "1b525ae2-e38e-4f25-92ef-9cfb2dc178cd"
+          }
+        ],
+        "properties": {
+          "dataType": "BigString",
+          "fieldType": "Multiselect",
+          "validations": [
+            {
+              "required": false
+            }
+          ],
+          "constraints": [
+            {
+              "unique": false
+            },
+            {
+              "readOnly": false
+            },
+            {
+              "fixed": false
+            }
+          ],
+          "display": [
+            {
+              "searchable": true
+            },
+            {
+              "showInList": false
+            }
+          ],
+          "system": {
+            "field_contentlet": "text_area3",
+            "indexed": "true"
+          },
+          "order": 22,
+          "uniqueName": "multiselect",
+          "setUpData": "Value1|val1\r\nValue2|val2\r\nValue3|val3\r\nValue4|val4\r\nValue5|val5\r\nValue6|val6",
+          "name": "Multiselect",
+          "modificationDate": "2020-09-15 14:41:29 +0000 UTC"
+        }
+      },
+      {
+        "id": [
+          {
+            "value": "fd614c19-7671-42fa-8445-018f2098b072"
+          }
+        ],
+        "properties": {
+          "dataType": "String",
+          "fieldType": "Row",
+          "validations": [
+            {
+              "required": false
+            }
+          ],
+          "constraints": [
+            {
+              "unique": false
+            },
+            {
+              "readOnly": false
+            },
+            {
+              "fixed": false
+            }
+          ],
+          "display": [
+            {
+              "searchable": false
+            },
+            {
+              "showInList": false
+            }
+          ],
+          "system": {
+            "field_contentlet": "system_field",
+            "indexed": "false"
+          },
+          "order": 23,
+          "uniqueName": "fields6",
+          "name": "fields-8",
+          "modificationDate": "2020-09-15 14:41:29 +0000 UTC"
+        }
+      },
+      {
+        "id": [
+          {
+            "value": "2bbe6aa3-b4e3-4b7a-ab90-87ec440ca1b6"
+          }
+        ],
+        "properties": {
+          "dataType": "String",
+          "fieldType": "Column",
+          "validations": [
+            {
+              "required": false
+            }
+          ],
+          "constraints": [
+            {
+              "unique": false
+            },
+            {
+              "readOnly": false
+            },
+            {
+              "fixed": false
+            }
+          ],
+          "display": [
+            {
+              "searchable": false
+            },
+            {
+              "showInList": false
+            }
+          ],
+          "system": {
+            "field_contentlet": "system_field",
+            "indexed": "false"
+          },
+          "order": 24,
+          "uniqueName": "fields7",
+          "name": "fields-9",
+          "modificationDate": "2020-09-15 14:41:29 +0000 UTC"
+        }
+      },
+      {
+        "id": [
+          {
+            "value": "1d35bea7-f07e-43c7-90c5-531f590af480"
+          }
+        ],
+        "properties": {
+          "dataType": "String",
+          "fieldType": "Permission",
+          "validations": [
+            {
+              "required": false
+            }
+          ],
+          "constraints": [
+            {
+              "unique": false
+            },
+            {
+              "readOnly": false
+            },
+            {
+              "fixed": false
+            }
+          ],
+          "display": [
+            {
+              "searchable": false
+            },
+            {
+              "showInList": false
+            }
+          ],
+          "system": {
+            "field_contentlet": "system_field",
+            "indexed": "false"
+          },
+          "order": 25,
+          "uniqueName": "permissions",
+          "name": "Permissions",
+          "modificationDate": "2020-09-15 14:41:29 +0000 UTC"
+        }
+      },
+      {
+        "id": [
+          {
+            "value": "8d39a494-a53c-4e86-b6f5-81f4681f9c11"
+          }
+        ],
+        "properties": {
+          "dataType": "String",
+          "fieldType": "Row",
+          "validations": [
+            {
+              "required": false
+            }
+          ],
+          "constraints": [
+            {
+              "unique": false
+            },
+            {
+              "readOnly": false
+            },
+            {
+              "fixed": false
+            }
+          ],
+          "display": [
+            {
+              "searchable": false
+            },
+            {
+              "showInList": false
+            }
+          ],
+          "system": {
+            "field_contentlet": "system_field",
+            "indexed": "false"
+          },
+          "order": 26,
+          "uniqueName": "fields8",
+          "name": "fields-10",
+          "modificationDate": "2020-09-15 14:41:29 +0000 UTC"
+        }
+      },
+      {
+        "id": [
+          {
+            "value": "72b3f5dd-8faa-4221-b7fb-7da84e5254c2"
+          }
+        ],
+        "properties": {
+          "dataType": "String",
+          "fieldType": "Column",
+          "validations": [
+            {
+              "required": false
+            }
+          ],
+          "constraints": [
+            {
+              "unique": false
+            },
+            {
+              "readOnly": false
+            },
+            {
+              "fixed": false
+            }
+          ],
+          "display": [
+            {
+              "searchable": false
+            },
+            {
+              "showInList": false
+            }
+          ],
+          "system": {
+            "field_contentlet": "system_field",
+            "indexed": "false"
+          },
+          "order": 27,
+          "uniqueName": "fields9",
+          "name": "fields-11",
+          "modificationDate": "2020-09-15 14:41:29 +0000 UTC"
+        }
+      },
+      {
+        "id": [
+          {
+            "value": "7d78afbe-cb61-47da-8b41-b5a7bcbf5c68"
+          }
+        ],
+        "properties": {
+          "dataType": "String",
+          "fieldType": "Relationship",
+          "validations": [
+            {
+              "required": false
+            }
+          ],
+          "constraints": [
+            {
+              "unique": false
+            },
+            {
+              "readOnly": false
+            },
+            {
+              "fixed": false
+            }
+          ],
+          "display": [
+            {
+              "searchable": true
+            },
+            {
+              "showInList": false
+            }
+          ],
+          "system": {
+            "field_contentlet": "system_field",
+            "field_relation_type": "webPageContent",
+            "indexed": "true"
+          },
+          "order": 28,
+          "uniqueName": "relationships",
+          "setUpData": "1",
+          "name": "Relationships",
+          "modificationDate": "2020-09-15 14:41:30 +0000 UTC"
+        }
+      },
+      {
+        "id": [
+          {
+            "value": "2f835f57-1420-4f46-bfdb-e2446fae4ab1"
+          }
+        ],
+        "properties": {
+          "dataType": "String",
+          "fieldType": "Divider",
+          "validations": [
+            {
+              "required": false
+            }
+          ],
+          "constraints": [
+            {
+              "unique": false
+            },
+            {
+              "readOnly": false
+            },
+            {
+              "fixed": false
+            }
+          ],
+          "display": [
+            {
+              "searchable": false
+            },
+            {
+              "showInList": false
+            }
+          ],
+          "system": {
+            "field_contentlet": "system_field",
+            "indexed": "false"
+          },
+          "order": 29,
+          "uniqueName": "linedivider3",
+          "name": "LineDivider3",
+          "modificationDate": "2020-09-15 14:41:30 +0000 UTC"
+        }
+      },
+      {
+        "id": [
+          {
+            "value": "0f945225-4e0f-4f27-bb66-e5c34561b36b"
+          }
+        ],
+        "properties": {
+          "dataType": "String",
+          "fieldType": "RelationshipTab",
+          "validations": [
+            {
+              "required": false
+            }
+          ],
+          "constraints": [
+            {
+              "unique": false
+            },
+            {
+              "readOnly": false
+            },
+            {
+              "fixed": false
+            }
+          ],
+          "display": [
+            {
+              "searchable": false
+            },
+            {
+              "showInList": false
+            }
+          ],
+          "system": {
+            "field_contentlet": "system_field",
+            "indexed": "false"
+          },
+          "order": 30,
+          "uniqueName": "relationshipsLegacy",
+          "name": "Relationships Legacy",
+          "modificationDate": "2020-09-15 14:41:30 +0000 UTC"
+        }
+      },
+      {
+        "id": [
+          {
+            "value": "ffa2bee1-5d20-4b13-be83-fd29fece236b"
+          }
+        ],
+        "properties": {
+          "dataType": "String",
+          "fieldType": "Divider",
+          "validations": [
+            {
+              "required": false
+            }
+          ],
+          "constraints": [
+            {
+              "unique": false
+            },
+            {
+              "readOnly": false
+            },
+            {
+              "fixed": false
+            }
+          ],
+          "display": [
+            {
+              "searchable": false
+            },
+            {
+              "showInList": false
+            }
+          ],
+          "system": {
+            "field_contentlet": "system_field",
+            "indexed": "false"
+          },
+          "order": 31,
+          "uniqueName": "linedividier4",
+          "name": "LineDividier4",
+          "modificationDate": "2020-09-15 14:41:30 +0000 UTC"
+        }
+      },
+      {
+        "id": [
+          {
+            "value": "45022cf7-efc4-42d9-8246-a984cf95483d"
+          }
+        ],
+        "properties": {
+          "dataType": "String",
+          "fieldType": "Row",
+          "validations": [
+            {
+              "required": false
+            }
+          ],
+          "constraints": [
+            {
+              "unique": false
+            },
+            {
+              "readOnly": false
+            },
+            {
+              "fixed": false
+            }
+          ],
+          "display": [
+            {
+              "searchable": false
+            },
+            {
+              "showInList": false
+            }
+          ],
+          "system": {
+            "field_contentlet": "system_field",
+            "indexed": "false"
+          },
+          "order": 32,
+          "uniqueName": "fields10",
+          "name": "fields-12",
+          "modificationDate": "2020-09-15 14:41:30 +0000 UTC"
+        }
+      },
+      {
+        "id": [
+          {
+            "value": "9a898378-d779-440e-bdb7-1c54601ea367"
+          }
+        ],
+        "properties": {
+          "dataType": "String",
+          "fieldType": "Column",
+          "validations": [
+            {
+              "required": false
+            }
+          ],
+          "constraints": [
+            {
+              "unique": false
+            },
+            {
+              "readOnly": false
+            },
+            {
+              "fixed": false
+            }
+          ],
+          "display": [
+            {
+              "searchable": false
+            },
+            {
+              "showInList": false
+            }
+          ],
+          "system": {
+            "field_contentlet": "system_field",
+            "indexed": "false"
+          },
+          "order": 33,
+          "uniqueName": "fields11",
+          "name": "fields-13",
+          "modificationDate": "2020-09-15 14:41:30 +0000 UTC"
+        }
+      },
+      {
+        "id": [
+          {
+            "value": "a1c3f628-567a-483d-915a-c48caf804223"
+          }
+        ],
+        "properties": {
+          "dataType": "Boolean",
+          "fieldType": "Radio",
+          "validations": [
+            {
+              "required": false
+            }
+          ],
+          "constraints": [
+            {
+              "unique": false
+            },
+            {
+              "readOnly": false
+            },
+            {
+              "fixed": false
+            }
+          ],
+          "display": [
+            {
+              "searchable": true
+            },
+            {
+              "showInList": false
+            }
+          ],
+          "system": {
+            "field_contentlet": "bool1",
+            "indexed": "true"
+          },
+          "order": 34,
+          "uniqueName": "radio",
+          "setUpData": "True|1\r\nFalse|0",
+          "name": "Radio",
+          "defaultValue": "1",
+          "modificationDate": "2020-09-15 14:41:30 +0000 UTC"
+        }
+      },
+      {
+        "id": [
+          {
+            "value": "58c49ba4-5351-4b05-bb3e-1da6880abb30"
+          }
+        ],
+        "properties": {
+          "dataType": "Int",
+          "fieldType": "Radio",
+          "validations": [
+            {
+              "required": false
+            }
+          ],
+          "constraints": [
+            {
+              "unique": false
+            },
+            {
+              "readOnly": false
+            },
+            {
+              "fixed": false
+            }
+          ],
+          "display": [
+            {
+              "searchable": true
+            },
+            {
+              "showInList": false
+            }
+          ],
+          "system": {
+            "field_contentlet": "integer2",
+            "indexed": "true"
+          },
+          "order": 35,
+          "uniqueName": "radio2",
+          "setUpData": "Value1|1\r\nValue2|2\r\nValue3|3\r\nValue4|4\r\nValue5|5\r\nValue6|6",
+          "name": "Radio2",
+          "modificationDate": "2020-09-15 14:41:30 +0000 UTC"
+        }
+      },
+      {
+        "id": [
+          {
+            "value": "086ece8d-8ad6-4a47-8e21-cd8604807fe3"
+          }
+        ],
+        "properties": {
+          "dataType": "Boolean",
+          "fieldType": "Select",
+          "validations": [
+            {
+              "required": false
+            }
+          ],
+          "constraints": [
+            {
+              "unique": false
+            },
+            {
+              "readOnly": false
+            },
+            {
+              "fixed": false
+            }
+          ],
+          "display": [
+            {
+              "searchable": true
+            },
+            {
+              "showInList": false
+            }
+          ],
+          "system": {
+            "field_contentlet": "bool2",
+            "indexed": "true"
+          },
+          "order": 36,
+          "uniqueName": "select",
+          "setUpData": "True|1\r\nFalse|0",
+          "name": "Select",
+          "defaultValue": "1",
+          "modificationDate": "2020-09-15 14:41:30 +0000 UTC"
+        }
+      },
+      {
+        "id": [
+          {
+            "value": "cb5d18d5-7b6d-4c9e-a763-9e3d5c9dfe88"
+          }
+        ],
+        "properties": {
+          "dataType": "String",
+          "fieldType": "Site",
+          "validations": [
+            {
+              "required": false
+            }
+          ],
+          "constraints": [
+            {
+              "unique": false
+            },
+            {
+              "readOnly": false
+            },
+            {
+              "fixed": false
+            }
+          ],
+          "display": [
+            {
+              "searchable": true
+            },
+            {
+              "showInList": false
+            }
+          ],
+          "system": {
+            "field_contentlet": "system_field",
+            "indexed": "true"
+          },
+          "order": 37,
+          "uniqueName": "site",
+          "name": "Site",
+          "modificationDate": "2020-09-15 14:41:30 +0000 UTC"
+        }
+      },
+      {
+        "id": [
+          {
+            "value": "c90f840f-8304-4f43-b947-06a735e300c1"
+          }
+        ],
+        "properties": {
+          "dataType": "Float",
+          "fieldType": "Text",
+          "validations": [
+            {
+              "required": false
+            }
+          ],
+          "constraints": [
+            {
+              "unique": false
+            },
+            {
+              "readOnly": false
+            },
+            {
+              "fixed": false
+            }
+          ],
+          "display": [
+            {
+              "searchable": true
+            },
+            {
+              "showInList": false
+            }
+          ],
+          "system": {
+            "field_contentlet": "float1",
+            "indexed": "true"
+          },
+          "order": 38,
+          "uniqueName": "textdecimal",
+          "name": "TextDecimal",
+          "modificationDate": "2020-09-15 14:41:30 +0000 UTC"
+        }
+      },
+      {
+        "id": [
+          {
+            "value": "69ed4f4e-4b0a-42b4-b628-4dfba1fdce25"
+          }
+        ],
+        "properties": {
+          "dataType": "String",
+          "fieldType": "Text",
+          "validations": [
+            {
+              "required": false
+            }
+          ],
+          "constraints": [
+            {
+              "unique": false
+            },
+            {
+              "readOnly": false
+            },
+            {
+              "fixed": false
+            }
+          ],
+          "display": [
+            {
+              "searchable": true
+            },
+            {
+              "showInList": false
+            }
+          ],
+          "metadata": [
+            {
+              "id": [
+                {
+                  "value": "2833f628-bf77-4b7e-bc21-6856223ee50d"
+                }
+              ],
+              "name": "1597789917261",
+              "key": "Var3",
+              "value": "Value3",
+              "modificationDate": "2020-09-15 14:41:31 +0000 UTC"
+            },
+            {
+              "id": [
+                {
+                  "value": "e4704cab-c668-4ebc-a5f1-bd32e2a70c0a"
+                }
+              ],
+              "name": "1597789926064",
+              "key": "Var4",
+              "value": "Value4",
+              "modificationDate": "2020-09-15 14:41:31 +0000 UTC"
+            },
+            {
+              "id": [
+                {
+                  "value": "a716afae-22e9-416c-b219-48bd254ce0be"
+                }
+              ],
+              "name": "1597789934642",
+              "key": "Var5",
+              "value": "Value5",
+              "modificationDate": "2020-09-15 14:41:31 +0000 UTC"
+            }
+          ],
+          "system": {
+            "field_contentlet": "text6",
+            "indexed": "true"
+          },
+          "order": 39,
+          "uniqueName": "fieldvariables",
+          "name": "FieldVariables",
+          "modificationDate": "2020-09-15 14:41:30 +0000 UTC"
+        }
+      },
+      {
+        "id": [
+          {
+            "value": "2057d82b-2e51-4283-a5fe-a099e8d34a27"
+          }
+        ],
+        "properties": {
+          "dataType": "String",
+          "fieldType": "Column",
+          "validations": [
+            {
+              "required": false
+            }
+          ],
+          "constraints": [
+            {
+              "unique": false
+            },
+            {
+              "readOnly": false
+            },
+            {
+              "fixed": false
+            }
+          ],
+          "display": [
+            {
+              "searchable": false
+            },
+            {
+              "showInList": false
+            }
+          ],
+          "system": {
+            "field_contentlet": "system_field",
+            "indexed": "false"
+          },
+          "order": 40,
+          "uniqueName": "fields12",
+          "name": "fields-14",
+          "modificationDate": "2020-09-15 14:41:30 +0000 UTC"
+        }
+      },
+      {
+        "id": [
+          {
+            "value": "09d0b004-a170-4d9c-a992-b86c990c2c5f"
+          }
+        ],
+        "properties": {
+          "dataType": "String",
+          "fieldType": "Tag",
+          "validations": [
+            {
+              "required": false
+            }
+          ],
+          "constraints": [
+            {
+              "unique": false
+            },
+            {
+              "readOnly": false
+            },
+            {
+              "fixed": false
+            }
+          ],
+          "display": [
+            {
+              "searchable": true
+            },
+            {
+              "showInList": false
+            }
+          ],
+          "system": {
+            "field_contentlet": "system_field",
+            "indexed": "true"
+          },
+          "order": 41,
+          "uniqueName": "tag",
+          "name": "Tag",
+          "modificationDate": "2020-09-15 14:41:30 +0000 UTC"
+        }
+      },
+      {
+        "id": [
+          {
+            "value": "3c866071-41d3-4396-ae60-ccec4467aba6"
+          }
+        ],
+        "properties": {
+          "dataType": "String",
+          "fieldType": "Text",
+          "validations": [
+            {
+              "required": false
+            },
+            {
+              "regex": "^([a-zA-Z0-9]+[a-zA-Z0-9._%+-]*@(?:[a-zA-Z0-9-]+.)+[a-zA-Z]{2,4})$"
+            }
+          ],
+          "constraints": [
+            {
+              "unique": false
+            },
+            {
+              "readOnly": false
+            },
+            {
+              "fixed": false
+            }
+          ],
+          "display": [
+            {
+              "searchable": true
+            },
+            {
+              "showInList": false
+            }
+          ],
+          "system": {
+            "field_contentlet": "text4",
+            "indexed": "true"
+          },
+          "order": 42,
+          "uniqueName": "email",
+          "name": "Email",
+          "modificationDate": "2020-09-15 14:41:30 +0000 UTC"
+        }
+      },
+      {
+        "id": [
+          {
+            "value": "8bd6ea9d-dfa8-4968-b5e9-9cb42e05618a"
+          }
+        ],
+        "properties": {
+          "dataType": "String",
+          "fieldType": "Select",
+          "validations": [
+            {
+              "required": false
+            }
+          ],
+          "constraints": [
+            {
+              "unique": false
+            },
+            {
+              "readOnly": false
+            },
+            {
+              "fixed": false
+            }
+          ],
+          "display": [
+            {
+              "searchable": true
+            },
+            {
+              "showInList": false
+            }
+          ],
+          "system": {
+            "field_contentlet": "text7",
+            "indexed": "true"
+          },
+          "order": 43,
+          "uniqueName": "select2",
+          "setUpData": "Value1|val1\r\nValue2|val2\r\nValue3|val3\r\nValue4|val4\r\nValue5|val5\r\nValue6|val6",
+          "name": "Select2",
+          "modificationDate": "2020-09-15 14:41:30 +0000 UTC"
+        }
+      },
+      {
+        "id": [
+          {
+            "value": "ad4c58e8-fd89-404f-8152-36b306287083"
+          }
+        ],
+        "properties": {
+          "dataType": "DateTime",
+          "fieldType": "Time",
+          "validations": [
+            {
+              "required": false
+            }
+          ],
+          "constraints": [
+            {
+              "unique": false
+            },
+            {
+              "readOnly": false
+            },
+            {
+              "fixed": false
+            }
+          ],
+          "display": [
+            {
+              "searchable": true
+            },
+            {
+              "showInList": false
+            }
+          ],
+          "system": {
+            "field_contentlet": "date3",
+            "indexed": "true"
+          },
+          "order": 44,
+          "uniqueName": "time",
+          "name": "Time",
+          "modificationDate": "2020-09-15 14:41:30 +0000 UTC"
+        }
+      },
+      {
+        "id": [
+          {
+            "value": "3cd1e994-ab0f-42d2-bd1b-d3697fab2195"
+          }
+        ],
+        "properties": {
+          "dataType": "Int",
+          "fieldType": "Text",
+          "validations": [
+            {
+              "required": false
+            }
+          ],
+          "constraints": [
+            {
+              "unique": false
+            },
+            {
+              "readOnly": false
+            },
+            {
+              "fixed": false
+            }
+          ],
+          "display": [
+            {
+              "searchable": true
+            },
+            {
+              "showInList": false
+            }
+          ],
+          "system": {
+            "field_contentlet": "integer1",
+            "indexed": "true"
+          },
+          "order": 45,
+          "uniqueName": "textnumber",
+          "name": "TextNumber",
+          "modificationDate": "2020-09-15 14:41:30 +0000 UTC"
+        }
+      },
+      {
+        "id": [
+          {
+            "value": "c73f99e2-b63e-439e-a4e3-f1987fb7ec5a"
+          }
+        ],
+        "properties": {
+          "dataType": "String",
+          "fieldType": "Row",
+          "validations": [
+            {
+              "required": false
+            }
+          ],
+          "constraints": [
+            {
+              "unique": false
+            },
+            {
+              "readOnly": false
+            },
+            {
+              "fixed": false
+            }
+          ],
+          "display": [
+            {
+              "searchable": false
+            },
+            {
+              "showInList": false
+            }
+          ],
+          "system": {
+            "field_contentlet": "system_field",
+            "indexed": "false"
+          },
+          "order": 46,
+          "uniqueName": "fields13",
+          "name": "fields-15",
+          "modificationDate": "2020-09-15 14:41:30 +0000 UTC"
+        }
+      },
+      {
+        "id": [
+          {
+            "value": "55d0aa9d-a4d0-437b-9892-a23d490aa42a"
+          }
+        ],
+        "properties": {
+          "dataType": "String",
+          "fieldType": "Column",
+          "validations": [
+            {
+              "required": false
+            }
+          ],
+          "constraints": [
+            {
+              "unique": false
+            },
+            {
+              "readOnly": false
+            },
+            {
+              "fixed": false
+            }
+          ],
+          "display": [
+            {
+              "searchable": false
+            },
+            {
+              "showInList": false
+            }
+          ],
+          "system": {
+            "field_contentlet": "system_field",
+            "indexed": "false"
+          },
+          "order": 47,
+          "uniqueName": "fields14",
+          "name": "fields-16",
+          "modificationDate": "2020-09-15 14:41:30 +0000 UTC"
+        }
+      },
+      {
+        "id": [
+          {
+            "value": "f5a23a73-27e9-4cec-a758-988ec39fd100"
+          }
+        ],
+        "properties": {
+          "dataType": "BigString",
+          "fieldType": "Textarea",
+          "validations": [
+            {
+              "required": false
+            }
+          ],
+          "constraints": [
+            {
+              "unique": false
+            },
+            {
+              "readOnly": false
+            },
+            {
+              "fixed": false
+            }
+          ],
+          "display": [
+            {
+              "searchable": true
+            },
+            {
+              "showInList": false
+            }
+          ],
+          "system": {
+            "field_contentlet": "text_area4",
+            "indexed": "true"
+          },
+          "order": 48,
+          "uniqueName": "textarea",
+          "name": "Textarea",
+          "modificationDate": "2020-09-15 14:41:30 +0000 UTC"
+        }
+      },
+      {
+        "id": [
+          {
+            "value": "365c3a42-ce4b-438a-899f-f21f6ca0f78a"
+          }
+        ],
+        "properties": {
+          "dataType": "String",
+          "fieldType": "Row",
+          "validations": [
+            {
+              "required": false
+            }
+          ],
+          "constraints": [
+            {
+              "unique": false
+            },
+            {
+              "readOnly": false
+            },
+            {
+              "fixed": false
+            }
+          ],
+          "display": [
+            {
+              "searchable": false
+            },
+            {
+              "showInList": false
+            }
+          ],
+          "system": {
+            "field_contentlet": "system_field",
+            "indexed": "false"
+          },
+          "order": 49,
+          "uniqueName": "fields15",
+          "name": "fields-17",
+          "modificationDate": "2020-09-15 14:41:30 +0000 UTC"
+        }
+      },
+      {
+        "id": [
+          {
+            "value": "8b6de8bf-06f3-43e9-9f06-79150260a65e"
+          }
+        ],
+        "properties": {
+          "dataType": "String",
+          "fieldType": "Column",
+          "validations": [
+            {
+              "required": false
+            }
+          ],
+          "constraints": [
+            {
+              "unique": false
+            },
+            {
+              "readOnly": false
+            },
+            {
+              "fixed": false
+            }
+          ],
+          "display": [
+            {
+              "searchable": false
+            },
+            {
+              "showInList": false
+            }
+          ],
+          "system": {
+            "field_contentlet": "system_field",
+            "indexed": "false"
+          },
+          "order": 50,
+          "uniqueName": "fields16",
+          "name": "fields-18",
+          "modificationDate": "2020-09-15 14:41:30 +0000 UTC"
+        }
+      },
+      {
+        "id": [
+          {
+            "value": "b8525712-ff31-4022-b9ca-b76f9419e6ae"
+          }
+        ],
+        "properties": {
+          "dataType": "BigString",
+          "fieldType": "WYSIWYG",
+          "validations": [
+            {
+              "required": false
+            }
+          ],
+          "constraints": [
+            {
+              "unique": false
+            },
+            {
+              "readOnly": false
+            },
+            {
+              "fixed": false
+            }
+          ],
+          "display": [
+            {
+              "searchable": true
+            },
+            {
+              "showInList": false
+            }
+          ],
+          "system": {
+            "field_contentlet": "text_area5",
+            "indexed": "true"
+          },
+          "order": 51,
+          "uniqueName": "wysiwyg",
+          "name": "WYSIWYG",
+          "modificationDate": "2020-09-15 14:41:31 +0000 UTC"
+        }
+      }
+    ]
+  }
+}
