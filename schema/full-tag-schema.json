@@ -1,5 +1,6 @@
 {
-  "$id": "http://example.com/schemas/domainSchema.json",
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "description": "A schema that validates the structure of a Language Motation Object file",
   "type": "object",
   "required": [
     "systems",
@@ -19,7 +20,7 @@
     "definition": {
       "allOf": [
         {
-          "$ref": "definitionSchema.json"
+          "$ref": "definition-field-schema.json"
         },
         {
           "properties": {
@@ -28,7 +29,7 @@
               "items": {
                 "allOf": [
                   {
-                    "$ref": "definitionSchema.json#/definitions/field"
+                    "$ref": "definition-field-schema.json#/definitions/field"
                   }
                 ]
               },
@@ -41,7 +42,7 @@
                         "properties": {
                           "name": {
                             "type": "string",
-                            "const": "domainName"
+                            "const": "name"
                           }
                         }
                       }
@@ -57,7 +58,7 @@
         "fields": {
           "type": "array",
           "items": {
-            "$ref": "definitionSchema.json#/definitions/field"
+            "$ref": "definition-field-schema.json#/definitions/field"
           },
           "minItems": 1
         }
@@ -71,7 +72,7 @@
             "$ref": "#content-field"
           },
           {
-            "$ref": "contentSchema.json"
+            "$ref": "content-schema.json"
           }
         ]
       },
@@ -106,7 +107,7 @@
                 "properties": {
                   "name": {
                     "type": "string",
-                    "const": "domainName"
+                    "const": "name"
                   }
                 }
               }
@@ -186,7 +187,7 @@
       "properties": {
         "id": {
           "type": "object",
-          "$ref": "commonSchema.json#/definitions/id"
+          "$ref": "common-schema.json#/definitions/id"
         },
         "name": {
           "type": "string"
@@ -212,7 +213,7 @@
         "id": {
           "type": "array",
           "items": {
-            "$ref": "commonSchema.json#/definitions/id"
+            "$ref": "common-schema.json#/definitions/id"
           },
           "minItems": 1,
           "uniqueItems": true

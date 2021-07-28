@@ -65,7 +65,7 @@
         ],
         "properties": {
           "fieldType": "DefinitionFieldProperties",
-          "name": "definitionDescription"
+          "name": "User Email"
         }
       },
       {
@@ -76,7 +76,7 @@
         ],
         "properties": {
           "fieldType": "DefinitionFieldProperties",
-          "name": "definitionDescription"
+          "name": "Title"
         }
       }
     ],
@@ -100,7 +100,7 @@
             "value": "a0ba0feb-440e-4881-8275-91f312bedb32"
           }
         ],
-        "name": "Kitchensink",
+        "name": "Example",
 
         "parent": {
           "type": "Site",
@@ -127,7 +127,7 @@
           ],
           "properties": {
             "status": "Live",
-            "title": "Kitchensink",
+            "title": "Example",
             "order": 0,
             "32680740-2120-4d68-bbc2-c47a5b13f139": {
               "system": {
@@ -161,7 +161,7 @@
               ],
               "value": [
                 {
-                  "value": "Kitchensink"
+                  "value": "Example"
                 }
               ]
             },
@@ -173,7 +173,7 @@
               ],
               "value": [
                 {
-                  "value": "Kitchensink"
+                  "value": "Example"
                 }
               ]
             },
