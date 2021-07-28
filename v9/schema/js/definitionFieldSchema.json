@@ -249,7 +249,8 @@
                 "WYSIWYG",
                 "Row",
                 "Column",
-                "Array"
+                "Array",
+                "DefinitionFieldProperties"
               ]
             },
             "validations": {

@@ -2,11 +2,9 @@
   "$schema": "http://json-schema.org/draft-07/schema#",
   "description": "A schema that validates the structure of a Motation Content",
   "$id": "http://example.com/schemas/definitionContentSchema.json",
-  "type": "object",
   "required": [
-    "id",
     "properties",
-    "versions"
+    "fields"
   ],
   "properties": {
     "id": {
@@ -14,92 +12,120 @@
       "items": {
         "$ref": "./common-schema.json#/definitions/id"
       },
+      "minItems": 1,
       "uniqueItems": true
     },
     "properties": {
       "type": "object",
-      "$ref": "#content-properties"
+      "$ref": "#def-properties"
     },
-    "versions": {
+    "fields": {
       "type": "array",
       "items": {
-        "$ref": "#content-version"
+        "$ref": "#def-field"
       },
       "minItems": 1,
       "uniqueItems": true
     }
   },
   "definitions": {
-    "storage": {
-      "$id": "#content-storage",
-      "required": [
-        "bucket",
-        "md5"
-      ],
-      "properties": {
-        "bucket": {
-          "type": "string"
-        },
-        "md5": {
-          "type": "string"
-        }
-      }
-    },
-    "status": {
-      "$id": "#content-status",
-      "enum": [
-        "Live",
-        "Working",
-        "Deleted"
-      ]
-    },
     "properties": {
-      "$id": "#content-properties",
+      "$id": "#def-properties",
       "required": [
-        "definitionId",
-        "name",
-        "type"
+        "uniqueName",
+        "type",
+        "motationType"
       ],
       "properties": {
-        "type": {
-          "enum": [
-            "Content",
-            "Page",
-            "Folder"
-          ]
+        "motationType": {
+          "type": "string"
         },
-        "status": {
-          "$ref": "#content-status"
-        },
-        "languageId": {
-          "type": "array",
-          "items": {
-            "$ref": "./common-schema.json#/definitions/id"
-          },
-          "uniqueItems": true
-        },
-        "definitionId": {
-          "type": "array",
-          "items": {
-            "$ref": "./common-schema.json#/definitions/id"
-          },
-          "uniqueItems": true
-        },
-        "name": {
+        "uniqueName": {
           "type": "string"
         },
         "description": {
           "type": "string"
         },
-        "path": {
+        "name": {
           "type": "string"
         },
-        "site": {
+        "type": {
+          "enum": [
+            "Content",
+            "Widget",
+            "Form",
+            "File",
+            "Page",
+            "Persona",
+            "MotationObject"
+          ]
+        },
+        "creationDate": {
           "type": "string"
+        },
+        "modificationDate": {
+          "type": "string"
+        },
+        "parent": {
+          "type": "object",
+          "$ref": "#def-parent"
+        },
+        "metadata": {
+          "type": "object",
+          "$ref": "./common-schema.json#/definitions/metadata"
         },
         "system": {
           "type": "object",
           "$ref": "./common-schema.json#/definitions/system"
+        }
+      }
+    },
+    "parent": {
+      "$id": "#def-parent",
+      "properties": {
+        "type": {
+          "enum": [
+            "Site",
+            "Folder"
+          ]
+        },
+        "id": {
+          "type": "array",
+          "items": {
+            "$ref": "./common-schema.json#/definitions/id"
+          },
+          "uniqueItems": true
+        }
+      },
+      "required": [
+        "type",
+        "id"
+      ],
+      "additionalProperties": false
+    },
+    "fullMetadata": {
+      "$id": "#def-fullMetadata",
+      "required": [
+        "key",
+        "value"
+      ],
+      "properties": {
+        "id": {
+          "type": "array",
+          "items": {
+            "$ref": "./common-schema.json#/definitions/id"
+          },
+          "minItems": 1,
+          "uniqueItems": true
+        },
+        "name": {
+          "type": "string"
+        },
+        "key": {
+          "type": "string"
+        },
+        "value": {
+          "type": "string"
         },
         "creationDate": {
           "type": "string"
@@ -109,12 +135,73 @@
         }
       }
     },
-    "version": {
-      "$id": "#content-version",
+    "validation": {
+      "$id": "#def-validation",
+      "properties": {
+        "name": {
+          "type": "string"
+        },
+        "required": {
+          "type": "boolean"
+        },
+        "minLength": {
+          "type": "number"
+        },
+        "maxLength": {
+          "type": "number"
+        },
+        "regex": {
+          "type": "string"
+        }
+      }
+    },
+    "constraint": {
+      "$id": "#def-constraint",
+      "properties": {
+        "unique": {
+          "type": "boolean"
+        },
+        "readOnly": {
+          "type": "boolean"
+        },
+        "fixed": {
+          "type": "boolean"
+        }
+      }
+    },
+    "display": {
+      "$id": "#def-display",
+      "properties": {
+        "showInList": {
+          "type": "boolean"
+        },
+        "searchable": {
+          "type": "boolean"
+        },
+        "hint": {
+          "type": "string"
+        }
+      }
+    },
+    "dataType": {
+      "$id": "#def-dataType",
+      "enum": [
+        "String",
+        "BigString",
+        "Boolean",
+        "Int",
+        "BigInt",
+        "Float",
+        "Date",
+        "Time",
+        "DateTime"
+      ]
+    },
+    "field": {
+      "$id": "#def-field",
       "required": [
         "id",
-        "properties",
-        "fields"
+        "properties"
       ],
       "properties": {
         "id": {
@@ -125,87 +212,206 @@
           "uniqueItems": true
         },
         "properties": {
+          "required": [
+            "fieldType",
+            "name"
+          ],
           "properties": {
-            "status": {
-              "$ref": "#content-status"
+            "dataType": {
+              "type": "string",
+              "$ref": "#def-dataType"
             },
-            "title": {
+            "fieldType": {
+              "enum": [
+                "Text",
+                "Category",
+                "Checkbox",
+                "Constant",
+                "Custom",
+                "Date",
+                "Datetime",
+                "File",
+                "Hidden",
+                "Site",
+                "Image",
+                "KeyValue",
+                "Divider",
+                "Select",
+                "Multiselect",
+                "Tab",
+                "Radio",
+                "Relationship",
+                "RelationshipTab",
+                "Permission",
+                "Tag",
+                "Textarea",
+                "Binary",
+                "Time",
+                "WYSIWYG",
+                "Row",
+                "Column",
+                "Array",
+                "DefinitionFieldProperties"
+              ]
+            },
+            "validations": {
+              "type": "array",
+              "items": {
+                "$ref": "#def-validation"
+              },
+              "uniqueItems": true
+            },
+            "constraints": {
+              "type": "array",
+              "items": {
+                "$ref": "#def-constraint"
+              },
+              "uniqueItems": true
+            },
+            "display": {
+              "type": "array",
+              "items": {
+                "$ref": "#def-display"
+              },
+              "uniqueItems": true
+            },
+            "system": {
+              "type": "object",
+              "$ref": "./common-schema.json#/definitions/system"
+            },
+            "metadata": {
+              "type": "array",
+              "items": {
+                "$ref": "#def-fullMetadata"
+              },
+              "uniqueItems": true
+            },
+            "uniqueName": {
               "type": "string"
             },
             "order": {
               "type": "integer"
             },
-            "metadata": {
-              "type": "object",
-              "$ref": "./common-schema.json#/definitions/metadata"
+            "description": {
+              "type": "string"
             },
-            "system": {
-              "type": "object",
-              "$ref": "./common-schema.json#/definitions/system"
+            "setUpData": {
+              "type": "string"
+            },
+            "name": {
+              "type": "string"
+            },
+            "defaultValue": {
+              "type": "string"
             },
             "creationDate": {
               "type": "string"
             },
             "modificationDate": {
               "type": "string"
-            },
-            "modificationUser": {
-              "type": "array",
-              "items": {
-                "$ref": "./common-schema.json#/definitions/id"
-              },
-              "uniqueItems": true
             }
           }
-        },
-        "fields": {
-          "$id": "#content-fields",
-          "type": "array",
-          "items": {
-            "$ref": "#content-field"
-          },
-          "uniqueItems": true
         }
       }
     },
-    "field": {
-      "$id": "#content-field",
+    "fieldProperties": {
+      "$id": "#def-fieldProperties",
       "required": [
-        "id"
+        "fieldType",
+        "name"
       ],
       "properties": {
-        "id": {
+        "dataType": {
+          "type": "string",
+          "$ref": "#def-dataType"
+        },
+        "fieldType": {
+          "enum": [
+            "Text",
+            "Category",
+            "Checkbox",
+            "Constant",
+            "Custom",
+            "Date",
+            "Datetime",
+            "File",
+            "Hidden",
+            "Site",
+            "Image",
+            "KeyValue",
+            "Divider",
+            "Select",
+            "Multiselect",
+            "Tab",
+            "Radio",
+            "Relationship",
+            "RelationshipTab",
+            "Permission",
+            "Tag",
+            "Textarea",
+            "Binary",
+            "Time",
+            "WYSIWYG",
+            "Row",
+            "Column",
+            "Array"
+          ]
+        },
+        "validations": {
           "type": "array",
           "items": {
-            "$ref": "./common-schema.json#/definitions/id"
+            "$ref": "#def-validation"
           },
           "uniqueItems": true
         },
-        "value": {
+        "constraints": {
           "type": "array",
           "items": {
-            "properties": {
-              "value": {
-                "type": "string"
-              },
-              "order": {
-                "type": "integer"
-              },
-              "properties": {
-                "$ref": "./definition-schema.json#/definitions/fieldProperties",
-                "required": [
-                  "dataType",
-                  "fieldType",
-                  "uniqueName",
-                  "order"
-                ]
-              }
-            }
-          }
+            "$ref": "#def-constraint"
+          },
+          "uniqueItems": true
         },
-        "storage": {
+        "display": {
+          "type": "array",
+          "items": {
+            "$ref": "#def-display"
+          },
+          "uniqueItems": true
+        },
+        "system": {
           "type": "object",
-          "$ref": "#content-storage"
+          "$ref": "./common-schema.json#/definitions/system"
+        },
+        "metadata": {
+          "type": "array",
+          "items": {
+            "$ref": "#def-fullMetadata"
+          },
+          "uniqueItems": true
+        },
+        "uniqueName": {
+          "type": "string"
+        },
+        "order": {
+          "type": "integer"
+        },
+        "description": {
+          "type": "string"
+        },
+        "setUpData": {
+          "type": "string"
+        },
+        "name": {
+          "type": "string"
+        },
+        "defaultValue": {
+          "type": "string"
+        },
+        "creationDate": {
+          "type": "string"
+        },
+        "modificationDate": {
+          "type": "string"
         }
       }
     }

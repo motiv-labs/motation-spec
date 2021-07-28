@@ -1,7 +1,6 @@
 {
   "$schema": "../../schema/full-generic-schema.json",
   "$id": "example-dotCMS-5.2.7.json",
-  "motationType": "generic",
   "systems": [
     {
       "name": "dotCMS 5.2.7",

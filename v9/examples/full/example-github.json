@@ -1,7 +1,6 @@
 {
   "$schema": "../../schema/full-generic-schema.json",
   "$id": "example-github.json",
-  "motationType": "generic",
   "systems": [
     {
       "name": "gitHub",

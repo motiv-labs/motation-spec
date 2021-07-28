@@ -56,6 +56,28 @@
           "fieldType": "Text",
           "name": "definitionDescription"
         }
+      },
+      {
+        "id": [
+          {
+            "value": "32680740-2120-4d68-bbc2-c47a5b13f139"
+          }
+        ],
+        "properties": {
+          "fieldType": "DefinitionFieldProperties",
+          "name": "definitionDescription"
+        }
+      },
+      {
+        "id": [
+          {
+            "value": "42680740-2120-4d68-bbc2-c47a5b13f144"
+          }
+        ],
+        "properties": {
+          "fieldType": "DefinitionFieldProperties",
+          "name": "definitionDescription"
+        }
       }
     ],
     "audit":[
@@ -270,6 +292,7 @@
                     "description": "Title field description",
                     "hint": "This is the title field",
                     "name": "Title",
+                    "order": 0,
                     "defaultValue": "Default Title",
                     "creationDate": "2020-03-27 13:36:37.000000",
                     "modificationDate": "2020-03-27 13:36:37.000000"

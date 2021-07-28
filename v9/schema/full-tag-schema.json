@@ -20,7 +20,7 @@
     "definition": {
       "allOf": [
         {
-          "$ref": "./definition-field-schema.json"
+          "$ref": "definition-field-schema.json"
         },
         {
           "properties": {
@@ -29,7 +29,7 @@
               "items": {
                 "allOf": [
                   {
-                    "$ref": "./definition-field-schema.json#/definitions/field"
+                    "$ref": "definition-field-schema.json#/definitions/field"
                   }
                 ]
               },
@@ -58,7 +58,7 @@
         "fields": {
           "type": "array",
           "items": {
-            "$ref": "./definition-field-schema.json#/definitions/field"
+            "$ref": "definition-field-schema.json#/definitions/field"
           },
           "minItems": 1
         }
