@@ -1,7 +1,6 @@
 {
   "$schema": "../../schema/full-generic-schema.json",
   "$id": "generic-schema.json",
-  "motationType": "generic",
   "systems": [
     {
       "name": "dotCMS 5.2.7",
@@ -26,18 +25,19 @@
       ],
       "properties": {
         "type": "Content",
-        "status": "Live",
-        "languageId": [
-          {
-            "value": "1"
-          }
-        ],
         "definitionId": [
           {
             "value": "a0ba0feb-440e-4881-8275-91f312bedb32"
           }
         ],
         "name": "content.936162bd-d3b1-4b13-ac76-1dcdf4ecef55",
+
+        "status": "Live",
+        "languageId": [
+          {
+            "value": "1"
+          }
+        ],
         "path": "/",
         "site": "SYSTEM_HOST",
         "system": {}

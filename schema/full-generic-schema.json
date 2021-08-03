@@ -9,10 +9,6 @@
     "key"
   ],
   "properties": {
-    "motationType": {
-      "type": "string",
-      "const": "generic"
-    },
     "systems": {
       "type": "array",
       "items": {

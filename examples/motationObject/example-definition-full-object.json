@@ -128,17 +128,7 @@
           "properties": {
             "status": "Live",
             "title": "Example",
-            "order": 0,
-            "32680740-2120-4d68-bbc2-c47a5b13f139": {
-              "system": {
-                "field_contentlet": "text3"
-              }
-            },
-            "42680740-2120-4d68-bbc2-c47a5b13f144": {
-              "system": {
-                "field_contentlet": "text2"
-              }
-            }
+            "order": 0
           },
           "fields": [
             {
