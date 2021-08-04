@@ -1,7 +1,7 @@
 {
   "$schema": "http://json-schema.org/draft-07/schema#",
   "description": "A schema that validates the structure of a Motation Content",
-  "$id": "http://example.com/schemas/definitionFieldSchema.json",
+  "$id": "definition-field-schema.json",
   "required": [
     "properties",
     "fields"

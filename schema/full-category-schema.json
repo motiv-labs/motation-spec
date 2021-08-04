@@ -1,7 +1,7 @@
 {
   "$schema": "http://json-schema.org/draft-07/schema#",
   "description": "A schema that validates the structure of a Category Motation Object file",
-  "$id": "http://example.com/schemas/languageSchema.json",
+  "$id": "full-category-schema.json",
   "type": "object",
   "required": [
     "systems",
@@ -21,7 +21,7 @@
     "definition": {
       "allOf": [
         {
-          "$ref": "./definition-schema.json"
+          "$ref": "./definition-field-schema.json"
         },
         {
           "properties": {
@@ -30,7 +30,7 @@
               "items": {
                 "allOf": [
                   {
-                    "$ref": "./definition-schema.json#/definitions/field"
+                    "$ref": "./definition-field-schema.json#/definitions/field"
                   }
                 ]
               },
@@ -59,7 +59,7 @@
         "fields": {
           "type": "array",
           "items": {
-            "$ref": "./definition-schema.json#/definitions/field"
+            "$ref": "./definition-field-schema.json#/definitions/field"
           },
           "minItems": 1
         }

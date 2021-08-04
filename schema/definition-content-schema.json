@@ -1,7 +1,7 @@
 {
   "$schema": "http://json-schema.org/draft-07/schema#",
   "description": "A schema that validates the structure of a Motation Content",
-  "$id": "http://example.com/schemas/definitionContentSchema.json",
+  "$id": "definition-content-schema.json",
   "type": "object",
   "required": [
     "id",
@@ -192,7 +192,7 @@
                 "type": "integer"
               },
               "properties": {
-                "$ref": "./definition-schema.json#/definitions/fieldProperties",
+                "$ref": "./definition-field-schema.json#/definitions/fieldProperties",
                 "required": [
                   "dataType",
                   "fieldType",

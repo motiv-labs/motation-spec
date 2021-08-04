@@ -1,6 +1,7 @@
 {
   "$schema": "http://json-schema.org/draft-07/schema#",
   "description": "A schema that contains common elements",
+  "$id": "common-schema.json",
   "type": "object",
   "definitions": {
     "id": {

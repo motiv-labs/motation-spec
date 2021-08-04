@@ -1,6 +1,7 @@
 {
   "$schema": "http://json-schema.org/draft-07/schema#",
   "description": "A schema that validates the structure of a Language Motation Object file",
+  "$id": "full-folder-schema.json",
   "type": "object",
   "required": [
     "systems",
