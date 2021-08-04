@@ -1,6 +1,15 @@
 {
   "$schema": "../../schema/full-tag-schema.json",
   "$id": "definition-schema.json",
+  "dependencies": {
+    "relationships": "relationship-reference-motation-id",
+    "tags": "tag-reference-motation-id",
+    "categories": "category-reference-motation-id",
+    "definitions": "definition-reference-motation-id",
+    "domains": "domain-reference-motation-id",
+    "languages": "language-reference-motation-id",
+    "folders": "folder-reference-motation-id"
+  },
   "definition": {
     "id": [
       {
@@ -126,166 +135,6 @@
               "value": [
                 {
                   "value": "2020-08-18 16:56:40.392 +0000 UTC"
-                }
-              ]
-            },
-            {
-              "id": [
-                {
-                  "value": "d3f676ce-1510-46f7-a64e-168ef5361777"
-                }
-              ],
-              "value": [
-                {
-                  "value": "false"
-                }
-              ]
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "id": [
-        {
-          "value": "d20dca41-2a90-43f7-af90-19b0eaa42af1"
-        }
-      ],
-      "properties": {
-        "type": "Content",
-        "definitionId": [
-          {
-            "value": "a0ba0feb-440e-4881-8275-91f312bedb32"
-          }
-        ],
-        "name": "tag2"
-      },
-      "versions": [
-        {
-          "id": [
-            {
-              "value": "3a4fd59c-c666-48b2-858c-f62c45c33b75"
-            }
-          ],
-          "properties": {
-            "status": "Live",
-            "title": "Tag2",
-            "order": 0
-          },
-          "fields": [
-            {
-              "id": [
-                {
-                  "value": "d3f676ce-1510-46f7-a64e-168ef5361555"
-                }
-              ],
-              "value": [
-                {
-                  "value": "tag2"
-                }
-              ]
-            },
-            {
-              "id": [
-                {
-                  "value": "d3f676ce-1510-46f7-a64e-168ef5361444"
-                }
-              ],
-              "value": [
-                {
-                  "value": "SYSTEM_HOST"
-                }
-              ]
-            },
-            {
-              "id": [
-                {
-                  "value": "d3f676ce-1510-46f7-a64e-168ef5361666"
-                }
-              ],
-              "value": [
-                {
-                  "value": "2020-08-18 16:56:50.559 +0000 UTC"
-                }
-              ]
-            },
-            {
-              "id": [
-                {
-                  "value": "d3f676ce-1510-46f7-a64e-168ef5361777"
-                }
-              ],
-              "value": [
-                {
-                  "value": "false"
-                }
-              ]
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "id": [
-        {
-          "value": "6c7a56bf-006e-4f93-a092-1c1b905998a6"
-        }
-      ],
-      "properties": {
-        "type": "Content",
-        "definitionId": [
-          {
-            "value": "a0ba0feb-440e-4881-8275-91f312bedb32"
-          }
-        ],
-        "name": "tag3"
-      },
-      "versions": [
-        {
-          "id": [
-            {
-              "value": "3a4fd59c-c666-48b2-858c-f62c45c33b75"
-            }
-          ],
-          "properties": {
-            "status": "Live",
-            "title": "Tag3",
-            "order": 0
-          },
-          "fields": [
-            {
-              "id": [
-                {
-                  "value": "d3f676ce-1510-46f7-a64e-168ef5361555"
-                }
-              ],
-              "value": [
-                {
-                  "value": "tag3"
-                }
-              ]
-            },
-            {
-              "id": [
-                {
-                  "value": "d3f676ce-1510-46f7-a64e-168ef5361444"
-                }
-              ],
-              "value": [
-                {
-                  "value": "SYSTEM_HOST"
-                }
-              ]
-            },
-            {
-              "id": [
-                {
-                  "value": "d3f676ce-1510-46f7-a64e-168ef5361666"
-                }
-              ],
-              "value": [
-                {
-                  "value": "2020-08-18 16:57:11.891 +0000 UTC"
                 }
               ]
             },

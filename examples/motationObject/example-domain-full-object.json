@@ -1,57 +1,14 @@
 {
   "$schema": "../../schema/full-domain-schema.json",
   "$id": "definition-schema.json",
-  "definition": {
-    "id": [
-      {
-        "value": "a0ba0feb-440e-4881-8275-91f312bedb32"
-      }
-    ],
-    "properties": {
-      "motationType": "domain",
-      "uniqueName": "domain",
-      "type": "MotationObject"
-    },
-    "fields": [
-      {
-        "id": [
-          {
-            "value": "d3f676ce-1510-46f7-a64e-168ef5361111"
-          }
-        ],
-        "properties": {
-          "fieldType": "Text",
-          "name": "domainName"
-        }
-      },
-      {
-        "id": [
-          {
-            "value": "d3f676ce-1510-46f7-a64e-168ef5361222"
-          }
-        ],
-        "properties": {
-          "fieldType": "Text",
-          "name": "active"
-        }
-      },
-      {
-        "id": [
-          {
-            "value": "d3f676ce-1510-46f7-a64e-168ef5361333"
-          }
-        ],
-        "properties": {
-          "fieldType": "Text",
-          "name": "vanityUrls"
-        }
-      }
-    ],
-    "audit":[
-      {
-        "date":"2021-07-14 18:53:09.139120783 +0000 UTC m=+641.870120051"
-      }
-    ]
+  "dependencies": {
+    "relationships": "relationship-reference-motation-id",
+    "tags": "tag-reference-motation-id",
+    "categories": "category-reference-motation-id",
+    "definitions": "domain-definition-reference-motation-id",
+    "domains": "domain-reference-motation-id",
+    "languages": "language-reference-motation-id",
+    "folders": "folder-reference-motation-id"
   },
   "contents": [
     {

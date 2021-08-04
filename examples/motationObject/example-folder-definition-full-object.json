@@ -1,15 +1,6 @@
 {
-  "$schema": "../../schema/full-relationship-schema.json",
+  "$schema": "../../schema/full-definition-schema.json",
   "$id": "definition-schema.json",
-  "dependencies": {
-    "relationships": "relationship-reference-motation-id",
-    "tags": "tag-reference-motation-id",
-    "categories": "category-reference-motation-id",
-    "definitions": "definition-reference-motation-id",
-    "domains": "domain-reference-motation-id",
-    "languages": "language-reference-motation-id",
-    "folders": "folder-reference-motation-id"
-  },
   "definition": {
     "id": [
       {
@@ -17,24 +8,10 @@
       }
     ],
     "properties": {
-      "motationType": "relationship",
-      "uniqueName": "relationship",
+      "motationType": "definition",
+      "uniqueName": "definition",
       "type": "MotationObject"
     },
-    "contentProperties": [
-      {
-        "propertyType":"String",
-        "name": "child_required"
-      },
-      {
-        "propertyType":"String",
-        "name": "fixed"
-      },
-      {
-        "propertyType":"String",
-        "name": "parent_required"
-      }
-    ],
     "fields": [
       {
         "id": [
@@ -44,7 +21,7 @@
         ],
         "properties": {
           "fieldType": "Text",
-          "name": "uniqueName"
+          "name": "definitionType"
         }
       },
       {
@@ -55,7 +32,7 @@
         ],
         "properties": {
           "fieldType": "Text",
-          "name": "parentId"
+          "name": "definitionUniqueName"
         }
       },
       {
@@ -66,7 +43,7 @@
         ],
         "properties": {
           "fieldType": "Text",
-          "name": "childId"
+          "name": "definitionName"
         }
       },
       {
@@ -77,18 +54,18 @@
         ],
         "properties": {
           "fieldType": "Text",
-          "name": "childName"
+          "name": "definitionDescription"
         }
       },
       {
         "id": [
           {
-            "value": "d3f676ce-1510-46f7-a64e-168ef5361555"
+            "value": "32680740-2120-4d68-bbc2-c47a5b13f139"
           }
         ],
         "properties": {
-          "fieldType": "Text",
-          "name": "cardinality"
+          "fieldType": "DefinitionFieldProperties",
+          "name": "path"
         }
       }
     ],
@@ -102,7 +79,7 @@
     {
       "id": [
         {
-          "value": "bd3a6f51-2df9-41f7-a6d8-2c5d80bc23b0"
+          "value": "a0ba0feb-440e-4881-8275-91f312bedb32"
         }
       ],
       "properties": {
@@ -112,12 +89,23 @@
             "value": "a0ba0feb-440e-4881-8275-91f312bedb32"
           }
         ],
-        "name": "Kitchensink.relationships",
+        "name": "Example",
+
+        "parent": {
+          "type": "Site",
+          "id": [
+            {
+              "value": "SYSTEM_HOST"
+            }
+          ]
+        },
         "system": {
-          "child_required": "false",
+          "default_structure": "false",
           "fixed": "false",
-          "parent_required": "false"
-        }
+          "folder": "SYSTEM_FOLDER",
+          "system": "false"
+        },
+        "modificationDate": "2020-09-15 14:41:31 +0000 UTC"
       },
       "versions": [
         {
@@ -128,7 +116,7 @@
           ],
           "properties": {
             "status": "Live",
-            "title": "Kitchensink.relationships",
+            "title": "Example",
             "order": 0
           },
           "fields": [
@@ -140,7 +128,7 @@
               ],
               "value": [
                 {
-                  "value": "Kitchensink.relationships"
+                  "value": "Content"
                 }
               ]
             },
@@ -152,7 +140,7 @@
               ],
               "value": [
                 {
-                  "value": "a0ba0feb-440e-4881-8275-91f312bedb32"
+                  "value": "Example"
                 }
               ]
             },
@@ -164,7 +152,7 @@
               ],
               "value": [
                 {
-                  "value": "2a3e91e4-fbbf-4876-8c5b-2233c1739b05"
+                  "value": "Example"
                 }
               ]
             },
@@ -176,19 +164,53 @@
               ],
               "value": [
                 {
-                  "value": "relationships"
+                  "value": "A content type with all the field types"
                 }
               ]
             },
             {
               "id": [
                 {
-                  "value": "d3f676ce-1510-46f7-a64e-168ef5361555"
+                  "value": "42680740-2120-4d68-bbc2-c47a5b13f155"
                 }
               ],
               "value": [
                 {
-                  "value": "ManyToMany"
+                  "properties":  {
+                    "dataType": "String",
+                    "fieldType": "text",
+                    "validations": [
+                      {
+                        "name": "required",
+                        "required": true
+                      }
+                    ],
+                    "constraints": [
+                      {
+                        "readOnly": true
+                      }
+                    ],
+                    "display": [
+                      {
+                        "searchable": true
+                      }
+                    ],
+                    "metadata": [
+                      {
+                        "key": "content-type"
+                      }
+                    ],
+                    "system": {
+                      "field_contentlet": "text1"
+                    },
+                    "uniqueName": "path",
+                    "description": "path description",
+                    "hint": "This is the path field",
+                    "name": "Path",
+                    "order": 0,
+                    "creationDate": "2020-03-27 13:36:37.000000",
+                    "modificationDate": "2020-03-27 13:36:37.000000"
+                  }
                 }
               ]
             }
@@ -205,7 +227,7 @@
   "key": {
     "fields": [
       {
-        "name": "uniqueName",
+        "name": "definitionType",
         "id": [
           {
             "value": "d3f676ce-1510-46f7-a64e-168ef5361111"
@@ -213,7 +235,7 @@
         ]
       },
       {
-        "name": "parentId",
+        "name": "definitionUniqueName",
         "id": [
           {
             "value": "d3f676ce-1510-46f7-a64e-168ef5361222"
@@ -221,7 +243,7 @@
         ]
       },
       {
-        "name": "childId",
+        "name": "definitionName",
         "id": [
           {
             "value": "d3f676ce-1510-46f7-a64e-168ef5361333"
@@ -229,7 +251,7 @@
         ]
       },
       {
-        "name": "childName",
+        "name": "definitionDescription",
         "id": [
           {
             "value": "d3f676ce-1510-46f7-a64e-168ef5361444"
@@ -237,10 +259,10 @@
         ]
       },
       {
-        "name": "cardinality",
+        "name": "42680740-2120-4d68-bbc2-c47a5b13f155",
         "id": [
           {
-            "value": "d3f676ce-1510-46f7-a64e-168ef5361555"
+            "value": "42680740-2120-4d68-bbc2-c47a5b13f155"
           }
         ]
       }

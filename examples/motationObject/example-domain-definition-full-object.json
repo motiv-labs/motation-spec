@@ -1,0 +1,416 @@
+{
+  "$schema": "../../schema/full-definition-schema.json",
+  "$id": "definition-schema.json",
+  "definition": {
+    "id": [
+      {
+        "value": "a0ba0feb-440e-4881-8275-91f312bedb32"
+      }
+    ],
+    "properties": {
+      "motationType": "definition",
+      "uniqueName": "definition",
+      "type": "MotationObject"
+    },
+    "fields": [
+      {
+        "id": [
+          {
+            "value": "d3f676ce-1510-46f7-a64e-168ef5361111"
+          }
+        ],
+        "properties": {
+          "fieldType": "Text",
+          "name": "definitionType"
+        }
+      },
+      {
+        "id": [
+          {
+            "value": "d3f676ce-1510-46f7-a64e-168ef5361222"
+          }
+        ],
+        "properties": {
+          "fieldType": "Text",
+          "name": "definitionUniqueName"
+        }
+      },
+      {
+        "id": [
+          {
+            "value": "d3f676ce-1510-46f7-a64e-168ef5361333"
+          }
+        ],
+        "properties": {
+          "fieldType": "Text",
+          "name": "definitionName"
+        }
+      },
+      {
+        "id": [
+          {
+            "value": "d3f676ce-1510-46f7-a64e-168ef5361444"
+          }
+        ],
+        "properties": {
+          "fieldType": "Text",
+          "name": "definitionDescription"
+        }
+      },
+      {
+        "id": [
+          {
+            "value": "32680740-2120-4d68-bbc2-c47a5b13f139"
+          }
+        ],
+        "properties": {
+          "fieldType": "DefinitionFieldProperties",
+          "name": "domainName"
+        }
+      },
+      {
+        "id": [
+          {
+            "value": "42680740-2120-4d68-bbc2-c47a5b13f144"
+          }
+        ],
+        "properties": {
+          "fieldType": "DefinitionFieldProperties",
+          "name": "active"
+        }
+      },
+      {
+        "id": [
+          {
+            "value": "42680740-2120-4d68-bbc2-c47a5b13f155"
+          }
+        ],
+        "properties": {
+          "fieldType": "DefinitionFieldProperties",
+          "name": "vanityUrls"
+        }
+      }
+    ],
+    "audit":[
+      {
+        "date":"2021-07-14 18:53:09.139120783 +0000 UTC m=+641.870120051"
+      }
+    ]
+  },
+  "contents": [
+    {
+      "id": [
+        {
+          "value": "a0ba0feb-440e-4881-8275-91f312bedb32"
+        }
+      ],
+      "properties": {
+        "type": "Content",
+        "definitionId": [
+          {
+            "value": "a0ba0feb-440e-4881-8275-91f312bedb32"
+          }
+        ],
+        "name": "Example",
+
+        "parent": {
+          "type": "Site",
+          "id": [
+            {
+              "value": "SYSTEM_HOST"
+            }
+          ]
+        },
+        "system": {
+          "default_structure": "false",
+          "fixed": "false",
+          "folder": "SYSTEM_FOLDER",
+          "system": "false"
+        },
+        "modificationDate": "2020-09-15 14:41:31 +0000 UTC"
+      },
+      "versions": [
+        {
+          "id": [
+            {
+              "value": "3a4fd59c-c666-48b2-858c-f62c45c33b75"
+            }
+          ],
+          "properties": {
+            "status": "Live",
+            "title": "Example",
+            "order": 0
+          },
+          "fields": [
+            {
+              "id": [
+                {
+                  "value": "d3f676ce-1510-46f7-a64e-168ef5361111"
+                }
+              ],
+              "value": [
+                {
+                  "value": "Content"
+                }
+              ]
+            },
+            {
+              "id": [
+                {
+                  "value": "d3f676ce-1510-46f7-a64e-168ef5361222"
+                }
+              ],
+              "value": [
+                {
+                  "value": "Example"
+                }
+              ]
+            },
+            {
+              "id": [
+                {
+                  "value": "d3f676ce-1510-46f7-a64e-168ef5361333"
+                }
+              ],
+              "value": [
+                {
+                  "value": "Example"
+                }
+              ]
+            },
+            {
+              "id": [
+                {
+                  "value": "d3f676ce-1510-46f7-a64e-168ef5361444"
+                }
+              ],
+              "value": [
+                {
+                  "value": "A content type with all the field types"
+                }
+              ]
+            },
+            {
+              "id": [
+                {
+                  "value": "32680740-2120-4d68-bbc2-c47a5b13f139"
+                }
+              ],
+              "value": [
+                {
+                  "properties": {
+                    "dataType": "String",
+                    "fieldType": "Text",
+                    "validations": [
+                      {
+                        "name": "required",
+                        "required": true
+                      }
+                    ],
+                    "constraints": [
+                      {
+                        "unique": true
+                      },
+                      {
+                        "readOnly": true
+                      }
+                    ],
+                    "display": [
+                      {
+                        "showInList": true
+                      },
+                      {
+                        "searchable": true
+                      }
+                    ],
+                    "metadata": [
+                      {
+                        "key": "content-type"
+                      }
+                    ],
+                    "system": {
+                      "field_contentlet": "text3"
+                    },
+                    "uniqueName": "domainName",
+                    "description": "domain name description",
+                    "hint": "This is the domain name field",
+                    "name": "Domain Name",
+                    "creationDate": "2020-03-27 13:36:37.000000",
+                    "modificationDate": "2020-03-27 13:36:37.000000",
+                    "defaultValue": "mysite",
+                    "order": 1,
+                    "setUpData": "##Some set up..."
+                  }
+                }
+              ]
+            },
+            {
+              "id": [
+                {
+                  "value": "42680740-2120-4d68-bbc2-c47a5b13f144"
+                }
+              ],
+              "value": [
+                {
+                  "properties":  {
+                    "dataType": "Boolean",
+                    "fieldType": "boolean",
+                    "validations": [
+                      {
+                        "name": "required",
+                        "required": true
+                      }
+                    ],
+                    "constraints": [
+                      {
+                        "readOnly": true
+                      }
+                    ],
+                    "display": [
+                      {
+                        "searchable": true
+                      }
+                    ],
+                    "metadata": [
+                      {
+                        "key": "content-type"
+                      }
+                    ],
+                    "system": {
+                      "field_contentlet": "text2"
+                    },
+                    "uniqueName": "active",
+                    "description": "active field description",
+                    "hint": "This is the active field",
+                    "name": "Active",
+                    "order": 0,
+                    "defaultValue": "true",
+                    "creationDate": "2020-03-27 13:36:37.000000",
+                    "modificationDate": "2020-03-27 13:36:37.000000"
+                  }
+                }
+              ]
+            },
+            {
+              "id": [
+                {
+                  "value": "42680740-2120-4d68-bbc2-c47a5b13f155"
+                }
+              ],
+              "value": [
+                {
+                  "properties":  {
+                    "dataType": "String",
+                    "fieldType": "textArea",
+                    "validations": [
+                      {
+                        "name": "required",
+                        "required": true
+                      }
+                    ],
+                    "constraints": [
+                      {
+                        "readOnly": true
+                      }
+                    ],
+                    "display": [
+                      {
+                        "searchable": true
+                      }
+                    ],
+                    "metadata": [
+                      {
+                        "key": "content-type"
+                      }
+                    ],
+                    "system": {
+                      "field_contentlet": "text3"
+                    },
+                    "uniqueName": "aliases",
+                    "description": "aliases description",
+                    "hint": "This is the aliases field",
+                    "name": "Aliases",
+                    "order": 3,
+                    "creationDate": "2020-03-27 13:36:37.000000",
+                    "modificationDate": "2020-03-27 13:36:37.000000"
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "audit": [
+    {
+      "date": "2020-09-16 15:05:48.954512 -0600 CST m=+0.003569682"
+    }
+  ],
+  "key": {
+    "fields": [
+      {
+        "name": "definitionType",
+        "id": [
+          {
+            "value": "d3f676ce-1510-46f7-a64e-168ef5361111"
+          }
+        ]
+      },
+      {
+        "name": "definitionUniqueName",
+        "id": [
+          {
+            "value": "d3f676ce-1510-46f7-a64e-168ef5361222"
+          }
+        ]
+      },
+      {
+        "name": "definitionName",
+        "id": [
+          {
+            "value": "d3f676ce-1510-46f7-a64e-168ef5361333"
+          }
+        ]
+      },
+      {
+        "name": "definitionDescription",
+        "id": [
+          {
+            "value": "d3f676ce-1510-46f7-a64e-168ef5361444"
+          }
+        ]
+      },
+      {
+        "name": "32680740-2120-4d68-bbc2-c47a5b13f139",
+        "id": [
+          {
+            "value": "32680740-2120-4d68-bbc2-c47a5b13f139"
+          }
+        ]
+      },
+      {
+        "name": "42680740-2120-4d68-bbc2-c47a5b13f144",
+        "id": [
+          {
+            "value": "42680740-2120-4d68-bbc2-c47a5b13f144"
+          }
+        ]
+      },
+      {
+        "name": "42680740-2120-4d68-bbc2-c47a5b13f155",
+        "id": [
+          {
+            "value": "42680740-2120-4d68-bbc2-c47a5b13f155"
+          }
+        ]
+      }
+    ]
+  },
+  "systems": [
+    {
+      "name": "dotCMS 5.2.7",
+      "date": "2020-09-16 15:05:48.954501 -0600 CST m=+0.003559429"
+    }
+  ]
+}
