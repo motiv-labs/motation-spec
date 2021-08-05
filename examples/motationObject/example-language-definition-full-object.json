@@ -8,8 +8,8 @@
       }
     ],
     "properties": {
-      "motationType": "definition",
-      "uniqueName": "definition",
+      "motationType": "language",
+      "uniqueName": "language",
       "type": "MotationObject"
     },
     "fields": [
@@ -234,11 +234,6 @@
                         "searchable": true
                       }
                     ],
-                    "metadata": [
-                      {
-                        "key": "content-type"
-                      }
-                    ],
                     "system": {
                       "field_contentlet": "text3"
                     },
@@ -286,11 +281,6 @@
                       },
                       {
                         "searchable": true
-                      }
-                    ],
-                    "metadata": [
-                      {
-                        "key": "content-type"
                       }
                     ],
                     "system": {
@@ -342,11 +332,6 @@
                         "searchable": true
                       }
                     ],
-                    "metadata": [
-                      {
-                        "key": "content-type"
-                      }
-                    ],
                     "system": {
                       "field_contentlet": "text3"
                     },
@@ -394,11 +379,6 @@
                       },
                       {
                         "searchable": true
-                      }
-                    ],
-                    "metadata": [
-                      {
-                        "key": "content-type"
                       }
                     ],
                     "system": {

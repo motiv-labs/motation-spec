@@ -18,53 +18,6 @@
       "minItems": 1,
       "uniqueItems": true
     },
-    "definition": {
-      "allOf": [
-        {
-          "$ref": "definition-field-schema.json"
-        },
-        {
-          "properties": {
-            "fields": {
-              "type": "array",
-              "items": {
-                "allOf": [
-                  {
-                    "$ref": "definition-field-schema.json#/definitions/field"
-                  }
-                ]
-              },
-              "allOf": [
-                {
-                  "contains": {
-                    "properties": {
-                      "properties": {
-                        "type": "object",
-                        "properties": {
-                          "name": {
-                            "type": "string",
-                            "const": "name"
-                          }
-                        }
-                      }
-                    }
-                  }
-                }
-              ]
-            }
-          }
-        }
-      ],
-      "properties": {
-        "fields": {
-          "type": "array",
-          "items": {
-            "$ref": "definition-field-schema.json#/definitions/field"
-          },
-          "minItems": 1
-        }
-      }
-    },
     "contents": {
       "type": "array",
       "items": {

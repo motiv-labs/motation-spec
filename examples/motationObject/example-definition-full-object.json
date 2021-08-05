@@ -8,8 +8,8 @@
       }
     ],
     "properties": {
-      "motationType": "definition",
-      "uniqueName": "definition",
+      "motationType": "main",
+      "uniqueName": "main",
       "type": "MotationObject"
     },
     "fields": [
@@ -220,12 +220,6 @@
                         "searchable": true
                       }
                     ],
-                    "metadata": [
-                      {
-                        "key": "content-type",
-                        "value": "image/jpeg"
-                      }
-                    ],
                     "system": {
                       "field_contentlet": "text3"
                     },
@@ -267,12 +261,6 @@
                     "display": [
                       {
                         "searchable": true
-                      }
-                    ],
-                    "metadata": [
-                      {
-                        "key": "content-type",
-                        "value": "image/jpeg"
                       }
                     ],
                     "system": {

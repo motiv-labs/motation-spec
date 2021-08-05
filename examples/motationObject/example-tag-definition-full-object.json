@@ -8,8 +8,8 @@
       }
     ],
     "properties": {
-      "motationType": "definition",
-      "uniqueName": "definition",
+      "motationType": "tag",
+      "uniqueName": "tag",
       "type": "MotationObject"
     },
     "fields": [
@@ -65,7 +65,7 @@
         ],
         "properties": {
           "fieldType": "DefinitionFieldProperties",
-          "name": "domainName"
+          "name": "name"
         }
       },
       {
@@ -76,7 +76,7 @@
         ],
         "properties": {
           "fieldType": "DefinitionFieldProperties",
-          "name": "active"
+          "name": "site"
         }
       },
       {
@@ -87,7 +87,7 @@
         ],
         "properties": {
           "fieldType": "DefinitionFieldProperties",
-          "name": "vanityUrls"
+          "name": "persona"
         }
       }
     ],
@@ -223,23 +223,17 @@
                         "searchable": true
                       }
                     ],
-                    "metadata": [
-                      {
-                        "key": "content-type",
-                        "value": "image/jpeg"
-                      }
-                    ],
                     "system": {
                       "field_contentlet": "text3"
                     },
-                    "uniqueName": "domainName",
-                    "description": "domain name description",
-                    "hint": "This is the domain name field",
-                    "name": "Domain Name",
+                    "uniqueName": "name",
+                    "description": "name description",
+                    "hint": "This is the name field",
+                    "name": "Name",
                     "creationDate": "2020-03-27 13:36:37.000000",
                     "modificationDate": "2020-03-27 13:36:37.000000",
-                    "defaultValue": "mysite",
-                    "order": 1,
+                    "defaultValue": "new tag",
+                    "order": 0,
                     "setUpData": "##Some set up..."
                   }
                 }
@@ -254,8 +248,8 @@
               "value": [
                 {
                   "properties":  {
-                    "dataType": "Boolean",
-                    "fieldType": "boolean",
+                    "dataType": "String",
+                    "fieldType": "Text",
                     "validations": [
                       {
                         "name": "required",
@@ -272,20 +266,14 @@
                         "searchable": true
                       }
                     ],
-                    "metadata": [
-                      {
-                        "key": "content-type"
-                      }
-                    ],
                     "system": {
                       "field_contentlet": "text2"
                     },
-                    "uniqueName": "active",
-                    "description": "active field description",
-                    "hint": "This is the active field",
-                    "name": "Active",
-                    "order": 0,
-                    "defaultValue": "true",
+                    "uniqueName": "site",
+                    "description": "site field description",
+                    "hint": "This is the site field",
+                    "name": "Site",
+                    "order": 1,
                     "creationDate": "2020-03-27 13:36:37.000000",
                     "modificationDate": "2020-03-27 13:36:37.000000"
                   }
@@ -302,7 +290,7 @@
                 {
                   "properties":  {
                     "dataType": "String",
-                    "fieldType": "textArea",
+                    "fieldType": "Textarea",
                     "validations": [
                       {
                         "name": "required",
@@ -319,19 +307,14 @@
                         "searchable": true
                       }
                     ],
-                    "metadata": [
-                      {
-                        "key": "content-type"
-                      }
-                    ],
                     "system": {
                       "field_contentlet": "text3"
                     },
-                    "uniqueName": "aliases",
-                    "description": "aliases description",
-                    "hint": "This is the aliases field",
-                    "name": "Aliases",
-                    "order": 3,
+                    "uniqueName": "persona",
+                    "description": "persona description",
+                    "hint": "This is the persona field",
+                    "name": "Persona",
+                    "order": 2,
                     "creationDate": "2020-03-27 13:36:37.000000",
                     "modificationDate": "2020-03-27 13:36:37.000000"
                   }

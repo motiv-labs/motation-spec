@@ -8,8 +8,8 @@
       }
     ],
     "properties": {
-      "motationType": "definition",
-      "uniqueName": "definition",
+      "motationType": "category",
+      "uniqueName": "category",
       "type": "MotationObject"
     },
     "fields": [
@@ -212,11 +212,6 @@
                         "searchable": true
                       }
                     ],
-                    "metadata": [
-                      {
-                        "key": "content-type"
-                      }
-                    ],
                     "system": {
                       "field_contentlet": "text1"
                     },
@@ -259,11 +254,6 @@
                         "searchable": true
                       }
                     ],
-                    "metadata": [
-                      {
-                        "key": "content-type"
-                      }
-                    ],
                     "system": {
                       "field_contentlet": "text2"
                     },
@@ -289,7 +279,7 @@
                 {
                   "properties":  {
                     "dataType": "String",
-                    "fieldType": "textArea",
+                    "fieldType": "Textarea",
                     "validations": [
                       {
                         "name": "required",
@@ -304,11 +294,6 @@
                     "display": [
                       {
                         "searchable": true
-                      }
-                    ],
-                    "metadata": [
-                      {
-                        "key": "content-type"
                       }
                     ],
                     "system": {

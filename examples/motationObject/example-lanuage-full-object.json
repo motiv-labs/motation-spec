@@ -2,76 +2,13 @@
   "$schema": "../../schema/full-language-schema.json",
   "$id": "definition-schema.json",
   "dependencies": {
-    "relationships": "relationship-reference-motation-id",
-    "tags": "tag-reference-motation-id",
-    "categories": "category-reference-motation-id",
-    "definitions": "definition-reference-motation-id",
-    "domains": "domain-reference-motation-id",
-    "languages": "language-reference-motation-id",
-    "folders": "folder-reference-motation-id"
-  },
-  "definition": {
-    "id": [
-      {
-        "value": "a0ba0feb-440e-4881-8275-91f312bedb32"
-      }
-    ],
-    "properties": {
-      "motationType": "language",
-      "uniqueName": "language",
-      "type": "MotationObject"
-    },
-    "fields": [
-      {
-        "id": [
-          {
-            "value": "d3f676ce-1510-46f7-a64e-168ef5361555"
-          }
-        ],
-        "properties": {
-          "fieldType": "Text",
-          "name": "language"
-        }
-      },
-      {
-        "id": [
-          {
-            "value": "d3f676ce-1510-46f7-a64e-168ef5361444"
-          }
-        ],
-        "properties": {
-          "fieldType": "Text",
-          "name": "languageCode"
-        }
-      },
-      {
-        "id": [
-          {
-            "value": "d3f676ce-1510-46f7-a64e-168ef5361c83"
-          }
-        ],
-        "properties": {
-          "fieldType": "Text",
-          "name": "countryCode"
-        }
-      },
-      {
-        "id": [
-          {
-            "value": "d3f676ce-1510-46f7-a64e-168ef5361666"
-          }
-        ],
-        "properties": {
-          "fieldType": "Text",
-          "name": "country"
-        }
-      }
-    ],
-    "audit":[
-      {
-        "date":"2021-07-14 18:53:09.139120783 +0000 UTC m=+641.870120051"
-      }
-    ]
+    "relationships": ["relationship-reference-motation-id"],
+    "tags": ["tag-reference-motation-id"],
+    "categories": ["category-reference-motation-id"],
+    "definitions": ["definition-reference-motation-id"],
+    "domains": ["domain-reference-motation-id"],
+    "languages": ["language-reference-motation-id"],
+    "folders": ["folder-reference-motation-id"]
   },
   "contents": [
     {
@@ -123,73 +60,6 @@
               "value": [
                 {
                   "value": "SP"
-                }
-              ]
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "id": [
-        {
-          "value": "1"
-        }
-      ],
-      "properties": {
-        "type": "Content",
-        "definitionId": [
-          {
-            "value": "a0ba0feb-440e-4881-8275-91f312bedb32"
-          }
-        ],
-        "name": "English"
-      },
-      "versions": [
-        {
-          "id": [
-            {
-              "value": "3a4fd59c-c666-48b2-858c-f62c45c33b75"
-            }
-          ],
-          "properties": {
-            "title": "English",
-            "order": 0
-          },
-          "fields": [
-            {
-              "id": [
-                {
-                  "value": "d3f676ce-1510-46f7-a64e-168ef5361555"
-                }
-              ],
-              "value": [
-                {
-                  "value": "English"
-                }
-              ]
-            },
-            {
-              "id": [
-                {
-                  "value": "d3f676ce-1510-46f7-a64e-168ef5361444"
-                }
-              ],
-              "value": [
-                {
-                  "value": "EN"
-                }
-              ]
-            },
-            {
-              "id": [
-                {
-                  "value": "d3f676ce-1510-46f7-a64e-168ef5361c83"
-                }
-              ],
-              "value": [
-                {
-                  "value": "US"
                 }
               ]
             }

@@ -8,8 +8,8 @@
       }
     ],
     "properties": {
-      "motationType": "definition",
-      "uniqueName": "definition",
+      "motationType": "domain",
+      "uniqueName": "domain",
       "type": "MotationObject"
     },
     "fields": [
@@ -223,11 +223,6 @@
                         "searchable": true
                       }
                     ],
-                    "metadata": [
-                      {
-                        "key": "content-type"
-                      }
-                    ],
                     "system": {
                       "field_contentlet": "text3"
                     },
@@ -254,7 +249,7 @@
                 {
                   "properties":  {
                     "dataType": "Boolean",
-                    "fieldType": "boolean",
+                    "fieldType": "Binary",
                     "validations": [
                       {
                         "name": "required",
@@ -269,11 +264,6 @@
                     "display": [
                       {
                         "searchable": true
-                      }
-                    ],
-                    "metadata": [
-                      {
-                        "key": "content-type"
                       }
                     ],
                     "system": {
@@ -301,7 +291,7 @@
                 {
                   "properties":  {
                     "dataType": "String",
-                    "fieldType": "textArea",
+                    "fieldType": "Textarea",
                     "validations": [
                       {
                         "name": "required",
@@ -316,11 +306,6 @@
                     "display": [
                       {
                         "searchable": true
-                      }
-                    ],
-                    "metadata": [
-                      {
-                        "key": "content-type"
                       }
                     ],
                     "system": {

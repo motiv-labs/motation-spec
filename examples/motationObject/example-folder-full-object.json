@@ -2,43 +2,13 @@
   "$schema": "../../schema/full-folder-schema.json",
   "$id": "definition-schema.json",
   "dependencies": {
-    "relationships": "relationship-reference-motation-id",
-    "tags": "tag-reference-motation-id",
-    "categories": "category-reference-motation-id",
-    "definitions": "definition-reference-motation-id",
-    "domains": "domain-reference-motation-id",
-    "languages": "language-reference-motation-id",
-    "folders": "folder-reference-motation-id"
-  },
-  "definition": {
-    "id": [
-      {
-        "value": "a0ba0feb-440e-4881-8275-91f312bedb32"
-      }
-    ],
-    "properties": {
-      "motationType": "folder",
-      "uniqueName": "folder",
-      "type": "MotationObject"
-    },
-    "fields": [
-      {
-        "id": [
-          {
-            "value": "d3f676ce-1510-46f7-a64e-168ef5361555"
-          }
-        ],
-        "properties": {
-          "fieldType": "Text",
-          "name": "path"
-        }
-      }
-    ],
-    "audit":[
-      {
-        "date":"2021-07-14 18:53:09.139120783 +0000 UTC m=+641.870120051"
-      }
-    ]
+    "relationships": ["relationship-reference-motation-id"],
+    "tags": ["tag-reference-motation-id"],
+    "categories": ["category-reference-motation-id"],
+    "definitions": ["definition-reference-motation-id"],
+    "domains": ["domain-reference-motation-id"],
+    "languages": ["language-reference-motation-id"],
+    "folders": ["folder-reference-motation-id"]
   },
   "contents": [
     {

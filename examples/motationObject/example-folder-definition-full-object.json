@@ -8,8 +8,8 @@
       }
     ],
     "properties": {
-      "motationType": "definition",
-      "uniqueName": "definition",
+      "motationType": "folder",
+      "uniqueName": "folder",
       "type": "MotationObject"
     },
     "fields": [
@@ -178,7 +178,7 @@
                 {
                   "properties":  {
                     "dataType": "String",
-                    "fieldType": "text",
+                    "fieldType": "Text",
                     "validations": [
                       {
                         "name": "required",
@@ -193,11 +193,6 @@
                     "display": [
                       {
                         "searchable": true
-                      }
-                    ],
-                    "metadata": [
-                      {
-                        "key": "content-type"
                       }
                     ],
                     "system": {

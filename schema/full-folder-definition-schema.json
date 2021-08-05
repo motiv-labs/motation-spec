@@ -1,7 +1,12 @@
 {
   "$schema": "http://json-schema.org/draft-07/schema#",
-  "description": "A schema that validates the structure of a Language Motation Object file",
-  "$id": "full-relationship-schema.json",
+  "description": "A schema that validates the structure of Definition Motation Object Field",
+  "$id": "full-folder-definition-schema.json",
+  "allOf": [
+    {
+      "$ref": "full-definition-schema.json"
+    }
+  ],
   "type": "object",
   "required": [
     "systems",
@@ -18,15 +23,64 @@
       "minItems": 1,
       "uniqueItems": true
     },
+    "definition": {
+      "type": "object",
+      "allOf": [
+        {
+          "properties": {
+            "fields": {
+              "type": "array",
+              "items": {
+                "allOf": [
+                  {
+                    "$ref": "definition-field-schema.json#/definitions/field"
+                  }
+                ]
+              },
+              "allOf": [
+                {
+                  "contains": {
+                    "properties": {
+                      "properties": {
+                        "type": "object",
+                        "properties": {
+                          "fieldType": {
+                            "type": "string",
+                            "const": "DefinitionFieldProperties"
+                          },
+                          "name": {
+                            "type": "string",
+                            "const": "path"
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              ]
+            }
+          }
+        }
+      ],
+      "properties": {
+        "fields": {
+          "type": "array",
+          "items": {
+            "$ref": "definition-field-schema.json#/definitions/field"
+          },
+          "minItems": 2
+        }
+      }
+    },
     "contents": {
       "type": "array",
       "items": {
         "allOf": [
           {
-            "$ref": "#content-field"
+            "$ref": "definition-content-schema.json"
           },
           {
-            "$ref": "content-schema.json"
+            "$ref": "#content-field"
           }
         ]
       },
@@ -48,10 +102,6 @@
       "properties": {
         "fields": {
           "type": "array",
-          "required": [
-            "name",
-            "id"
-          ],
           "items": {
             "$ref": "#key-field"
           },
@@ -61,7 +111,7 @@
                 "properties": {
                   "name": {
                     "type": "string",
-                    "const": "uniqueName"
+                    "const": "definitionType"
                   }
                 }
               }
@@ -71,58 +121,13 @@
                 "properties": {
                   "name": {
                     "type": "string",
-                    "const": "parentId"
-                  }
-                }
-              }
-            },
-            {
-              "contains": {
-                "properties": {
-                  "name": {
-                    "type": "string",
-                    "const": "childId"
-                  }
-                }
-              }
-            },
-            {
-              "contains": {
-                "properties": {
-                  "name": {
-                    "type": "string",
-                    "const": "childName"
-                  }
-                }
-              }
-            },
-            {
-              "contains": {
-                "properties": {
-                  "name": {
-                    "type": "string",
-                    "const": "cardinality"
-                  }
-                }
-              }
-            },
-            {
-              "contains": {
-                "properties": {
-                  "name": {
-                    "type": "string",
-                    "const": "relations"
+                    "const": "definitionUniqueName"
                   }
                 }
               }
             }
           ],
-          "properties": {
-            "name": {
-              "type": "string"
-            }
-          },
-          "minItems": 6,
+          "minItems": 3,
           "uniqueItems": true
         }
       }
@@ -141,16 +146,12 @@
               },
               "fields": {
                 "type": "array",
-                "minItems": 6
+                "minItems": 3
               }
             }
           }
         }
       }
-    },
-    "version-field": {
-      "$id": "#version-field",
-      "properties": {}
     },
     "system": {
       "$id": "#global-system",
