@@ -1,5 +1,5 @@
 {
-  "$schema": "../../schema/full-generic-schema.json",
+  "$schema": "../../schema/motation-schema.json",
   "$id": "example-kitchensink.json",
   "systems": [
     {

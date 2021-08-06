@@ -1,5 +1,5 @@
 {
-  "$schema": "../../schema/full-domain-schema.json",
+  "$schema": "../../schema/domain-motation-dependency-schema.json",
   "$id": "example-domain-full-object.json",
   "domains": [
     {
