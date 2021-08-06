@@ -2,23 +2,23 @@
   "domains": [
     {
       "domainName": "site1",
-
-      "active": "true",
+      "URI": "https://site1.com",
+      "active": true,
       "description": "Testing site for testing purposes",
-      "systemDomain": "true",
-      "defaultDomain": "true",
-      "keywords": "comma,separated,list,of,keywords",
-      "aliases": "mysite,mysamesite"
+      "systemDomain": true,
+      "defaultDomain": true,
+      "keywords": ["array", "separated", "list", "of", "keywords"],
+      "aliases": ["https://mysite.com", "https://mysamesite.com"]
     },
     {
       "domainName": "site-2",
-
-      "active": "true",
+      "URI": "https://site-2.com",
+      "active": true,
       "description": "another site",
-      "systemDomain": "false",
-      "defaultDomain": "false",
-      "keywords": "comma,separated,list,of,keywords",
-      "aliases": "anothersite"
+      "systemDomain": false,
+      "defaultDomain": false,
+      "keywords": ["array", "separated", "list", "of", "keywords"],
+      "aliases": ["https://anothersite.com"]
     }
   ]
 }
