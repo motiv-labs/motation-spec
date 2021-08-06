@@ -1,167 +1,21 @@
 {
-  "$schema": "../../schema/full-relationship-schema.json",
-  "$id": "definition-schema.json",
-  "dependencies": {
-    "relationships": ["relationship-reference-motation-id"],
-    "tags": ["tag-reference-motation-id"],
-    "categories": ["category-reference-motation-id"],
-    "definitions": ["definition-reference-motation-id"],
-    "domains": ["domain-reference-motation-id"],
-    "languages": ["language-reference-motation-id"],
-    "folders": ["folder-reference-motation-id"]
-  },
-  "contents": [
+  "$id": "example-relationship-full-object.json",
+  "relationships": [
     {
-      "id": [
-        {
-          "value": "bd3a6f51-2df9-41f7-a6d8-2c5d80bc23b0"
-        }
-      ],
-      "properties": {
-        "type": "Content",
-        "definitionId": [
-          {
-            "value": "a0ba0feb-440e-4881-8275-91f312bedb32"
-          }
-        ],
-        "name": "Kitchensink.relationships",
-        "system": {
-          "child_required": "false",
-          "fixed": "false",
-          "parent_required": "false"
-        }
-      },
-      "versions": [
-        {
-          "id": [
-            {
-              "value": "3a4fd59c-c666-48b2-858c-f62c45c33b75"
-            }
-          ],
-          "properties": {
-            "status": "Live",
-            "title": "Kitchensink.relationships",
-            "order": 0
-          },
-          "fields": [
-            {
-              "id": [
-                {
-                  "value": "d3f676ce-1510-46f7-a64e-168ef5361111"
-                }
-              ],
-              "value": [
-                {
-                  "value": "Kitchensink.relationships"
-                }
-              ]
-            },
-            {
-              "id": [
-                {
-                  "value": "d3f676ce-1510-46f7-a64e-168ef5361222"
-                }
-              ],
-              "value": [
-                {
-                  "value": "a0ba0feb-440e-4881-8275-91f312bedb32"
-                }
-              ]
-            },
-            {
-              "id": [
-                {
-                  "value": "d3f676ce-1510-46f7-a64e-168ef5361333"
-                }
-              ],
-              "value": [
-                {
-                  "value": "2a3e91e4-fbbf-4876-8c5b-2233c1739b05"
-                }
-              ]
-            },
-            {
-              "id": [
-                {
-                  "value": "d3f676ce-1510-46f7-a64e-168ef5361444"
-                }
-              ],
-              "value": [
-                {
-                  "value": "relationships"
-                }
-              ]
-            },
-            {
-              "id": [
-                {
-                  "value": "d3f676ce-1510-46f7-a64e-168ef5361555"
-                }
-              ],
-              "value": [
-                {
-                  "value": "ManyToMany"
-                }
-              ]
-            }
-          ]
-        }
-      ]
-    }
-  ],
-  "audit": [
+      "id": "bd3a6f51-2df9-41f7-a6d8-2c5d80bc23b0",
+      "name": "Kitchensink.relationships",
+      "childName": "relationships",
+      "cardinality": "ManyToMany",
+      "parentDefinitionId": "a0ba0feb-440e-4881-8275-91f312bedb32",
+      "childDefinitionId": "2a3e91e4-fbbf-4876-8c5b-2233c1739b05"
+    },
     {
-      "date": "2020-09-16 15:05:48.954512 -0600 CST m=+0.003569682"
-    }
-  ],
-  "key": {
-    "fields": [
-      {
-        "name": "uniqueName",
-        "id": [
-          {
-            "value": "d3f676ce-1510-46f7-a64e-168ef5361111"
-          }
-        ]
-      },
-      {
-        "name": "parentId",
-        "id": [
-          {
-            "value": "d3f676ce-1510-46f7-a64e-168ef5361222"
-          }
-        ]
-      },
-      {
-        "name": "childId",
-        "id": [
-          {
-            "value": "d3f676ce-1510-46f7-a64e-168ef5361333"
-          }
-        ]
-      },
-      {
-        "name": "childName",
-        "id": [
-          {
-            "value": "d3f676ce-1510-46f7-a64e-168ef5361444"
-          }
-        ]
-      },
-      {
-        "name": "cardinality",
-        "id": [
-          {
-            "value": "d3f676ce-1510-46f7-a64e-168ef5361555"
-          }
-        ]
-      }
-    ]
-  },
-  "systems": [
-    {
-      "name": "dotCMS 5.2.7",
-      "date": "2020-09-16 15:05:48.954501 -0600 CST m=+0.003559429"
+      "id": "293452f2-f6ec-11eb-9a03-0242ac130003",
+      "name": "Kitchensink.otherRelationship",
+      "childName": "otherRelationship",
+      "cardinality": "OneToOne",
+      "parentDefinitionId": "2fc3f442-f6ec-11eb-9a03-0242ac130003",
+      "childDefinitionId": "3247808a-f6ec-11eb-9a03-0242ac130003"
     }
   ]
 }

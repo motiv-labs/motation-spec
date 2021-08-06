@@ -1,111 +1,32 @@
 {
-  "$schema": "../../schema/full-category-schema.json",
-  "$id": "definition-schema.json",
-  "dependencies": {
-    "relationships": ["relationship-reference-motation-id"],
-    "tags": ["tag-reference-motation-id"],
-    "categories": ["category-reference-motation-id"],
-    "definitions": ["definition-reference-motation-id"],
-    "domains": ["domain-reference-motation-id"],
-    "languages": ["language-reference-motation-id"],
-    "folders": ["folder-reference-motation-id"]
-  },
-  "contents": [
+  "$id": "example-category-full-object.json",
+  "categories": [
     {
-      "id": [
-        {
-          "value": "f5476c1e-7fcc-4e5c-846f-7390fa8c6f60"
-        }
-      ],
-      "properties": {
-        "type": "Content",
-        "definitionId": [
-          {
-            "value": "a0ba0feb-440e-4881-8275-91f312bedb32"
-          }
-        ],
-        "name": "cat1"
-      },
-      "versions": [
-        {
-          "id": [
-            {
-              "value": "3a4fd59c-c666-48b2-858c-f62c45c33b75"
-            }
-          ],
-          "properties": {
-            "status": "Live",
-            "title": "cat1",
-            "order": 0
-          },
-          "fields": [
-            {
-              "id": [
-                {
-                  "value": "d3f676ce-1510-46f7-a64e-168ef5361111"
-                }
-              ],
-              "value": [
-                {
-                  "value": "cat1"
-                }
-              ]
-            },
-            {
-              "id": [
-                {
-                  "value": "d3f676ce-1510-46f7-a64e-168ef5361333"
-                }
-              ],
-              "value": [
-                {
-                  "value": "f5476c1e-7fcc-4e5c-846f-7390fa8c6111",
-                  "order": 0
-                },
-                {
-                  "value": "f5476c1e-7fcc-4e5c-846f-7390fa8c6222",
-                  "order": 1
-                },
-                {
-                  "value": "f5476c1e-7fcc-4e5c-846f-7390fa8c6333",
-                  "order": 2
-                }
-              ]
-            }
-          ]
-        }
+      "id": "f5476c1e-7fcc-4e5c-846f-7390fa8c6f60",
+      "name": "cat1",
+      "order": 0,
+      "children": [
+        "cat1.1",
+        "cat1.2"
       ]
-    }
-  ],
-  "audit": [
+    },
     {
-      "date": "2020-09-16 15:05:48.954512 -0600 CST m=+0.003569682"
-    }
-  ],
-  "key": {
-    "fields": [
-      {
-        "name": "uniqueName",
-        "id": [
-          {
-            "value": "d3f676ce-1510-46f7-a64e-168ef5361111"
-          }
-        ]
-      },
-      {
-        "name": "children",
-        "id": [
-          {
-            "value": "d3f676ce-1510-46f7-a64e-168ef5361333"
-          }
-        ]
-      }
-    ]
-  },
-  "systems": [
+      "id": "7ec289ef-f830-4d0b-ba3d-a43e4cdceec0",
+      "name": "cat1.1",
+      "order": 1
+    },
     {
-      "name": "dotCMS 5.2.7",
-      "date": "2020-09-16 15:05:48.954501 -0600 CST m=+0.003559429"
+      "id": "81a56c8d-b9d1-4df6-95e2-39577270154f",
+      "name": "cat1.2",
+      "order": 1,
+      "children": [
+        "cat1.1.1"
+      ]
+    },
+    {
+      "id": "aa2738de-4134-47d4-8852-1d86bd5e78ed",
+      "name": "cat1.1.1",
+      "order": 2
     }
   ]
 }

@@ -1,6 +1,9 @@
 {
+  "$schema": "../../schema/full-domain-schema.json",
+  "$id": "example-domain-full-object.json",
   "domains": [
     {
+      "id": "df9675be-f6ee-11eb-9a03-0242ac130003",
       "domainName": "site1",
       "URI": "https://site1.com",
       "active": true,
@@ -11,6 +14,7 @@
       "aliases": ["https://mysite.com", "https://mysamesite.com"]
     },
     {
+      "id": "e3b7f28a-f6ee-11eb-9a03-0242ac130003",
       "domainName": "site-2",
       "URI": "https://site-2.com",
       "active": true,

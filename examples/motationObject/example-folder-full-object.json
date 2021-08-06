@@ -1,134 +1,17 @@
 {
-  "$schema": "../../schema/full-folder-schema.json",
-  "$id": "definition-schema.json",
-  "dependencies": {
-    "relationships": ["relationship-reference-motation-id"],
-    "tags": ["tag-reference-motation-id"],
-    "categories": ["category-reference-motation-id"],
-    "definitions": ["definition-reference-motation-id"],
-    "domains": ["domain-reference-motation-id"],
-    "languages": ["language-reference-motation-id"],
-    "folders": ["folder-reference-motation-id"]
-  },
-  "contents": [
+  "$id": "example-folder-full-object.json",
+  "folders": [
     {
-      "id": [
-        {
-          "value": "4bae2fbe-7ab3-4b44-a196-1bd444b42eda"
-        }
-      ],
-      "properties": {
-        "type": "Content",
-        "definitionId": [
-          {
-            "value": "a0ba0feb-440e-4881-8275-91f312bedb32"
-          }
-        ],
-        "name": "folder1"
-      },
-      "versions": [
-        {
-          "id": [
-            {
-              "value": "3a4fd59c-c666-48b2-858c-f62c45c33b75"
-            }
-          ],
-          "properties": {
-            "status": "Live",
-            "title": "folder1",
-            "order": 0
-          },
-          "fields": [
-            {
-              "id": [
-                {
-                  "value": "d3f676ce-1510-46f7-a64e-168ef5361555"
-                }
-              ],
-              "value": [
-                {
-                  "value": "folder1/"
-                }
-              ]
-            }
-          ]
-        },
-        {
-          "id": [
-            {
-              "value": "3a4fd59c-c666-48b2-858c-f62c45c33b75"
-            }
-          ],
-          "properties": {
-            "status": "Live",
-            "title": "folder2",
-            "order": 0
-          },
-          "fields": [
-            {
-              "id": [
-                {
-                  "value": "d3f676ce-1510-46f7-a64e-168ef5361555"
-                }
-              ],
-              "value": [
-                {
-                  "value": "folder2/"
-                }
-              ]
-            }
-          ]
-        },
-        {
-          "id": [
-            {
-              "value": "3a4fd59c-c666-48b2-858c-f62c45c33b75"
-            }
-          ],
-          "properties": {
-            "status": "Live",
-            "title": "folder4",
-            "order": 0
-          },
-          "fields": [
-            {
-              "id": [
-                {
-                  "value": "d3f676ce-1510-46f7-a64e-168ef5361555"
-                }
-              ],
-              "value": [
-                {
-                  "value": "folder3/folder4/"
-                }
-              ]
-            }
-          ]
-        }
-      ]
-    }
-  ],
-  "audit": [
+      "id": "ec658190-f6ee-11eb-9a03-0242ac130003",
+      "path":"folder1/"
+    },
     {
-      "date": "2020-09-16 15:05:48.954512 -0600 CST m=+0.003569682"
-    }
-  ],
-  "key": {
-    "fields": [
-      {
-        "name": "path",
-        "id": [
-          {
-            "value": "d3f676ce-1510-46f7-a64e-168ef5361555"
-          }
-        ]
-      }
-    ]
-  },
-  "systems": [
+      "id": "f1225000-f6ee-11eb-9a03-0242ac130003",
+      "path":"folder3/"
+    },
     {
-      "name": "dotCMS 5.2.7",
-      "date": "2020-09-16 15:05:48.954501 -0600 CST m=+0.003559429"
+      "id": "f37c0d96-f6ee-11eb-9a03-0242ac130003",
+      "path":"folder1/folder2/"
     }
   ]
 }

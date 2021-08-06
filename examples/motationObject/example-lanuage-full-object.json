@@ -1,118 +1,17 @@
 {
-  "$schema": "../../schema/full-language-schema.json",
-  "$id": "definition-schema.json",
-  "dependencies": {
-    "relationships": ["relationship-reference-motation-id"],
-    "tags": ["tag-reference-motation-id"],
-    "categories": ["category-reference-motation-id"],
-    "definitions": ["definition-reference-motation-id"],
-    "domains": ["domain-reference-motation-id"],
-    "languages": ["language-reference-motation-id"],
-    "folders": ["folder-reference-motation-id"]
-  },
-  "contents": [
+  "$id": "example-lanuage-full-object.json",
+  "languages": [
     {
-      "id": [
-        {
-          "value": "123"
-        }
-      ],
-      "properties": {
-        "type": "Content",
-        "definitionId": [
-          {
-            "value": "a0ba0feb-440e-4881-8275-91f312bedb32"
-          }
-        ],
-        "name": "spanish"
-      },
-      "versions": [
-        {
-          "id": [
-            {
-              "value": "3a4fd59c-c666-48b2-858c-f62c45c33b75"
-            }
-          ],
-          "properties": {
-            "status": "Live",
-            "title": "Spanish",
-            "order": 0
-          },
-          "fields": [
-            {
-              "id": [
-                {
-                  "value": "d3f676ce-1510-46f7-a64e-168ef5361555"
-                }
-              ],
-              "value": [
-                {
-                  "value": "Spanish"
-                }
-              ]
-            },
-            {
-              "id": [
-                {
-                  "value": "d3f676ce-1510-46f7-a64e-168ef5361444"
-                }
-              ],
-              "value": [
-                {
-                  "value": "SP"
-                }
-              ]
-            }
-          ]
-        }
-      ]
-    }
-  ],
-  "audit": [
+      "id": "1",
+      "languageName": "English",
+      "languageCode": "EN"
+    },
     {
-      "date": "2020-09-16 15:05:48.954512 -0600 CST m=+0.003569682"
-    }
-  ],
-  "key": {
-    "fields": [
-      {
-        "name": "language",
-        "id": [
-          {
-            "value": "d3f676ce-1510-46f7-a64e-168ef5361555"
-          }
-        ]
-      },
-      {
-        "name": "languageCode",
-        "id": [
-          {
-            "value": "d3f676ce-1510-46f7-a64e-168ef5361444"
-          }
-        ]
-      },
-      {
-        "name": "countryCode",
-        "id": [
-          {
-            "value": "d3f676ce-1510-46f7-a64e-168ef5361c83"
-          }
-        ]
-      },
-      {
-        "name": "country",
-        "id": [
-          {
-            "value": "d3f676ce-1510-46f7-a64e-168ef5361666"
-          }
-        ]
-      }
-    ]
-  },
-  "systems": [
-    {
-      "name": "dotCMS 5.2.7",
-      "date": "2020-09-16 15:05:48.954501 -0600 CST m=+0.003559429"
+      "id": "2",
+      "languageName": "Spanish",
+      "languageCode": "ES",
+      "countryCode": "ES",
+      "countryName": "Spain"
     }
   ]
 }

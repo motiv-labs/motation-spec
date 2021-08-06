@@ -1,123 +1,17 @@
 {
-  "$schema": "../../schema/full-tag-schema.json",
-  "$id": "definition-schema.json",
-  "dependencies": {
-    "relationships": ["relationship-reference-motation-id"],
-    "tags": ["tag-reference-motation-id"],
-    "categories": ["category-reference-motation-id"],
-    "definitions": ["definition-reference-motation-id"],
-    "domains": ["domain-reference-motation-id"],
-    "languages": ["language-reference-motation-id"],
-    "folders": ["folder-reference-motation-id"]
-  },
-  "contents": [
+  "$id": "example-tag-full-object.json",
+  "tags": [
     {
-      "id": [
-        {
-          "value": "df56f776-928f-4cb7-93f9-0ca242df928f"
-        }
-      ],
-      "properties": {
-        "type": "Content",
-        "definitionId": [
-          {
-            "value": "a0ba0feb-440e-4881-8275-91f312bedb32"
-          }
-        ],
-        "name": "tag1"
-      },
-      "versions": [
-        {
-          "id": [
-            {
-              "value": "3a4fd59c-c666-48b2-858c-f62c45c33b75"
-            }
-          ],
-          "properties": {
-            "status": "Live",
-            "title": "Tag1",
-            "modificationDate": "2020-08-18 16:56:40.392 +0000 UTC",
-            "order": 0
-          },
-          "fields": [
-            {
-              "id": [
-                {
-                  "value": "d3f676ce-1510-46f7-a64e-168ef5361555"
-                }
-              ],
-              "value": [
-                {
-                  "value": "tag1"
-                }
-              ]
-            },
-            {
-              "id": [
-                {
-                  "value": "d3f676ce-1510-46f7-a64e-168ef5361444"
-                }
-              ],
-              "value": [
-                {
-                  "value": "SYSTEM_HOST"
-                }
-              ]
-            },
-            {
-              "id": [
-                {
-                  "value": "d3f676ce-1510-46f7-a64e-168ef5361777"
-                }
-              ],
-              "value": [
-                {
-                  "value": "false"
-                }
-              ]
-            }
-          ]
-        }
-      ]
-    }
-  ],
-  "audit": [
+      "id": "df56f776-928f-4cb7-93f9-0ca242df928f",
+      "name": "tag1"
+    },
     {
-      "date": "2020-09-16 15:05:48.954512 -0600 CST m=+0.003569682"
-    }
-  ],
-  "key": {
-    "fields": [
-      {
-        "name": "name",
-        "id": [
-          {
-            "value": "d3f676ce-1510-46f7-a64e-168ef5361555"
-          }
-        ]
-      },
-      {
-        "name": "site",
-        "id": [
-          {
-            "value": "d3f676ce-1510-46f7-a64e-168ef5361444"
-          }
-        ]
-      },
-      {
-        "name": "persona",
-        "id": [
-          {
-            "value": "d3f676ce-1510-46f7-a64e-168ef5361777"
-          }
-        ]
-      }
-    ]
-  },
-  "systems": [
+      "id": "d20dca41-2a90-43f7-af90-19b0eaa42af1",
+      "name": "tag2"
+    },
     {
-      "name": "dotCMS 5.2.7",
-      "date": "2020-09-16 15:05:48.954501 -0600 CST m=+0.003559429"
+      "id": "6c7a56bf-006e-4f93-a092-1c1b905998a6",
+      "name": "tag3"
     }
   ]
 }
