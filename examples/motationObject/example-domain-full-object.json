@@ -1,125 +1,24 @@
 {
-  "$schema": "../../schema/full-domain-schema.json",
-  "$id": "definition-schema.json",
-  "dependencies": {
-    "relationships": ["relationship-reference-motation-id"],
-    "tags": ["tag-reference-motation-id"],
-    "categories": ["category-reference-motation-id"],
-    "definitions": ["definition-reference-motation-id"],
-    "domains": ["domain-reference-motation-id"],
-    "languages": ["language-reference-motation-id"],
-    "folders": ["folder-reference-motation-id"]
-  },
-  "contents": [
+  "domains": [
     {
-      "id": [
-        {
-          "value": "4bae2fbe-7ab3-4b44-a196-1bd444b42eda"
-        }
-      ],
-      "properties": {
-        "type": "Content",
-        "definitionId": [
-          {
-            "value": "a0ba0feb-440e-4881-8275-91f312bedb32"
-          }
-        ],
-        "name": "site1"
-      },
-      "versions": [
-        {
-          "id": [
-            {
-              "value": "3a4fd59c-c666-48b2-858c-f62c45c33b75"
-            }
-          ],
-          "properties": {
-            "status": "Live",
-            "title": "site1",
-            "order": 0
-          },
-          "fields": [
-            {
-              "id": [
-                {
-                  "value": "d3f676ce-1510-46f7-a64e-168ef5361111"
-                }
-              ],
-              "value": [
-                {
-                  "value": "site1"
-                }
-              ]
-            },
-            {
-              "id": [
-                {
-                  "value": "d3f676ce-1510-46f7-a64e-168ef5361222"
-                }
-              ],
-              "value": [
-                {
-                  "value": "true"
-                }
-              ]
-            },
-            {
-              "id": [
-                {
-                  "value": "d3f676ce-1510-46f7-a64e-168ef5361333"
-                }
-              ],
-              "value": [
-                {
-                  "value": "mysite"
-                },
-                {
-                  "value": "mysamesite"
-                }
-              ]
-            }
-          ]
-        }
-      ]
-    }
-  ],
-  "audit": [
+      "domainName": "site1",
+
+      "active": "true",
+      "description": "Testing site for testing purposes",
+      "systemDomain": "true",
+      "defaultDomain": "true",
+      "keywords": "comma,separated,list,of,keywords",
+      "aliases": "mysite,mysamesite"
+    },
     {
-      "date": "2020-09-16 15:05:48.954512 -0600 CST m=+0.003569682"
-    }
-  ],
-  "key": {
-    "fields": [
-      {
-        "name": "domainName",
-        "id": [
-          {
-            "value": "d3f676ce-1510-46f7-a64e-168ef5361111"
-          }
-        ]
-      },
-      {
-        "name": "active",
-        "id": [
-          {
-            "value": "d3f676ce-1510-46f7-a64e-168ef5361222"
-          }
-        ]
-      },
-      {
-        "name": "vanityUrls",
-        "id": [
-          {
-            "value": "d3f676ce-1510-46f7-a64e-168ef5361333"
-          }
-        ]
-      }
-    ]
-  },
-  "systems": [
-    {
-      "name": "dotCMS 5.2.7",
-      "date": "2020-09-16 15:05:48.954501 -0600 CST m=+0.003559429"
+      "domainName": "site-2",
+
+      "active": "true",
+      "description": "another site",
+      "systemDomain": "false",
+      "defaultDomain": "false",
+      "keywords": "comma,separated,list,of,keywords",
+      "aliases": "anothersite"
     }
   ]
 }
