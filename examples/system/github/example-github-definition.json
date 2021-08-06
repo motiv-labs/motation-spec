@@ -1,0 +1,116 @@
+{
+  "definition": {
+    "id": [
+      {
+        "value": "01FCEKKE51CW4FFCPYMR7G44M1"
+      }
+    ],
+    "properties": {
+      "type": "File",
+      "uniqueName": "GitHub",
+      "name": "GitHub",
+      "description": "Content type for GitHub files",
+      "system": {
+        "after": "c71ffdf6e97d6edcf72ce80bdffe541a7391d820",
+        "before": "5c6bd7d8affc3940ffbaf62a353ae5df618176a6",
+        "ref": "refs/heads/master",
+        "repository": {
+          "default_branch": "master",
+          "description": null,
+          "full_name": "motiv-labs/itest-data",
+          "git_url": "git://github.com/motiv-labs/itest-data.git",
+          "html_url": "https://github.com/motiv-labs/itest-data",
+          "id": 281466574,
+          "master_branch": "master",
+          "name": "itest-data",
+          "node_id": "MDEwOlJlcG9zaXRvcnkyODE0NjY1NzQ=",
+          "private": false,
+          "ssh_url": "git@github.com:motiv-labs/itest-data.git"
+        }
+      }
+    },
+    "fields": [
+      {
+        "id": [
+          {
+            "value": "01FCEKKE51BBJGE5YWRYN2R2KD"
+          }
+        ],
+        "properties": {
+          "dataType": "String",
+          "fieldType": "Text",
+          "validations": [
+            {
+              "required": true
+            }
+          ],
+          "display": [
+            {
+              "searchable": true
+            },
+            {
+              "showInList": true
+            }
+          ],
+          "order": 1,
+          "uniqueName": "Name",
+          "name": "Name"
+        }
+      },
+      {
+        "id": [
+          {
+            "value": "01FCEKKE511S4VPW5B94T99NMQ"
+          }
+        ],
+        "properties": {
+          "dataType": "String",
+          "fieldType": "Binary",
+          "validations": [
+            {
+              "required": true
+            }
+          ],
+          "display": [
+            {
+              "searchable": false
+            },
+            {
+              "showInList": false
+            }
+          ],
+          "order": 2,
+          "uniqueName": "File",
+          "name": "File"
+        }
+      },
+      {
+        "id": [
+          {
+            "value": "01FCEKKE51KSX8SA843W12YRD4"
+          }
+        ],
+        "properties": {
+          "dataType": "BigString",
+          "fieldType": "Textarea",
+          "validations": [
+            {
+              "required": false
+            }
+          ],
+          "display": [
+            {
+              "searchable": false
+            },
+            {
+              "showInList": false
+            }
+          ],
+          "order": 3,
+          "uniqueName": "Description",
+          "name": "Description"
+        }
+      }
+    ]
+  }
+}

@@ -1,0 +1,12 @@
+{
+  "$id": "example-dotcms-languages.json",
+  "languages": [
+    {
+      "id": "1",
+      "languageName": "English",
+      "languageCode": "EN",
+      "countryCode": "US",
+      "countryName": "United States"
+    }
+  ]
+}

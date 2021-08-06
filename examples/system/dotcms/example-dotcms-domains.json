@@ -1,0 +1,14 @@
+{
+  "$schema": "../../schema/domain-motation-dependency-schema.json",
+  "$id": "example-dotcms-domains.json",
+  "domains": [
+    {
+      "id": "8a7d5e23-da1e-420a-b4f0-471e7da8ea2d",
+      "domainName": "SYSTEM_HOST",
+      "URI": "https://dotcms.com",
+      "active": true,
+      "systemDomain": true,
+      "defaultDomain": true
+    }
+  ]
+}

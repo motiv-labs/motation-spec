@@ -1,0 +1,11 @@
+{
+  "$schema": "../../../schema/domain-motation-dependency-schema.json",
+  "$id": "example-github-domains.json",
+  "domains": [
+    {
+      "id": "df9675be-f6ee-11eb-9a03-0242ac130003",
+      "domainName": "motiv-labs",
+      "URI": "https://github.com/motiv-labs/itest-data"
+    }
+  ]
+}

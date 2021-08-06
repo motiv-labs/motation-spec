@@ -24,7 +24,50 @@
     },
     "definition": {
       "type": "object",
-      "$ref": "definition-field-schema.json"
+      "properties": {
+        "domains": {
+          "type": "string",
+          "items": {
+            "type": "string"
+          }
+        },
+        "definitions": {
+          "type": "string",
+          "items": {
+            "type": "string"
+          }
+        },
+        "languages": {
+          "type": "string",
+          "items": {
+            "type": "string"
+          }
+        },
+        "tags": {
+          "type": "string",
+          "items": {
+            "type": "string"
+          }
+        },
+        "categories": {
+          "type": "string",
+          "items": {
+            "type": "string"
+          }
+        },
+        "relationships": {
+          "type": "string",
+          "items": {
+            "type": "string"
+          }
+        },
+        "folders": {
+          "type": "string",
+          "items": {
+            "type": "string"
+          }
+        }
+      }
     },
     "contents": {
       "type": "array",
