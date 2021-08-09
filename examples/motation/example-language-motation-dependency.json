@@ -37,5 +37,73 @@
         "additional": "richer data"
       }
     }
-  ]
+  ],
+  "key": {
+    "fields": [
+      {
+        "name": "name",
+        "id": [
+          {
+            "value": "1"
+          }
+        ]
+      },
+      {
+        "name": "code",
+        "id": [
+          {
+            "value": "1"
+          }
+        ]
+      },
+      {
+        "name": "name",
+        "id": [
+          {
+            "value": "2"
+          }
+        ]
+      },
+      {
+        "name": "code",
+        "id": [
+          {
+            "value": "2"
+          }
+        ]
+      },
+      {
+        "name": "countryName",
+        "id": [
+          {
+            "value": "2"
+          }
+        ]
+      },
+      {
+        "name": "countryCode",
+        "id": [
+          {
+            "value": "2"
+          }
+        ]
+      },
+      {
+        "name": "systemSpecific",
+        "id": [
+          {
+            "value": "2"
+          }
+        ]
+      },
+      {
+        "name": "additional",
+        "id": [
+          {
+            "value": "2"
+          }
+        ]
+      }
+    ]
+  }
 }
