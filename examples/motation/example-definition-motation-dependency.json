@@ -1,5 +1,17 @@
 {
-  "$id": "definition-schema.json",
+  "$schema": "../../schema/definition-motation-dependency-schema.json",
+  "$id": "example-definition-motation-dependency.json",
+  "systems": [
+    {
+      "name": "dotCMS 5.2.7",
+      "date": "2021-08-06 20:08:16.349952035 +0000 UTC m=+165.808550789"
+    }
+  ],
+  "audit": [
+    {
+      "date": "2021-08-06 20:08:16.349976409 +0000 UTC m=+165.808575166"
+    }
+  ],
   "definition": {
     "id": [
       {
