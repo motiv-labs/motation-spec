@@ -45,5 +45,46 @@
       "name": "tag3",
       "domainId": "domainId"
     }
-  ]
+  ],
+  "key": {
+    "fields": [
+      {
+        "name": "name",
+        "values": [
+          "tag1",
+          "tag2"
+        ]
+      },
+      {
+        "name": "domainId",
+        "values": [
+          "domainId"
+        ]
+      },
+      {
+        "name": "domainName",
+        "values": [
+          "domainName"
+        ]
+      },
+      {
+        "name": "folder",
+        "values": [
+          "SYSTEM_FOLDER"
+        ]
+      },
+      {
+        "name": "systemSpecific",
+        "values": [
+          "data"
+        ]
+      },
+      {
+        "name": "additional",
+        "values": [
+          "richer data"
+        ]
+      }
+    ]
+  }
 }
