@@ -41,5 +41,95 @@
       "name": "site-2",
       "URI": "https://site-2.com"
     }
-  ]
+  ],
+  "key": {
+    "fields": [
+      {
+        "name": "name",
+        "id": [
+          {
+            "value": "df9675be-f6ee-11eb-9a03-0242ac130003"
+          },
+          {
+            "value": "e3b7f28a-f6ee-11eb-9a03-0242ac130003"
+          }
+        ]
+      },
+      {
+        "name": "URI",
+        "id": [
+          {
+            "value": "df9675be-f6ee-11eb-9a03-0242ac130003"
+          },
+          {
+            "value": "e3b7f28a-f6ee-11eb-9a03-0242ac130003"
+          }
+        ]
+      },
+      {
+        "name": "active",
+        "id": [
+          {
+            "value": "df9675be-f6ee-11eb-9a03-0242ac130003"
+          }
+        ]
+      },
+      {
+        "name": "description",
+        "id": [
+          {
+            "value": "df9675be-f6ee-11eb-9a03-0242ac130003"
+          }
+        ]
+      },
+      {
+        "name": "systemDomain",
+        "id": [
+          {
+            "value": "df9675be-f6ee-11eb-9a03-0242ac130003"
+          }
+        ]
+      },
+      {
+        "name": "defaultDomain",
+        "id": [
+          {
+            "value": "df9675be-f6ee-11eb-9a03-0242ac130003"
+          }
+        ]
+      },
+      {
+        "name": "keywords",
+        "id": [
+          {
+            "value": "df9675be-f6ee-11eb-9a03-0242ac130003"
+          }
+        ]
+      },
+      {
+        "name": "aliases",
+        "id": [
+          {
+            "value": "df9675be-f6ee-11eb-9a03-0242ac130003"
+          }
+        ]
+      },
+      {
+        "name": "systemSpecific",
+        "id": [
+          {
+            "value": "df9675be-f6ee-11eb-9a03-0242ac130003"
+          }
+        ]
+      },
+      {
+        "name": "additional",
+        "id": [
+          {
+            "value": "df9675be-f6ee-11eb-9a03-0242ac130003"
+          }
+        ]
+      }
+    ]
+  }
 }

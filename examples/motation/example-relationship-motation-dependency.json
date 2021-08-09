@@ -41,5 +41,80 @@
         "additional": "richer data"
       }
     }
-  ]
+  ],
+  "key": {
+    "fields": [
+      {
+        "name": "name",
+        "id": [
+          {
+            "value": "bd3a6f51-2df9-41f7-a6d8-2c5d80bc23b0"
+          },
+          {
+            "value": "293452f2-f6ec-11eb-9a03-0242ac130003"
+          }
+        ]
+      },
+      {
+        "name": "childName",
+        "id": [
+          {
+            "value": "bd3a6f51-2df9-41f7-a6d8-2c5d80bc23b0"
+          },
+          {
+            "value": "293452f2-f6ec-11eb-9a03-0242ac130003"
+          }
+        ]
+      },
+      {
+        "name": "cardinality",
+        "id": [
+          {
+            "value": "bd3a6f51-2df9-41f7-a6d8-2c5d80bc23b0"
+          },
+          {
+            "value": "293452f2-f6ec-11eb-9a03-0242ac130003"
+          }
+        ]
+      },
+      {
+        "name": "parentDefinitionId",
+        "id": [
+          {
+            "value": "bd3a6f51-2df9-41f7-a6d8-2c5d80bc23b0"
+          },
+          {
+            "value": "293452f2-f6ec-11eb-9a03-0242ac130003"
+          }
+        ]
+      },
+      {
+        "name": "childDefinitionId",
+        "id": [
+          {
+            "value": "bd3a6f51-2df9-41f7-a6d8-2c5d80bc23b0"
+          },
+          {
+            "value": "293452f2-f6ec-11eb-9a03-0242ac130003"
+          }
+        ]
+      },
+      {
+        "name": "systemSpecific",
+        "id": [
+          {
+            "value": "293452f2-f6ec-11eb-9a03-0242ac130003"
+          }
+        ]
+      },
+      {
+        "name": "additional",
+        "id": [
+          {
+            "value": "293452f2-f6ec-11eb-9a03-0242ac130003"
+          }
+        ]
+      }
+    ]
+  }
 }
