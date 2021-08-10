@@ -33,6 +33,58 @@
           "type": "array"
         }
       }
+    },
+    "systems": {
+      "$id": "#common-systems",
+      "required": [
+        "name",
+        "date"
+      ],
+      "properties": {
+        "name": {
+          "type": "string"
+        },
+        "version": {
+          "type": "string"
+        },
+        "date": {
+          "type": "string"
+        }
+      },
+      "additionalProperties": false
+    },
+    "audit": {
+      "$id": "#common-audit",
+      "required": [
+        "date"
+      ],
+      "properties": {
+        "user": {
+          "type": "object",
+          "$ref": "#common-user"
+        },
+        "date": {
+          "type": "string"
+        }
+      }
+    },
+    "user": {
+      "$id": "#common-user",
+      "properties": {
+        "id": {
+          "type": "object",
+          "$ref": "common-schema.json#/definitions/id"
+        },
+        "name": {
+          "type": "string"
+        },
+        "email": {
+          "type": "string"
+        },
+        "username": {
+          "type": "string"
+        }
+      }
     }
   }
 }

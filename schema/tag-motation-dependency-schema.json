@@ -4,7 +4,10 @@
   "$id": "tag-schema.json",
   "type": "object",
   "required": [
-    "tags"
+    "tags",
+    "key",
+    "audit",
+    "systems"
   ],
   "properties": {
     "tags": {
@@ -24,9 +27,72 @@
           },
           "name": {
             "type": "string"
+          },
+          "domainName": {
+            "type": "string"
+          },
+          "domainId": {
+            "type": "string"
           }
         }
       }
+    },
+    "key": {
+      "type": "object",
+      "required": [
+        "fields"
+      ],
+      "properties": {
+        "fields": {
+          "type": "array",
+          "required": [
+            "name",
+            "id"
+          ],
+          "items": {
+            "properties": {
+              "name": {
+                "type": "string"
+              },
+              "id": {
+                "type": "array",
+                "items": {
+                  "$ref": "common-schema.json#/definitions/id"
+                }
+              }
+            }
+          },
+          "allOf": [
+            {
+              "contains": {
+                "properties": {
+                  "name": {
+                    "const": "name"
+                  }
+                }
+              }
+            }
+          ],
+          "minItems": 1,
+          "uniqueItems": true
+        }
+      }
+    },
+    "systems": {
+      "type": "array",
+      "items": {
+        "$ref": "common-schema.json#/definitions/systems"
+      },
+      "minItems": 1,
+      "uniqueItems": true
+    },
+    "audit": {
+      "type": "array",
+      "items": {
+        "$ref": "common-schema.json#/definitions/audit"
+      },
+      "minItems": 1,
+      "uniqueItems": true
     }
   }
 }

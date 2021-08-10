@@ -13,16 +13,12 @@
     "systems": {
       "type": "array",
       "items": {
-        "$ref": "#global-system"
+        "$ref": "common-schema.json#/definitions/systems"
       },
       "minItems": 1,
       "uniqueItems": true
     },
     "dependencies": {
-      "type": "object",
-      "$ref": "dependencies-schema.json"
-    },
-    "definition": {
       "type": "object",
       "properties": {
         "domains": {
@@ -80,7 +76,7 @@
     "audit": {
       "type": "array",
       "items": {
-        "$ref": "#global-audit"
+        "$ref": "common-schema.json#/definitions/audit"
       },
       "minItems": 1,
       "uniqueItems": true
@@ -102,58 +98,6 @@
     }
   },
   "definitions": {
-    "system": {
-      "$id": "#global-system",
-      "required": [
-        "name",
-        "date"
-      ],
-      "properties": {
-        "name": {
-          "type": "string"
-        },
-        "version": {
-          "type": "string"
-        },
-        "date": {
-          "type": "string"
-        }
-      },
-      "additionalProperties": false
-    },
-    "audit": {
-      "$id": "#global-audit",
-      "required": [
-        "date"
-      ],
-      "properties": {
-        "user": {
-          "type": "object",
-          "$ref": "#global-user"
-        },
-        "date": {
-          "type": "string"
-        }
-      }
-    },
-    "user": {
-      "$id": "#global-user",
-      "properties": {
-        "id": {
-          "type": "object",
-          "$ref": "common-schema.json#/definitions/id"
-        },
-        "name": {
-          "type": "string"
-        },
-        "email": {
-          "type": "string"
-        },
-        "username": {
-          "type": "string"
-        }
-      }
-    },
     "key-field": {
       "$id": "#key-field",
       "required": [
