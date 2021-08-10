@@ -87,7 +87,7 @@
               "contains": {
                 "properties": {
                   "name": {
-                    "const": "uniqueName"
+                    "const": "properties.uniqueName"
                   }
                 }
               }
@@ -96,7 +96,7 @@
               "contains": {
                 "properties": {
                   "name": {
-                    "const": "type"
+                    "const": "properties.type"
                   }
                 }
               }
