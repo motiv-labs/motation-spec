@@ -31,7 +31,6 @@
       "domainId": "domainId",
       "domainName": "domainName",
       "system": {
-        "folder": "SYSTEM_FOLDER",
         "systemSpecific": "data",
         "additional": "richer data"
       }

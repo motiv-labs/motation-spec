@@ -55,6 +55,9 @@
           },
           "defaultDomain": {
             "type": "boolean"
+          },
+          "system": {
+            "type": "object"
           }
         }
       }

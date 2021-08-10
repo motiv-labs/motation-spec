@@ -37,6 +37,9 @@
             "items": {
               "type": "string"
             }
+          },
+          "system": {
+            "type": "object"
           }
         }
       }

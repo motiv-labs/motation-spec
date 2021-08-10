@@ -37,6 +37,9 @@
           },
           "countryName": {
             "type": "string"
+          },
+          "system": {
+            "type": "object"
           }
         }
       }

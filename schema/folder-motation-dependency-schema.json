@@ -33,6 +33,9 @@
           },
           "domainId": {
             "type": "string"
+          },
+          "system": {
+            "type": "object"
           }
         }
       }

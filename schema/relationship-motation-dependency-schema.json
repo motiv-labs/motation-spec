@@ -43,6 +43,9 @@
           },
           "childDefinitionId": {
             "type": "string"
+          },
+          "system": {
+            "type": "object"
           }
         }
       }
