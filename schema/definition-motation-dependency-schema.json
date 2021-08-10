@@ -69,7 +69,7 @@
               "contains": {
                 "properties": {
                   "name": {
-                    "const": "name"
+                    "const": "fields.uniqueName"
                   }
                 }
               }
@@ -78,13 +78,31 @@
               "contains": {
                 "properties": {
                   "name": {
-                    "const": "order"
+                    "const": "fields.fieldType"
+                  }
+                }
+              }
+            },
+            {
+              "contains": {
+                "properties": {
+                  "name": {
+                    "const": "uniqueName"
+                  }
+                }
+              }
+            },
+            {
+              "contains": {
+                "properties": {
+                  "name": {
+                    "const": "type"
                   }
                 }
               }
             }
           ],
-          "minItems": 2,
+          "minItems": 4,
           "uniqueItems": true
         }
       }
@@ -287,7 +305,7 @@
         "properties": {
           "required": [
             "fieldType",
-            "name"
+            "uniqueName"
           ],
           "properties": {
             "dataType": {

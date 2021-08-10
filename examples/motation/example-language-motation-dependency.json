@@ -91,7 +91,7 @@
         ]
       },
       {
-        "name": "systemSpecific",
+        "name": "system.systemSpecific",
         "id": [
           [
             {
@@ -101,7 +101,7 @@
         ]
       },
       {
-        "name": "additional",
+        "name": "system.additional",
         "id": [
           [
             {
