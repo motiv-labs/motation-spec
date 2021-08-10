@@ -51,50 +51,66 @@
       {
         "name": "name",
         "id": [
-          {
-            "value": "df56f776-928f-4cb7-93f9-0ca242df928f"
-          },
-          {
-            "value": "d20dca41-2a90-43f7-af90-19b0eaa42af1"
-          },
-          {
-            "value": "6c7a56bf-006e-4f93-a092-1c1b905998a6"
-          }
+          [
+            {
+              "value": "df56f776-928f-4cb7-93f9-0ca242df928f"
+            }
+          ],
+          [
+            {
+              "value": "d20dca41-2a90-43f7-af90-19b0eaa42af1"
+            }
+          ],
+          [
+            {
+              "value": "6c7a56bf-006e-4f93-a092-1c1b905998a6"
+            }
+          ]
         ]
       },
       {
         "name": "domainId",
         "id": [
-          {
-            "value": "d20dca41-2a90-43f7-af90-19b0eaa42af1"
-          },
-          {
-            "value": "6c7a56bf-006e-4f93-a092-1c1b905998a6"
-          }
+          [
+            {
+              "value": "d20dca41-2a90-43f7-af90-19b0eaa42af1"
+            }
+          ],
+          [
+            {
+              "value": "6c7a56bf-006e-4f93-a092-1c1b905998a6"
+            }
+          ]
         ]
       },
       {
         "name": "domainName",
         "id": [
-          {
-            "value": "d20dca41-2a90-43f7-af90-19b0eaa42af1"
-          }
+          [
+            {
+              "value": "d20dca41-2a90-43f7-af90-19b0eaa42af1"
+            }
+          ]
         ]
       },
       {
         "name": "systemSpecific",
         "id": [
-          {
-            "value": "d20dca41-2a90-43f7-af90-19b0eaa42af1"
-          }
+          [
+            {
+              "value": "d20dca41-2a90-43f7-af90-19b0eaa42af1"
+            }
+          ]
         ]
       },
       {
         "name": "additional",
         "id": [
-          {
-            "value": "d20dca41-2a90-43f7-af90-19b0eaa42af1"
-          }
+          [
+            {
+              "value": "d20dca41-2a90-43f7-af90-19b0eaa42af1"
+            }
+          ]
         ]
       }
     ]

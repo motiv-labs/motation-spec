@@ -67,7 +67,7 @@
               "id": {
                 "type": "array",
                 "items": {
-                  "$ref": "common-schema.json#/definitions/id"
+                  "$ref": "common-schema.json#/definitions/keyId"
                 }
               }
             }

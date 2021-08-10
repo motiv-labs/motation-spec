@@ -104,17 +104,21 @@
       {
         "name": "body",
         "id": [
-          {
-            "value": "5c6e0bff-cfeb-44c6-86e2-a0ba40e7b66c"
-          }
+          [
+            {
+              "value": "5c6e0bff-cfeb-44c6-86e2-a0ba40e7b66c"
+            }
+          ]
         ]
       },
       {
         "name": "title",
         "id": [
-          {
-            "value": "9f5a97dc-703c-4721-9cce-29478671558b"
-          }
+          [
+            {
+              "value": "9f5a97dc-703c-4721-9cce-29478671558b"
+            }
+          ]
         ]
       }
     ]

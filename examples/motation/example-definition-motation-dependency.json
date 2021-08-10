@@ -136,19 +136,172 @@
   "key": {
     "fields": [
       {
-        "name": "title",
+        "name": "uniqueName",
         "id": [
-          {
-            "value": "42680740-2120-4d68-bbc2-c47a5b13f144"
-          }
+          [
+            {
+              "value": "42680740-2120-4d68-bbc2-c47a5b13f144"
+            },
+            {
+              "value": "32680740-2120-4d68-bbc2-c47a5b13f139"
+            }
+          ]
         ]
       },
       {
-        "name": "userEmail",
+        "name": "dataType",
         "id": [
-          {
-            "value": "32680740-2120-4d68-bbc2-c47a5b13f139"
-          }
+          [
+            {
+              "value": "42680740-2120-4d68-bbc2-c47a5b13f144"
+            },
+            {
+              "value": "32680740-2120-4d68-bbc2-c47a5b13f139"
+            }
+          ]
+        ]
+      },
+      {
+        "name": "fieldType",
+        "id": [
+          [
+            {
+              "value": "42680740-2120-4d68-bbc2-c47a5b13f144"
+            },
+            {
+              "value": "32680740-2120-4d68-bbc2-c47a5b13f139"
+            }
+          ]
+        ]
+      },
+      {
+        "name": "description",
+        "id": [
+          [
+            {
+              "value": "42680740-2120-4d68-bbc2-c47a5b13f144"
+            },
+            {
+              "value": "32680740-2120-4d68-bbc2-c47a5b13f139"
+            }
+          ]
+        ]
+      },
+      {
+        "name": "hint",
+        "id": [
+          [
+            {
+              "value": "42680740-2120-4d68-bbc2-c47a5b13f144"
+            },
+            {
+              "value": "32680740-2120-4d68-bbc2-c47a5b13f139"
+            }
+          ]
+        ]
+      },
+      {
+        "name": "name",
+        "id": [
+          [
+            {
+              "value": "42680740-2120-4d68-bbc2-c47a5b13f144"
+            },
+            {
+              "value": "32680740-2120-4d68-bbc2-c47a5b13f139"
+            }
+          ]
+        ]
+      },
+      {
+        "name": "order",
+        "id": [
+          [
+            {
+              "value": "42680740-2120-4d68-bbc2-c47a5b13f144"
+            },
+            {
+              "value": "32680740-2120-4d68-bbc2-c47a5b13f139"
+            }
+          ]
+        ]
+      },
+      {
+        "name": "defaultValue",
+        "id": [
+          [
+            {
+              "value": "42680740-2120-4d68-bbc2-c47a5b13f144"
+            },
+            {
+              "value": "32680740-2120-4d68-bbc2-c47a5b13f139"
+            }
+          ]
+        ]
+      },
+      {
+        "name": "validations.name",
+        "id": [
+          [
+            {
+              "value": "42680740-2120-4d68-bbc2-c47a5b13f144"
+            },
+            {
+              "value": "32680740-2120-4d68-bbc2-c47a5b13f139"
+            }
+          ]
+        ]
+      },
+      {
+        "name": "validations.required",
+        "id": [
+          [
+            {
+              "value": "42680740-2120-4d68-bbc2-c47a5b13f144"
+            },
+            {
+              "value": "32680740-2120-4d68-bbc2-c47a5b13f139"
+            }
+          ]
+        ]
+      },
+      {
+        "name": "constraints.readOnly",
+        "id": [
+          [
+            {
+              "value": "42680740-2120-4d68-bbc2-c47a5b13f144"
+            },
+            {
+              "value": "32680740-2120-4d68-bbc2-c47a5b13f139"
+            }
+          ]
+        ]
+      },
+      {
+        "name": "display.showInList",
+        "id": [
+          [
+            {
+              "value": "42680740-2120-4d68-bbc2-c47a5b13f144"
+            },
+            {
+              "value": "32680740-2120-4d68-bbc2-c47a5b13f139"
+            }
+          ]
+        ]
+      },
+      {
+        "name": "display.searchable",
+        "id": [
+          [
+            {
+              "value": "42680740-2120-4d68-bbc2-c47a5b13f144"
+            },
+            {
+              "value": "32680740-2120-4d68-bbc2-c47a5b13f139"
+            }
+          ]
         ]
       }
     ]

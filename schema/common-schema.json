@@ -73,7 +73,7 @@
       "properties": {
         "id": {
           "type": "object",
-          "$ref": "common-schema.json#/definitions/id"
+          "$ref": "#common-id"
         },
         "name": {
           "type": "string"
@@ -84,6 +84,13 @@
         "username": {
           "type": "string"
         }
+      }
+    },
+    "keyId": {
+      "$id": "#common-keyId",
+      "type": "array",
+      "items": {
+        "$ref": "#common-id"
       }
     }
   }
