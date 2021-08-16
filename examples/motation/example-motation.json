@@ -66,12 +66,12 @@
           },
           "relations": [
             {
-              "parent": [
+              "parentIds": [
                 {
                   "value": "de0db860-fea0-11eb-9a03-0242ac130003"
                 }
               ],
-              "child":[
+              "childIds":[
                 {
                   "value": "de0db860-fea0-11eb-9a03-0242ac130003"
                 }
