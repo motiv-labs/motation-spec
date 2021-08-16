@@ -157,6 +157,14 @@
             }
           }
         },
+        "relations": {
+          "$id": "#content-relations",
+          "type": "array",
+          "items": {
+            "$ref": "#content-relation"
+          },
+          "uniqueItems": true
+        },
         "fields": {
           "$id": "#content-fields",
           "type": "array",
@@ -164,6 +172,35 @@
             "$ref": "#content-field"
           },
           "uniqueItems": true
+        }
+      }
+    },
+    "relation": {
+      "$id": "#content-relation",
+      "type": "object",
+      "required": [
+        "parentIds",
+        "childIds"
+      ],
+      "properties": {
+        "parentIds": {
+          "type": "array",
+          "items": {
+            "$ref": "common-schema.json#/definitions/id"
+          }
+        },
+        "childIds": {
+          "type": "array",
+          "items": {
+            "$ref": "common-schema.json#/definitions/id"
+          }
+        },
+        "order": {
+          "type": "integer"
+        },
+        "system": {
+          "type": "object",
+          "$ref": "common-schema.json#/definitions/system"
         }
       }
     },
