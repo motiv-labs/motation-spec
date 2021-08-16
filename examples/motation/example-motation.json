@@ -64,6 +64,24 @@
               "show_on_menu": "false"
             }
           },
+          "relations": [
+            {
+              "parent": [
+                {
+                  "value": "de0db860-fea0-11eb-9a03-0242ac130003"
+                }
+              ],
+              "child":[
+                {
+                  "value": "de0db860-fea0-11eb-9a03-0242ac130003"
+                }
+              ],
+              "order": 0,
+              "system": {
+                "relation_type": "some relation type"
+              }
+            }
+          ],
           "fields": [
             {
               "id": [
