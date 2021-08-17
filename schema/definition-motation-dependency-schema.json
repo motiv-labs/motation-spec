@@ -228,6 +228,7 @@
     },
     "validation": {
       "$id": "#def-validation",
+      "type": "object",
       "properties": {
         "name": {
           "type": "string"
@@ -248,6 +249,7 @@
     },
     "constraint": {
       "$id": "#def-constraint",
+      "type": "object",
       "properties": {
         "unique": {
           "type": "boolean"
@@ -262,6 +264,7 @@
     },
     "display": {
       "$id": "#def-display",
+      "type": "object",
       "properties": {
         "showInList": {
           "type": "boolean"
@@ -344,25 +347,13 @@
               ]
             },
             "validations": {
-              "type": "array",
-              "items": {
-                "$ref": "#def-validation"
-              },
-              "uniqueItems": true
+              "$ref": "#def-validation"
             },
             "constraints": {
-              "type": "array",
-              "items": {
-                "$ref": "#def-constraint"
-              },
-              "uniqueItems": true
+              "$ref": "#def-constraint"
             },
             "display": {
-              "type": "array",
-              "items": {
-                "$ref": "#def-display"
-              },
-              "uniqueItems": true
+              "$ref": "#def-display"
             },
             "system": {
               "type": "object",

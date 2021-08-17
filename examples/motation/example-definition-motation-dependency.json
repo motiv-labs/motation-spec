@@ -49,36 +49,23 @@
         "properties": {
           "dataType": "String",
           "fieldType": "Text",
-          "validations": [
-            {
-              "name": "required",
-              "required": true
-            },
-            {
-              "name": "email",
-              "regex": "^(\\([0-9]{3}\\))?[0-9]{3}-[0-9]{4}$"
-            },
-            {
-              "name": "email",
-              "minLength": 6
-            }
-          ],
-          "constraints": [
-            {
-              "unique": true
-            },
-            {
-              "readOnly": true
-            }
-          ],
-          "display": [
-            {
-              "showInList": true
-            },
-            {
-              "searchable": true
-            }
-          ],
+          "validations": {
+            "name": "name validation",
+            "required": true,
+            "regex": "^(\\([0-9]{3}\\))?[0-9]{3}-[0-9]{4}$",
+            "minLength": 6,
+            "maxLength": 100
+          },
+          "constraints": {
+            "unique": true,
+            "readOnly": true,
+            "fixed": false
+          },
+          "display": {
+            "hint": "work email",
+            "showInList": true,
+            "searchable": true
+          },
           "system": {
             "field_contentlet": "text3"
           },
@@ -102,22 +89,18 @@
         "properties":  {
           "dataType": "String",
           "fieldType": "Text",
-          "validations": [
-            {
-              "name": "required",
-              "required": true
-            }
-          ],
-          "constraints": [
-            {
-              "readOnly": true
-            }
-          ],
-          "display": [
-            {
-              "searchable": true
-            }
-          ],
+          "validations": {
+            "required": true,
+            "regex": "^(\\([0-9]{3}\\))?[0-9]{3}-[0-9]{4}$",
+            "minLength": 6,
+            "maxLength": 100
+          },
+          "constraints": {
+            "readOnly": true
+          },
+          "display": {
+            "searchable": true
+          },
           "system": {
             "field_contentlet": "text2"
           },
@@ -140,16 +123,12 @@
         "properties":  {
           "dataType": "String",
           "fieldType": "Radio",
-          "constraints": [
-            {
-              "readOnly": true
-            }
-          ],
-          "display": [
-            {
-              "searchable": true
-            }
-          ],
+          "constraints": {
+            "readOnly": true
+          },
+          "display": {
+            "searchable": true
+          },
           "system": {
             "field_contentlet": "text4"
           },
