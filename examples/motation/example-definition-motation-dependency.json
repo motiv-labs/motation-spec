@@ -208,7 +208,7 @@
         ]
       },
       {
-        "name": "parent.type",
+        "name": "properties.parent.type",
         "id": [
           [
             {
