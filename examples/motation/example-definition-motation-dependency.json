@@ -197,15 +197,19 @@
         ]
       },
       {
-        "name": "fields.uniqueName",
+        "name": "fields.properties.uniqueName",
         "id": [
           [
             {
               "value": "42680740-2120-4d68-bbc2-c47a5b13f144"
-            },
+            }
+          ],
+          [
             {
               "value": "32680740-2120-4d68-bbc2-c47a5b13f139"
-            },
+            }
+          ],
+          [
             {
               "value": "fbe89d9a-fab9-11eb-9a03-0242ac130003"
             }
@@ -213,15 +217,19 @@
         ]
       },
       {
-        "name": "fields.dataType",
+        "name": "fields.properties.dataType",
         "id": [
           [
             {
               "value": "42680740-2120-4d68-bbc2-c47a5b13f144"
-            },
+            }
+          ],
+          [
             {
               "value": "32680740-2120-4d68-bbc2-c47a5b13f139"
-            },
+            }
+          ],
+          [
             {
               "value": "fbe89d9a-fab9-11eb-9a03-0242ac130003"
             }
@@ -229,15 +237,19 @@
         ]
       },
       {
-        "name": "fields.fieldType",
+        "name": "fields.properties.fieldType",
         "id": [
           [
             {
               "value": "42680740-2120-4d68-bbc2-c47a5b13f144"
-            },
+            }
+          ],
+          [
             {
               "value": "32680740-2120-4d68-bbc2-c47a5b13f139"
-            },
+            }
+          ],
+          [
             {
               "value": "fbe89d9a-fab9-11eb-9a03-0242ac130003"
             }
@@ -245,15 +257,19 @@
         ]
       },
       {
-        "name": "fields.description",
+        "name": "fields.properties.description",
         "id": [
           [
             {
               "value": "42680740-2120-4d68-bbc2-c47a5b13f144"
-            },
+            }
+          ],
+          [
             {
               "value": "32680740-2120-4d68-bbc2-c47a5b13f139"
-            },
+            }
+          ],
+          [
             {
               "value": "fbe89d9a-fab9-11eb-9a03-0242ac130003"
             }
@@ -261,15 +277,19 @@
         ]
       },
       {
-        "name": "fields.hint",
+        "name": "fields.properties.hint",
         "id": [
           [
             {
               "value": "42680740-2120-4d68-bbc2-c47a5b13f144"
-            },
+            }
+          ],
+          [
             {
               "value": "32680740-2120-4d68-bbc2-c47a5b13f139"
-            },
+            }
+          ],
+          [
             {
               "value": "fbe89d9a-fab9-11eb-9a03-0242ac130003"
             }
@@ -277,15 +297,19 @@
         ]
       },
       {
-        "name": "fields.name",
+        "name": "fields.properties.name",
         "id": [
           [
             {
               "value": "42680740-2120-4d68-bbc2-c47a5b13f144"
-            },
+            }
+          ],
+          [
             {
               "value": "32680740-2120-4d68-bbc2-c47a5b13f139"
-            },
+            }
+          ],
+          [
             {
               "value": "fbe89d9a-fab9-11eb-9a03-0242ac130003"
             }
@@ -293,15 +317,19 @@
         ]
       },
       {
-        "name": "fields.order",
+        "name": "fields.properties.order",
         "id": [
           [
             {
               "value": "42680740-2120-4d68-bbc2-c47a5b13f144"
-            },
+            }
+          ],
+          [
             {
               "value": "32680740-2120-4d68-bbc2-c47a5b13f139"
-            },
+            }
+          ],
+          [
             {
               "value": "fbe89d9a-fab9-11eb-9a03-0242ac130003"
             }
@@ -309,15 +337,19 @@
         ]
       },
       {
-        "name": "fields.defaultValue",
+        "name": "fields.properties.defaultValue",
         "id": [
           [
             {
               "value": "42680740-2120-4d68-bbc2-c47a5b13f144"
-            },
+            }
+          ],
+          [
             {
               "value": "32680740-2120-4d68-bbc2-c47a5b13f139"
-            },
+            }
+          ],
+          [
             {
               "value": "fbe89d9a-fab9-11eb-9a03-0242ac130003"
             }
@@ -325,41 +357,19 @@
         ]
       },
       {
-        "name": "fields.validations.name",
+        "name": "fields.properties.validations.name",
         "id": [
           [
             {
               "value": "42680740-2120-4d68-bbc2-c47a5b13f144"
-            },
+            }
+          ],
+          [
             {
               "value": "32680740-2120-4d68-bbc2-c47a5b13f139"
             }
-          ]
-        ]
-      },
-      {
-        "name": "fields.validations.required",
-        "id": [
+          ],
           [
-            {
-              "value": "42680740-2120-4d68-bbc2-c47a5b13f144"
-            },
-            {
-              "value": "32680740-2120-4d68-bbc2-c47a5b13f139"
-            }
-          ]
-        ]
-      },
-      {
-        "name": "fields.constraints.readOnly",
-        "id": [
-          [
-            {
-              "value": "42680740-2120-4d68-bbc2-c47a5b13f144"
-            },
-            {
-              "value": "32680740-2120-4d68-bbc2-c47a5b13f139"
-            },
             {
               "value": "fbe89d9a-fab9-11eb-9a03-0242ac130003"
             }
@@ -367,15 +377,19 @@
         ]
       },
       {
-        "name": "fields.display.showInList",
+        "name": "fields.properties.validations.required",
         "id": [
           [
             {
               "value": "42680740-2120-4d68-bbc2-c47a5b13f144"
-            },
+            }
+          ],
+          [
             {
               "value": "32680740-2120-4d68-bbc2-c47a5b13f139"
-            },
+            }
+          ],
+          [
             {
               "value": "fbe89d9a-fab9-11eb-9a03-0242ac130003"
             }
@@ -383,15 +397,59 @@
         ]
       },
       {
-        "name": "fields.display.searchable",
+        "name": "fields.properties.constraints.readOnly",
         "id": [
           [
             {
               "value": "42680740-2120-4d68-bbc2-c47a5b13f144"
-            },
+            }
+          ],
+          [
             {
               "value": "32680740-2120-4d68-bbc2-c47a5b13f139"
-            },
+            }
+          ],
+          [
+            {
+              "value": "fbe89d9a-fab9-11eb-9a03-0242ac130003"
+            }
+          ]
+        ]
+      },
+      {
+        "name": "fields.properties.display.showInList",
+        "id": [
+          [
+            {
+              "value": "42680740-2120-4d68-bbc2-c47a5b13f144"
+            }
+          ],
+          [
+            {
+              "value": "32680740-2120-4d68-bbc2-c47a5b13f139"
+            }
+          ],
+          [
+            {
+              "value": "fbe89d9a-fab9-11eb-9a03-0242ac130003"
+            }
+          ]
+        ]
+      },
+      {
+        "name": "fields.properties.display.searchable",
+        "id": [
+          [
+            {
+              "value": "42680740-2120-4d68-bbc2-c47a5b13f144"
+            }
+          ],
+          [
+            {
+              "value": "32680740-2120-4d68-bbc2-c47a5b13f139"
+            }
+          ],
+          [
             {
               "value": "fbe89d9a-fab9-11eb-9a03-0242ac130003"
             }
