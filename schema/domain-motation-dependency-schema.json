@@ -1,0 +1,132 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "description": "A schema that validates the structure of a Domain Motation dependency file",
+  "$id": "full-domain-schema.json",
+  "type": "object",
+  "required": [
+    "domains",
+    "key",
+    "audit",
+    "systems"
+  ],
+  "properties": {
+    "domains": {
+      "type": "array",
+      "items": {
+        "required": [
+          "id",
+          "name",
+          "URI"
+        ],
+        "properties": {
+          "id": {
+            "type": "array",
+            "items": {
+              "$ref": "common-schema.json#/definitions/id"
+            },
+            "uniqueItems": true
+          },
+          "name": {
+            "type": "string"
+          },
+          "URI": {
+            "type": "string"
+          },
+          "active": {
+            "type": "boolean"
+          },
+          "aliases": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          },
+          "description": {
+            "type": "string"
+          },
+          "keywords": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          },
+          "systemDomain": {
+            "type": "boolean"
+          },
+          "defaultDomain": {
+            "type": "boolean"
+          },
+          "system": {
+            "type": "object"
+          }
+        }
+      }
+    },
+    "key": {
+      "type": "object",
+      "required": [
+        "fields"
+      ],
+      "properties": {
+        "fields": {
+          "type": "array",
+          "required": [
+            "name",
+            "id"
+          ],
+          "items": {
+            "properties": {
+              "name": {
+                "type": "string"
+              },
+              "id": {
+                "type": "array",
+                "items": {
+                  "$ref": "common-schema.json#/definitions/keyId"
+                }
+              }
+            }
+          },
+          "allOf": [
+            {
+              "contains": {
+                "properties": {
+                  "name": {
+                    "const": "name"
+                  }
+                }
+              }
+            },
+            {
+              "contains": {
+                "properties": {
+                  "name": {
+                    "const": "URI"
+                  }
+                }
+              }
+            }
+          ],
+          "minItems": 2,
+          "uniqueItems": true
+        }
+      }
+    },
+    "systems": {
+      "type": "array",
+      "items": {
+        "$ref": "common-schema.json#/definitions/systems"
+      },
+      "minItems": 1,
+      "uniqueItems": true
+    },
+    "audit": {
+      "type": "array",
+      "items": {
+        "$ref": "common-schema.json#/definitions/audit"
+      },
+      "minItems": 1,
+      "uniqueItems": true
+    }
+  }
+}

@@ -1,0 +1,147 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "description": "A schema that validates the structure of a Relationship Motation dependency file",
+  "$id": "relationship-schema.json",
+  "type": "object",
+  "required": [
+    "relationships",
+    "key",
+    "audit",
+    "systems"
+  ],
+  "properties": {
+    "relationships": {
+      "type": "array",
+      "items": {
+        "required": [
+          "id",
+          "name",
+          "childName",
+          "cardinality",
+          "parentDefinitionId",
+          "childDefinitionId"
+        ],
+        "properties": {
+          "id": {
+            "type": "array",
+            "items": {
+              "$ref": "common-schema.json#/definitions/id"
+            },
+            "uniqueItems": true
+          },
+          "name": {
+            "type": "string"
+          },
+          "childName": {
+            "type": "string"
+          },
+          "cardinality": {
+            "type": "string"
+          },
+          "parentDefinitionId": {
+            "type": "string"
+          },
+          "childDefinitionId": {
+            "type": "string"
+          },
+          "system": {
+            "type": "object"
+          }
+        }
+      }
+    },
+    "key": {
+      "type": "object",
+      "required": [
+        "fields"
+      ],
+      "properties": {
+        "fields": {
+          "type": "array",
+          "required": [
+            "name",
+            "id"
+          ],
+          "items": {
+            "properties": {
+              "name": {
+                "type": "string"
+              },
+              "id": {
+                "type": "array",
+                "items": {
+                  "$ref": "common-schema.json#/definitions/keyId"
+                }
+              }
+            }
+          },
+          "allOf": [
+            {
+              "contains": {
+                "properties": {
+                  "name": {
+                    "const": "name"
+                  }
+                }
+              }
+            },
+            {
+              "contains": {
+                "properties": {
+                  "name": {
+                    "const": "childName"
+                  }
+                }
+              }
+            },
+            {
+              "contains": {
+                "properties": {
+                  "name": {
+                    "const": "cardinality"
+                  }
+                }
+              }
+            },
+            {
+              "contains": {
+                "properties": {
+                  "name": {
+                    "const": "parentDefinitionId"
+                  }
+                }
+              }
+            },
+            {
+              "contains": {
+                "properties": {
+                  "name": {
+                    "const": "childDefinitionId"
+                  }
+                }
+              }
+            }
+          ],
+          "minItems": 5,
+          "uniqueItems": true
+        }
+      }
+    },
+    "systems": {
+      "type": "array",
+      "items": {
+        "$ref": "common-schema.json#/definitions/systems"
+      },
+      "minItems": 1,
+      "uniqueItems": true
+    },
+    "audit": {
+      "type": "array",
+      "items": {
+        "$ref": "common-schema.json#/definitions/audit"
+      },
+      "minItems": 1,
+      "uniqueItems": true
+    }
+  }
+}

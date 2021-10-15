@@ -1,0 +1,115 @@
+{
+  "$schema": "../../schema/language-motation-dependency-schema.json",
+  "$id": "example-language-motation-dependency.json",
+  "systems": [
+    {
+      "name": "dotCMS 5.2.7",
+      "date": "2021-08-06 20:08:16.349952035 +0000 UTC m=+165.808550789"
+    }
+  ],
+  "audit": [
+    {
+      "date": "2021-08-06 20:08:16.349976409 +0000 UTC m=+165.808575166"
+    }
+  ],
+  "languages": [
+    {
+      "id": [
+        {
+          "value":"1"
+        }
+      ],
+      "name": "English",
+      "code": "EN"
+    },
+    {
+      "id": [
+        {
+          "value":"2"
+        }
+      ],
+      "name": "Spanish",
+      "code": "ES",
+      "countryName": "Spain",
+      "countryCode": "ES",
+      "system": {
+        "systemSpecific": "data",
+        "additional": "richer data"
+      }
+    }
+  ],
+  "key": {
+    "fields": [
+      {
+        "name": "name",
+        "id": [
+          [
+            {
+              "value": "1"
+            }
+          ],
+          [
+            {
+              "value": "2"
+            }
+          ]
+        ]
+      },
+      {
+        "name": "code",
+        "id": [
+          [
+            {
+              "value": "1"
+            }
+          ],
+          [
+            {
+              "value": "2"
+            }
+          ]
+        ]
+      },
+      {
+        "name": "countryName",
+        "id": [
+          [
+            {
+              "value": "2"
+            }
+          ]
+        ]
+      },
+      {
+        "name": "countryCode",
+        "id": [
+          [
+            {
+              "value": "2"
+            }
+          ]
+        ]
+      },
+      {
+        "name": "system.systemSpecific",
+        "id": [
+          [
+            {
+              "value": "2"
+            }
+          ]
+        ]
+      },
+      {
+        "name": "system.additional",
+        "id": [
+          [
+            {
+              "value": "2"
+            }
+          ]
+        ]
+      }
+    ]
+  }
+}

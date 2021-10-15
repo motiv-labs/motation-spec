@@ -1,0 +1,101 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "description": "A schema that validates the structure of a Folder Motation dependency file",
+  "$id": "folder-schema.json",
+  "type": "object",
+  "required": [
+    "folders",
+    "key",
+    "audit",
+    "systems"
+  ],
+  "properties": {
+    "folders": {
+      "type": "array",
+      "items": {
+        "required": [
+          "id",
+          "path"
+        ],
+        "properties": {
+          "id": {
+            "type": "array",
+            "items": {
+              "$ref": "common-schema.json#/definitions/id"
+            },
+            "uniqueItems": true
+          },
+          "path": {
+            "type": "string"
+          },
+          "domainName": {
+            "type": "string"
+          },
+          "domainId": {
+            "type": "string"
+          },
+          "system": {
+            "type": "object"
+          }
+        }
+      }
+    },
+    "key": {
+      "type": "object",
+      "required": [
+        "fields"
+      ],
+      "properties": {
+        "fields": {
+          "type": "array",
+          "required": [
+            "name",
+            "id"
+          ],
+          "items": {
+            "properties": {
+              "name": {
+                "type": "string"
+              },
+              "id": {
+                "type": "array",
+                "items": {
+                  "$ref": "common-schema.json#/definitions/keyId"
+                }
+              }
+            }
+          },
+          "allOf": [
+            {
+              "contains": {
+                "properties": {
+                  "name": {
+                    "const": "path"
+                  }
+                }
+              }
+            }
+          ],
+          "minItems": 1,
+          "uniqueItems": true
+        }
+      }
+    },
+    "systems": {
+      "type": "array",
+      "items": {
+        "$ref": "common-schema.json#/definitions/systems"
+      },
+      "minItems": 1,
+      "uniqueItems": true
+    },
+    "audit": {
+      "type": "array",
+      "items": {
+        "$ref": "common-schema.json#/definitions/audit"
+      },
+      "minItems": 1,
+      "uniqueItems": true
+    }
+  }
+}

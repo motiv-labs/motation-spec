@@ -1,0 +1,117 @@
+{
+  "$schema": "../../schema/folder-motation-dependency-schema.json",
+  "$id": "example-folder-motation-dependency.json",
+  "systems": [
+    {
+      "name": "dotCMS 5.2.7",
+      "date": "2021-08-06 20:08:16.349952035 +0000 UTC m=+165.808550789"
+    }
+  ],
+  "audit": [
+    {
+      "date": "2021-08-06 20:08:16.349976409 +0000 UTC m=+165.808575166"
+    }
+  ],
+  "folders": [
+    {
+      "id": [
+        {
+          "value":"ec658190-f6ee-11eb-9a03-0242ac130003"
+        }
+      ],
+      "path":"folder1/"
+    },
+    {
+      "id": [
+        {
+          "value":"f1225000-f6ee-11eb-9a03-0242ac130003"
+        }
+      ],
+      "path":"folder3/",
+      "domainId": "domainId",
+      "domainName": "domainName",
+      "system": {
+        "systemSpecific": "data",
+        "additional": "richer data"
+      }
+    },
+    {
+      "id": [
+        {
+          "value":"f37c0d96-f6ee-11eb-9a03-0242ac130003"
+        }
+      ],
+      "path":"folder1/folder2/",
+      "domainId": "domainId"
+    }
+  ],
+  "key": {
+    "fields": [
+      {
+        "name": "path",
+        "id": [
+          [
+            {
+              "value": "ec658190-f6ee-11eb-9a03-0242ac130003"
+            }
+          ],
+          [
+            {
+              "value": "f1225000-f6ee-11eb-9a03-0242ac130003"
+            }
+          ],
+          [
+            {
+              "value": "f37c0d96-f6ee-11eb-9a03-0242ac130003"
+            }
+          ]
+        ]
+      },
+      {
+        "name": "domainId",
+        "id": [
+          [
+            {
+              "value": "f1225000-f6ee-11eb-9a03-0242ac130003"
+            }
+          ],
+          [
+            {
+              "value": "f37c0d96-f6ee-11eb-9a03-0242ac130003"
+            }
+          ]
+        ]
+      },
+      {
+        "name": "domainName",
+        "id": [
+          [
+            {
+              "value": "f1225000-f6ee-11eb-9a03-0242ac130003"
+            }
+          ]
+        ]
+      },
+      {
+        "name": "system.systemSpecific",
+        "id": [
+          [
+            {
+              "value": "f1225000-f6ee-11eb-9a03-0242ac130003"
+            }
+          ]
+        ]
+      },
+      {
+        "name": "system.additional",
+        "id": [
+          [
+            {
+              "value": "f1225000-f6ee-11eb-9a03-0242ac130003"
+            }
+          ]
+        ]
+      }
+    ]
+  }
+}

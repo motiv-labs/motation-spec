@@ -1,0 +1,114 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "description": "A schema that validates the structure of a Language Motation dependency file",
+  "$id": "language-schema.json",
+  "type": "object",
+  "required": [
+    "languages",
+    "key",
+    "audit",
+    "systems"
+  ],
+  "properties": {
+    "languages": {
+      "type": "array",
+      "items": {
+        "required": [
+          "id",
+          "name",
+          "code"
+        ],
+        "properties": {
+          "id": {
+            "type": "array",
+            "items": {
+              "$ref": "common-schema.json#/definitions/id"
+            },
+            "uniqueItems": true
+          },
+          "name": {
+            "type": "string"
+          },
+          "code": {
+            "type": "string"
+          },
+          "countryCode": {
+            "type": "string"
+          },
+          "countryName": {
+            "type": "string"
+          },
+          "system": {
+            "type": "object"
+          }
+        }
+      }
+    },
+    "key": {
+      "type": "object",
+      "required": [
+        "fields"
+      ],
+      "properties": {
+        "fields": {
+          "type": "array",
+          "required": [
+            "name",
+            "id"
+          ],
+          "items": {
+            "properties": {
+              "name": {
+                "type": "string"
+              },
+              "id": {
+                "type": "array",
+                "items": {
+                  "$ref": "common-schema.json#/definitions/keyId"
+                }
+              }
+            }
+          },
+          "allOf": [
+            {
+              "contains": {
+                "properties": {
+                  "name": {
+                    "const": "name"
+                  }
+                }
+              }
+            },
+            {
+              "contains": {
+                "properties": {
+                  "name": {
+                    "const": "code"
+                  }
+                }
+              }
+            }
+          ],
+          "minItems": 2,
+          "uniqueItems": true
+        }
+      }
+    },
+    "systems": {
+      "type": "array",
+      "items": {
+        "$ref": "common-schema.json#/definitions/systems"
+      },
+      "minItems": 1,
+      "uniqueItems": true
+    },
+    "audit": {
+      "type": "array",
+      "items": {
+        "$ref": "common-schema.json#/definitions/audit"
+      },
+      "minItems": 1,
+      "uniqueItems": true
+    }
+  }
+}

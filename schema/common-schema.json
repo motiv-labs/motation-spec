@@ -1,0 +1,97 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "description": "A schema that contains common elements",
+  "$id": "common-schema.json",
+  "type": "object",
+  "definitions": {
+    "id": {
+      "$id": "#common-id",
+      "required": [
+        "value"
+      ],
+      "properties": {
+        "label": {
+          "type": "string"
+        },
+        "value": {
+          "type": "string"
+        }
+      }
+    },
+    "metadata": {
+      "$id": "#common-metadata",
+      "properties": {
+        "items": {
+          "type": "array"
+        }
+      }
+    },
+    "system": {
+      "$id": "#common-system",
+      "properties": {
+        "items": {
+          "type": "array"
+        }
+      }
+    },
+    "systems": {
+      "$id": "#common-systems",
+      "required": [
+        "name",
+        "date"
+      ],
+      "properties": {
+        "name": {
+          "type": "string"
+        },
+        "version": {
+          "type": "string"
+        },
+        "date": {
+          "type": "string"
+        }
+      },
+      "additionalProperties": false
+    },
+    "audit": {
+      "$id": "#common-audit",
+      "required": [
+        "date"
+      ],
+      "properties": {
+        "user": {
+          "type": "object",
+          "$ref": "#common-user"
+        },
+        "date": {
+          "type": "string"
+        }
+      }
+    },
+    "user": {
+      "$id": "#common-user",
+      "properties": {
+        "id": {
+          "type": "object",
+          "$ref": "#common-id"
+        },
+        "name": {
+          "type": "string"
+        },
+        "email": {
+          "type": "string"
+        },
+        "username": {
+          "type": "string"
+        }
+      }
+    },
+    "keyId": {
+      "$id": "#common-keyId",
+      "type": "array",
+      "items": {
+        "$ref": "#common-id"
+      }
+    }
+  }
+}

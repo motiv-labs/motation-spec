@@ -1,0 +1,117 @@
+{
+  "$schema": "../../schema/tag-motation-dependency-schema.json",
+  "$id": "example-tag-motation-dependency.json",
+  "systems": [
+    {
+      "name": "dotCMS 5.2.7",
+      "date": "2021-08-06 20:08:16.349952035 +0000 UTC m=+165.808550789"
+    }
+  ],
+  "audit": [
+    {
+      "date": "2021-08-06 20:08:16.349976409 +0000 UTC m=+165.808575166"
+    }
+  ],
+  "tags": [
+    {
+      "id": [
+        {
+          "value":"df56f776-928f-4cb7-93f9-0ca242df928f"
+        }
+      ],
+      "name": "tag1"
+    },
+    {
+      "id": [
+        {
+          "value":"d20dca41-2a90-43f7-af90-19b0eaa42af1"
+        }
+      ],
+      "name": "tag2",
+      "domainId": "domainId",
+      "domainName": "domainName",
+      "system": {
+        "systemSpecific": "data",
+        "additional": "richer data"
+      }
+    },
+    {
+      "id": [
+        {
+          "value":"6c7a56bf-006e-4f93-a092-1c1b905998a6"
+        }
+      ],
+      "name": "tag3",
+      "domainId": "domainId"
+    }
+  ],
+  "key": {
+    "fields": [
+      {
+        "name": "name",
+        "id": [
+          [
+            {
+              "value": "df56f776-928f-4cb7-93f9-0ca242df928f"
+            }
+          ],
+          [
+            {
+              "value": "d20dca41-2a90-43f7-af90-19b0eaa42af1"
+            }
+          ],
+          [
+            {
+              "value": "6c7a56bf-006e-4f93-a092-1c1b905998a6"
+            }
+          ]
+        ]
+      },
+      {
+        "name": "domainId",
+        "id": [
+          [
+            {
+              "value": "d20dca41-2a90-43f7-af90-19b0eaa42af1"
+            }
+          ],
+          [
+            {
+              "value": "6c7a56bf-006e-4f93-a092-1c1b905998a6"
+            }
+          ]
+        ]
+      },
+      {
+        "name": "domainName",
+        "id": [
+          [
+            {
+              "value": "d20dca41-2a90-43f7-af90-19b0eaa42af1"
+            }
+          ]
+        ]
+      },
+      {
+        "name": "system.systemSpecific",
+        "id": [
+          [
+            {
+              "value": "d20dca41-2a90-43f7-af90-19b0eaa42af1"
+            }
+          ]
+        ]
+      },
+      {
+        "name": "system.additional",
+        "id": [
+          [
+            {
+              "value": "d20dca41-2a90-43f7-af90-19b0eaa42af1"
+            }
+          ]
+        ]
+      }
+    ]
+  }
+}

@@ -1,0 +1,122 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "description": "A schema that validates the structure of a Motation file",
+  "$id": "full-generic-schema.json",
+  "type": "object",
+  "required": [
+    "systems",
+    "contents",
+    "audit",
+    "key"
+  ],
+  "properties": {
+    "systems": {
+      "type": "array",
+      "items": {
+        "$ref": "common-schema.json#/definitions/systems"
+      },
+      "minItems": 1,
+      "uniqueItems": true
+    },
+    "dependencies": {
+      "type": "object",
+      "properties": {
+        "domains": {
+          "type": "string",
+          "items": {
+            "type": "string"
+          }
+        },
+        "definitions": {
+          "type": "string",
+          "items": {
+            "type": "string"
+          }
+        },
+        "languages": {
+          "type": "string",
+          "items": {
+            "type": "string"
+          }
+        },
+        "tags": {
+          "type": "string",
+          "items": {
+            "type": "string"
+          }
+        },
+        "categories": {
+          "type": "string",
+          "items": {
+            "type": "string"
+          }
+        },
+        "relationships": {
+          "type": "string",
+          "items": {
+            "type": "string"
+          }
+        },
+        "folders": {
+          "type": "string",
+          "items": {
+            "type": "string"
+          }
+        }
+      }
+    },
+    "contents": {
+      "type": "array",
+      "items": {
+        "$ref": "content-schema.json"
+      },
+      "minItems": 1,
+      "uniqueItems": true
+    },
+    "audit": {
+      "type": "array",
+      "items": {
+        "$ref": "common-schema.json#/definitions/audit"
+      },
+      "minItems": 1,
+      "uniqueItems": true
+    },
+    "key": {
+      "required": [
+        "fields"
+      ],
+      "properties": {
+        "fields": {
+          "type": "array",
+          "items": {
+            "$ref": "#key-field"
+          },
+          "minItems": 1,
+          "uniqueItems": true
+        }
+      }
+    }
+  },
+  "definitions": {
+    "key-field": {
+      "$id": "#key-field",
+      "required": [
+        "name",
+        "id"
+      ],
+      "properties": {
+        "name": {
+          "type": "string"
+        },
+        "id": {
+          "type": "array",
+          "items": {
+            "$ref": "common-schema.json#/definitions/keyId"
+          },
+          "minItems": 1,
+          "uniqueItems": true
+        }
+      }
+    }
+  }
+}
