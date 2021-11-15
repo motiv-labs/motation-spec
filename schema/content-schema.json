@@ -178,10 +178,17 @@
       "$id": "#content-relation",
       "type": "object",
       "required": [
+        "fieldId",
         "parentIds",
         "childIds"
       ],
       "properties": {
+        "fieldId": {
+          "type": "array",
+          "items": {
+            "$ref": "common-schema.json#/definitions/id"
+          }
+        },
         "parentIds": {
           "type": "array",
           "items": {
