@@ -36,7 +36,6 @@
             "value": "2a3e91e4-fbbf-4876-8c5b-2233c1739b05"
           }
         ],
-        "name": "content.3ef7204c-e429-4d7c-bcd4-807548f4c18f",
         "path": "/",
         "site": "8a7d5e23-da1e-420a-b4f0-471e7da8ea2d",
         "system": {}
@@ -93,7 +92,8 @@
                 {
                   "value": "mine@email.com"
                 }
-              ]
+              ],
+              "fieldType": "Text"
             },
             {
               "id": [
@@ -105,7 +105,9 @@
                 {
                   "value": "my title"
                 }
-              ]
+              ],
+              "fieldType": "Text",
+              "dataType": "String"
             },
             {
               "id": [
@@ -126,7 +128,22 @@
                   "value": "maybe",
                   "order": 2
                 }
-              ]
+              ],
+              "fieldType": "Checkbox"
+            },
+            {
+              "id": [
+                {
+                  "value": "fbe89d9a-fab9-11eb-9a03-0242ac130777"
+                }
+              ],
+              "storage": [
+                {
+                  "bucket": "bucket",
+                  "md5": "md5"
+                }
+              ],
+              "fieldType": "Checkbox"
             }
           ]
         }

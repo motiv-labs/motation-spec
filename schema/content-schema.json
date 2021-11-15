@@ -56,7 +56,6 @@
       "$id": "#content-properties",
       "required": [
         "definitionId",
-        "name",
         "type"
       ],
       "properties": {
@@ -204,10 +203,25 @@
         }
       }
     },
+    "dataType": {
+      "$id": "#def-dataType",
+      "enum": [
+        "String",
+        "BigString",
+        "Boolean",
+        "Int",
+        "BigInt",
+        "Float",
+        "Date",
+        "Time",
+        "DateTime"
+      ]
+    },
     "field": {
       "$id": "#content-field",
       "required": [
-        "id"
+        "id",
+        "fieldType"
       ],
       "properties": {
         "id": {
@@ -216,6 +230,41 @@
             "$ref": "common-schema.json#/definitions/id"
           },
           "uniqueItems": true
+        },
+        "dataType": {
+          "type": "string",
+          "$ref": "#def-dataType"
+        },
+        "fieldType": {
+          "enum": [
+            "Text",
+            "Category",
+            "Checkbox",
+            "Constant",
+            "Custom",
+            "Date",
+            "Datetime",
+            "File",
+            "Hidden",
+            "Site",
+            "Image",
+            "KeyValue",
+            "Divider",
+            "Select",
+            "Multiselect",
+            "Tab",
+            "Radio",
+            "Relationship",
+            "RelationshipTab",
+            "Permission",
+            "Tag",
+            "Textarea",
+            "Binary",
+            "Time",
+            "WYSIWYG",
+            "Row",
+            "Column"
+          ]
         },
         "value": {
           "type": "array",
@@ -231,8 +280,10 @@
           }
         },
         "storage": {
-          "type": "object",
-          "$ref": "#content-storage"
+          "type": "array",
+          "items": {
+            "$ref": "#content-storage"
+          }
         }
       }
     }
