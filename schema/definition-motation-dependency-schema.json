@@ -359,6 +359,9 @@
               "type": "object",
               "$ref": "./common-schema.json#/definitions/system"
             },
+            "relationship": {
+              "type": "string"
+            },
             "metadata": {
               "type": "array",
               "items": {
