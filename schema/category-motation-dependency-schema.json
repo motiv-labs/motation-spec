@@ -35,7 +35,7 @@
           "children": {
             "type": "array",
             "items": {
-              "type": "string"
+              "$ref": "common-schema.json#/definitions/keyId"
             }
           },
           "system": {

@@ -28,7 +28,11 @@
         }
       ],
       "path":"folder3/",
-      "domainId": "domainId",
+      "domainId": [
+        {
+          "value": "domainId"
+        }
+      ],
       "domainName": "domainName",
       "system": {
         "systemSpecific": "data",
@@ -42,7 +46,11 @@
         }
       ],
       "path":"folder1/folder2/",
-      "domainId": "domainId"
+      "domainId": [
+        {
+          "value": "domainId"
+        }
+      ]
     }
   ],
   "key": {

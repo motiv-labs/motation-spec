@@ -28,7 +28,11 @@
         }
       ],
       "name": "tag2",
-      "domainId": "domainId",
+      "domainId": [
+        {
+          "value":"df9675be-f6ee-11eb-9a03-0242ac130003"
+        }
+      ],
       "domainName": "domainName",
       "system": {
         "systemSpecific": "data",
@@ -42,7 +46,11 @@
         }
       ],
       "name": "tag3",
-      "domainId": "domainId"
+      "domainId": [
+        {
+          "value":"df9675be-f6ee-11eb-9a03-0242ac130003"
+        }
+      ]
     }
   ],
   "key": {

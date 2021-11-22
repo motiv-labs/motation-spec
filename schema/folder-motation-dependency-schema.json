@@ -32,7 +32,11 @@
             "type": "string"
           },
           "domainId": {
-            "type": "string"
+            "type": "array",
+            "items": {
+              "$ref": "common-schema.json#/definitions/id"
+            },
+            "uniqueItems": true
           },
           "system": {
             "type": "object"

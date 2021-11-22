@@ -22,8 +22,14 @@
       "name": "cat1",
       "order": 0,
       "children": [
-        "7ec289ef-f830-4d0b-ba3d-a43e4cdceec0",
-        "81a56c8d-b9d1-4df6-95e2-39577270154f"
+        [
+          {
+            "value": "7ec289ef-f830-4d0b-ba3d-a43e4cdceec0"
+          },
+          {
+            "value": "81a56c8d-b9d1-4df6-95e2-39577270154f"
+          }
+        ]
       ],
       "system": {
         "systemSpecific": "data",
@@ -48,7 +54,11 @@
       "name": "cat1.2",
       "order": 1,
       "children": [
-        "aa2738de-4134-47d4-8852-1d86bd5e78ed"
+        [
+          {
+            "value": "aa2738de-4134-47d4-8852-1d86bd5e78ed"
+          }
+        ]
       ]
     },
     {

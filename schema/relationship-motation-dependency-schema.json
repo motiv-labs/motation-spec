@@ -15,11 +15,11 @@
       "items": {
         "required": [
           "id",
-          "name",
-          "childName",
+          "definition1FieldId",
+          "definition2FieldId",
           "cardinality",
-          "parentDefinitionId",
-          "childDefinitionId"
+          "definition1Id",
+          "definition2Id"
         ],
         "properties": {
           "id": {
@@ -29,20 +29,47 @@
             },
             "uniqueItems": true
           },
-          "name": {
+          "definition1FieldId": {
+            "type": "array",
+            "items": {
+              "$ref": "common-schema.json#/definitions/id"
+            },
+            "uniqueItems": true
+          },
+          "definition2FieldId": {
+            "type": "array",
+            "items": {
+              "$ref": "common-schema.json#/definitions/id"
+            },
+            "uniqueItems": true
+          },
+          "definition1FieldName": {
             "type": "string"
           },
-          "childName": {
+          "definition2FieldName": {
             "type": "string"
           },
           "cardinality": {
-            "type": "string"
+            "enum": [
+              "ManyToMany",
+              "OneToMany",
+              "ManyToOne",
+              "OneToOne"
+            ]
           },
-          "parentDefinitionId": {
-            "type": "string"
+          "definition1Id": {
+            "type": "array",
+            "items": {
+              "$ref": "common-schema.json#/definitions/id"
+            },
+            "uniqueItems": true
           },
-          "childDefinitionId": {
-            "type": "string"
+          "definition2Id": {
+            "type": "array",
+            "items": {
+              "$ref": "common-schema.json#/definitions/id"
+            },
+            "uniqueItems": true
           },
           "system": {
             "type": "object"
