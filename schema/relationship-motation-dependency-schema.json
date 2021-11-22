@@ -107,7 +107,7 @@
               "contains": {
                 "properties": {
                   "name": {
-                    "const": "name"
+                    "const": "definition1FieldId"
                   }
                 }
               }
@@ -116,7 +116,7 @@
               "contains": {
                 "properties": {
                   "name": {
-                    "const": "childName"
+                    "const": "definition2FieldId"
                   }
                 }
               }
@@ -134,7 +134,7 @@
               "contains": {
                 "properties": {
                   "name": {
-                    "const": "parentDefinitionId"
+                    "const": "definition1Id"
                   }
                 }
               }
@@ -143,7 +143,7 @@
               "contains": {
                 "properties": {
                   "name": {
-                    "const": "childDefinitionId"
+                    "const": "definition2Id"
                   }
                 }
               }
