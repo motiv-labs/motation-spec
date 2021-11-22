@@ -21,23 +21,27 @@
       ],
       "definition1FieldId": [
         {
-          "value":"Kitchensink.relationships"
+          "value":"Kitchensink.relationships",
+          "label": "local"
         }
       ],
       "definition2FieldId": [
         {
-          "value":"relationships"
+          "value":"relationships",
+          "label": "local"
         }
       ],
       "cardinality": "ManyToMany",
       "definition1Id": [
         {
-          "value":"a0ba0feb-440e-4881-8275-91f312bedb32"
+          "value":"a0ba0feb-440e-4881-8275-91f312bedb32",
+          "label": "uuid"
         }
       ],
       "definition2Id": [
         {
-          "value":"2a3e91e4-fbbf-4876-8c5b-2233c1739b05"
+          "value":"2a3e91e4-fbbf-4876-8c5b-2233c1739b05",
+          "label": "uuid"
         }
       ]
     },
@@ -49,12 +53,14 @@
       ],
       "definition1FieldId": [
         {
-          "value":"Kitchensink.relationships"
+          "value":"Kitchensink.relationships",
+          "label": "local"
         }
       ],
       "definition2FieldId": [
         {
-          "value":"otherRelationships"
+          "value":"otherRelationships",
+          "label": "local"
         }
       ],
       "definition1FieldName": "def1field",
@@ -62,12 +68,14 @@
       "cardinality": "OneToOne",
       "definition1Id": [
         {
-          "value":"a0ba0feb-440e-4881-8275-91f312bedb32"
+          "value":"a0ba0feb-440e-4881-8275-91f312bedb32",
+          "label": "uuid"
         }
       ],
       "definition2Id": [
         {
-          "value":"2a3e91e4-fbbf-4876-8c5b-2233c1739b05"
+          "value":"2a3e91e4-fbbf-4876-8c5b-2233c1739b05",
+          "label": "uuid"
         }
       ],
       "system": {
