@@ -207,7 +207,7 @@
         ]
       },
       {
-        "name": "fields.properties.uniqueName",
+        "name": "fields.uniqueName",
         "id": [
           [
             {
@@ -230,7 +230,7 @@
         ]
       },
       {
-        "name": "fields.properties.dataType",
+        "name": "fields.dataType",
         "id": [
           [
             {
@@ -253,7 +253,7 @@
         ]
       },
       {
-        "name": "fields.properties.fieldType",
+        "name": "fields.fieldType",
         "id": [
           [
             {
@@ -276,7 +276,7 @@
         ]
       },
       {
-        "name": "fields.properties.description",
+        "name": "fields.description",
         "id": [
           [
             {
@@ -299,7 +299,7 @@
         ]
       },
       {
-        "name": "fields.properties.hint",
+        "name": "fields.hint",
         "id": [
           [
             {
@@ -322,7 +322,7 @@
         ]
       },
       {
-        "name": "fields.properties.name",
+        "name": "fields.name",
         "id": [
           [
             {
@@ -345,7 +345,7 @@
         ]
       },
       {
-        "name": "fields.properties.order",
+        "name": "fields.order",
         "id": [
           [
             {
@@ -368,7 +368,7 @@
         ]
       },
       {
-        "name": "fields.properties.defaultValue",
+        "name": "fields.defaultValue",
         "id": [
           [
             {
@@ -391,7 +391,7 @@
         ]
       },
       {
-        "name": "fields.properties.validations.name",
+        "name": "fields.validations.name",
         "id": [
           [
             {
@@ -414,7 +414,7 @@
         ]
       },
       {
-        "name": "fields.properties.validations.required",
+        "name": "fields.validations.required",
         "id": [
           [
             {
@@ -437,7 +437,7 @@
         ]
       },
       {
-        "name": "fields.properties.constraints.readOnly",
+        "name": "fields.constraints.readOnly",
         "id": [
           [
             {
@@ -460,7 +460,7 @@
         ]
       },
       {
-        "name": "fields.properties.display.showInList",
+        "name": "fields.display.showInList",
         "id": [
           [
             {
@@ -483,7 +483,7 @@
         ]
       },
       {
-        "name": "fields.properties.display.searchable",
+        "name": "fields.display.searchable",
         "id": [
           [
             {
