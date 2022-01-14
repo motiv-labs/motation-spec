@@ -1,0 +1,69 @@
+{
+
+  "idMap": {
+    "c4ef352f74e502ef5e7bc98e6f4e493d.0d2d87f5119ad6cbcceca5a00f622cbb": {
+      "dotCMS": [
+        {
+          "value": "f5476c1e-7fcc-4e5c-846f-7390fa8c6f60",
+          "label": "local"
+        }
+      ],
+      "impulse": [
+        {
+          "value": "f5476c1e-7fcc-4e5c-846f-7390fa8c6f60",
+          "label": "UUID"
+        }
+      ]
+    },
+    "65c76007e6e9d7f5679127c458fe4d9b.3d1a658e61e83491216f67c50ca3a220": {
+      "dotCMS": [
+        {
+          "value": "7ec289ef-f830-4d0b-ba3d-a43e4cdceec0",
+          "label": "local"
+        }
+      ],
+      "impulse": [
+        {
+          "value": "7ec289ef-f830-4d0b-ba3d-a43e4cdceec0",
+          "label": "UUID"
+        }
+      ]
+    },
+    "65c76007e6e9d7f5679127c458fe4d9b.84b09d7b34051bc4c11ac7b8a89f7e8a": {
+      "dotCMS": [
+        {
+          "value": "81a56c8d-b9d1-4df6-95e2-39577270154f",
+          "label": "local"
+        }
+      ],
+      "impulse": [
+        {
+          "value": "81a56c8d-b9d1-4df6-95e2-39577270154f",
+          "label": "UUID"
+        }
+      ]
+    },
+    "ad5f82e879a9c5d6b5b442eb37e50551.dbfc7545ec2b0951a8e2a9d2910e67a4": {
+      "dotCMS": [
+        {
+          "value": "SYSTEM_HOST",
+          "label": "local"
+        }
+      ],
+      "impulse": [
+        {
+          "value": "38f2b660-c98d-4ee8-be26-f1ecc149cc29",
+          "label": "UUID"
+        }
+      ]
+    }
+  },
+  "localToImpulseIdMap": {
+    "ImpulsePlaceholderEndpointId": {
+      "f5476c1e-7fcc-4e5c-846f-7390fa8c6f60": "c4ef352f74e502ef5e7bc98e6f4e493d.0d2d87f5119ad6cbcceca5a00f622cbb",
+      "7ec289ef-f830-4d0b-ba3d-a43e4cdceec0": "65c76007e6e9d7f5679127c458fe4d9b.3d1a658e61e83491216f67c50ca3a220",
+      "81a56c8d-b9d1-4df6-95e2-39577270154f": "65c76007e6e9d7f5679127c458fe4d9b.84b09d7b34051bc4c11ac7b8a89f7e8a",
+      "SYSTEM_HOST": "ad5f82e879a9c5d6b5b442eb37e50551.dbfc7545ec2b0951a8e2a9d2910e67a4"
+    }
+  }
+}

@@ -14,13 +14,15 @@
     "definitions": "definition-reference-motation-id",
     "domains": "domain-reference-motation-id",
     "languages": "language-reference-motation-id",
-    "folders": "folder-reference-motation-id"
+    "folders": "folder-reference-motation-id",
+    "idMap": "idMap-reference-UUID"
   },
   "contents": [
     {
       "id": [
         {
-          "value": "956b7be9-c1a7-4244-8ae6-5390be4e4ce1"
+          "value": "9a0364b9e99bb480dd25e1f0284c8555.7d5bfb0ca3c66f02c983a594c77dfad3",
+          "label": "ImpulseId"
         }
       ],
       "properties": {
@@ -28,12 +30,14 @@
         "status": "Working",
         "languageId": [
           {
-            "value": "1"
+            "value": "8512ae7d57b1396273f76fe6ed341a23.ec99ba4d90593761af6fa5145a44ae24",
+            "label": "ImpulseId"
           }
         ],
         "definitionId": [
           {
-            "value": "2a3e91e4-fbbf-4876-8c5b-2233c1739b05"
+            "value": "30618b3b44fa316257d07e387759fae5.11bbc8acea656a8322fa9218a864043a",
+            "label": "ImpulseId"
           }
         ],
         "path": "/",
@@ -44,7 +48,8 @@
         {
           "id": [
             {
-              "value": "3ef7204c-e429-4d7c-bcd4-807548f4c18f"
+              "value": "22c76d211aebd0843003c378394c2bf7.8df3ec5945c4c0184f32e955bc0ccb99",
+              "label": "ImpulseId"
             }
           ],
           "properties": {
@@ -54,7 +59,8 @@
             "modificationDate": "2021-02-03 20:45:29.188 +0000 UTC",
             "modificationUser": [
               {
-                "value": "dotcms.org.1"
+                "value": "f4a2a18ae743a74e1c171c08743f4536.939abd9f4e1b63c6042bc3ffe54360a3",
+                "label": "ImpulseId"
               }
             ],
             "system": {
@@ -67,17 +73,20 @@
             {
               "fieldId": [
                 {
-                  "value": "32680740-2120-4d68-bbc2-c47a5b13f139"
+                  "value": "42c895caabdc14947d59ec800b90986e.5732264b7a13c8c427aad594e84ae9c0",
+                  "label": "ImpulseId"
                 }
               ],
               "parentIds": [
                 {
-                  "value": "de0db860-fea0-11eb-9a03-0242ac130003"
+                  "value": "8f8fb674c6cdff43b91acf77ad7917ba.fa513c480a2681b79db4e44725ff2286",
+                  "label": "ImpulseId"
                 }
               ],
               "childIds":[
                 {
-                  "value": "de0db860-fea0-11eb-9a03-0242ac130003"
+                  "value": "36c290a587c06278422371ef721f630f.7bb39054775fe9e4d324ff433b9dd5bc",
+                  "label": "ImpulseId"
                 }
               ],
               "order": 0,
@@ -90,7 +99,8 @@
             {
               "id": [
                 {
-                  "value": "32680740-2120-4d68-bbc2-c47a5b13f139"
+                  "value": "53fcbb6d7b48c17ad24dc8fc75227ce7.9f5ad275f5caef83edf871d9b9b601bb",
+                  "label": "ImpulseId"
                 }
               ],
               "value": [
@@ -103,7 +113,8 @@
             {
               "id": [
                 {
-                  "value": "42680740-2120-4d68-bbc2-c47a5b13f144"
+                  "value": "53fcbb6d7b48c17ad24dc8fc75227ce7.b506fd06305b40b70b7ffe8dbfe030bf",
+                  "label": "ImpulseId"
                 }
               ],
               "value": [
@@ -117,7 +128,8 @@
             {
               "id": [
                 {
-                  "value": "fbe89d9a-fab9-11eb-9a03-0242ac130003"
+                  "value": "53fcbb6d7b48c17ad24dc8fc75227ce7.594cf7a8d8bcb179b2502c805ede2afc",
+                  "label": "ImpulseId"
                 }
               ],
               "value": [
@@ -139,7 +151,8 @@
             {
               "id": [
                 {
-                  "value": "fbe89d9a-fab9-11eb-9a03-0242ac130777"
+                  "value": "53fcbb6d7b48c17ad24dc8fc75227ce7.cbec40b6d9e9892b91be3caec614f63b",
+                  "label": "ImpulseId"
                 }
               ],
               "storage": [
@@ -167,7 +180,8 @@
         "id": [
           [
             {
-              "value": "32680740-2120-4d68-bbc2-c47a5b13f139"
+              "value": "53fcbb6d7b48c17ad24dc8fc75227ce7.9f5ad275f5caef83edf871d9b9b601bb",
+                  "label": "ImpulseId"
             }
           ]
         ]
@@ -177,7 +191,8 @@
         "id": [
           [
             {
-              "value": "42680740-2120-4d68-bbc2-c47a5b13f144"
+              "value": "53fcbb6d7b48c17ad24dc8fc75227ce7.b506fd06305b40b70b7ffe8dbfe030bf",
+              "label": "ImpulseId"
             }
           ]
         ]
@@ -187,7 +202,8 @@
         "id": [
           [
             {
-              "value": "fbe89d9a-fab9-11eb-9a03-0242ac130003"
+              "value": "53fcbb6d7b48c17ad24dc8fc75227ce7.594cf7a8d8bcb179b2502c805ede2afc",
+              "label": "ImpulseId"
             }
           ]
         ]
