@@ -226,6 +226,23 @@
         }
       }
     },
+    "setUpDataItem": {
+      "$id": "#def-setUpDataItem",
+      "required": [
+        "value"
+      ],
+      "properties": {
+        "key": {
+          "type": "string"
+        },
+        "value": {
+          "type": "string"
+        },
+        "order": {
+          "type": "integer"
+        }
+      }
+    },
     "validation": {
       "$id": "#def-validation",
       "type": "object",
@@ -285,10 +302,12 @@
         "Boolean",
         "Int",
         "BigInt",
+        "Decimal",
         "Float",
         "Date",
         "Time",
-        "DateTime"
+        "DateTime",
+        "System"
       ]
     },
     "field": {
@@ -343,7 +362,10 @@
                 "Time",
                 "WYSIWYG",
                 "Row",
-                "Column"
+                "Column",
+                "Array",
+                "JSON",
+                "System"
               ]
             },
             "validations": {
@@ -376,7 +398,12 @@
               "type": "string"
             },
             "setUpData": {
-              "type": "string"
+              "type": "array",
+              "items": {
+                "$ref": "#def-setUpDataItem"
+              },
+              "minItems": 1,
+              "uniqueItems": true
             },
             "name": {
               "type": "string"
