@@ -77,7 +77,11 @@
           "modificationDate": "2020-03-27 13:36:37.000000",
           "defaultValue": "info@email.com",
           "order": 1,
-          "setUpData": "##Some set up..."
+          "setUpData": [
+            {
+              "value": "##Some set up..."
+            }
+          ]
         }
       },
       {
@@ -139,7 +143,24 @@
           "order": 2,
           "defaultValue": "yes",
           "creationDate": "2020-03-27 13:36:37.000000",
-          "modificationDate": "2020-03-27 13:36:37.000000"
+          "modificationDate": "2020-03-27 13:36:37.000000",
+          "setUpData": [
+            {
+              "key": "Yes",
+              "value": "yes",
+              "order": 0
+            },
+            {
+              "key": "No",
+              "value": "no",
+              "order": 1
+            },
+            {
+              "key": "Maybe",
+              "value": "maybe",
+              "order": 2
+            }
+          ]
         }
       }
     ]

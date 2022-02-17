@@ -115,16 +115,7 @@
               ],
               "value": [
                 {
-                  "value": "yes",
-                  "order": 0
-                },
-                {
-                  "value": "no",
-                  "order": 1
-                },
-                {
-                  "value": "maybe",
-                  "order": 2
+                  "value": "no"
                 }
               ]
             }
